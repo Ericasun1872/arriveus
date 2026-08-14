@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3f7fc;
+  --surface: #ffffff;
+  --surface-muted: #eaf1f9;
+  --ink: #12233d;
+  --muted: #5b6b82;
+  --border: #d5e0ee;
+  --brand: #1b4f9c;
+  --brand-soft: #dce8f8;
+  --brand-border: #9bb6de;
+  --hero-from: #0f2f63;
+  --hero-via: #1b4f9c;
+  --hero-to: #3d7fd1;
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+body {
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(61, 127, 209, 0.16), transparent 55%),
+    radial-gradient(900px 420px at 90% 0%, rgba(27, 79, 156, 0.12), transparent 50%),
+    var(--background);
+  color: var(--ink);
+  font-family: var(--font-body), "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+::selection {
+  background: var(--brand-soft);
+  color: var(--ink);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+
+.animate-rise {
+  animation: rise 0.55s ease both;
+}
+
+.animate-fade {
+  animation: fade 0.25s ease both;
+}
+
+.hero-orb {
+  animation: drift 5s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rise,
+  .animate-fade,
+  .hero-orb {
+    animation: none;
+  }
+}
