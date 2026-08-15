@@ -23,9 +23,24 @@ export async function generateMetadata({
   const { category: categorySlug, slug } = await params;
   const guide = getGuide(categorySlug, slug);
   if (!guide) return { title: "가이드" };
+  const path = `/guides/${guide.category}/${guide.slug}`;
   return {
     title: guide.title,
     description: guide.summary,
+    alternates: { canonical: path },
+    openGraph: {
+      title: guide.title,
+      description: guide.summary,
+      url: path,
+      type: "article",
+      images: ["/og-arriveus.png"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: guide.title,
+      description: guide.summary,
+      images: ["/og-arriveus.png"],
+    },
   };
 }
 

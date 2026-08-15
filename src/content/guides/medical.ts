@@ -57,9 +57,9 @@ export const medicalGuides: Guide[] = [
   {
     slug: "low-income-insurance",
     category: "medical",
-    title: "저소득층 보험 가입",
+    title: "저소득층 Medicaid·CHIP 보험 가입",
     summary:
-      "소득이 낮을 때 쓰는 Medicaid·CHIP·Marketplace 보험료 지원(Subsidy)의 차이, 신청에 필요한 것, 온라인·전화로 가입하는 기본 절차를 안내합니다.",
+      "소득이 낮을 때 Medicaid·CHIP·Marketplace 보험료 지원(Subsidy) 자격 확인과 Healthcare.gov 신청 절차를 안내합니다.",
     cost: "Medicaid/CHIP는 무료~저비용인 경우가 많음 / Marketplace는 소득에 따라 월 보험료·본인부담이 줄어들 수 있음",
     methods: [
       "Medicaid (주 메디케이드)",
@@ -122,9 +122,9 @@ export const medicalGuides: Guide[] = [
   {
     slug: "medicare",
     category: "medical",
-    title: "65세 메디케어 (Medicare)",
+    title: "65세 메디케어 가입 (Medicare)",
     summary:
-      "65세부터 시작하는 미국 연방 건강보험 Medicare의 Part A·B·C·D 구성, 가입 시기, 한국 건강보험과의 차이, 이민자 자격 확인 포인트를 정리했습니다.",
+      "65세 Medicare Part A·B·C·D 차이, 가입 시기, 지연 페널티, Original vs Advantage 비교와 신청 절차를 정리한 가이드입니다.",
     cost: "Part A는 근로 크레딧에 따라 보험료 0원인 경우 많음 / Part B·D는 월 보험료·자기부담 있음 (연도·소득에 따라 변동)",
     methods: [
       "Original Medicare (A+B) + Part D",
@@ -224,9 +224,9 @@ export const medicalGuides: Guide[] = [
   {
     slug: "medical-bills",
     category: "medical",
-    title: "무보험·응급실 비용 처리",
+    title: "무보험·응급실 병원비 협상",
     summary:
-      "보험이 없거나 체류 서류가 불안정한 상황에서 응급실을 이용한 뒤, 청구서가 여러 장으로 나뉘어 올 때 협상·할인·할부 처리하는 실전 흐름입니다.",
+      "보험이 없거나 체류가 불안정할 때 응급실 청구서(병원·의사 분리 청구)를 할인·할부·Charity care로 처리하는 실전 안내입니다.",
     cost: "응급실 수 시간만으로도 수천~수만 달러가 나올 수 있음 (시설·검사·의사 청구가 따로 옴)",
     methods: [
       "Financial assistance / Charity care",

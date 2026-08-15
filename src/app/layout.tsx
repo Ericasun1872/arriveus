@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Noto_Sans_KR, Sora } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
 const display = Sora({
@@ -19,12 +20,41 @@ const body = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: "ArriveUS — 한국인을 위한 미국 정착 가이드",
     template: "%s · ArriveUS",
   },
-  description:
-    "DMV, 은행, 의료, 세금, 취업, 주거 — 미국 생활 정착에 필요한 가이드를 한곳에서.",
+  description: siteConfig.description,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: siteConfig.locale,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: "ArriveUS — 한국인을 위한 미국 정착 가이드",
+    description: siteConfig.description,
+    images: [
+      {
+        url: "/og-arriveus.png",
+        width: 1376,
+        height: 768,
+        alt: "ArriveUS — 한국인을 위한 미국 정착 가이드",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ArriveUS — 한국인을 위한 미국 정착 가이드",
+    description: siteConfig.description,
+    images: ["/og-arriveus.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

@@ -80,9 +80,9 @@ export const dmvGuides: Guide[] = [
   {
     slug: "license-renewal",
     category: "dmv",
-    title: "운전면허 갱신",
+    title: "미국 운전면허 갱신 (DMV)",
     summary:
-      "만료 전후 운전면허를 갱신하는 방법과 준비물, 절차를 정리했습니다. 주(State)마다 세부 규정이 다를 수 있으니 거주 주 DMV 안내를 함께 확인하세요.",
+      "미국 운전면허 갱신 절차, 준비물, 온라인·방문 방법과 주(State)별 확인 포인트를 정리했습니다. REAL ID·시력검사 여부도 함께 점검하세요.",
     cost: "$32 – $56 (주마다 상이)",
     methods: ["온라인", "우편", "방문"],
     overview:

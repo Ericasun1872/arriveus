@@ -7,9 +7,9 @@ export const seniorHousingGuides: Guide[] = [
   {
     slug: "senior-housing-55",
     category: "housing",
-    title: "55+·중상층 시니어 주거",
+    title: "55세 이상 시니어 주거 (중상층)",
     summary:
-      "55세 이후 중산·중상층이 많이 찾는 Active Adult(55+) 단지, Independent Living, CCRC 등 민간 시니어 주거의 종류·비용·계약 시 확인할 점을 정리했습니다.",
+      "55+ Active Adult, Independent Living, CCRC 등 중산·중상층 시니어 커뮤니티 종류와 비용·계약 체크포인트를 정리했습니다.",
     cost: "월 임대·콘도비·커뮤니티 피부터, CCRC는 입주금(Entrance fee)+월 비용까지 폭이 큼 (지역·서비스에 따라 수천~수만 달러/월 가능)",
     methods: [
       "55+ Active Adult 커뮤니티",
@@ -58,9 +58,9 @@ export const seniorHousingGuides: Guide[] = [
   {
     slug: "senior-housing-low-income",
     category: "housing",
-    title: "저소득 시니어 주거 혜택",
+    title: "저소득 시니어 주택·Section 8",
     summary:
-      "소득이 낮은 시니어가 이용할 수 있는 HUD 시니어 주택, Public Housing, Housing Choice Voucher(Section 8), 주·지방 고령자 주거 지원을 찾는 기본 절차입니다.",
+      "HUD 시니어 주택, Public Housing, Housing Choice Voucher(Section 8), 주·지방 고령자 렌트 지원을 신청하는 기본 절차입니다.",
     cost: "자격되면 보통 소득의 약 30% 수준 임대료인 경우가 많음 (프로그램·공제 항목에 따라 상이). 대기 기간이 길 수 있음",
     methods: [
       "HUD 시니어·장애인 주택 (예: Section 202 등)",
