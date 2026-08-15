@@ -83,8 +83,8 @@ export const jobGuides: Guide[] = [
         url: "https://www.irs.gov/individuals/tax-withholding-estimator",
       },
       {
-        label: "SSN·ITIN 가이드",
-        url: "/guides/tax/itin-ssn",
+        label: "SSN 신청 절차",
+        url: "/guides/tax/ssn-apply",
       },
       {
         label: "미국식 이력서·면접",

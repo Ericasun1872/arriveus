@@ -415,6 +415,42 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Do I also need to file a state tax return?",
     },
   ],
+  "tax/diy-file-taxes": [
+    {
+      ko: "Free File 자격이 되는지 확인하고 싶습니다.",
+      en: "I want to check if I qualify for IRS Free File.",
+    },
+    {
+      ko: "이 W-2 숫자를 어디에 입력하나요?",
+      en: "Where should I enter these amounts from my W-2?",
+    },
+    {
+      ko: "전자 제출이 거절되었습니다. 어떻게 고치나요?",
+      en: "My e-file was rejected. How do I fix it?",
+    },
+    {
+      ko: "환급 진행 상황을 확인하고 싶습니다.",
+      en: "I would like to check the status of my refund.",
+    },
+  ],
+  "tax/ssn-apply": [
+    {
+      ko: "소셜시큐리티 번호를 신청하고 싶습니다.",
+      en: "I would like to apply for a Social Security number.",
+    },
+    {
+      ko: "어떤 원본 서류를 가져와야 하나요?",
+      en: "Which original documents should I bring?",
+    },
+    {
+      ko: "가장 가까운 SSA 사무소는 어디인가요?",
+      en: "Where is the nearest Social Security office?",
+    },
+    {
+      ko: "카드는 우편으로 언제 오나요?",
+      en: "When will my Social Security card arrive by mail?",
+    },
+  ],
   "tax/itin-ssn": [
     {
       ko: "사회보장번호를 신청하고 싶습니다.",

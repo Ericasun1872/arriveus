@@ -29,7 +29,7 @@ export const categories: Category[] = [
     slug: "tax",
     name: "세금",
     nameEn: "Taxes",
-    description: "세금 신고, SSN·ITIN, W-2",
+    description: "세금 신고, DIY, SSN·ITIN",
     accent: "#8A5A12",
     icon: "tax",
   },
