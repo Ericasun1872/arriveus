@@ -118,27 +118,32 @@ export const taxGuides: Guide[] = [
     summary:
       "Social Security Number 신청 자격, 준비 서류, SSA 온라인·방문 절차, 카드 수령 후 은행·고용주·세금 등록까지 단계별로 안내합니다.",
     cost: "신청 수수료 없음 (재발급·대행은 별도일 수 있음)",
-    methods: ["ssa.gov 온라인", "SSA 사무소 방문", "우편 (안내에 따른 경우)"],
+    methods: ["ssa.gov 온라인 신청", "온라인 후 SSA 방문(서류 확인)", "USCIS 양식에서 동시 신청(해당 시)"],
     overview:
-      "Social Security Number(SSN)는 미국에서의 근로, 세금, 신용, 많은 공공·금융 서비스의 기본 식별번호입니다. 합법적으로 일할 수 있는 자격이 있는 사람(시민·영주권자·특정 비자·EAD 소지자 등)이 보통 신청 대상입니다. 세금 신고만 필요하고 근로 허가가 없으면 ITIN을 검토하며, ITIN은 SSN을 대체해 취업할 수 없습니다. 신청은 Social Security Administration(SSA)에서 하며, 상황에 따라 온라인 신청 후 방문·서류 제시가 필요할 수 있습니다. 카드가 오기까지 우편으로 수 주가 걸릴 수 있으니, 입사·세금 시즌 전에 여유를 두고 진행하세요.",
+      "Social Security Number(SSN)는 미국에서의 근로, 세금, 신용, 많은 공공·금융 서비스의 기본 식별번호입니다. 합법적으로 일할 수 있는 자격이 있는 사람(시민·영주권자·특정 비자·EAD 소지자 등)이 보통 신청 대상입니다. 세금 신고만 필요하고 근로 허가가 없으면 ITIN을 검토하며, ITIN은 SSN을 대체해 취업할 수 없습니다. 신청은 Social Security Administration(SSA)에서 하며, 미국 체류 중이면 ssa.gov에서 온라인으로 신청을 시작할 수 있습니다. 안내에 따라 온라인만으로 끝나거나, 원본 서류 확인을 위해 가까운 SSA 사무소 방문이 필요할 수 있습니다. EAD·영주권(I-765/I-485) 신청 시 SSN을 함께 요청하는 방법도 있습니다. 카드는 보통 우편으로 오며 수 영업일이 걸릴 수 있으니, 입사·세금 시즌 전에 여유를 두고 진행하세요.",
     requirements: [
       "유효한 여권 (또는 SSA가 인정하는 신원 증명)",
       "이민·체류 서류: I-94, 비자, EAD, 영주권 등 해당 원본",
       "근로 허가와 연결되는 서류 (비자 조건·I-20/DS-2019 등 해당 시)",
       "미국 내 우편 수령 가능한 주소",
+      "온라인 신청용 이메일·my Social Security 계정(안내되는 경우)",
       "이미 SSN이 있는데 카드를 분실한 경우: 재발급(Replacement) 안내 별도 확인",
     ],
     steps: [
-      "ssa.gov에서 본인이 신규 SSN 신청 대상인지, 온라인 신청이 가능한지 확인합니다.",
-      "필요한 원본 서류 목록을 인쇄·메모하고, 사본이 아니라 원본을 가져갈지 안내를 따릅니다.",
-      "온라인으로 신청을 시작하거나, 가까운 SSA 사무소 방문 예약·웨이크인 규칙을 확인합니다.",
-      "신청서(관련 Form SS-5 정보)를 작성하고 신원·이민 서류를 제시합니다. 직원이 추가 서류를 요청하면 기한 안에 보완합니다.",
-      "처리 중이라는 확인을 받고, 카드는 보통 등록 주소로 우편 발송됩니다. 중간 상태는 SSA 안내에 따릅니다.",
-      "카드를 받으면 이름 철자를 확인하고, 고용주·은행·세금 소프트웨어에 번호를 등록합니다. 카드를 지갑에 상시 휴대하거나 사진을 메신저로 보내지 마세요.",
+      "ssa.gov의 ‘Request a Social Security number for the first time’에서 온라인 신청을 시작합니다.",
+      "질문에 답하면 온라인 완료인지, 사무소 방문이 필요한지 안내가 나옵니다. 방문이 필요하면 예약을 잡고 가져갈 원본 서류 목록을 확인합니다.",
+      "EAD·영주권을 USCIS에 신청 중이면 양식의 SSN 동시 신청 항목도 함께 검토합니다.",
+      "방문 시 여권·이민 서류 원본을 제시합니다. 직원이 추가 서류를 요청하면 기한 안에 보완합니다.",
+      "승인 후 카드는 등록 주소로 우편 발송되는 경우가 많습니다(안내상 수 영업일 소요될 수 있음).",
+      "카드를 받으면 이름 철자를 확인하고, 고용주·은행·세금 소프트웨어에 번호를 등록합니다. 카드 사진을 메신저로 보내지 마세요.",
     ],
     links: [
       {
-        label: "SSA – Social Security number",
+        label: "SSA – 온라인으로 처음 SSN 신청",
+        url: "https://www.ssa.gov/number-card/request-number-first-time",
+      },
+      {
+        label: "SSA – Social Security number & card",
         url: "https://www.ssa.gov/number-card",
       },
       {
@@ -148,6 +153,10 @@ export const taxGuides: Guide[] = [
       {
         label: "SSA – Immigrants and SSN",
         url: "https://www.ssa.gov/ssnumber/immigrants.htm",
+      },
+      {
+        label: "USCIS 신청 시 SSN 함께 요청",
+        url: "https://www.ssa.gov/ssnvisa/ebe.html",
       },
       {
         label: "SSN과 ITIN 비교",
