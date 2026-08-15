@@ -34,6 +34,14 @@ export const categories: Category[] = [
     icon: "tax",
   },
   {
+    slug: "immigration",
+    name: "이민국",
+    nameEn: "USCIS",
+    description: "계정·케이스, 양식, 귀화(N-400)",
+    accent: "#5C4A2E",
+    icon: "immigration",
+  },
+  {
     slug: "job",
     name: "취업",
     nameEn: "Jobs",

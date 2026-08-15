@@ -169,6 +169,10 @@ export const taxGuides: Guide[] = [
         url: "https://www.uscis.gov/newsroom/alerts/new-citizens-will-be-able-to-seamlessly-request-social-security-updates",
       },
       {
+        label: "귀화(N-400) 개요",
+        url: "/guides/immigration/naturalization-n400",
+      },
+      {
         label: "SSN과 ITIN 비교",
         url: "/guides/tax/itin-ssn",
       },

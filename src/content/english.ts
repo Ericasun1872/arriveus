@@ -477,6 +477,62 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Can I use an ITIN for employment authorization?",
     },
   ],
+  "immigration/uscis-account": [
+    {
+      ko: "myUSCIS 계정을 만들고 싶습니다.",
+      en: "I would like to create a myUSCIS account.",
+    },
+    {
+      ko: "Receipt Number로 케이스 상태를 확인하고 싶습니다.",
+      en: "I want to check my case status with my receipt number.",
+    },
+    {
+      ko: "주소를 변경했습니다. USCIS에 업데이트하고 싶습니다.",
+      en: "I moved and need to update my address with USCIS.",
+    },
+  ],
+  "immigration/biometrics-interview": [
+    {
+      ko: "바이오메트릭스 예약을 확인하고 싶습니다.",
+      en: "I would like to confirm my biometrics appointment.",
+    },
+    {
+      ko: "인터뷰에 어떤 서류를 가져가야 하나요?",
+      en: "What documents should I bring to my interview?",
+    },
+    {
+      ko: "예약 일정을 변경할 수 있나요?",
+      en: "Can I reschedule my appointment?",
+    },
+  ],
+  "immigration/common-forms": [
+    {
+      ko: "영주권 카드 갱신은 어떤 양식인가요?",
+      en: "Which form do I use to renew my green card?",
+    },
+    {
+      ko: "취업허가(EAD)는 I-765인가요?",
+      en: "Is Form I-765 for employment authorization?",
+    },
+    {
+      ko: "시민권 신청은 N-400인가요?",
+      en: "Is Form N-400 the application for naturalization?",
+    },
+  ],
+  "immigration/naturalization-n400": [
+    {
+      ko: "N-400 귀화 신청을 준비하고 있습니다.",
+      en: "I am preparing to file Form N-400 for naturalization.",
+    },
+    {
+      ko: "시민 시험 공부 자료를 어디서 받나요?",
+      en: "Where can I find study materials for the civics test?",
+    },
+    {
+      ko: "선서식 안내를 받았습니다.",
+      en: "I received my notice for the oath ceremony.",
+    },
+  ],
   "job/resume-interview": [
     {
       ko: "이 포지션에 지원하고 싶습니다.",

@@ -41,5 +41,5 @@ export type Category = {
   nameEn: string;
   description: string;
   accent: string;
-  icon: "car" | "bank" | "medical" | "tax" | "job" | "housing";
+  icon: "car" | "bank" | "medical" | "tax" | "job" | "housing" | "immigration";
 };

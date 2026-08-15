@@ -10,8 +10,8 @@ export function Footer() {
               ArriveUS
             </p>
             <p className="mt-1 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
-              한국인을 위한 미국 정착 가이드. DMV, 은행, 의료, 세금, 취업, 주거
-              정보를 한곳에서 확인하세요.
+              한국인을 위한 미국 정착 가이드. DMV, 은행, 의료, 세금, 이민국,
+              취업, 주거 정보를 한곳에서 확인하세요.
             </p>
           </div>
           <Link
@@ -22,8 +22,9 @@ export function Footer() {
           </Link>
         </div>
         <p className="text-xs leading-relaxed text-[var(--muted)]">
-          본 사이트의 정보는 일반적인 참고용이며 법률·세무·의료 자문이 아닙니다.
-          최종 결정 전에는 반드시 해당 주·연방 공식 기관 안내를 확인하세요.
+          본 사이트의 정보는 일반적인 참고용이며 법률·세무·의료·이민 자문이
+          아닙니다. 최종 결정 전에는 반드시 해당 주·연방 공식 기관 안내를
+          확인하세요.
         </p>
         <p className="text-xs text-[var(--muted)]">
           © {new Date().getFullYear()} ArriveUS

@@ -41,8 +41,8 @@ export default function HomePage() {
               className="animate-rise max-w-xl text-[0.95rem] leading-relaxed text-white/92 sm:text-base"
               style={{ animationDelay: "140ms" }}
             >
-              DMV부터 은행, 의료, 세금, 취업, 주거까지 — 한국인 기준으로 정리한
-              단계별 가이드입니다.
+              DMV부터 은행, 의료, 세금, 이민국, 취업, 주거까지 — 한국인 기준으로
+              정리한 단계별 가이드입니다.
             </p>
             <div
               className="animate-rise mt-3 flex flex-wrap gap-3"
