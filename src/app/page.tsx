@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CategoryGrid } from "@/components/CategoryGrid";
 import { dailyTip } from "@/content/tips";
@@ -8,49 +9,58 @@ export default function HomePage() {
 
   return (
     <div>
-      <section className="relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-[linear-gradient(135deg,var(--hero-from),var(--hero-via)_55%,var(--hero-to))]"
-          aria-hidden
+      <section className="relative isolate min-h-[68vh] overflow-hidden sm:min-h-[72vh]">
+        <Image
+          src="/hero-whitehouse.jpg"
+          alt="워싱턴 D.C. 백악관"
+          fill
+          priority
+          className="object-cover object-[center_48%]"
+          sizes="100vw"
         />
         <div
-          className="hero-orb absolute -right-16 top-8 h-56 w-56 rounded-full bg-white/10 blur-2xl"
-          aria-hidden
-        />
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 20% 20%, rgba(255,255,255,0.25) 0 2px, transparent 2px), radial-gradient(circle at 80% 40%, rgba(255,255,255,0.18) 0 1.5px, transparent 1.5px)",
-            backgroundSize: "48px 48px, 36px 36px",
-          }}
+          className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,22,46,0.52)_0%,rgba(8,22,46,0.12)_18%,rgba(8,22,46,0.05)_45%,rgba(8,22,46,0.5)_78%,rgba(8,22,46,0.78)_100%)]"
           aria-hidden
         />
 
-        <div className="relative mx-auto max-w-6xl px-4 pb-14 pt-14 sm:px-6 sm:pb-16 sm:pt-20">
-          <p className="animate-rise font-[family-name:var(--font-display)] text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl">
-            ArriveUS
-          </p>
-          <h1 className="animate-rise mt-4 max-w-2xl text-2xl font-semibold leading-snug text-white sm:text-3xl" style={{ animationDelay: "80ms" }}>
-            미국 정착, 필요한 정보만 깔끔하게
-          </h1>
-          <p className="animate-rise mt-4 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg" style={{ animationDelay: "140ms" }}>
-            DMV부터 은행, 의료, 세금, 취업, 주거까지 — 한국인 기준으로 정리한
-            단계별 가이드입니다.
-          </p>
-          <div className="animate-rise mt-8 flex flex-wrap gap-3" style={{ animationDelay: "200ms" }}>
-            <a
-              href="#categories"
-              className="inline-flex items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-[var(--brand)] transition hover:bg-white/90"
+        <div className="relative mx-auto min-h-[68vh] max-w-6xl px-4 sm:min-h-[72vh] sm:px-6">
+          <div className="absolute inset-x-4 top-4 text-center sm:inset-x-6 sm:top-5 md:top-6">
+            <p className="animate-rise font-[family-name:var(--font-display)] text-4xl font-semibold tracking-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)] sm:text-5xl md:text-6xl">
+              ArriveUS
+            </p>
+            <h1
+              className="animate-rise mx-auto mt-2 max-w-2xl text-2xl font-semibold leading-snug text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)] sm:mt-3 sm:text-3xl"
+              style={{ animationDelay: "80ms" }}
             >
-              가이드 보기
-            </a>
-            <Link
-              href="/guides/dmv/license-renewal"
-              className="inline-flex items-center justify-center rounded-lg border border-white/40 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+              미국 정착, 필요한 정보만 깔끔하게
+            </h1>
+          </div>
+
+          <div className="absolute inset-x-4 bottom-2 sm:inset-x-6 sm:bottom-3 md:bottom-4">
+            <p
+              className="animate-rise max-w-xl text-[0.95rem] leading-relaxed text-white/92 sm:text-base"
+              style={{ animationDelay: "140ms" }}
             >
-              면허 갱신부터 시작
-            </Link>
+              DMV부터 은행, 의료, 세금, 취업, 주거까지 — 한국인 기준으로 정리한
+              단계별 가이드입니다.
+            </p>
+            <div
+              className="animate-rise mt-3 flex flex-wrap gap-3"
+              style={{ animationDelay: "200ms" }}
+            >
+              <a
+                href="#categories"
+                className="inline-flex items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-[var(--brand)] transition hover:bg-white/90"
+              >
+                가이드 보기
+              </a>
+              <Link
+                href="/guides/dmv/license-renewal"
+                className="inline-flex items-center justify-center rounded-lg border border-white/40 bg-white/12 px-5 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
+              >
+                면허 갱신부터 시작
+              </Link>
+            </div>
           </div>
         </div>
       </section>

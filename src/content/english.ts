@@ -305,6 +305,54 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Am I eligible for a premium tax credit?",
     },
   ],
+  "medical/low-income-insurance": [
+    {
+      ko: "소득이 낮은데 Medicaid를 신청할 수 있나요?",
+      en: "My income is low. Can I apply for Medicaid?",
+    },
+    {
+      ko: "자녀 CHIP 가입을 도와주세요.",
+      en: "I need help enrolling my child in CHIP.",
+    },
+    {
+      ko: "보험료 지원금(premium tax credit)이 얼마나 나오는지 보고 싶습니다.",
+      en: "I want to see how much premium tax credit I qualify for.",
+    },
+    {
+      ko: "가구 소득이 바뀌었습니다. 정보를 업데이트하고 싶습니다.",
+      en: "My household income changed. I need to update my application.",
+    },
+    {
+      ko: "한국어 도움이 가능한 가입 상담이 있나요?",
+      en: "Is there enrollment assistance available in Korean?",
+    },
+  ],
+  "medical/medicare": [
+    {
+      ko: "65세 메디케어 가입을 도와주세요.",
+      en: "I need help enrolling in Medicare at age 65.",
+    },
+    {
+      ko: "Part A와 Part B 중 무엇이 필요한가요?",
+      en: "Do I need both Medicare Part A and Part B?",
+    },
+    {
+      ko: "Medicare Advantage와 Original Medicare 차이를 설명해 주세요.",
+      en: "Can you explain the difference between Original Medicare and Medicare Advantage?",
+    },
+    {
+      ko: "처방약 Part D 플랜을 비교하고 싶습니다.",
+      en: "I would like to compare Medicare Part D prescription drug plans.",
+    },
+    {
+      ko: "가입이 늦으면 페널티가 있나요?",
+      en: "Is there a late enrollment penalty if I delay Medicare?",
+    },
+    {
+      ko: "이 병원은 메디케어를 받나요?",
+      en: "Do you accept Medicare?",
+    },
+  ],
   "medical/find-doctor": [
     {
       ko: "주치의를 찾고 싶습니다.",
@@ -321,6 +369,28 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "한국어 통역이 가능한가요?",
       en: "Do you offer Korean interpreter services?",
+    },
+  ],
+  "medical/medical-bills": [
+    {
+      ko: "보험이 없습니다. 자선진료나 할인이 가능한가요?",
+      en: "I do not have insurance. Do you offer financial assistance or a self-pay discount?",
+    },
+    {
+      ko: "상세 내역서(itemized bill)를 받을 수 있나요?",
+      en: "Can I get an itemized bill for this visit?",
+    },
+    {
+      ko: "이 청구는 병원비인가요, 의사비인가요?",
+      en: "Is this the hospital facility bill or the physician bill?",
+    },
+    {
+      ko: "금액을 낮추거나 할부로 낼 수 있을까요?",
+      en: "Can we reduce this balance or set up a payment plan?",
+    },
+    {
+      ko: "합의한 할인 내용을 이메일로 보내 주세요.",
+      en: "Please email me a written confirmation of the discounted amount.",
     },
   ],
   "tax/file-taxes": [
@@ -451,6 +521,42 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "직접 만나서 계약을 진행하고 싶습니다.",
       en: "I prefer to meet in person before signing or paying.",
+    },
+  ],
+  "housing/senior-housing-55": [
+    {
+      ko: "55세 이상 커뮤니티 투어를 예약하고 싶습니다.",
+      en: "I would like to schedule a tour of a 55+ community.",
+    },
+    {
+      ko: "월 총비용에 식비와 커뮤니티 피가 포함되나요?",
+      en: "Does the monthly fee include meals and community fees?",
+    },
+    {
+      ko: "입주금 환급 조건을 서면으로 보내 주세요.",
+      en: "Please send the entrance fee refund terms in writing.",
+    },
+    {
+      ko: "Independent Living과 Assisted Living 차이를 설명해 주세요.",
+      en: "Can you explain the difference between independent living and assisted living?",
+    },
+  ],
+  "housing/senior-housing-low-income": [
+    {
+      ko: "시니어 공공임대·바우처 대기 신청을 하고 싶습니다.",
+      en: "I want to apply for senior public housing or a voucher waitlist.",
+    },
+    {
+      ko: "소득 제한 시니어 아파트 자격이 되는지 알고 싶습니다.",
+      en: "I would like to know if I qualify for income-restricted senior housing.",
+    },
+    {
+      ko: "지역 PHA 연락처를 알려 주세요.",
+      en: "Can you give me the contact information for the local housing authority?",
+    },
+    {
+      ko: "대기 중인데 주소가 바뀌었습니다.",
+      en: "I am on the waitlist and my address has changed.",
     },
   ],
 };

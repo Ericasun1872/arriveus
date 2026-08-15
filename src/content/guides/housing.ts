@@ -38,6 +38,14 @@ export const housingGuides: Guide[] = [
         label: "CFPB – Renting",
         url: "https://www.consumerfinance.gov/consumer-tools/renter-protections/",
       },
+      {
+        label: "55+·중상층 시니어 주거",
+        url: "/guides/housing/senior-housing-55",
+      },
+      {
+        label: "저소득 시니어 주거 혜택",
+        url: "/guides/housing/senior-housing-low-income",
+      },
     ],
     disclaimer,
   },

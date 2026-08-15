@@ -80,6 +80,27 @@ export default async function CategoryPage({ params }: PageProps) {
         </section>
       ) : null}
 
+      {category.slug === "medical" ? (
+        <section className="mb-8 rounded-2xl border border-[var(--brand-border)] bg-[var(--brand-soft)]/50 px-5 py-5">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--brand)]">
+            Korean-speaking care
+          </p>
+          <h2 className="mt-1 text-lg font-semibold text-[var(--ink)]">
+            한국어 의사 찾기 · 시애틀 중심
+          </h2>
+          <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
+            보험 검색·커뮤니티 클리닉·통역 요청 방법을 지역별로 안내합니다. LA·뉴욕
+            등도 같은 형식으로 추가할 수 있습니다.
+          </p>
+          <Link
+            href="/guides/medical/korean-doctors"
+            className="mt-4 inline-flex rounded-lg bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white hover:opacity-90"
+          >
+            지역별 안내 보기
+          </Link>
+        </section>
+      ) : null}
+
       <ul className="grid gap-3">
         {guides.map((guide) => {
           const href = `/guides/${category.slug}/${guide.slug}`;
