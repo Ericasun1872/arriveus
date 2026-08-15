@@ -120,7 +120,7 @@ export const taxGuides: Guide[] = [
     cost: "신청 수수료 없음 (재발급·대행은 별도일 수 있음)",
     methods: ["ssa.gov 온라인 신청", "온라인 후 SSA 방문(서류 확인)", "USCIS 양식에서 동시 신청(해당 시)"],
     overview:
-      "Social Security Number(SSN)는 미국에서의 근로, 세금, 신용, 많은 공공·금융 서비스의 기본 식별번호입니다. 합법적으로 일할 수 있는 자격이 있는 사람(시민·영주권자·특정 비자·EAD 소지자 등)이 보통 신청 대상입니다. 세금 신고만 필요하고 근로 허가가 없으면 ITIN을 검토하며, ITIN은 SSN을 대체해 취업할 수 없습니다. 신청은 Social Security Administration(SSA)에서 하며, 미국 체류 중이면 ssa.gov에서 온라인으로 신청을 시작할 수 있습니다. 안내에 따라 온라인만으로 끝나거나, 원본 서류 확인을 위해 가까운 SSA 사무소 방문이 필요할 수 있습니다. EAD·영주권(I-765/I-485) 신청 시 SSN을 함께 요청하는 방법도 있습니다. 카드는 보통 우편으로 오며 수 영업일이 걸릴 수 있으니, 입사·세금 시즌 전에 여유를 두고 진행하세요.",
+      "Social Security Number(SSN)는 미국에서의 근로, 세금, 신용, 많은 공공·금융 서비스의 기본 식별번호입니다. 합법적으로 일할 수 있는 자격이 있는 사람(시민·영주권자·특정 비자·EAD 소지자 등)이 보통 신청 대상입니다. 세금 신고만 필요하고 근로 허가가 없으면 ITIN을 검토하며, ITIN은 SSN을 대체해 취업할 수 없습니다. 신청은 Social Security Administration(SSA)에서 하며, 미국 체류 중이면 ssa.gov에서 온라인으로 신청을 시작할 수 있습니다. 안내에 따라 온라인만으로 끝나거나, 원본 서류 확인을 위해 가까운 SSA 사무소 방문이 필요할 수 있습니다. EAD·영주권(I-765/I-485) 신청 시 SSN을 함께 요청하는 방법도 있습니다. 영주권자가 시민권을 취득하면 SSN 숫자는 그대로이지만, SSA에 시민권 취득을 알려 기록을 갱신하고 필요하면 카드를 재발급받는 것이 좋습니다. N-400(귀화) 신청 때 SSA 업데이트·카드 재발급을 함께 요청할 수 있는 경우도 있습니다. 퇴직·장애 연금(일하면서 낸 세금·크레딧 기준)은 보통 근로 이력이 핵심이라 시민권만으로 금액표가 바뀌지는 않지만, SSI 등 소득·자산 기준 지원은 시민권·적격 신분 조건이 다를 수 있습니다. 카드는 보통 우편으로 오며 수 영업일이 걸릴 수 있으니, 입사·세금·귀화 일정 전에 여유를 두고 진행하세요.",
     requirements: [
       "유효한 여권 (또는 SSA가 인정하는 신원 증명)",
       "이민·체류 서류: I-94, 비자, EAD, 영주권 등 해당 원본",
@@ -128,6 +128,7 @@ export const taxGuides: Guide[] = [
       "미국 내 우편 수령 가능한 주소",
       "온라인 신청용 이메일·my Social Security 계정(안내되는 경우)",
       "이미 SSN이 있는데 카드를 분실한 경우: 재발급(Replacement) 안내 별도 확인",
+      "시민권 취득 후 업데이트 시: 귀화증(Certificate of Naturalization) 또는 미국 여권",
     ],
     steps: [
       "ssa.gov의 ‘Request a Social Security number for the first time’에서 온라인 신청을 시작합니다.",
@@ -136,6 +137,7 @@ export const taxGuides: Guide[] = [
       "방문 시 여권·이민 서류 원본을 제시합니다. 직원이 추가 서류를 요청하면 기한 안에 보완합니다.",
       "승인 후 카드는 등록 주소로 우편 발송되는 경우가 많습니다(안내상 수 영업일 소요될 수 있음).",
       "카드를 받으면 이름 철자를 확인하고, 고용주·은행·세금 소프트웨어에 번호를 등록합니다. 카드 사진을 메신저로 보내지 마세요.",
+      "영주권에서 시민권이 되면: N-400에서 SSA 기록·카드 업데이트를 요청했는지 확인하고, 안 했다면 귀화증·미국 여권을 준비해 SSA에 시민권 갱신·카드 재발급을 신청합니다. SSN 숫자는 바뀌지 않습니다.",
     ],
     links: [
       {
@@ -147,6 +149,10 @@ export const taxGuides: Guide[] = [
         url: "https://www.ssa.gov/number-card",
       },
       {
+        label: "SSA – 개인 정보 변경 (Personal record)",
+        url: "https://www.ssa.gov/number-card",
+      },
+      {
         label: "SSA – Office locator",
         url: "https://www.ssa.gov/locator/",
       },
@@ -155,8 +161,12 @@ export const taxGuides: Guide[] = [
         url: "https://www.ssa.gov/ssnumber/immigrants.htm",
       },
       {
-        label: "USCIS 신청 시 SSN 함께 요청",
+        label: "USCIS/SSA – 귀화·영주권 신청 시 SSN 함께 요청",
         url: "https://www.ssa.gov/ssnvisa/ebe.html",
+      },
+      {
+        label: "USCIS – 귀화 후 SSA 업데이트 안내",
+        url: "https://www.uscis.gov/newsroom/alerts/new-citizens-will-be-able-to-seamlessly-request-social-security-updates",
       },
       {
         label: "SSN과 ITIN 비교",

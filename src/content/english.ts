@@ -450,6 +450,14 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       ko: "카드는 우편으로 언제 오나요?",
       en: "When will my Social Security card arrive by mail?",
     },
+    {
+      ko: "시민권을 취득했습니다. SSA 기록을 업데이트하고 싶습니다.",
+      en: "I became a U.S. citizen and need to update my Social Security record.",
+    },
+    {
+      ko: "귀화증으로 카드 재발급이 가능한가요?",
+      en: "Can I get a replacement Social Security card with my Certificate of Naturalization?",
+    },
   ],
   "tax/itin-ssn": [
     {
