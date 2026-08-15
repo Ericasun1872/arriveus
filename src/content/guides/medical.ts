@@ -108,6 +108,10 @@ export const medicalGuides: Guide[] = [
         url: "https://findahealthcenter.hrsa.gov/",
       },
       {
+        label: "WA Healthplanfinder (워싱턴주)",
+        url: "https://www.wahealthplanfinder.org/",
+      },
+      {
         label: "건강보험 가입(전체 경로)",
         url: "/guides/medical/health-insurance",
       },
@@ -116,6 +120,7 @@ export const medicalGuides: Guide[] = [
         url: "/guides/medical/medical-bills",
       },
     ],
+    updatedAt: "2026-08",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 의료·보험·이민 자문이 아닙니다. Medicaid·CHIP·Marketplace 자격과 지원금은 주·연도·가구 소득·체류 신분에 따라 달라지므로 Healthcare.gov·주 Medicaid·공식 상담 채널에서 최종 확인하세요.",
   },

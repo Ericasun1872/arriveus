@@ -7,6 +7,7 @@ import {
   getAllGuideParams,
   getCategory,
   getGuide,
+  formatGuideUpdatedAt,
 } from "@/lib/guides";
 
 type PageProps = {
@@ -115,6 +116,11 @@ export default async function GuidePage({ params }: PageProps) {
         <p className="mt-3 text-base leading-relaxed text-[var(--muted)]">
           {guide.summary}
         </p>
+        {guide.updatedAt ? (
+          <p className="mt-2 text-xs font-medium text-[var(--muted)]">
+            {formatGuideUpdatedAt(guide.updatedAt)} 확인
+          </p>
+        ) : null}
       </header>
 
       <GuideTabs guide={guide} />

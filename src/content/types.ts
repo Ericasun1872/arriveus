@@ -31,6 +31,8 @@ export type Guide = {
   practiceQuestions?: PracticeQuestion[];
   disclaimer?: string;
   comingSoon?: boolean;
+  /** YYYY-MM, shown as "YYYY년 M월 기준" */
+  updatedAt?: string;
 };
 
 export type Category = {

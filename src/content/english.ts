@@ -403,8 +403,16 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I have not received my W-2 yet.",
     },
     {
+      ko: "저는 Resident인가요, Nonresident인가요?",
+      en: "Am I considered a resident or nonresident alien for tax purposes?",
+    },
+    {
       ko: "환급을 계좌로 받고 싶습니다.",
       en: "I would like my refund by direct deposit.",
+    },
+    {
+      ko: "주(State) 세금 신고도 해야 하나요?",
+      en: "Do I also need to file a state tax return?",
     },
   ],
   "tax/itin-ssn": [
@@ -420,6 +428,10 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       ko: "어떤 서류를 가져와야 하나요?",
       en: "What documents should I bring?",
     },
+    {
+      ko: "ITIN으로 취업할 수 있나요?",
+      en: "Can I use an ITIN for employment authorization?",
+    },
   ],
   "job/resume-interview": [
     {
@@ -434,6 +446,14 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       ko: "제 강점은 문제 해결과 협업입니다.",
       en: "My strengths are problem-solving and collaboration.",
     },
+    {
+      ko: "합법적으로 이 직무에서 일할 수 있습니다.",
+      en: "I am authorized to work in the United States for this role.",
+    },
+    {
+      ko: "면접 기회에 감사드립니다.",
+      en: "Thank you for the opportunity to interview.",
+    },
   ],
   "job/work-documents": [
     {
@@ -447,6 +467,10 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "W-4 작성에 도움이 필요합니다.",
       en: "I need help completing Form W-4.",
+    },
+    {
+      ko: "SSN 카드 원본을 가져왔습니다.",
+      en: "I brought my original Social Security card.",
     },
   ],
   "housing/rent-apartment": [

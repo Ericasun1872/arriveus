@@ -49,10 +49,11 @@ export const seniorHousingGuides: Guide[] = [
         url: "https://acl.gov/",
       },
       {
-        label: "저소득 시니어 주거 혜택",
+        label: "저소득 시니어 주택·Section 8",
         url: "/guides/housing/senior-housing-low-income",
       },
     ],
+    updatedAt: "2026-08",
     disclaimer,
   },
   {
@@ -108,10 +109,19 @@ export const seniorHousingGuides: Guide[] = [
         url: "https://eldercare.acl.gov/",
       },
       {
-        label: "55+·중상층 시니어 주거",
+        label: "King County Housing Authority (시애틀 인근)",
+        url: "https://www.kcha.org/",
+      },
+      {
+        label: "Seattle Housing Authority",
+        url: "https://www.seattlehousing.org/",
+      },
+      {
+        label: "55세 이상 시니어 주거 (중상층)",
         url: "/guides/housing/senior-housing-55",
       },
     ],
+    updatedAt: "2026-08",
     disclaimer,
   },
 ];
