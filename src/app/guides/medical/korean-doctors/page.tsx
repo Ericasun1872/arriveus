@@ -124,6 +124,27 @@ export default function KoreanDoctorsPage() {
               <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
                 {region.summary}
               </p>
+              {region.comingSoon ? (
+                <p className="mt-3 text-sm text-[var(--muted)]">
+                  당분간은{" "}
+                  <Link
+                    href="/guides/medical/korean-doctors/seattle"
+                    className="font-medium text-[var(--brand)] hover:underline"
+                  >
+                    시애틀 가이드
+                  </Link>
+                  의 검색 방법을 참고하거나,{" "}
+                  <a
+                    href="https://findahealthcenter.hrsa.gov/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-[var(--brand)] hover:underline"
+                  >
+                    HRSA 클리닉 검색
+                  </a>
+                  을 이용해 보세요.
+                </p>
+              ) : null}
             </li>
           ))}
         </ul>

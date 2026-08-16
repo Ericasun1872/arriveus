@@ -181,6 +181,23 @@ export const taxGuides: Guide[] = [
         url: "/guides/job/work-documents",
       },
     ],
+    faq: [
+      {
+        question: "미국 도착 전에 SSN을 받을 수 있나요?",
+        answer:
+          "보통 미국 입국·합법 근로 자격이 확인된 뒤 SSA에 신청합니다. 해외에서 미리 발급받는 일반적인 경로는 아닙니다.",
+      },
+      {
+        question: "온라인 신청만으로 끝나나요?",
+        answer:
+          "안내에 따라 온라인으로 끝나는 경우도 있고, 원본 서류 확인을 위해 SSA 사무소 방문이 필요할 수도 있습니다.",
+      },
+      {
+        question: "시민권을 받으면 SSN 숫자가 바뀌나요?",
+        answer:
+          "숫자는 보통 그대로입니다. 다만 SSA에 시민권 취득을 알려 기록을 갱신하고, 필요하면 카드를 재발급받는 것이 좋습니다.",
+      },
+    ],
     updatedAt: "2026-08",
     disclaimer,
   },

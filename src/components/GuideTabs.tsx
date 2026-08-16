@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useId, useMemo, useState } from "react";
+import { useId, useMemo, useState, type ReactNode } from "react";
 import type { Guide } from "@/content/types";
 import { EnglishPhrases } from "./EnglishPhrases";
+import { FaqAccordion } from "./FaqAccordion";
 import { ExternalLinkIcon } from "./icons";
 import { PracticeQuiz } from "./PracticeQuiz";
 import { RequirementsChecklist } from "./RequirementsChecklist";
@@ -12,6 +13,7 @@ const baseTabs = [
   { id: "overview", label: "개요" },
   { id: "requirements", label: "준비물" },
   { id: "process", label: "절차" },
+  { id: "faq", label: "FAQ" },
   { id: "quiz", label: "연습 문제" },
   { id: "english", label: "영어 표현" },
   { id: "links", label: "링크" },
@@ -19,20 +21,138 @@ const baseTabs = [
 
 type TabId = (typeof baseTabs)[number]["id"];
 
+function stripBullet(line: string) {
+  return line.replace(/^[•\-·]\s*/, "").trim();
+}
+
+function isBulletLine(line: string) {
+  return /^[•\-·]\s+/.test(line.trim());
+}
+
+/** 긴 한 덩어리 문장을 읽기 쉬운 문단으로 나눕니다. */
+function splitLongParagraph(text: string): string[] {
+  if (text.length < 260) return [text];
+  const sentences = text.split(/(?<=[.?!。])\s+/).filter(Boolean);
+  if (sentences.length <= 1) return [text];
+
+  const grouped: string[] = [];
+  let buffer = "";
+  for (const sentence of sentences) {
+    const next = buffer ? `${buffer} ${sentence}` : sentence;
+    if (buffer && next.length > 200) {
+      grouped.push(buffer);
+      buffer = sentence;
+    } else {
+      buffer = next;
+    }
+  }
+  if (buffer) grouped.push(buffer);
+  return grouped.length > 1 ? grouped : [text];
+}
+
+function OverviewText({ text }: { text: string }) {
+  const blocks = text
+    .split(/\n\n+/)
+    .map((block) => block.trim())
+    .filter(Boolean)
+    .flatMap((block) => {
+      const lines = block
+        .split("\n")
+        .map((line) => line.trim())
+        .filter(Boolean);
+      if (lines.some(isBulletLine)) return [block];
+      return splitLongParagraph(lines.join(" "));
+    });
+
+  const nodes: ReactNode[] = [];
+  let bulletBuffer: string[] = [];
+
+  const flushBullets = () => {
+    if (bulletBuffer.length === 0) return;
+    const items = bulletBuffer;
+    bulletBuffer = [];
+    nodes.push(
+      <ul
+        key={`bullets-${nodes.length}`}
+        className="list-disc space-y-2.5 pl-5 marker:text-[var(--brand)]"
+      >
+        {items.map((item) => (
+          <li key={item} className="pl-1 leading-relaxed">
+            {item}
+          </li>
+        ))}
+      </ul>,
+    );
+  };
+
+  for (const block of blocks) {
+    const lines = block
+      .split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean);
+
+    if (lines.length > 0 && lines.every(isBulletLine)) {
+      bulletBuffer.push(...lines.map(stripBullet));
+      continue;
+    }
+
+    if (lines.length === 1 && isBulletLine(lines[0])) {
+      bulletBuffer.push(stripBullet(lines[0]));
+      continue;
+    }
+
+    flushBullets();
+
+    if (lines.some(isBulletLine)) {
+      nodes.push(
+        <div key={`mixed-${nodes.length}`} className="space-y-3">
+          {lines.map((line) =>
+            isBulletLine(line) ? (
+              <p key={line} className="flex gap-2 leading-relaxed">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--brand)]" />
+                <span>{stripBullet(line)}</span>
+              </p>
+            ) : (
+              <p key={line} className="leading-relaxed">
+                {line}
+              </p>
+            ),
+          )}
+        </div>,
+      );
+      continue;
+    }
+
+    nodes.push(
+      <p key={`p-${nodes.length}`} className="leading-relaxed">
+        {lines.join(" ")}
+      </p>,
+    );
+  }
+
+  flushBullets();
+
+  return (
+    <div className="space-y-4 text-base text-[var(--ink)]">{nodes}</div>
+  );
+}
+
 export function GuideTabs({ guide }: { guide: Guide }) {
   const [active, setActive] = useState<TabId>("overview");
   const baseId = useId();
   const phrases = guide.english ?? [];
   const quiz = guide.practiceQuestions ?? [];
+  const faq = guide.faq ?? [];
 
   const tabs = useMemo(
     () =>
       baseTabs.filter((tab) => {
         if (tab.id === "english") return phrases.length > 0;
         if (tab.id === "quiz") return quiz.length > 0;
+        if (tab.id === "faq") return faq.length > 0;
         return true;
       }),
-    [phrases.length, quiz.length],
+    [phrases.length, quiz.length, faq.length],
   );
 
   return (
@@ -76,9 +196,7 @@ export function GuideTabs({ guide }: { guide: Guide }) {
             aria-labelledby={`${baseId}-overview`}
             className="animate-fade space-y-5"
           >
-            <p className="text-base leading-relaxed text-[var(--ink)]">
-              {guide.overview}
-            </p>
+            <OverviewText text={guide.overview} />
             {(guide.cost || guide.methods?.length) && (
               <dl className="grid gap-3 sm:grid-cols-2">
                 {guide.cost ? (
@@ -96,8 +214,18 @@ export function GuideTabs({ guide }: { guide: Guide }) {
                     <dt className="text-xs font-medium uppercase tracking-wide text-[var(--muted)]">
                       갱신·신청 방법
                     </dt>
-                    <dd className="mt-1 text-sm font-medium text-[var(--ink)]">
-                      {guide.methods.join(" · ")}
+                    <dd className="mt-2">
+                      <ul className="space-y-1.5 text-sm font-medium text-[var(--ink)]">
+                        {guide.methods.map((method) => (
+                          <li key={method} className="flex gap-2">
+                            <span
+                              className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[var(--brand)]"
+                              aria-hidden
+                            />
+                            <span>{method}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </dd>
                   </div>
                 ) : null}
@@ -148,6 +276,17 @@ export function GuideTabs({ guide }: { guide: Guide }) {
             ) : (
               <EmptyState message="절차 정보가 곧 업데이트됩니다." />
             )}
+          </section>
+        ) : null}
+
+        {active === "faq" ? (
+          <section
+            role="tabpanel"
+            id={`${baseId}-panel-faq`}
+            aria-labelledby={`${baseId}-faq`}
+            className="animate-fade"
+          >
+            <FaqAccordion items={faq} />
           </section>
         ) : null}
 

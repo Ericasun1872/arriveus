@@ -53,6 +53,23 @@ export const seniorHousingGuides: Guide[] = [
         url: "/guides/housing/senior-housing-low-income",
       },
     ],
+    faq: [
+      {
+        question: "55+ 단지에 의료 돌봄이 포함되나요?",
+        answer:
+          "Active Adult형은 보통 포함되지 않습니다. Independent Living은 생활 편의 위주이고, Assisted Living·Memory Care·CCRC로 갈수록 돌봄·비용이 커집니다.",
+      },
+      {
+        question: "저소득 지원 주거와 같은 건가요?",
+        answer:
+          "아니요. 이 가이드는 민간 중산·중상층 시니어 주거 중심입니다. 소득 제한·바우처는 ‘저소득 시니어 주택·Section 8’ 가이드를 보세요.",
+      },
+      {
+        question: "입주금을 내면 나중에 돌려받나요?",
+        answer:
+          "CCRC 등에서 Entrance fee 환급 조건이 단지·계약마다 다릅니다. 계약서의 환급·해지 조항을 반드시 확인하고, 큰 금액은 전문가 검토를 권합니다.",
+      },
+    ],
     updatedAt: "2026-08",
     disclaimer,
   },

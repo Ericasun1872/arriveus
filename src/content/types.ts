@@ -16,6 +16,11 @@ export type PracticeQuestion = {
   explanation?: string;
 };
 
+export type FaqItem = {
+  question: string;
+  answer: string;
+};
+
 export type Guide = {
   slug: string;
   category: string;
@@ -29,6 +34,7 @@ export type Guide = {
   links: GuideLink[];
   english?: EnglishPhrase[];
   practiceQuestions?: PracticeQuestion[];
+  faq?: FaqItem[];
   disclaimer?: string;
   comingSoon?: boolean;
   /** YYYY-MM, shown as "YYYY년 M월 기준" */

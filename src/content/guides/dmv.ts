@@ -35,8 +35,8 @@ export const dmvGuides: Guide[] = [
     ],
     links: [
       {
-        label: "USA.gov – Drivers Licenses",
-        url: "https://www.usa.gov/drivers-license",
+        label: "USA.gov – State motor vehicle services",
+        url: "https://www.usa.gov/state-motor-vehicle-services",
       },
       {
         label: "NHTSA – Teen driving",
@@ -69,8 +69,8 @@ export const dmvGuides: Guide[] = [
     ],
     links: [
       {
-        label: "USA.gov – Drivers Licenses",
-        url: "https://www.usa.gov/drivers-license",
+        label: "USA.gov – State motor vehicle services",
+        url: "https://www.usa.gov/state-motor-vehicle-services",
       },
     ],
     practiceQuestions: dmvPracticeQuestions,
@@ -103,12 +103,29 @@ export const dmvGuides: Guide[] = [
     ],
     links: [
       {
-        label: "USA.gov – Drivers Licenses",
-        url: "https://www.usa.gov/drivers-license",
+        label: "USA.gov – State motor vehicle services",
+        url: "https://www.usa.gov/state-motor-vehicle-services",
       },
       {
         label: "DHS – REAL ID",
         url: "https://www.dhs.gov/real-id",
+      },
+    ],
+    faq: [
+      {
+        question: "온라인으로만 갱신할 수 있나요?",
+        answer:
+          "주·개인 상황에 따라 다릅니다. 최근 사진·시력 검사·REAL ID 전환이 필요하면 방문을 요구하는 경우가 많습니다. 거주 주 DMV에서 ‘Renew by mail/online’ 가능 여부를 먼저 확인하세요.",
+      },
+      {
+        question: "만료 전에 꼭 갱신해야 하나요?",
+        answer:
+          "만료 후 유예 기간이 있는 주도 있지만, 보험·신분·경찰 검문에 불리할 수 있어 만료 전에 하는 편이 안전합니다. 주마다 과태료·재시험 규정이 다릅니다.",
+      },
+      {
+        question: "REAL ID와 일반 면허 갱신이 다른가요?",
+        answer:
+          "REAL ID로 올리거나 유지하려면 추가 신원·거주지 서류가 필요할 수 있습니다. 비행기 탑승 등에 REAL ID가 필요하면 일반 갱신과 요건을 구분해서 준비하세요.",
       },
     ],
     disclaimer:
@@ -139,8 +156,8 @@ export const dmvGuides: Guide[] = [
     ],
     links: [
       {
-        label: "USA.gov – Drivers Licenses",
-        url: "https://www.usa.gov/drivers-license",
+        label: "USA.gov – State motor vehicle services",
+        url: "https://www.usa.gov/state-motor-vehicle-services",
       },
       {
         label: "ArriveUS – 도로주행 시험 팁",
@@ -182,8 +199,8 @@ export const dmvGuides: Guide[] = [
     ],
     links: [
       {
-        label: "USA.gov – Drivers Licenses",
-        url: "https://www.usa.gov/drivers-license",
+        label: "USA.gov – State motor vehicle services",
+        url: "https://www.usa.gov/state-motor-vehicle-services",
       },
       {
         label: "NHTSA – Learning to drive",
@@ -227,8 +244,8 @@ export const dmvGuides: Guide[] = [
     ],
     links: [
       {
-        label: "USA.gov – Auto insurance",
-        url: "https://www.usa.gov/car-insurance",
+        label: "USA.gov – State motor vehicle services",
+        url: "https://www.usa.gov/state-motor-vehicle-services",
       },
       {
         label: "NAIC – Auto insurance basics",
@@ -255,18 +272,18 @@ export const dmvGuides: Guide[] = [
     cost: "이전·시험 수수료는 주마다 상이",
     methods: ["타주 면허 이전", "해외 면허 교환/시험", "DMV·DOL 방문"],
     overview:
-      "미국 안에서 이사한 경우(Out-of-state transfer)와 한국 등 해외에서 온 경우(Foreign license)는 절차가 다릅니다. 타주 면허는 시력 검사와 서류 확인 후 필기·도로시험을 면제받는 주가 많고, 해외 면허는 주마다 ‘교환 가능 / 일부 시험 필요 / 처음부터 신규’가 갈립니다. 국제운전면허증(IDP)은 단기 관광용인 경우가 많아 장기 거주·주 면허 대체가 되지 않을 수 있습니다. 워싱턴주(시애틀)는 DOL에서 Moving to Washington / transfer 안내를 확인하세요.",
+      "미국 안에서 이사한 경우(Out-of-state transfer)와 한국 등 해외에서 온 경우(Foreign license)는 절차가 다릅니다. 타주 면허는 시력 검사와 서류 확인 후 필기·도로시험을 면제받는 주가 많고, 해외 면허는 주마다 ‘교환 가능 / 일부 시험 필요 / 처음부터 신규’가 갈립니다. 국제운전면허증(IDP)은 단기 관광용인 경우가 많아 장기 거주·주 면허 대체가 되지 않을 수 있습니다.\n\n워싱턴주(시애틀 포함) 핵심: Washington DOL 안내에 따르면 유효한 한국(South Korea) 운전면허가 있고 만 18세 이상이면, 워싱턴 면허를 받을 때 필기(knowledge)·도로(drive) 시험이 면제되는 목록에 포함됩니다. 방문(관광)만 하는 경우에는 해외 면허로 일정 기간 운전이 가능할 수 있고, 워싱턴 거주자가 되면 보통 30일 안에 주 면허를 받아야 합니다. 면제여도 시력 검사·신원·거주지·SSN 등 서류와 수수료는 필요하고, 기존 면허 처리(구멍 펀치 등)는 방문 시 안내를 따릅니다. 만료된 면허·18세 미만·의료상 시험이 필요한 경우는 예외일 수 있으니 신청 전 DOL ‘Do I need to take a test?’ 페이지를 다시 확인하세요.",
     requirements: [
-      "현재 유효한 타주 또는 해외 운전면허 (원본)",
+      "현재 유효한 타주 또는 해외 운전면허 (원본) — 한국→WA는 유효한 한국 면허가 핵심",
       "여권·비자/영주권 등 신원·신분 서류",
       "새 거주지 증명 (임대 계약서, 공과금 고지서 등)",
       "SSN 또는 주에서 요구하는 대체 서류",
-      "해외 면허인 경우 공식 번역본 또는 주가 인정하는 번역 (요구 시)",
-      "기존 면허 반납이 필요한지 여부 확인",
+      "해외 면허인 경우 공식 번역본 또는 주가 인정하는 번역 (요구 시 — 한국·WA는 면제 목록이어도 서류는 DOL 확인)",
+      "기존 면허 반납·펀치 처리 여부 확인",
     ],
     steps: [
-      "거주 주 DMV/DOL에서 ‘transfer out-of-state license’ / ‘foreign license’ 페이지를 엽니다.",
-      "필기·도로시험 면제 여부, 번역·추가 서류 요건을 확인합니다.",
+      "거주 주 DMV/DOL에서 ‘transfer out-of-state license’ / ‘Do I need to take a test?’ 페이지를 엽니다.",
+      "필기·도로시험 면제 여부(한국→워싱턴 포함), 번역·추가 서류 요건을 확인합니다.",
       "필요 서류를 모아 예약 후 방문합니다. (워크인 가능 여부도 확인)",
       "시력 검사와 신분 확인을 진행하고, 안내에 따라 시험을 보거나 면제받습니다.",
       "새 주 면허를 받은 뒤 보험사에 면허·주소 변경을 알립니다.",
@@ -274,16 +291,37 @@ export const dmvGuides: Guide[] = [
     ],
     links: [
       {
-        label: "USA.gov – Drivers Licenses",
-        url: "https://www.usa.gov/drivers-license",
+        label: "USA.gov – State motor vehicle services",
+        url: "https://www.usa.gov/state-motor-vehicle-services",
+      },
+      {
+        label: "Washington DOL – Do I need to take a test?",
+        url: "https://dol.wa.gov/driver-licenses-and-permits/driver-training-and-testing/do-i-need-take-test",
       },
       {
         label: "Washington DOL – Moving to Washington",
-        url: "https://www.dol.wa.gov/driver-licenses-and-ids/moving-washington",
+        url: "https://dol.wa.gov/moving-washington/get-driver-license",
       },
       {
         label: "ArriveUS – 워싱턴주·시애틀 가이드",
         url: "/guides/dmv/states/wa",
+      },
+    ],
+    faq: [
+      {
+        question: "시애틀(워싱턴)에서 한국 면허를 인정해 주나요?",
+        answer:
+          "네. Washington DOL 공식 안내에서 유효한 South Korea 면허는 만 18세 이상일 때 필기·도로 시험 면제 대상에 포함됩니다. 그래도 워싱턴 면허 발급 절차(서류·시력·수수료)는 거쳐야 합니다.",
+      },
+      {
+        question: "한국 면허만으로 계속 운전해도 되나요?",
+        answer:
+          "단기 방문이면 해외 면허로 일정 기간(DOL 안내상 최대 약 1년) 운전이 가능할 수 있습니다. 워싱턴 거주자가 되면 보통 30일 안에 주 면허로 바꿔야 합니다.",
+      },
+      {
+        question: "필기·도로시험을 정말 안 봐도 되나요?",
+        answer:
+          "유효한 한국 면허 + 18세 이상이면 DOL 표 기준으로 knowledge/drive test가 면제됩니다. 만료 면허, 미성년, 의료상 시험 필요 등은 예외일 수 있으니 방문 전 공식 페이지를 확인하세요.",
       },
     ],
     disclaimer: dmvDisclaimer,
@@ -402,16 +440,24 @@ export const dmvGuides: Guide[] = [
     ],
     links: [
       {
-        label: "USA.gov – Vehicle registration",
-        url: "https://www.usa.gov/vehicle-registration",
+        label: "USA.gov – State motor vehicle services",
+        url: "https://www.usa.gov/state-motor-vehicle-services",
       },
       {
-        label: "USA.gov – Auto insurance",
-        url: "https://www.usa.gov/car-insurance",
+        label: "Washington DOL – Vehicle registration",
+        url: "https://dol.wa.gov/vehicles-and-boats/vehicles/vehicle-registration",
+      },
+      {
+        label: "Washington DOL – Buy and register a vehicle",
+        url: "https://dol.wa.gov/vehicles-and-boats/vehicles/buying-and-selling-vehicle/buy-and-register-vehicle",
+      },
+      {
+        label: "ArriveUS – 자동차 보험 기초",
+        url: "/guides/dmv/auto-insurance",
       },
     ],
     disclaimer:
-      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·공식 자문이 아닙니다. 최종 안내는 거주 주 DMV 공식 정보를 확인하세요.",
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·공식 자문이 아닙니다. 최종 안내는 거주 주 DMV/DOL 공식 정보를 확인하세요.",
   },
 ];
 

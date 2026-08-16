@@ -31,11 +31,14 @@ export const stateGuides: StateGuide[] = [
     summary:
       "시애틀·벨뷰 등 워싱턴주 거주자를 위한 면허·차량 공식 안내 출발점입니다. 주 기관 명칭은 DMV가 아니라 DOL입니다.",
     dmvUrl: "https://www.dol.wa.gov/",
-    handbookUrl: "https://www.dol.wa.gov/driver-licenses-and-ids/driver-guides",
+    handbookUrl:
+      "https://dol.wa.gov/driver-licenses-and-permits/driver-training-and-testing/driver-guides",
     featured: true,
     highlights: [
       "운전·ID 업무는 주 DOL 사이트와 예약/방문 안내를 기준으로 합니다.",
-      "타주·해외 면허 이전은 DOL Moving to Washington 안내를 확인하세요.",
+      "유효한 한국(South Korea) 면허 + 만 18세 이상이면, DOL 안내상 필기·도로 시험 면제로 워싱턴 면허를 받을 수 있는 경우가 많습니다. (시력·서류·수수료는 필요)",
+      "방문만 하면 해외 면허로 일정 기간 운전이 가능할 수 있고, 거주자가 되면 보통 30일 안에 주 면허가 필요합니다.",
+      "타주·해외 면허 이전은 DOL ‘Do I need to take a test?’ / Moving to Washington 안내를 확인하세요.",
       "워싱턴주의 REAL ID 준수 주 발급 신분증은 Enhanced DL/ID(EDL/EID)이며, 미국 시민만 신청할 수 있습니다.",
       "영주권·비자 보유자는 일반 면허로 운전하고, 국내선은 여권 등 TSA 인정 서류를 준비하는 경우가 많습니다.",
       "시애틀 시내 주차·단속 규칙은 시(City) 규정과 별개이니 함께 확인하세요.",
@@ -46,12 +49,17 @@ export const stateGuides: StateGuide[] = [
         nameKo: "시애틀",
         notes: [
           "면허·차량 등록의 법적 기준은 워싱턴주 DOL입니다. 시애틀 거주자도 주 절차를 따릅니다.",
-          "REAL ID: 워싱턴주에서 별로 표시되는 ‘주 발급 REAL ID’에 해당하는 것은 EDL/EID이며, DOL 기준 미국 시민만 가능합니다. (시애틀만의 별도 규칙이라기보다 주 전체 정책입니다.)",
+          "한국 면허: 유효한 South Korea 면허(18세+)는 DOL 기준 필기·도로 시험 면제 대상에 포함됩니다. 시애틀만의 별도 규칙이 아니라 주 전체 정책입니다.",
+          "REAL ID: 워싱턴주에서 별로 표시되는 ‘주 발급 REAL ID’에 해당하는 것은 EDL/EID이며, DOL 기준 미국 시민만 가능합니다.",
           "시민이 아니어도 일반 Washington driver license로 운전할 수 있는 경우가 많고, 공항 신분 확인은 유효 여권·영주권 카드 등으로 대체하는 경우가 많습니다.",
           "시내 주차(Parking), 거주자 허가(RPZ), 교통 카메라 등은 Seattle Department of Transportation(SDOT) 안내를 보세요.",
           "킹카운티(King County) 버스·교통 정보는 King County Metro를 참고할 수 있습니다.",
         ],
         links: [
+          {
+            label: "Washington DOL – Do I need to take a test?",
+            url: "https://dol.wa.gov/driver-licenses-and-permits/driver-training-and-testing/do-i-need-take-test",
+          },
           {
             label: "Washington DOL – REAL ID",
             url: "https://www.dol.wa.gov/id-cards/real-id",

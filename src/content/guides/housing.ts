@@ -76,8 +76,8 @@ export const housingGuides: Guide[] = [
     ],
     links: [
       {
-        label: "USA.gov – Utilities",
-        url: "https://www.usa.gov/utilities",
+        label: "USA.gov – Help with utility bills",
+        url: "https://www.usa.gov/help-with-utility-bills",
       },
       {
         label: "FCC – Internet consumer tips",

@@ -37,12 +37,25 @@ export const bankGuides: Guide[] = [
         url: "https://www.consumerfinance.gov/ask-cfpb/how-do-i-open-a-bank-account-en-906/",
       },
       {
-        label: "USA.gov – Banking",
-        url: "https://www.usa.gov/banking",
-      },
-      {
         label: "ArriveUS – 신분별 계좌 개설",
         url: "/guides/bank/account-by-status",
+      },
+    ],
+    faq: [
+      {
+        question: "대형 은행과 Credit Union 중 어디가 나을까요?",
+        answer:
+          "대형 은행은 지점·ATM이 많고, Credit Union은 수수료·금리 조건이 유리한 경우가 있습니다. 본인 신분으로 개설 가능한지, 월 유지비 면제 조건이 맞는지를 먼저 보세요.",
+      },
+      {
+        question: "온라인만으로 개설이 되나요?",
+        answer:
+          "시민·영주권·SSN이 있으면 온라인 개설이 되는 상품이 많습니다. 학생·비자·SSN 없음은 지점 방문이 필요한 경우가 흔합니다.",
+      },
+      {
+        question: "계좌를 열면 바로 신용카드도 나오나요?",
+        answer:
+          "보통 별도 심사입니다. 신용 이력이 없으면 체킹을 먼저 쓰고, Secured card 등으로 이력을 쌓는 경우가 많습니다.",
       },
     ],
     disclaimer,
@@ -212,8 +225,8 @@ export const bankGuides: Guide[] = [
         url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-direct-deposit-en-1021/",
       },
       {
-        label: "USA.gov – Banking",
-        url: "https://www.usa.gov/banking",
+        label: "CFPB – Opening a bank account",
+        url: "https://www.consumerfinance.gov/ask-cfpb/how-do-i-open-a-bank-account-en-906/",
       },
     ],
     disclaimer,
@@ -248,8 +261,8 @@ export const bankGuides: Guide[] = [
         url: "https://www.consumerfinance.gov/consumer-tools/remittances/",
       },
       {
-        label: "USA.gov – Money transfers",
-        url: "https://www.usa.gov/money-transfers",
+        label: "CFPB – Money transfers",
+        url: "https://www.consumerfinance.gov/consumer-tools/money-transfers/",
       },
     ],
     disclaimer,

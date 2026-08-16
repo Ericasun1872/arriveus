@@ -533,6 +533,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I received my notice for the oath ceremony.",
     },
   ],
+  "immigration/employment-green-card": [
+    {
+      ko: "이 포지션은 영주권 스폰서가 가능한가요?",
+      en: "Does this position offer employment-based green card sponsorship?",
+    },
+    {
+      ko: "PERM과 I-140은 회사에서 진행하나요?",
+      en: "Will the employer handle the PERM and Form I-140 process?",
+    },
+    {
+      ko: "우선순위 날짜와 Visa Bulletin을 확인하고 싶습니다.",
+      en: "I would like to check my priority date against the Visa Bulletin.",
+    },
+    {
+      ko: "이민 변호사와 상담을 받고 싶습니다.",
+      en: "I would like to consult an immigration attorney.",
+    },
+  ],
   "job/resume-interview": [
     {
       ko: "이 포지션에 지원하고 싶습니다.",

@@ -177,6 +177,23 @@ export const medicalGuides: Guide[] = [
         url: "/guides/medical/health-insurance",
       },
     ],
+    faq: [
+      {
+        question: "65세가 되면 자동으로 가입되나요?",
+        answer:
+          "항상 자동은 아닙니다. Social Security 혜택을 이미 받는 등 일부 경우에는 Part A가 자동 연결되기도 하지만, Part B·D·Advantage는 직접 선택·신청이 필요한 경우가 많습니다. 가입 시기(Initial Enrollment)를 미리 확인하세요.",
+      },
+      {
+        question: "영주권자도 Medicare를 받을 수 있나요?",
+        answer:
+          "근로 크레딧·거주·신분 요건을 충족하면 가능한 경우가 많습니다. 체류 서류가 없거나 요건이 부족하면 대상이 아닐 수 있습니다. Medicare.gov·SSA에서 본인 자격을 확인하세요.",
+      },
+      {
+        question: "Original과 Advantage 중 무엇을 고르나요?",
+        answer:
+          "의사·병원 선택의 폭(Original)과 네트워크·추가 혜택(Advantage)의 트레이드오프입니다. 복용 약·주치의·예산에 맞춰 Plan Finder로 비교하는 것이 좋습니다.",
+      },
+    ],
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 의료·보험 자문이 아닙니다. Medicare 자격·보험료·페널티·플랜 내용은 연도와 개인 상황(근로 이력, 체류 신분, 소득, 직장 보험 등)에 따라 달라지므로 Medicare.gov·Social Security·공인 상담 채널에서 최종 확인하세요.",
   },
@@ -210,10 +227,6 @@ export const medicalGuides: Guide[] = [
       {
         label: "한국어 의사 찾기 (시애틀 등)",
         url: "/guides/medical/korean-doctors",
-      },
-      {
-        label: "USA.gov – Doctors and hospitals",
-        url: "https://www.usa.gov/doctors",
       },
       {
         label: "Find a Health Center (HRSA)",
@@ -278,6 +291,23 @@ export const medicalGuides: Guide[] = [
       {
         label: "병원·의사 찾기 가이드",
         url: "/guides/medical/find-doctor",
+      },
+    ],
+    faq: [
+      {
+        question: "보험이 없어도 응급실을 이용할 수 있나요?",
+        answer:
+          "응급 상황에서는 EMTALA 등으로 안정 치료를 받는 경우가 많습니다. 다만 이후 병원비·의사비 청구는 별개로 올 수 있습니다.",
+      },
+      {
+        question: "청구서가 여러 장 오는 게 정상인가요?",
+        answer:
+          "네. 병원 시설비, 응급의학과 의사, 영상·검사 등이 따로 청구되는 경우가 흔합니다. 각각 연락처를 확인해 협상·할인을 문의하세요.",
+      },
+      {
+        question: "고지액 전액을 내야 하나요?",
+        answer:
+          "Financial assistance, Self-pay discount, 할부 등이 가능한 병원이 많습니다. 결과를 보장할 수는 없지만, ‘고지액=최종 납부액’이 아닌 경우가 많습니다.",
       },
     ],
     disclaimer:

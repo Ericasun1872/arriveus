@@ -42,6 +42,27 @@ export const jobGuides: Guide[] = [
         label: "근로 서류 I-9·W-4 가이드",
         url: "/guides/job/work-documents",
       },
+      {
+        label: "취업 이민(EB-3) 개요",
+        url: "/guides/immigration/employment-green-card",
+      },
+    ],
+    faq: [
+      {
+        question: "Resume는 반드시 1페이지여야 하나요?",
+        answer:
+          "신입·경력 초기에는 1페이지가 일반적이고, 경력이 길면 2페이지도 가능합니다. 채용 담당자가 빠르게 스캔할 수 있게 군더더기를 줄이세요.",
+      },
+      {
+        question: "면접에서 비자·스폰서를 물어보면?",
+        answer:
+          "합법 근로 가능 여부·시작 가능 시점을 짧게 말하는 준비가 도움이 됩니다. 세부 이민 전략은 채용 단계와 변호사 상담을 구분하세요.",
+      },
+      {
+        question: "LinkedIn이 꼭 필요한가요?",
+        answer:
+          "필수는 아니지만 미국 채용에서 사실상 기본에 가깝습니다. Resume와 날짜·직함을 맞추는 것이 중요합니다.",
+      },
     ],
     updatedAt: "2026-08",
     disclaimer,
@@ -89,6 +110,10 @@ export const jobGuides: Guide[] = [
       {
         label: "미국식 이력서·면접",
         url: "/guides/job/resume-interview",
+      },
+      {
+        label: "취업 이민(EB-3) 개요",
+        url: "/guides/immigration/employment-green-card",
       },
     ],
     updatedAt: "2026-08",

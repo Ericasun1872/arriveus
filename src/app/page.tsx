@@ -1,23 +1,18 @@
-import Image from "next/image";
 import Link from "next/link";
 import { CategoryGrid } from "@/components/CategoryGrid";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
 import { dailyTip } from "@/content/tips";
-import { getCategories } from "@/lib/guides";
+import { heroSlides } from "@/content/hero-slides";
+import { getCategories, getCategory, getNewGuides } from "@/lib/guides";
 
 export default function HomePage() {
   const categories = getCategories();
+  const newGuides = getNewGuides();
 
   return (
     <div>
       <section className="relative isolate min-h-[68vh] overflow-hidden sm:min-h-[72vh]">
-        <Image
-          src="/hero-whitehouse.jpg"
-          alt="워싱턴 D.C. 백악관"
-          fill
-          priority
-          className="object-cover object-[center_48%]"
-          sizes="100vw"
-        />
+        <HeroSlideshow slides={heroSlides} />
         <div
           className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,22,46,0.52)_0%,rgba(8,22,46,0.12)_18%,rgba(8,22,46,0.05)_45%,rgba(8,22,46,0.5)_78%,rgba(8,22,46,0.78)_100%)]"
           aria-hidden
@@ -81,6 +76,45 @@ export default function HomePage() {
         </div>
         <CategoryGrid categories={categories} />
       </section>
+
+      {newGuides.length > 0 ? (
+        <section className="mx-auto max-w-6xl px-4 pb-12 sm:px-6 sm:pb-14">
+          <div className="mb-6">
+            <h2 className="font-[family-name:var(--font-display)] text-2xl font-semibold text-[var(--ink)]">
+              새로 올린 가이드
+            </h2>
+            <p className="mt-1 text-sm text-[var(--muted)]">
+              최근에 보강한 주제입니다. 필요한 절차부터 바로 확인해 보세요.
+            </p>
+          </div>
+          <ul className="grid gap-3 md:grid-cols-3">
+            {newGuides.map((guide) => {
+              const category = getCategory(guide.category);
+              return (
+                <li key={`${guide.category}-${guide.slug}`}>
+                  <Link
+                    href={`/guides/${guide.category}/${guide.slug}`}
+                    className="group flex h-full flex-col border-b border-[var(--border)] pb-4 transition hover:border-[var(--brand-border)] md:border-b-0 md:border-l md:border-[var(--border)] md:pb-0 md:pl-5 md:first:border-l-0 md:first:pl-0"
+                  >
+                    <span className="text-xs font-medium text-[var(--brand)]">
+                      {category?.name ?? guide.category}
+                    </span>
+                    <span className="mt-2 font-[family-name:var(--font-display)] text-lg font-semibold leading-snug text-[var(--ink)] group-hover:text-[var(--brand)]">
+                      {guide.title}
+                    </span>
+                    <span className="mt-2 flex-1 text-sm leading-relaxed text-[var(--muted)]">
+                      {guide.summary}
+                    </span>
+                    <span className="mt-3 text-sm font-semibold text-[var(--brand)]">
+                      가이드 보기 →
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      ) : null}
 
       <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
         <div className="overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)]">

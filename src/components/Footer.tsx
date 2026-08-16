@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { siteConfig } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -10,8 +11,7 @@ export function Footer() {
               ArriveUS
             </p>
             <p className="mt-1 max-w-xl text-sm leading-relaxed text-[var(--muted)]">
-              한국인을 위한 미국 정착 가이드. DMV, 은행, 의료, 세금, 이민국,
-              취업, 주거 정보를 한곳에서 확인하세요.
+              한국인을 위한 미국 정착 가이드. DMV, 은행, 의료, 세금, 이민국, 취업, 주거 정보를 한곳에서 확인하세요.
             </p>
           </div>
           <Link
@@ -22,9 +22,13 @@ export function Footer() {
           </Link>
         </div>
         <p className="text-xs leading-relaxed text-[var(--muted)]">
-          본 사이트의 정보는 일반적인 참고용이며 법률·세무·의료·이민 자문이
-          아닙니다. 최종 결정 전에는 반드시 해당 주·연방 공식 기관 안내를
-          확인하세요.
+          본 사이트의 정보는 일반적인 참고용이며 법률·세무·의료·이민 자문이 아닙니다. 최종 결정 전에는 반드시 해당 주·연방 공식 기관 안내를 확인하세요. 일부 링크는 제휴·광고일 수 있으며, 이를 통해 소액의 수수료를 받을 수 있습니다. 추천 여부와 수수료는 무관하게 공식·유용한 출처를 우선합니다. 채용·광고 문의:{" "}
+          <a
+            href={`mailto:${siteConfig.contactEmail}`}
+            className="underline underline-offset-2"
+          >
+            {siteConfig.contactEmail}
+          </a>
         </p>
         <p className="text-xs text-[var(--muted)]">
           © {new Date().getFullYear()} ArriveUS

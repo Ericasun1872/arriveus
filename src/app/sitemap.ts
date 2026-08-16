@@ -23,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
     {
+      url: `${base}/jobs`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.6,
+    },
+    {
       url: `${base}/guides/dmv/states`,
       lastModified: now,
       changeFrequency: "monthly",

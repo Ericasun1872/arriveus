@@ -104,13 +104,13 @@ export const immigrationGuides: Guide[] = [
     category: "immigration",
     title: "자주 쓰는 USCIS 양식 지도",
     summary:
-      "I-90, I-765, I-485, I-751, N-400 등 한국인이 자주 접하는 양식이 ‘무엇을 위한 것인지’만 빠르게 구분하는 안내입니다. 작성법은 공식 지침을 따르세요.",
+      "I-90, I-765, I-140, I-485, I-751, N-400 등 한국인이 자주 접하는 양식이 ‘무엇을 위한 것인지’만 빠르게 구분하는 안내입니다. 작성법은 공식 지침을 따르세요.",
     methods: ["USCIS Forms", "myUSCIS 온라인 제출", "종이 접수 (양식별)"],
     overview:
-      "USCIS 양식은 이름만 비슷해도 용도가 전혀 다릅니다. I-90은 영주권 카드 갱신·재발급, I-765는 취업허가(EAD), I-485는 신분 조정(영주권 신청의 한 경로), I-751은 조건부 영주권(결혼 등 2년) 조건 제거, N-400은 시민권(귀화) 신청입니다. 이 페이지는 ‘어떤 상황에서 어떤 양식 이름을 듣는지’ 지도일 뿐이며, 자격·동반 제출·수수료는 케이스마다 다릅니다. 잘못된 양식을 내면 기각·거절될 수 있으니, 제출 전 공식 Forms 페이지의 Filing fee·Edition date·Instructions PDF를 반드시 확인하세요.",
+      "USCIS 양식은 이름만 비슷해도 용도가 전혀 다릅니다. I-90은 영주권 카드 갱신·재발급, I-765는 취업허가(EAD), I-140은 고용주가 제출하는 취업 이민 청원, I-485는 신분 조정(영주권 신청의 한 경로), I-751은 조건부 영주권(결혼 등 2년) 조건 제거, N-400은 시민권(귀화) 신청입니다. 이 페이지는 ‘어떤 상황에서 어떤 양식 이름을 듣는지’ 지도일 뿐이며, 자격·동반 제출·수수료는 케이스마다 다릅니다. 잘못된 양식을 내면 기각·거절될 수 있으니, 제출 전 공식 Forms 페이지의 Filing fee·Edition date·Instructions PDF를 반드시 확인하세요. 취업으로 영주권을 알아보는 경우 I-140·PERM 흐름은 취업 이민(EB-3) 개요 가이드를 함께 보세요.",
     requirements: [
       "본인 현재 신분 (비자·영주권·EAD 등)",
-      "목표 (카드 갱신 / 취업허가 / 영주권 / 조건 제거 / 시민권)",
+      "목표 (카드 갱신 / 취업허가 / 취업 이민 / 영주권 / 조건 제거 / 시민권)",
       "Receipt·A-Number·여권 정보",
       "해당 양식 Instructions PDF",
     ],
@@ -135,6 +135,10 @@ export const immigrationGuides: Guide[] = [
         url: "https://www.uscis.gov/i-765",
       },
       {
+        label: "I-140 – Immigrant Petition for Alien Workers",
+        url: "https://www.uscis.gov/i-140",
+      },
+      {
         label: "I-485 – Adjust Status",
         url: "https://www.uscis.gov/i-485",
       },
@@ -145,6 +149,10 @@ export const immigrationGuides: Guide[] = [
       {
         label: "N-400 – Naturalization",
         url: "https://www.uscis.gov/n-400",
+      },
+      {
+        label: "취업 이민(EB-3) 개요",
+        url: "/guides/immigration/employment-green-card",
       },
       {
         label: "귀화(N-400) 개요",
@@ -204,8 +212,108 @@ export const immigrationGuides: Guide[] = [
         label: "자주 쓰는 양식 지도",
         url: "/guides/immigration/common-forms",
       },
+      {
+        label: "취업 이민(EB-3) 개요",
+        url: "/guides/immigration/employment-green-card",
+      },
     ],
     updatedAt: "2026-08",
     disclaimer,
+  },
+  {
+    slug: "employment-green-card",
+    category: "immigration",
+    title: "취업 이민(EB-3) 개요",
+    summary:
+      "고용주 스폰서로 영주권을 받는 취업 이민(특히 EB-3)의 큰 흐름, PERM·I-140·대기·신분조정 개념, 공장·제조업 사례를 볼 때 확인할 점과 사기 주의사항을 정리했습니다.",
+    cost: "고용주·변호사·USCIS·DOL 수수료는 케이스마다 다름 (본인 부담 여부를 계약서·오퍼에서 확인)",
+    methods: [
+      "고용주 스폰서 (PERM → I-140)",
+      "우선순위 날짜 대기 (Visa Bulletin)",
+      "I-485 신분조정 또는 영사관 수속",
+    ],
+    overview:
+      "미국에는 ‘회사가 직원을 위해 영주권을 신청해 주는’ 취업 기반 영주권(Employment-based) 경로가 있습니다. 한국에서 자주 듣는 육가공·제조·서비스업 영주권 이야기의 많은 경우, 큰 그림으로는 EB-2/EB-3 같은 고용주 스폰서 카테고리와 맞닿아 있습니다. ArriveUS는 특정 회사·공장을 ‘영주권 잘 주는 곳’으로 추천하지 않습니다. 같은 업종이라도 채용 시점, 지역, 예산, 변호사, 노동인증(PERM) 결과에 따라 전혀 다를 수 있고, 온라인의 회사 리스트는 오래되거나 과장·사기인 경우가 많습니다.\n\n취업 이민의 핵심은 본인이 회사 목록에 지원한다고 끝나는 것이 아니라, 미국 고용주가 풀타임 포지션에 대해 스폰서할 의사가 있고, 노동부·이민국 절차를 진행한다는 점입니다. 흔히 이야기되는 ‘공장에서 일하며 영주권’ 사례도, 실제로는 고용주가 PERM(노동인증)과 I-140(이민 청원)을 진행하고, 우선순위 날짜가 열린 뒤 I-485(미국 내 신분조정) 또는 해외 영사관 인터뷰로 영주권을 받는 구조인 경우가 많습니다. 학력·경력 요건이 낮은 Other Worker(비숙련) 자리도 EB-3에 포함될 수 있지만, 대기 기간이 길고 거절·이직·사업장 변경 리스크가 큽니다.\n\n임시 취업 비자(H-2B 등)로 먼저 들어와 일하다가 나중에 영주권 절차로 이어지는 이야기와, 처음부터 영주권 스폰서 채용인 이야기가 섞여 들리기도 합니다. 비자와 영주권은 별개 절차이므로, 채용 공고·계약서·에이전시 설명에서 ‘지금 어떤 신분으로 일하는지’와 ‘누가 PERM/I-140 비용을 내는지’를 구분해서 확인하세요. 이 가이드는 용어와 큰 순서만 잡는 개요이며, 자격·전략·서류는 반드시 자격 있는 이민 변호사 또는 공인 대리인(Accredited Representative)과 검토하세요.",
+    requirements: [
+      "합법 근로·체류와 관련된 현재 신분 파악 (시민·영주권·비자·EAD 등)",
+      "고용주의 풀타임 오퍼와 영주권 스폰서 의사 (구두 약속만으로는 부족)",
+      "직무 설명·학력·경력 요건이 적힌 채용/포지션 정보",
+      "여권·입국·체류 기록, 이전 이민 신청 이력",
+      "비용 분담·이직 시 어떻게 되는지 적은 안내 또는 고용 관련 문서",
+      "사기 여부 확인용: 변호사 이름·주 라이선스, USCIS/DOL 공식 용어 사용 여부",
+    ],
+    steps: [
+      "목표가 ‘취업으로 영주권’인지 확인하고, 가족·결혼·인도적 등 다른 경로와 혼동하지 않습니다.",
+      "오퍼를 받을 때 직무, 근무지, 급여, 시작일, 스폰서 여부, PERM/I-140 진행 주체(회사·변호사), 본인 비용 부담을 서면으로 확인합니다.",
+      "‘영주권 보장’ ‘빠른 승인’ ‘선입금만 내면 그린카드’처럼 단정하는 광고·에이전시는 거절하고, 공식 기관·변호사와 교차 확인합니다.",
+      "고용주 측에서 보통 PERM(노동인증)을 준비합니다. 미국 노동자 채용 시도·임금 수준 등 요건이 있으며, 승인되어야 다음 단계로 가기 쉽습니다.",
+      "PERM 이후 고용주가 Form I-140(이민 청원)을 USCIS에 제출합니다. 승인되면 우선순위 날짜(Priority Date)가 생깁니다.",
+      "국무부 Visa Bulletin에서 해당 카테고리·출생국 기준으로 우선순위 날짜가 Final Action에 가까운지 확인합니다. 대기는 수년이 걸릴 수 있습니다.",
+      "날짜가 열리면 미국 내에서 조정 가능한 신분이면 I-485 등을, 해외에 있으면 영사관 이민 비자 수속을 진행하는 경우가 많습니다. 동반 가족은 별도 자격이 필요합니다.",
+      "승인 후에도 카드 수령·SSN·입사 I-9 등을 정리합니다. 이직·사업장 폐쇄·중도 해지는 케이스에 큰 영향을 줄 수 있으니 변호사와 상의합니다.",
+    ],
+    links: [
+      {
+        label: "USCIS – Green Card through a job",
+        url: "https://www.uscis.gov/green-card/green-card-eligibility/green-card-through-a-job",
+      },
+      {
+        label: "USCIS – EB-3 Employment-Based Third Preference",
+        url: "https://www.uscis.gov/working-in-the-united-states/permanent-workers/employment-based-immigration-third-preference-eb-3",
+      },
+      {
+        label: "USCIS – Form I-140",
+        url: "https://www.uscis.gov/i-140",
+      },
+      {
+        label: "USCIS – Form I-485",
+        url: "https://www.uscis.gov/i-485",
+      },
+      {
+        label: "DOL – Permanent Labor Certification (PERM)",
+        url: "https://www.dol.gov/agencies/eta/foreign-labor/programs/permanent",
+      },
+      {
+        label: "Department of State – Visa Bulletin",
+        url: "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
+      },
+      {
+        label: "USCIS – Avoid scams",
+        url: "https://www.uscis.gov/avoid-scams",
+      },
+      {
+        label: "입사 근로 서류 (I-9, W-4)",
+        url: "/guides/job/work-documents",
+      },
+      {
+        label: "자주 쓰는 USCIS 양식 지도",
+        url: "/guides/immigration/common-forms",
+      },
+    ],
+    updatedAt: "2026-08",
+    faq: [
+      {
+        question: "회사 이름만 알면 영주권을 신청할 수 있나요?",
+        answer:
+          "아니요. 고용주가 해당 포지션에 대해 스폰서하고 PERM·I-140 등을 진행하는 구조인 경우가 많습니다. 공개된 ‘영주권 잘 주는 회사 리스트’만 보고 신청하는 방식이 아닙니다.",
+      },
+      {
+        question: "치킨·육가공 공장만 해당되나요?",
+        answer:
+          "아니요. 인력 부족 업종에서 스폰서 사례가 이야기될 뿐입니다. 같은 업종이라도 시점·사업장·변호사에 따라 전혀 다를 수 있습니다.",
+      },
+      {
+        question: "PERM이 무엇인가요?",
+        answer:
+          "고용주가 노동부에 신청하는 노동인증 절차로, 미국 노동자 채용 시도·임금 수준 등 요건이 있습니다. 이후 I-140으로 이어지는 경우가 많습니다.",
+      },
+      {
+        question: "대기 기간은 얼마나 걸리나요?",
+        answer:
+          "출생국·카테고리·Visa Bulletin에 따라 수년이 걸릴 수 있습니다. 최신 대기 상황은 국무부 Visa Bulletin을 확인하세요.",
+      },
+    ],
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 이민·법률·채용 알선 자문이 아닙니다. 특정 회사·공장·에이전시를 추천하거나 영주권 승인을 보장하지 않습니다. 자격·수수료·대기·전략은 수시로 바뀌므로 USCIS·DOL·국무부 공식 안내와 자격 있는 이민 변호사·Accredited Representative를 확인하세요.",
   },
 ];
