@@ -257,8 +257,12 @@ export const bankGuides: Guide[] = [
     ],
     links: [
       {
-        label: "CFPB – Remittances / sending money abroad",
-        url: "https://www.consumerfinance.gov/consumer-tools/remittances/",
+        label: "CFPB – 해외 송금 권리 (Remittance)",
+        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-remittance-transfer-and-what-are-my-rights-en-1161/",
+      },
+      {
+        label: "CFPB – Send money abroad",
+        url: "https://www.consumerfinance.gov/consumer-tools/money-transfers/send-money-abroad-with-more-confidence/",
       },
       {
         label: "CFPB – Money transfers",
