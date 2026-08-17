@@ -61,5 +61,5 @@ export function getAllGuideParams() {
 export function getNewGuides(): Guide[] {
   return newGuideRefs
     .map((ref) => getGuide(ref.category, ref.slug))
-    .filter((guide): guide is Guide => Boolean(guide) && !guide.comingSoon);
+    .filter((guide): guide is Guide => guide != null && !guide.comingSoon);
 }
