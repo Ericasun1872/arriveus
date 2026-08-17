@@ -30,8 +30,9 @@ export function Footer() {
             {siteConfig.contactEmail}
           </a>
         </p>
-        <p className="text-xs text-[var(--muted)]">
-          © {new Date().getFullYear()} ArriveUS
+        <p className="text-xs leading-relaxed text-[var(--muted)]">
+          © {new Date().getFullYear()} ArriveUS. 본 사이트의 문구·이미지·구성은
+          저작권으로 보호되며, 무단 복제·배포·재가공을 금지합니다.
         </p>
       </div>
     </footer>

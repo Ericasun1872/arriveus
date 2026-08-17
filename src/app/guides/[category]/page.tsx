@@ -117,8 +117,8 @@ export default async function CategoryPage({ params }: PageProps) {
             채용 공고 · 광고 문의
           </h2>
           <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
-            가이드와 별도로 채용 공고를 게시할 수 있습니다. 지금은 준비 중이며,
-            사업체 문의는 이메일로 받습니다.
+            미국 내 채용과 한국·원격(미국→한국) 채용을 구분해 게시합니다. 지금은
+            준비 중이며, 사업체 문의는 이메일로 받습니다.
           </p>
           <Link
             href="/jobs"
