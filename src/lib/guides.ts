@@ -63,3 +63,55 @@ export function getNewGuides(): Guide[] {
     .map((ref) => getGuide(ref.category, ref.slug))
     .filter((guide): guide is Guide => guide != null && !guide.comingSoon);
 }
+
+export function getAllGuides(): Guide[] {
+  return guides.map(withEnglish);
+}
+
+export function getSearchIndex() {
+  return getAllGuides()
+    .filter((guide) => !guide.comingSoon)
+    .map((guide) => {
+      const category = getCategory(guide.category);
+      return {
+        category: guide.category,
+        categoryName: category?.name ?? guide.category,
+        slug: guide.slug,
+        title: guide.title,
+        summary: guide.summary,
+        haystack: [
+          guide.title,
+          guide.summary,
+          guide.overview,
+          ...(guide.methods ?? []),
+          category?.name,
+          category?.nameEn,
+          category?.description,
+        ]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase(),
+      };
+    });
+}
+
+export function searchGuides(query: string): Guide[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  const tokens = q.split(/\s+/).filter(Boolean);
+  return getSearchIndex()
+    .map((item) => {
+      const score = tokens.reduce(
+        (sum, token) => sum + (item.haystack.includes(token) ? 1 : 0),
+        0,
+      );
+      return { item, score };
+    })
+    .filter((row) => row.score === tokens.length)
+    .sort(
+      (a, b) =>
+        b.score - a.score || a.item.title.localeCompare(b.item.title, "ko"),
+    )
+    .map((row) => getGuide(row.item.category, row.item.slug)!)
+    .filter(Boolean);
+}

@@ -66,6 +66,26 @@ export default async function CategoryPage({ params }: PageProps) {
         </div>
       </header>
 
+      {category.slug === "life" ? (
+        <section className="mb-8 rounded-2xl border border-[var(--brand-border)] bg-[var(--brand-soft)]/50 px-5 py-5">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--brand)]">
+            First week
+          </p>
+          <h2 className="mt-1 text-lg font-semibold text-[var(--ink)]">
+            도착 첫 7일부터 시작
+          </h2>
+          <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
+            전화번호·학교·ESL·혜택·응급·커뮤니티 순서를 한곳에서 확인하세요.
+          </p>
+          <Link
+            href="/guides/life/first-week"
+            className="mt-4 inline-flex rounded-lg bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white hover:opacity-90"
+          >
+            체크리스트 보기
+          </Link>
+        </section>
+      ) : null}
+
       {category.slug === "dmv" ? (
         <section className="mb-8 rounded-2xl border border-[var(--brand-border)] bg-[var(--brand-soft)]/50 px-5 py-5">
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--brand)]">
@@ -93,11 +113,10 @@ export default async function CategoryPage({ params }: PageProps) {
             Korean-speaking care
           </p>
           <h2 className="mt-1 text-lg font-semibold text-[var(--ink)]">
-            한국어 의사 찾기 · 시애틀 중심
+            한국어 의사 찾기 · 시애틀·LA·뉴욕
           </h2>
           <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
-            보험 검색·커뮤니티 클리닉·통역 요청 방법을 지역별로 안내합니다. LA·뉴욕
-            등도 같은 형식으로 추가할 수 있습니다.
+            보험 검색·커뮤니티 클리닉·통역 요청 방법을 지역별로 안내합니다.
           </p>
           <Link
             href="/guides/medical/korean-doctors"
@@ -114,18 +133,26 @@ export default async function CategoryPage({ params }: PageProps) {
             Hiring board
           </p>
           <h2 className="mt-1 text-lg font-semibold text-[var(--ink)]">
-            채용 공고 · 광고 문의
+            채용 가이드 · 공고 문의
           </h2>
           <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
-            미국 내 채용과 한국·원격(미국→한국) 채용을 구분해 게시합니다. 지금은
-            준비 중이며, 사업체 문의는 이메일로 받습니다.
+            현장 취업·홈케어 가이드를 먼저 보세요. 채용 공고 게재는 준비 중이며
+            사업체 문의는 이메일로 받습니다.
           </p>
-          <Link
-            href="/jobs"
-            className="mt-4 inline-flex rounded-lg bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white hover:opacity-90"
-          >
-            채용 공고 보기
-          </Link>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link
+              href="/guides/job/everyday-jobs"
+              className="inline-flex rounded-lg bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white hover:opacity-90"
+            >
+              현장 취업 가이드
+            </Link>
+            <Link
+              href="/jobs"
+              className="inline-flex rounded-lg border border-[var(--brand-border)] bg-white/70 px-4 py-2.5 text-sm font-semibold text-[var(--brand)] hover:bg-white"
+            >
+              공고·문의
+            </Link>
+          </div>
         </section>
       ) : null}
 

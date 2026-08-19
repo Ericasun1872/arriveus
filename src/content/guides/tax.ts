@@ -244,4 +244,120 @@ export const taxGuides: Guide[] = [
     updatedAt: "2026-08",
     disclaimer,
   },
+  {
+    slug: "estimated-taxes",
+    category: "tax",
+    title: "예상세 (Estimated tax)",
+    summary:
+      "프리랜서·1099·부업처럼 원천징수가 적을 때 분기 Estimated tax를 내는 이유와 Form 1040-ES·납부 방법을 정리했습니다.",
+    cost: "세금 자체는 소득에 따라 다름 / 미납·부족 납부 시 가산금(Penalty) 가능",
+    methods: ["Form 1040-ES", "IRS Direct Pay·온라인 계정", "W-4로 원천징수 늘리기"],
+    overview:
+      "직장 W-2만 있고 원천징수(Withholding)가 충분하면 분기 예상세를 따로 안 내는 경우가 많습니다. 반대로 1099 소득, 스몰 비즈니스, 투자·임대 소득처럼 원천징수가 거의 없으면, 연말에 한꺼번에 내기보다 분기마다 Estimated tax를 내는 것이 일반적입니다. IRS 안내에 따르면 개인은 보통 신고 시 낼 세금이 $1,000 이상일 것으로 예상되면 예상세 납부 대상이 될 수 있습니다(예외·세부 요건은 Form 1040-ES·Publication 505 확인). 급여만 있는 사람은 고용주에게 새 W-4로 원천징수를 늘려 예상세를 피하는 방법도 있습니다. 분기 마감을 놓치면 연말 환급이 나와도 부족 납부 가산금이 붙을 수 있습니다. Nonresident는 1040-ES(NR) 등 다른 양식을 쓸 수 있으니 지위를 먼저 확인하세요.",
+    requirements: [
+      "작년 신고서 또는 올해 예상 소득·공제 메모",
+      "SSN 또는 ITIN",
+      "납부용 은행 계좌 또는 카드",
+      "Resident / Nonresident 신고 지위 파악",
+    ],
+    steps: [
+      "올해 직장 외 소득(1099·사업)과 원천징수 예상액을 대략 적습니다.",
+      "IRS Estimated taxes·Form 1040-ES 안내로 본인이 납부 대상인지 확인합니다. 확신이 없으면 세무사에게 묻습니다.",
+      "1040-ES 워크시트로 분기 납부액을 계산하거나, 작년 세금의 안전한 비율 규칙을 Publication 505에서 확인합니다.",
+      "IRS Direct Pay·온라인 계정·앱 등으로 분기 마감 전에 납부하고 확인 번호를 저장합니다.",
+      "소득이 크게 변하면 다음 분기 금액을 다시 계산합니다.",
+      "연말 신고 때 이미 낸 예상세를 빠짐없이 반영합니다.",
+    ],
+    links: [
+      {
+        label: "IRS – Estimated taxes",
+        url: "https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes",
+      },
+      {
+        label: "IRS – Form 1040-ES",
+        url: "https://www.irs.gov/forms-pubs/about-form-1040-es",
+      },
+      {
+        label: "IRS – Pay online",
+        url: "https://www.irs.gov/payments",
+      },
+      {
+        label: "첫 미국 세금 신고",
+        url: "/guides/tax/file-taxes",
+      },
+      {
+        label: "스몰 비즈니스 시작·지원",
+        url: "/guides/job/small-business",
+      },
+    ],
+    faq: [
+      {
+        question: "W-2만 있어도 내야 하나요?",
+        answer:
+          "원천징수가 충분하면 보통 필요 없습니다. 급여에서 더 떼고 싶으면 W-4를 수정하세요.",
+      },
+      {
+        question: "분기마다 꼭 같은 금액을 내야 하나요?",
+        answer:
+          "소득이 들쭉날쭉하면 금액을 다시 계산할 수 있습니다. 마감까지 ‘충분히’ 내는 것이 중요합니다.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer,
+  },
+  {
+    slug: "state-taxes",
+    category: "tax",
+    title: "주세 (State tax) 기본",
+    summary:
+      "연방세와 별도로 내는 주 소득세·판매세 개념, 거주 주 신고 창구를 찾는 방법을 안내합니다.",
+    cost: "주마다 세율·수수료 다름 / 일부 주는 주 소득세 없음",
+    methods: ["주 세무국(Department of Revenue) 사이트", "연방 신고 후 주 신고"],
+    overview:
+      "미국은 연방(IRS) 세금과 주(State)·일부 지방 세금이 겹칩니다. 많은 주는 소득세(State income tax)를 따로 신고·납부하게 하고, 일부 주(예: 소득세가 없는 주)는 다릅니다. 판매세(Sales tax)는 쇼핑 때 붙는 경우가 많고, 사업자는 판매세 허가·납부가 필요할 수 있습니다. 이사를 하면 Part-year resident 규칙으로 두 주에 걸쳐 신고하는 경우도 있습니다. 연방 Free File·소프트웨어가 주 신고를 묶거나 따로 파는 경우가 있으니, 거주 주 공식 Department of Revenue / Taxation 사이트에서 ‘Individual income tax’를 검색하는 것이 안전합니다. ArriveUS는 주별 세율표 전체를 대신하지 않습니다.",
+    requirements: [
+      "거주·근무 주 이름 (이사 날짜)",
+      "연방 신고서 초안 또는 AGI 정보",
+      "주에서 발행한 W-2 주 정보·원천징수",
+    ],
+    steps: [
+      "거주 주(와 근무 주)를 확인하고, 주 소득세가 있는지 주 세무국 사이트에서 검색합니다.",
+      "연방 신고를 먼저 정리한 뒤, 같은 시즌에 주 신고가 필요한지 확인합니다.",
+      "주 소프트웨어·무료 파일·세무사 중 방법을 고르고, 주 환급 계좌를 등록합니다.",
+      "이사를 했으면 Part-year / nonresident 안내를 읽어 소득 배분을 확인합니다.",
+      "판매·서비스 사업이면 판매세 허가 필요 여부를 주·시에서 확인합니다(스몰 비즈니스 가이드).",
+    ],
+    links: [
+      {
+        label: "IRS – State government websites",
+        url: "https://www.irs.gov/businesses/small-businesses-self-employed/state-government-websites",
+      },
+      {
+        label: "첫 미국 세금 신고",
+        url: "/guides/tax/file-taxes",
+      },
+      {
+        label: "예상세 (Estimated tax)",
+        url: "/guides/tax/estimated-taxes",
+      },
+      {
+        label: "스몰 비즈니스 시작·지원",
+        url: "/guides/job/small-business",
+      },
+    ],
+    faq: [
+      {
+        question: "연방만 내면 끝나나요?",
+        answer:
+          "거주 주에 소득세가 있으면 보통 주 신고도 필요합니다. 주 세무국에서 확인하세요.",
+      },
+      {
+        question: "판매세도 매년 신고하나요?",
+        answer:
+          "소비자는 보통 결제 때 내고, 판매자는 허가·정기 납부가 필요할 수 있습니다.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer,
+  },
 ];

@@ -99,6 +99,32 @@ export const stateGuides: StateGuide[] = [
       "필기·도로시험과 Driver Handbook는 DMV 공식 사이트에서 확인합니다.",
       "차량 smog(배기가스) 검사 요건이 있는 지역이 있습니다.",
     ],
+    localNotes: [
+      {
+        name: "Los Angeles",
+        nameKo: "로스앤젤레스",
+        notes: [
+          "면허·ID의 법적 기준은 캘리포니아 DMV입니다. LA 시 거주자도 주 절차를 따릅니다.",
+          "LA·OC 한인 밀집 지역도 DMV 오피스 대기가 길 수 있어 온라인 예약·가능 업무를 먼저 확인하세요.",
+          "주차·단속·거주자 허가는 시·카운티 규정과 별개이니 LADOT 등 시 안내를 함께 보세요.",
+          "대중교통은 Metro (LA County) 안내를 참고할 수 있습니다.",
+        ],
+        links: [
+          {
+            label: "California DMV",
+            url: "https://www.dmv.ca.gov/",
+          },
+          {
+            label: "LADOT – Parking",
+            url: "https://ladot.lacity.gov/parking",
+          },
+          {
+            label: "LA Metro",
+            url: "https://www.metro.net/",
+          },
+        ],
+      },
+    ],
   },
   {
     code: "ny",
@@ -114,6 +140,32 @@ export const stateGuides: StateGuide[] = [
       "뉴욕시는 주차·톨게이트·교통 규칙이 까다로울 수 있어 시 안내도 함께 보세요.",
       "타주 면허 이전과 신규 발급 서류 목록이 다릅니다.",
       "Learner permit·도로시험 일정은 지역 오피스마다 다를 수 있습니다.",
+    ],
+    localNotes: [
+      {
+        name: "New York City",
+        nameKo: "뉴욕시",
+        notes: [
+          "면허·등록의 법적 기준은 뉴욕주 DMV입니다. 시 거주자도 주 절차를 따릅니다.",
+          "NYC는 주차·카메라·톨(Congestion pricing 등) 규칙이 복잡하니 NYC DOT·MTA 안내를 함께 확인하세요.",
+          "대중교통 중심이면 면허보다 MetroCard/OMNY·버스·지하철 정보가 더 급할 수 있습니다.",
+          "도로시험·오피스 예약은 거주 보로·근교 가능 여부를 DMV에서 확인하세요.",
+        ],
+        links: [
+          {
+            label: "New York DMV",
+            url: "https://dmv.ny.gov/",
+          },
+          {
+            label: "NYC DOT",
+            url: "https://www.nyc.gov/html/dot/",
+          },
+          {
+            label: "MTA",
+            url: "https://new.mta.info/",
+          },
+        ],
+      },
     ],
   },
   {

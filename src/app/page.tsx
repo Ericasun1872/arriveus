@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { CategoryGrid } from "@/components/CategoryGrid";
 import { HeroSlideshow } from "@/components/HeroSlideshow";
-import { dailyTip } from "@/content/tips";
 import { heroSlides } from "@/content/hero-slides";
+import { startPaths } from "@/content/start-paths";
+import { getDailyTip } from "@/content/tips";
 import { getCategories, getCategory, getNewGuides } from "@/lib/guides";
 
 export default function HomePage() {
   const categories = getCategories();
   const newGuides = getNewGuides();
+  const dailyTip = getDailyTip();
 
   return (
     <div>
@@ -36,33 +38,59 @@ export default function HomePage() {
               className="animate-rise max-w-xl text-[0.95rem] leading-relaxed text-white/92 sm:text-base"
               style={{ animationDelay: "140ms" }}
             >
-              DMV부터 은행, 의료, 세금, 이민국, 취업, 주거까지 — 한국인 기준으로
-              정리한 단계별 가이드입니다.
+              DMV부터 은행, 의료, 생활(첫 주), 세금, 이민국, 취업, 주거까지 —
+              한국인 기준으로 정리한 단계별 가이드입니다.
             </p>
             <div
               className="animate-rise mt-3 flex flex-wrap gap-3"
               style={{ animationDelay: "200ms" }}
             >
-              <a
-                href="#categories"
+              <Link
+                href="/search"
                 className="inline-flex items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-[var(--brand)] transition hover:bg-white/90"
               >
-                가이드 보기
-              </a>
+                검색·상황별 시작
+              </Link>
               <Link
-                href="/guides/dmv/license-renewal"
+                href="/guides/life/first-week"
                 className="inline-flex items-center justify-center rounded-lg border border-white/40 bg-white/12 px-5 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
               >
-                면허 갱신부터 시작
+                도착 첫 7일부터
               </Link>
             </div>
           </div>
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-14">
+        <div className="mb-6">
+          <h2 className="font-[family-name:var(--font-display)] text-2xl font-semibold text-[var(--ink)]">
+            상황별 시작
+          </h2>
+          <p className="mt-1 text-sm text-[var(--muted)]">
+            지금 처한 상황에 맞는 입구를 고르세요.
+          </p>
+        </div>
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {startPaths.map((path) => (
+            <li key={path.slug}>
+              <Link
+                href={path.href}
+                className="block h-full border-b border-[var(--border)] pb-4 transition hover:border-[var(--brand-border)] sm:border-b-0 sm:border-l sm:pb-0 sm:pl-5"
+              >
+                <span className="font-semibold text-[var(--ink)]">{path.title}</span>
+                <span className="mt-1 block text-sm leading-relaxed text-[var(--muted)]">
+                  {path.description}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       <section
         id="categories"
-        className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16"
+        className="mx-auto max-w-6xl px-4 pb-12 sm:px-6 sm:pb-16"
       >
         <div className="mb-6 flex items-end justify-between gap-4">
           <div>
@@ -73,6 +101,12 @@ export default function HomePage() {
               필요한 주제를 골라 절차와 공식 링크를 확인하세요.
             </p>
           </div>
+          <Link
+            href="/search"
+            className="shrink-0 text-sm font-semibold text-[var(--brand)] hover:underline"
+          >
+            검색 →
+          </Link>
         </div>
         <CategoryGrid categories={categories} />
       </section>
@@ -136,7 +170,10 @@ export default function HomePage() {
                 {dailyTip.linkLabel}
               </Link>
             </div>
-            <div className="relative min-h-40 bg-[linear-gradient(160deg,#163f7d,#2f6fbd)] p-6 text-white md:min-h-full">
+            <Link
+              href="/guides/housing/rental-scams"
+              className="relative min-h-40 bg-[linear-gradient(160deg,#163f7d,#2f6fbd)] p-6 text-white transition hover:opacity-95 md:min-h-full"
+            >
               <p className="font-[family-name:var(--font-display)] text-sm font-medium text-white/80">
                 Featured
               </p>
@@ -146,7 +183,10 @@ export default function HomePage() {
               <p className="mt-2 text-sm text-white/80">
                 투어 전 송금 요구는 한 번 더 확인
               </p>
-            </div>
+              <span className="mt-4 inline-flex text-sm font-semibold text-white">
+                가이드 보기 →
+              </span>
+            </Link>
           </div>
         </div>
       </section>

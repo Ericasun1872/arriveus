@@ -26,6 +26,8 @@ export function CategoryIcon({
       return <HousingIcon className={className} />;
     case "immigration":
       return <ImmigrationIcon className={className} />;
+    case "life":
+      return <LifeIcon className={className} />;
   }
 }
 
@@ -137,6 +139,25 @@ function ImmigrationIcon({ className }: IconProps) {
         strokeWidth="1.6"
         strokeLinecap="round"
         strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function LifeIcon({ className }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden>
+      <path
+        d="M7 4.5h10A1.5 1.5 0 0 1 18.5 6v13a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 19V6A1.5 1.5 0 0 1 7 4.5Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9 9.5h6M9 13h6M9 16.5h4"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
       />
     </svg>
   );

@@ -27,7 +27,7 @@ export function Header() {
               <Link
                 key={category.slug}
                 href={href}
-                className={`rounded-md px-2.5 py-2 text-sm transition-colors ${
+                className={`rounded-md px-2 py-2 text-[13px] transition-colors ${
                   active
                     ? "bg-[var(--brand-soft)] font-medium text-[var(--brand)]"
                     : "text-[var(--muted)] hover:bg-[var(--surface-muted)] hover:text-[var(--ink)]"
@@ -38,8 +38,18 @@ export function Header() {
             );
           })}
           <Link
+            href="/search"
+            className={`rounded-md px-2 py-2 text-[13px] transition-colors ${
+              pathname === "/search"
+                ? "bg-[var(--brand-soft)] font-medium text-[var(--brand)]"
+                : "text-[var(--muted)] hover:bg-[var(--surface-muted)] hover:text-[var(--ink)]"
+            }`}
+          >
+            검색
+          </Link>
+          <Link
             href="/saved"
-            className={`rounded-md px-2.5 py-2 text-sm transition-colors ${
+            className={`rounded-md px-2 py-2 text-[13px] transition-colors ${
               pathname === "/saved"
                 ? "bg-[var(--brand-soft)] font-medium text-[var(--brand)]"
                 : "text-[var(--muted)] hover:bg-[var(--surface-muted)] hover:text-[var(--ink)]"
@@ -83,6 +93,15 @@ export function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/search"
+                className="block rounded-md bg-[var(--surface-muted)] px-3 py-2.5 text-sm font-medium text-[var(--ink)]"
+                onClick={() => setOpen(false)}
+              >
+                검색
+              </Link>
+            </li>
             <li>
               <Link
                 href="/saved"

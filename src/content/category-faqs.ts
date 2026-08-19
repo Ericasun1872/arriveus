@@ -2,6 +2,28 @@ import type { FaqItem } from "./types";
 
 /** 카테고리 목록 페이지에 보이는 섹션별 FAQ */
 export const categoryFaqs: Record<string, FaqItem[]> = {
+  life: [
+    {
+      question: "미국에 막 도착했는데 무엇부터 하나요?",
+      answer:
+        "미국 전화번호와 잠자리·비상 연락처를 먼저 확보하세요. ArriveUS ‘도착 첫 7일 체크리스트’에서 은행·보험·학교·응급 순서를 이어서 볼 수 있습니다.",
+    },
+    {
+      question: "SSN 전에 휴대폰을 개통할 수 있나요?",
+      answer:
+        "prepaid SIM·eSIM은 여권만으로 가능한 경우가 많습니다. 월정액·할부는 통신사 정책을 확인하세요.",
+    },
+    {
+      question: "공공 혜택은 누구나 받나요?",
+      answer:
+        "아닙니다. 소득·가구·체류 자격·주 규칙에 따라 다릅니다. USA.gov Benefit finder와 주 공식 신청 창구를 이용하고, 선입금 대행은 피하세요.",
+    },
+    {
+      question: "영어를 못해도 911을 쳐야 하나요?",
+      answer:
+        "생명이 위급하면 바로 911에 연락하세요. 주소와 상황을 짧게 말하고 통역을 요청할 수 있습니다.",
+    },
+  ],
   dmv: [
     {
       question: "주마다 DMV 절차가 다른가요?",
@@ -82,7 +104,12 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
     {
       question: "주 소득세가 없는 주도 있나요?",
       answer:
-        "네. 워싱턴 등 일부 주는 주 소득세가 없습니다. 그래도 Federal 신고는 별개이며, 다른 주에서 소득이 있으면 해당 주 규정도 봐야 합니다.",
+        "네. 워싱턴 등 일부 주는 주 소득세가 없습니다. 그래도 Federal 신고는 별개이며, 다른 주에서 소득이 있으면 해당 주 규정도 봐야 합니다. ‘주세 기본’ 가이드도 참고하세요.",
+    },
+    {
+      question: "프리랜서인데 분기마다 세금을 내야 하나요?",
+      answer:
+        "원천징수가 거의 없으면 Estimated tax(예상세) 대상이 될 수 있습니다. ArriveUS 예상세 가이드와 IRS 1040-ES 안내를 확인하세요.",
     },
   ],
   immigration: [
@@ -101,6 +128,11 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       answer:
         "Receipt Number로 Case Status Online 또는 myUSCIS 계정에서 확인합니다. 이사를 하면 USCIS 주소 변경도 함께 하세요.",
     },
+    {
+      question: "EAD가 곧 만료됩니다.",
+      answer:
+        "USCIS는 만료 180일 전 갱신(I-765) 신청을 권장합니다. ArriveUS ‘EAD 갱신’ 가이드와 공식 자동연장 공지를 확인하세요.",
+    },
   ],
   job: [
     {
@@ -112,6 +144,11 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       question: "스몰 비즈니스는 어디서 도움을 받나요?",
       answer:
         "SBA Local assistance로 SBDC·SCORE 등 무료·저비용 상담을 찾을 수 있습니다. ‘지원금 대행비’를 먼저 받는 업체보다 공식 창구와 ArriveUS 스몰 비즈니스 가이드를 우선하세요.",
+    },
+    {
+      question: "어르신 돌봄·홈케어 일은 어디서 찾나요?",
+      answer:
+        "한인 소개와 Home care 에이전시 지원이 흔합니다. 온라인은 CareerOneStop·Indeed 등에 caregiver / home health aide로 검색하세요. ArriveUS ‘어르신 홈케어·돌봄 일자리’ 가이드에 신청 순서와 링크가 있습니다.",
     },
     {
       question: "미국 이력서에 사진을 넣나요?",

@@ -2,6 +2,14 @@ import type { Category } from "./types";
 
 export const categories: Category[] = [
   {
+    slug: "life",
+    name: "생활",
+    nameEn: "Daily life",
+    description: "전화번호, 학교·자녀, ESL, 혜택, 응급, 커뮤니티",
+    accent: "#2F6B4F",
+    icon: "life",
+  },
+  {
     slug: "dmv",
     name: "DMV",
     nameEn: "Driver & Vehicle",
@@ -29,7 +37,7 @@ export const categories: Category[] = [
     slug: "tax",
     name: "세금",
     nameEn: "Taxes",
-    description: "세금 신고, DIY, SSN·ITIN",
+    description: "세금 신고, 예상세, 주세, SSN·ITIN",
     accent: "#8A5A12",
     icon: "tax",
   },
@@ -37,7 +45,7 @@ export const categories: Category[] = [
     slug: "immigration",
     name: "이민국",
     nameEn: "USCIS",
-    description: "계정·케이스, 양식, 취업 이민, 귀화",
+    description: "계정·케이스, EAD, 가족·취업 이민, 학생·OPT, 귀화",
     accent: "#5C4A2E",
     icon: "immigration",
   },
@@ -45,7 +53,7 @@ export const categories: Category[] = [
     slug: "job",
     name: "취업",
     nameEn: "Jobs",
-    description: "현장 취업(식당·네일·창고·돌봄), 스몰 비즈니스, 이력서",
+    description: "현장 취업, 홈케어·돌봄, 스몰 비즈니스, 이력서",
     accent: "#3D3A8C",
     icon: "job",
   },

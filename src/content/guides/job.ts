@@ -165,6 +165,10 @@ export const jobGuides: Guide[] = [
         url: "https://www.worker.gov/",
       },
       {
+        label: "어르신 홈케어·돌봄 일자리",
+        url: "/guides/job/home-care",
+      },
+      {
         label: "스몰 비즈니스 시작·지원",
         url: "/guides/job/small-business",
       },
@@ -199,7 +203,7 @@ export const jobGuides: Guide[] = [
       {
         question: "돌봄(케어)은 뭐가 다른가요?",
         answer:
-          "동행·가사·장보기와 의료 돌봄은 다릅니다. 약 투여·의료 처치는 자격 범위를 넘기 쉽습니다. 업무 범위·시급·교통비를 서면으로 남기세요.",
+          "동행·가사와 의료 돌봄(HHA/CNA)은 다릅니다. 자세한 신청·온라인 구인은 ‘어르신 홈케어·돌봄 일자리’ 가이드를 보세요.",
       },
       {
         question: "신분이 불안정해도 이 가이드를 보면 되나요?",
@@ -210,6 +214,97 @@ export const jobGuides: Guide[] = [
     updatedAt: "2026-08",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 법률·취업 알선·이민 자문이 아닙니다. 합법 근로 자격은 본인 비자·EAD·시민권·영주권 등 공식 서류를 기준으로 확인하세요. 네일·돌봄 등 면허가 필요한 업종은 주 규정을 확인하세요. 불법 취업·가짜 서류·보증금 소개는 이용하지 마세요. 임금·안전 문제는 Worker.gov 등 공식 안내와 필요 시 변호사·근로 상담 창구를 이용하세요.",
+  },
+  {
+    slug: "home-care",
+    category: "job",
+    title: "어르신 홈케어·돌봄 일자리",
+    summary:
+      "나이 드신 분을 돌보는 Companion care·Home care·HHA 일자리 구하는 법, 에이전시 지원, 온라인 공고 검색과 신청 시 챙길 서류를 정리했습니다.",
+    cost: "시급제·시간제가 흔함 / 에이전시·개인 고용·라이브인(동거 돌봄)에 따라 시급·교통비·숙식 조건이 다름",
+    methods: [
+      "한인 소개·교회·카톡 (개인 돌봄)",
+      "Home care / Home health 에이전시 지원",
+      "CareerOneStop·Indeed 등 온라인 검색",
+      "HHA·CNA 교육 후 레지스트리 등록 (주마다)",
+    ],
+    overview:
+      "미국에 오신 분들 중에는 식당·청소와 함께 ‘어르신 돌봄(Home care / Caregiver)’으로 시작하는 경우도 많습니다. 크게 두 갈래입니다. (1) Non-medical / Companion / Personal care—동행, 말벗, 간단한 식사·장보기·가사, 병원 동행. 약 투여·주사·상처 치료는 보통 하지 않습니다. (2) Home Health Aide(HHA)·CNA 등—면허·교육·백그라운드 체크 후 Home health agency에서 Medicare/Medicaid 케이스를 맡는 경우가 많습니다. 한인 커뮤니티에서는 (1)이 소개로 빨리 잡히고, (2)는 교육비·시간이 들지만 페이롤·스케줄이 비교적 명확한 편입니다. 온라인으로는 CareerOneStop에서 Home Health Aide / Personal Care Aide 직업 정보와 지역 공고를 볼 수 있고, Indeed·에이전시 채용 페이지에 ‘caregiver’, ‘home health aide’, ‘PCA’, ‘HHA’, ‘companion care’로 검색하는 방법이 흔합니다. 지원 전에는 업무 범위(약·리프팅·야간·라이브인), 시급·교통비·오버타임, I-9·배경조사·TB검사·CPR 필요 여부를 확인하세요. ‘교육비 선입금만 내면 바로 배정’, ‘서류 없이 고수익’ 광고는 경계합니다. 혼자 손님을 받는 개인 홈케어는 스몰 비즈니스·세금·보험 이슈가 따로 생깁니다.",
+    requirements: [
+      "합법 근로 가능 여부 (I-9용 서류)",
+      "가능한 요일·시간·이동 수단 (차·대중교통)",
+      "영어·한국어로 가능한 업무 범위 메모 (동행만 / 목욕 도움 / 약 아님 등)",
+      "이력서 또는 간단 경력(돌봄·가사·병원 동행 경험)",
+      "배경조사·TB·CPR·HHA/CNA 증명 (에이전시가 요구할 때)",
+    ],
+    steps: [
+      "원하는 유형을 고릅니다. 개인 소개 돌봄 vs 에이전시 HHA/PCA. 약·의료 행위가 필요하면 교육·자격 경로를 먼저 확인합니다.",
+      "한인 네트워크·교회·카톡방에 ‘어르신 돌봄 구인’을 묻고, 조건(시급·시간·업무·교통)을 메모합니다.",
+      "온라인에서는 CareerOneStop Find Jobs에 Home Health Aide / Caregiver를 넣고 거주 도시를 검색하거나, 지역 Home care agency 채용·Indeed 등에서 같은 키워드로 지원합니다.",
+      "에이전시에 지원하면 보통 신청서·면접·I-9·배경조사·(필요 시) TB·약물검사·오리엔테이션 순입니다. 교육비를 먼저 크게 요구하면 조건을 다시 확인하세요.",
+      "첫 배정 전에 Care plan·할 일/하지 말 일(약 투여 금지 등)·응급 연락처·시급·주당 시간을 서면 또는 문자로 남깁니다.",
+      "근무 시간과 받은 금액을 기록합니다. 임금이 늦거나 깎이면 Worker.gov 안내를 참고합니다.",
+      "개인으로 손님을 받기 시작하면 스몰 비즈니스 가이드에서 EIN·장부·보험을 확인합니다.",
+    ],
+    links: [
+      {
+        label: "CareerOneStop – Home Health Aide 직업 정보",
+        url: "https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Home+Health+Aides&onetcode=31112100",
+      },
+      {
+        label: "CareerOneStop – Personal Care Aide 직업 정보",
+        url: "https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Personal+Care+Aides&onetcode=31112200",
+      },
+      {
+        label: "CareerOneStop – Find Jobs (Home Health Aide)",
+        url: "https://www.careeronestop.org/Toolkit/Jobs/find-jobs.aspx?keyword=Home%20Health%20Aide&location=",
+      },
+      {
+        label: "USA.gov – Jobs",
+        url: "https://www.usa.gov/jobs",
+      },
+      {
+        label: "Worker.gov – 근로자 권리",
+        url: "https://www.worker.gov/",
+      },
+      {
+        label: "식당·네일·창고·돌봄·청소 취업",
+        url: "/guides/job/everyday-jobs",
+      },
+      {
+        label: "스몰 비즈니스 시작·지원",
+        url: "/guides/job/small-business",
+      },
+      {
+        label: "ArriveUS 채용 공고",
+        url: "/jobs",
+      },
+    ],
+    faq: [
+      {
+        question: "자격증 없이 돌봄을 할 수 있나요?",
+        answer:
+          "개인 가정의 비의료 Companion care는 소개로 시작하는 경우가 있습니다. 다만 Home health agency·Medicare/Medicaid 케이스는 HHA/CNA 등 교육·등록이 필요한 주·고용주가 많습니다. 업무에 약이 포함되면 거절하거나 자격을 확인하세요.",
+      },
+      {
+        question: "온라인에서 어디서 찾나요?",
+        answer:
+          "CareerOneStop Find Jobs, 지역 Home care agency 채용 페이지, Indeed 등에 caregiver / home health aide / PCA로 검색하세요. 거주 도시·ZIP을 넣으면 결과가 달라집니다.",
+      },
+      {
+        question: "에이전시 지원에 뭐가 필요하나요?",
+        answer:
+          "신분증·근로 자격 서류, 신청서, 면접, 배경조사, 때로 TB·CPR·운전면허·보험이 필요합니다. 오리엔테이션 후 스케줄이 배정되는 경우가 많습니다.",
+      },
+      {
+        question: "라이브인(집에서 함께 지내며 돌봄)은요?",
+        answer:
+          "숙식 제공·장시간 대기가 섞여 시급 계산이 복잡해질 수 있습니다. 근무/휴식 시간·시급·오버타임을 미리 적고, 불명확하면 시작하지 않는 편이 낫습니다.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·취업 알선·의료·이민 자문이 아닙니다. HHA/CNA 요건과 허용 업무는 주·고용주마다 다르므로 주 보건당국·에이전시에서 최종 확인하세요. 불법 취업·가짜 서류·선입금 사기 소개는 이용하지 마세요.",
   },
   {
     slug: "small-business",
@@ -266,6 +361,10 @@ export const jobGuides: Guide[] = [
       {
         label: "식당·네일·창고·돌봄·청소 취업",
         url: "/guides/job/everyday-jobs",
+      },
+      {
+        label: "어르신 홈케어·돌봄 일자리",
+        url: "/guides/job/home-care",
       },
     ],
     faq: [

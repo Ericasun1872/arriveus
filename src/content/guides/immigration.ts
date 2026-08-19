@@ -316,4 +316,189 @@ export const immigrationGuides: Guide[] = [
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 이민·법률·채용 알선 자문이 아닙니다. 특정 회사·공장·에이전시를 추천하거나 영주권 승인을 보장하지 않습니다. 자격·수수료·대기·전략은 수시로 바뀌므로 USCIS·DOL·국무부 공식 안내와 자격 있는 이민 변호사·Accredited Representative를 확인하세요.",
   },
+  {
+    slug: "ead-renewal",
+    category: "immigration",
+    title: "EAD(취업허가증) 갱신",
+    summary:
+      "Form I-765로 Employment Authorization Document를 갱신·재발급할 때 시기, 자동연장 확인, 분실·오류 대처의 공식 출발점입니다.",
+    cost: "I-765 수수료는 카테고리·면제 여부에 따라 다름 (USCIS 수수료표 확인)",
+    methods: ["Form I-765 갱신 신청", "myUSCIS", "자동연장 안내 확인"],
+    overview:
+      "EAD(Employment Authorization Document, Form I-766)는 특정 신분·상황에서 미국 내 근로 허가·증빙으로 쓰입니다. 영주권 카드나 H-1B처럼 ‘신분 자체로’ 특정 고용주 근로가 되는 경우와 다릅니다. 만료가 다가오면 보통 새 I-765를 제출해 갱신합니다. USCIS는 만료 180일 전부터 갱신 신청을 권장해, 공백을 줄이라고 안내합니다. 일부 카테고리는 자동연장(Automatic extension) 규칙이 있을 수 있으나 대상·기간이 바뀌므로 반드시 최신 USCIS EAD·I-765 안내를 확인하세요. 분실·도난·USCIS 오류 카드는 재발급·정정 절차가 다릅니다. ArriveUS는 개별 카테고리 자격 판정을 하지 않습니다.",
+    requirements: [
+      "현재 EAD 카드·만료일",
+      "I-765 자격 카테고리(예: 대기 중 신분조정, 학생 OPT 등) 파악",
+      "여권·이전 승인 서류·사진 등 양식 지시서 목록",
+      "myUSCIS 계정 (온라인 제출 시)",
+    ],
+    steps: [
+      "EAD 만료일을 확인하고, USCIS 안내에 따라 가능하면 180일 안에 갱신 준비를 시작합니다.",
+      "Form I-765 지시서에서 본인 카테고리·수수료·증거 서류를 확인합니다.",
+      "myUSCIS 또는 우편 접수 안내대로 신청하고 Receipt Number를 저장합니다.",
+      "자동연장 대상인지 USCIS ‘Automatic EAD Extension’ 최신 공지를 확인한 뒤, 고용주 I-9에 필요한 증빙을 준비합니다.",
+      "카드를 못 받았거나 분실·오류면 USCIS Non-delivery / Replacement 안내를 따릅니다.",
+      "만료 전 공백이 우려되면 고용주·변호사와 일정을 공유하고, 케이스 지연 시 Processing times를 확인합니다.",
+    ],
+    links: [
+      {
+        label: "USCIS – Employment Authorization Document",
+        url: "https://www.uscis.gov/green-card/green-card-processes-and-procedures/employment-authorization-document",
+      },
+      {
+        label: "USCIS – Form I-765",
+        url: "https://www.uscis.gov/i-765",
+      },
+      {
+        label: "USCIS – Avoid scams",
+        url: "https://www.uscis.gov/avoid-scams",
+      },
+      {
+        label: "USCIS 계정·케이스 조회",
+        url: "/guides/immigration/uscis-account",
+      },
+      {
+        label: "입사 근로 서류 (I-9)",
+        url: "/guides/job/work-documents",
+      },
+    ],
+    faq: [
+      {
+        question: "만료 후에 신청해도 되나요?",
+        answer:
+          "가능한 경우도 있으나 근로 공백·I-9 문제가 생길 수 있습니다. USCIS는 만료 180일 전 신청을 권장합니다.",
+      },
+      {
+        question: "영주권자도 EAD가 필요하나요?",
+        answer:
+          "일반적으로 영주권 카드가 근로 허가 증빙입니다. EAD가 필요한 상황은 카테고리마다 다릅니다.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer,
+  },
+  {
+    slug: "family-green-card",
+    category: "immigration",
+    title: "가족 초청 영주권 개요",
+    summary:
+      "시민·영주권자 가족이 스폰서하는 영주권의 큰 흐름(청원·대기·신분조정/영사 수속)과 사기 주의만 정리한 입문 가이드입니다.",
+    cost: "양식 수수료·의료검사·변호사비는 케이스마다 다름",
+    methods: [
+      "가족 청원 (예: I-130)",
+      "Visa Bulletin 대기",
+      "I-485 또는 영사관 이민 비자",
+    ],
+    overview:
+      "가족 기반 영주권은 미국 시민 또는 영주권자가 자격 있는 가족을 위해 청원(흔히 Form I-130)을 넣는 구조가 일반적입니다. 배우자·미성년 자녀·부모 등 ‘즉시 친족(Immediate relative)’과, 성인 자녀·형제처럼 대기(Preference)가 있는 카테고리가 나뉩니다. 승인 후에도 Visa Bulletin 대기, 의료검사, 인터뷰, 미국 내 신분조정(I-485) 또는 해외 영사 수속이 이어질 수 있습니다. ‘결혼만 하면 바로 카드’, ‘서류 대행 보증’ 광고는 사기·형사 위험이 큽니다. 이 글은 용어와 순서만 잡는 개요이며, 자격·동시 제출·근로 허가(EAD)·여행 허가는 변호사·USCIS 공식 안내로 확인하세요.",
+    requirements: [
+      "스폰서의 시민권·영주권 증빙과 관계 증명(혼인·출생 등)",
+      "초청·피초청자 여권·입국·체류 기록",
+      "재정 보증(예: I-864) 가능 여부 검토",
+      "사기·허위 결혼이 아님을 보여줄 실제 관계 증거 (해당 시)",
+    ],
+    steps: [
+      "가족 관계가 어느 카테고리(즉시 친족 vs 대기)인지 USCIS Family 안내로 확인합니다.",
+      "스폰서가 I-130 등 청원 자격·증거 목록을 공식 지시서에서 확인합니다.",
+      "접수 후 Receipt·바이오·추가서류(RFE)를 myUSCIS로 관리합니다.",
+      "대기 카테고리면 Visa Bulletin을 주기적으로 보고, 날짜가 열리면 다음 단계(I-485 또는 영사)를 준비합니다.",
+      "인터뷰·의료검사·재정 보증 서류를 기한에 맞춰 준비하고, 허위 서류·위장 결혼 요구는 거절합니다.",
+      "승인 후 카드 수령·SSN·주소 변경을 정리합니다.",
+    ],
+    links: [
+      {
+        label: "USCIS – Green Card through family",
+        url: "https://www.uscis.gov/green-card/green-card-eligibility/green-card-through-family",
+      },
+      {
+        label: "USCIS – Form I-130",
+        url: "https://www.uscis.gov/i-130",
+      },
+      {
+        label: "Department of State – Visa Bulletin",
+        url: "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
+      },
+      {
+        label: "USCIS – Avoid scams",
+        url: "https://www.uscis.gov/avoid-scams",
+      },
+      {
+        label: "자주 쓰는 USCIS 양식 지도",
+        url: "/guides/immigration/common-forms",
+      },
+      {
+        label: "EAD 갱신",
+        url: "/guides/immigration/ead-renewal",
+      },
+    ],
+    faq: [
+      {
+        question: "시민 배우자는 대기가 없나요?",
+        answer:
+          "즉시 친족에 해당하는 경우가 많아 대기 카테고리와 다릅니다. 그래도 서류·인터뷰·처리 기간은 필요합니다. 최신은 USCIS를 확인하세요.",
+      },
+      {
+        question: "영주권자가 형제를 바로 초청할 수 있나요?",
+        answer:
+          "형제 초청은 보통 시민만 가능한 구조입니다. 관계·카테고리는 USCIS Family 안내를 보세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer,
+  },
+  {
+    slug: "f1-opt",
+    category: "immigration",
+    title: "학생(F-1)·OPT 개요",
+    summary:
+      "F-1 유지, CPT/OPT 개념, SEVP·학교 DSO 창구를 찾는 입문 안내입니다. 개별 승인 전략은 학교·변호사와 확인하세요.",
+    cost: "I-765 등 수수료·SEVIS 관련 비용은 시점마다 다름",
+    methods: ["학교 DSO / SEVP", "OPT I-765", "USCIS·Study in the States"],
+    overview:
+      "F-1은 학업을 위한 학생 신분으로, 등록·출석·학교 기록(SEVIS) 유지가 핵심입니다. 현장실습 CPT, 졸업 후 실무훈련 OPT 등은 학교 국제학생 담당(DSO) 승인·SEVIS 업데이트와 USCIS 신청이 겹치는 경우가 많습니다. ‘OPT만 내면 취업·영주권 보장’은 사실이 아닙니다. STEM OPT 연장 등 세부 규칙은 바뀌므로 Study in the States·학교 안내를 우선하세요. ArriveUS는 입학 알선·불법 근로를 안내하지 않습니다.",
+    requirements: [
+      "유효 I-20·여권·I-94",
+      "학교 DSO 연락처",
+      "OPT 신청 시 졸업·전공·고용 계획 정보",
+    ],
+    steps: [
+      "입학·전학·휴학 전 반드시 학교 DSO에게 신분 유지 요건을 확인합니다.",
+      "교내·CPT·OPT 근로가 필요한지 DSO와 먼저 상의하고, 허가 없이 일하지 않습니다.",
+      "OPT를 진행하면 학교 추천·SEVIS 업데이트 후 I-765 등 USCIS 절차를 따릅니다.",
+      "EAD 카드·만료·실업 제한 일수를 Study in the States·학교 안내로 확인합니다.",
+      "신분 변경·여행·졸업 후 계획은 미리 DSO·변호사와 상담하고, 카톡 소문보다 공식 문서에 의존합니다.",
+    ],
+    links: [
+      {
+        label: "Study in the States (SEVP)",
+        url: "https://studyinthestates.dhs.gov/",
+      },
+      {
+        label: "USCIS – Students and Employment",
+        url: "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/students-and-employment",
+      },
+      {
+        label: "USCIS – Form I-765",
+        url: "https://www.uscis.gov/i-765",
+      },
+      {
+        label: "EAD 갱신",
+        url: "/guides/immigration/ead-renewal",
+      },
+    ],
+    faq: [
+      {
+        question: "OPT 중 실업하면 어떻게 되나요?",
+        answer:
+          "실업으로 계산되는 일수 제한이 있을 수 있습니다. 최신 규칙은 DSO·Study in the States에서 확인하세요.",
+      },
+      {
+        question: "학교에서 알아서 해 주나요?",
+        answer:
+          "DSO가 SEVIS·추천을 도우나, USCIS 신청·수수료·기한은 본인 책임이 큽니다.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer,
+  },
 ];

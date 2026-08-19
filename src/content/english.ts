@@ -1,6 +1,116 @@
 import type { EnglishPhrase } from "./types";
 
 export const englishByGuide: Record<string, EnglishPhrase[]> = {
+  "life/first-week": [
+    {
+      ko: "미국에 막 도착해서 무엇을 먼저 해야 하는지 알고 싶습니다.",
+      en: "I just arrived in the U.S. What should I do first?",
+    },
+    {
+      ko: "미국 전화번호와 임시 주소가 필요합니다.",
+      en: "I need a U.S. phone number and a temporary address.",
+    },
+    {
+      ko: "은행 계좌와 건강보험을 어디서 시작하나요?",
+      en: "Where should I start for a bank account and health insurance?",
+    },
+  ],
+  "life/phone-sim": [
+    {
+      ko: "선불 유심(또는 eSIM)을 사고 싶습니다.",
+      en: "I would like to buy a prepaid SIM card or eSIM.",
+    },
+    {
+      ko: "여권만으로 개통할 수 있나요?",
+      en: "Can I activate service with my passport only?",
+    },
+    {
+      ko: "이 요금제에 데이터와 통화가 얼마나 포함되나요?",
+      en: "How much data and talk time is included in this plan?",
+    },
+    {
+      ko: "Lifeline 할인 자격이 되는지 알고 싶습니다.",
+      en: "I would like to know if I qualify for the Lifeline discount.",
+    },
+  ],
+  "life/school-kids": [
+    {
+      ko: "자녀를 공립학교에 등록하고 싶습니다.",
+      en: "I want to enroll my child in public school.",
+    },
+    {
+      ko: "등록에 필요한 서류 목록을 알려 주세요.",
+      en: "Please tell me what documents I need for enrollment.",
+    },
+    {
+      ko: "영어가 익숙하지 않은 학생을 위한 ESL 지원이 있나요?",
+      en: "Do you have ESL support for students who are not fluent in English?",
+    },
+    {
+      ko: "보육(daycare) 추천이나 보육비 지원을 문의하고 싶습니다.",
+      en: "I would like information about daycare and help paying for child care.",
+    },
+  ],
+  "life/esl-english": [
+    {
+      ko: "성인 ESL 수업 시간을 알려 주세요.",
+      en: "What are the adult ESL class times?",
+    },
+    {
+      ko: "초급 영어 수업이 있나요?",
+      en: "Do you have beginner English classes?",
+    },
+    {
+      ko: "도서관에서 영어 공부 자료를 빌리고 싶습니다.",
+      en: "I would like to borrow English learning materials from the library.",
+    },
+  ],
+  "life/public-benefits": [
+    {
+      ko: "SNAP(푸드스탬프) 신청 방법을 알고 싶습니다.",
+      en: "I would like to know how to apply for SNAP benefits.",
+    },
+    {
+      ko: "WIC 자격이 되는지 확인하고 싶습니다.",
+      en: "I want to check if I qualify for WIC.",
+    },
+    {
+      ko: "실업 급여 신청은 어디서 하나요?",
+      en: "Where do I apply for unemployment benefits?",
+    },
+  ],
+  "life/emergency-911": [
+    {
+      ko: "응급입니다. 도움이 필요합니다.",
+      en: "This is an emergency. I need help.",
+    },
+    {
+      ko: "제 주소는 다음과 같습니다.",
+      en: "My address is...",
+    },
+    {
+      ko: "한국어 통역을 요청합니다.",
+      en: "I need a Korean interpreter, please.",
+    },
+    {
+      ko: "급하지 않은 일인데 경찰에 신고하려면 어느 번호로 전화하나요?",
+      en: "What is the non-emergency police number?",
+    },
+  ],
+  "life/korean-community": [
+    {
+      ko: "관할 한국 영사관 연락처를 찾고 있습니다.",
+      en: "I am looking for contact information for the Korean consulate that covers my area.",
+    },
+    {
+      ko: "여권 갱신 예약을 하고 싶습니다.",
+      en: "I would like to make an appointment to renew my passport.",
+    },
+    {
+      ko: "근처 한인 커뮤니티나 도서관 프로그램을 알고 싶습니다.",
+      en: "I would like information about nearby Korean community groups or library programs.",
+    },
+  ],
   "dmv/learner-permit": [
     {
       ko: "Learner’s Permit를 신청하고 싶습니다.",
@@ -565,6 +675,26 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Can I use an ITIN for employment authorization?",
     },
   ],
+  "tax/estimated-taxes": [
+    {
+      ko: "올해 예상세를 얼마 내야 하는지 알고 싶습니다.",
+      en: "I would like to know how much estimated tax I should pay this year.",
+    },
+    {
+      ko: "분기 예상세를 온라인으로 납부하고 싶습니다.",
+      en: "I want to pay my quarterly estimated taxes online.",
+    },
+  ],
+  "tax/state-taxes": [
+    {
+      ko: "이 주에 소득세 신고가 필요한가요?",
+      en: "Do I need to file a state income tax return in this state?",
+    },
+    {
+      ko: "주 세무국 웹사이트를 알려 주세요.",
+      en: "Can you point me to the state tax agency website?",
+    },
+  ],
   "immigration/uscis-account": [
     {
       ko: "myUSCIS 계정을 만들고 싶습니다.",
@@ -639,6 +769,36 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I would like to consult an immigration attorney.",
     },
   ],
+  "immigration/ead-renewal": [
+    {
+      ko: "EAD 갱신 신청을 하고 싶습니다.",
+      en: "I would like to renew my Employment Authorization Document.",
+    },
+    {
+      ko: "제 EAD는 곧 만료됩니다. 언제 갱신해야 하나요?",
+      en: "My EAD will expire soon. When should I apply for renewal?",
+    },
+  ],
+  "immigration/family-green-card": [
+    {
+      ko: "가족 초청 영주권 청원 자격을 확인하고 싶습니다.",
+      en: "I would like to check eligibility for a family-based green card petition.",
+    },
+    {
+      ko: "Form I-130 서류 목록을 알려 주세요.",
+      en: "Please tell me what documents are needed for Form I-130.",
+    },
+  ],
+  "immigration/f1-opt": [
+    {
+      ko: "OPT 신청 일정을 DSO와 상의하고 싶습니다.",
+      en: "I would like to discuss my OPT timeline with my DSO.",
+    },
+    {
+      ko: "F-1 신분 유지 요건을 확인하고 싶습니다.",
+      en: "I want to confirm the requirements to maintain my F-1 status.",
+    },
+  ],
   "job/everyday-jobs": [
     {
       ko: "일자리 있으면 지원하고 싶습니다.",
@@ -663,6 +823,28 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "돌봄 업무 범위를 알려 주세요.",
       en: "Please explain what caregiving tasks are included.",
+    },
+  ],
+  "job/home-care": [
+    {
+      ko: "홈케어·돌봄 일자리를 찾고 있습니다.",
+      en: "I am looking for a home care or caregiver job.",
+    },
+    {
+      ko: "약 투여는 하지 않습니다. 동행과 가사만 가능합니다.",
+      en: "I do not administer medication. I can do companionship and light housekeeping.",
+    },
+    {
+      ko: "배경조사와 TB 검사가 필요한가요?",
+      en: "Do I need a background check and a TB test?",
+    },
+    {
+      ko: "시급과 교통비를 알려 주세요.",
+      en: "What is the hourly pay, and is transportation reimbursed?",
+    },
+    {
+      ko: "주중 오전만 일할 수 있습니다.",
+      en: "I am available weekday mornings only.",
     },
   ],
   "job/small-business": [

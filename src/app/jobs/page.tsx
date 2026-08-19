@@ -136,11 +136,35 @@ export default function JobsPage() {
           채용 공고
         </h1>
         <p className="mt-3 text-sm leading-relaxed text-[var(--muted)]">
-          미국 내 근무와 한국·원격(미국→한국) 채용을 나눠 보여 줍니다. 공고는
-          가이드와 분리되어 있으며, 게재 전 검수를 거칩니다. ArriveUS는 채용
+          지금은 채용 가이드를 먼저 보시고, 공고 게재는 이메일로 문의해 주세요.
+          미국 내 근무와 한국·원격 채용을 나눠 올릴 예정입니다. ArriveUS는 채용
           알선·이민 대행을 하지 않습니다.
         </p>
       </header>
+
+      <div className="mt-6 rounded-2xl border border-[var(--border)] bg-[var(--surface-muted)]/60 px-5 py-5">
+        <p className="text-sm font-semibold text-[var(--ink)]">
+          공고 목록은 준비 중입니다
+        </p>
+        <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
+          빈 목록이 아니라, 검수 후 게시할 예정입니다. 당장 일자리가 필요하면
+          취업 가이드(현장·홈케어·이력서)를 이용해 주세요.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <Link
+            href="/guides/job"
+            className="inline-flex rounded-lg bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white hover:opacity-90"
+          >
+            취업 가이드 보기
+          </Link>
+          <Link
+            href="/guides/job/home-care"
+            className="inline-flex rounded-lg border border-[var(--border)] px-4 py-2.5 text-sm font-semibold text-[var(--ink)] hover:bg-[var(--surface)]"
+          >
+            홈케어·돌봄
+          </Link>
+        </div>
+      </div>
 
       <div className="mt-8 grid gap-3 sm:grid-cols-2">
         {jobTracks.map((track, index) => (
