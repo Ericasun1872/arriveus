@@ -91,7 +91,8 @@ export const stateGuides: StateGuide[] = [
     agency: "California DMV",
     summary: "LA·SF베이 등에서 가장 많이 찾는 주 DMV 안내입니다.",
     dmvUrl: "https://www.dmv.ca.gov/",
-    handbookUrl: "https://www.dmv.ca.gov/portal/handbook/",
+    handbookUrl:
+      "https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/",
     highlights: [
       "예약(appointment) 없이 방문하면 대기 시간이 긴 경우가 많습니다.",
       "REAL ID, AB 60 등 신분·서류 옵션이 다양하니 신청 유형을 먼저 고르세요.",
@@ -106,7 +107,8 @@ export const stateGuides: StateGuide[] = [
     agency: "New York DMV",
     summary: "뉴욕시·업스테이트 포함, 주 DMV 기준으로 면허·등록을 진행합니다.",
     dmvUrl: "https://dmv.ny.gov/",
-    handbookUrl: "https://dmv.ny.gov/driver-manual",
+    handbookUrl:
+      "https://dmv.ny.gov/driver-license/drivers-manual-practice-tests",
     highlights: [
       "온라인으로 가능한 업무와 반드시 방문해야 하는 업무가 나뉩니다.",
       "뉴욕시는 주차·톨게이트·교통 규칙이 까다로울 수 있어 시 안내도 함께 보세요.",
@@ -122,7 +124,7 @@ export const stateGuides: StateGuide[] = [
     summary:
       "면허(DPS)와 차량 등록(TxDMV) 기관이 나뉘어 있으니 목적에 맞는 사이트를 확인하세요.",
     dmvUrl: "https://www.dps.texas.gov/section/driver-license",
-    handbookUrl: "https://www.dps.texas.gov/section/driver-license/driver-education-and-safety",
+    handbookUrl: "https://www.dps.texas.gov/internetforms/Forms/DL-7.pdf",
     highlights: [
       "Driver License는 Texas DPS, 차량 등록·타이틀은 TxDMV 쪽을 보는 경우가 많습니다.",
       "신규·이전·갱신에 필요한 신분 서류 목록을 DPS 체크리스트로 확인하세요.",
@@ -137,7 +139,7 @@ export const stateGuides: StateGuide[] = [
     agency: "Florida DHSMV / FLHSMV",
     summary: "면허·차량 관련 공식 안내는 FLHSMV에서 확인합니다.",
     dmvUrl: "https://www.flhsmv.gov/",
-    handbookUrl: "https://www.flhsmv.gov/driver-licenses-id-cards/florida-driver-license-manual/",
+    handbookUrl: "https://www.flhsmv.gov/resources/handbooks-manuals/",
     highlights: [
       "서비스는 카운티 tax collector / driver license office에서 처리되는 경우가 많습니다.",
       "타주·해외 면허 소지자의 시험 면제 여부는 조건에 따라 다릅니다.",
@@ -167,7 +169,7 @@ export const stateGuides: StateGuide[] = [
     agency: "New Jersey MVC",
     summary: "뉴저지는 MVC(Motor Vehicle Commission)가 면허·등록을 담당합니다.",
     dmvUrl: "https://www.nj.gov/mvc/",
-    handbookUrl: "https://www.nj.gov/mvc/licenses/drivertest.htm",
+    handbookUrl: "https://www.nj.gov/mvc/about/manuals.htm",
     highlights: [
       "예약 시스템이 중요하니 방문 전 MVC 예약을 확인하세요.",
       "GDL(단계별 면허) 규칙이 학생·초보에게 적용될 수 있습니다.",
@@ -182,7 +184,7 @@ export const stateGuides: StateGuide[] = [
     agency: "Virginia DMV",
     summary: "워싱턴 DC 근교(북버지니아) 거주자도 버지니아 DMV 절차를 따릅니다.",
     dmvUrl: "https://www.dmv.virginia.gov/",
-    handbookUrl: "https://www.dmv.virginia.gov/drivers/#manual.html",
+    handbookUrl: "https://www.dmv.virginia.gov/licenses-ids/exams/manual",
     highlights: [
       "온라인으로 처리 가능한 갱신·주소 변경이 있습니다.",
       "신규·이전 시 proof of identity / residency 조합을 미리 맞추세요.",
@@ -197,7 +199,7 @@ export const stateGuides: StateGuide[] = [
     agency: "Georgia DDS",
     summary: "애틀랜타 포함, 운전 면허는 Georgia DDS에서 담당합니다.",
     dmvUrl: "https://dds.georgia.gov/",
-    handbookUrl: "https://dds.georgia.gov/georgia-drivers-manual",
+    handbookUrl: "https://dds.georgia.gov/dds-drivers-manual-2023-2024",
     highlights: [
       "DDS 고객센터/예약 안내를 먼저 확인하는 것이 좋습니다.",
       "지식 시험·도로 시험 요건과 준비물을 DDS 매뉴얼에서 확인하세요.",
@@ -212,7 +214,7 @@ export const stateGuides: StateGuide[] = [
     agency: "Massachusetts RMV",
     summary: "보스턴 지역 포함, RMV가 면허·등록 서비스를 제공합니다.",
     dmvUrl: "https://www.mass.gov/orgs/massachusetts-registry-of-motor-vehicles",
-    handbookUrl: "https://www.mass.gov/guides/massachusetts-driver-manual",
+    handbookUrl: "https://www.mass.gov/lists/drivers-manuals",
     highlights: [
       "대부분 업무는 예약 후 방문하는 흐름이 일반적입니다.",
       "Learner’s permit·도로시험 일정과  Mandatory driver education 요건을 확인하세요.",

@@ -34,7 +34,7 @@ export const bankGuides: Guide[] = [
     links: [
       {
         label: "CFPB – Opening a bank account",
-        url: "https://www.consumerfinance.gov/ask-cfpb/how-do-i-open-a-bank-account-en-906/",
+        url: "https://www.consumerfinance.gov/ask-cfpb/how-do-i-open-a-checking-account-en-905/",
       },
       {
         label: "ArriveUS – 신분별 계좌 개설",
@@ -90,7 +90,7 @@ export const bankGuides: Guide[] = [
     links: [
       {
         label: "CFPB – Opening a bank account",
-        url: "https://www.consumerfinance.gov/ask-cfpb/how-do-i-open-a-bank-account-en-906/",
+        url: "https://www.consumerfinance.gov/ask-cfpb/how-do-i-open-a-checking-account-en-905/",
       },
       {
         label: "SSA – International students and SSN",
@@ -136,12 +136,12 @@ export const bankGuides: Guide[] = [
     ],
     links: [
       {
-        label: "CFPB – How to get a credit card",
-        url: "https://www.consumerfinance.gov/consumer-tools/credit-cards/how-to-get-a-credit-card/",
+        label: "CFPB – Credit cards",
+        url: "https://www.consumerfinance.gov/consumer-tools/credit-cards/",
       },
       {
-        label: "CFPB – Secured credit cards",
-        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-secured-credit-card-en-1207/",
+        label: "CFPB – Secured card로 신용 쌓기",
+        url: "https://www.consumerfinance.gov/ask-cfpb/what-are-some-ways-to-start-or-rebuild-a-good-credit-history-en-2155/",
       },
       {
         label: "ArriveUS – 신용 점수 올리기",
@@ -226,7 +226,7 @@ export const bankGuides: Guide[] = [
       },
       {
         label: "CFPB – Opening a bank account",
-        url: "https://www.consumerfinance.gov/ask-cfpb/how-do-i-open-a-bank-account-en-906/",
+        url: "https://www.consumerfinance.gov/ask-cfpb/how-do-i-open-a-checking-account-en-905/",
       },
     ],
     disclaimer,
@@ -295,12 +295,12 @@ export const bankGuides: Guide[] = [
     ],
     links: [
       {
-        label: "CFPB – Overdraft fees",
-        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-an-overdraft-fee-en-1045/",
+        label: "CFPB – Overdraft options",
+        url: "https://www.consumerfinance.gov/consumer-tools/bank-accounts/know-your-overdraft-options/",
       },
       {
         label: "CFPB – Debit cards",
-        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debit-card-en-1107/",
+        url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debit-card-en-76/",
       },
     ],
     disclaimer,

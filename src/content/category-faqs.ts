@@ -57,6 +57,16 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       answer:
         "보험사 Doctor Finder의 Language 필터, 커뮤니티 클리닉, 한인 네트워크를 함께 쓰는 방법이 일반적입니다. ArriveUS의 ‘한국어 의사 찾기’ 가이드(시애틀 중심)를 참고하세요.",
     },
+    {
+      question: "한방·침이나 물리치료도 보험이 되나요?",
+      answer:
+        "플랜마다 다릅니다. 침은 진단·횟수 제한이 흔하고, 물리치료는 Referral·사전승인이 필요한 경우가 많습니다. ArriveUS의 한방·침 / 물리치료 가이드와 보험사 안내를 함께 확인하세요.",
+    },
+    {
+      question: "치과·안경도 의료보험에 포함되나요?",
+      answer:
+        "많은 경우 별도 Dental·Vision 플랜입니다. Original Medicare도 일상 치과·안경은 거의 안 되는 편입니다. ArriveUS 치과·시력 가이드를 참고하세요.",
+    },
   ],
   tax: [
     {
@@ -93,6 +103,16 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
     },
   ],
   job: [
+    {
+      question: "처음부터 미국 회사 오피스에 들어가기 어렵나요?",
+      answer:
+        "많은 분들이 식당·네일·창고·돌봄·청소·한인 업장에서 먼저 시작합니다. ArriveUS의 현장 취업 가이드를 보시고, 혼자 고객을 받으면 스몰 비즈니스 가이드·SBA 상담으로 이어가면 됩니다.",
+    },
+    {
+      question: "스몰 비즈니스는 어디서 도움을 받나요?",
+      answer:
+        "SBA Local assistance로 SBDC·SCORE 등 무료·저비용 상담을 찾을 수 있습니다. ‘지원금 대행비’를 먼저 받는 업체보다 공식 창구와 ArriveUS 스몰 비즈니스 가이드를 우선하세요.",
+    },
     {
       question: "미국 이력서에 사진을 넣나요?",
       answer:

@@ -393,6 +393,94 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Please email me a written confirmation of the discounted amount.",
     },
   ],
+  "medical/oriental-medicine": [
+    {
+      ko: "침 치료를 예약하고 싶습니다.",
+      en: "I would like to schedule an acupuncture appointment.",
+    },
+    {
+      ko: "제 보험으로 침 치료가 되나요?",
+      en: "Does my insurance cover acupuncture?",
+    },
+    {
+      ko: "면허 있는 침구사(L.Ac.)이신가요?",
+      en: "Are you a licensed acupuncturist?",
+    },
+    {
+      ko: "한약과 양약을 같이 먹어도 될까요?",
+      en: "Is it safe to take herbal medicine with my prescription medications?",
+    },
+    {
+      ko: "한국어로 상담할 수 있나요?",
+      en: "Can we discuss my care in Korean?",
+    },
+  ],
+  "medical/physical-therapy": [
+    {
+      ko: "물리치료 초진 예약을 잡고 싶습니다.",
+      en: "I would like to schedule a physical therapy evaluation.",
+    },
+    {
+      ko: "의사 Referral이 필요한가요?",
+      en: "Do I need a doctor’s referral for physical therapy?",
+    },
+    {
+      ko: "제 보험 네트워크에 포함되나요?",
+      en: "Are you in my insurance network?",
+    },
+    {
+      ko: "방문할 때마다 본인부담이 얼마인가요?",
+      en: "What is my copay for each physical therapy visit?",
+    },
+    {
+      ko: "집에서 할 수 있는 운동을 알려 주세요.",
+      en: "Please show me home exercises I can do.",
+    },
+  ],
+  "medical/dental": [
+    {
+      ko: "치과 검진과 클리닝 예약을 잡고 싶습니다.",
+      en: "I would like to schedule a dental exam and cleaning.",
+    },
+    {
+      ko: "제 치과 보험을 받으시나요?",
+      en: "Do you accept my dental insurance?",
+    },
+    {
+      ko: "치료 전에 견적과 보험 적용 금액을 알려 주세요.",
+      en: "Please give me a treatment plan and estimate of my out-of-pocket cost.",
+    },
+    {
+      ko: "충치 치료가 필요해 보입니다.",
+      en: "I think I need a cavity filled.",
+    },
+    {
+      ko: "한국어로 설명해 주실 수 있나요?",
+      en: "Can you explain the treatment in Korean?",
+    },
+  ],
+  "medical/vision": [
+    {
+      ko: "시력검사를 예약하고 싶습니다.",
+      en: "I would like to schedule an eye exam.",
+    },
+    {
+      ko: "제 Vision 보험을 받으시나요?",
+      en: "Do you accept my vision insurance?",
+    },
+    {
+      ko: "안경 처방전이 필요합니다.",
+      en: "I need a prescription for eyeglasses.",
+    },
+    {
+      ko: "콘택트렌즈 착용법을 알려 주세요.",
+      en: "Please show me how to put in and take out contact lenses.",
+    },
+    {
+      ko: "갑자기 시력이 나빠졌습니다.",
+      en: "My vision suddenly got worse.",
+    },
+  ],
   "tax/file-taxes": [
     {
       ko: "세금 신고를 도와주실 수 있나요?",
@@ -549,6 +637,54 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "이민 변호사와 상담을 받고 싶습니다.",
       en: "I would like to consult an immigration attorney.",
+    },
+  ],
+  "job/everyday-jobs": [
+    {
+      ko: "일자리 있으면 지원하고 싶습니다.",
+      en: "I am looking for work. Are you hiring?",
+    },
+    {
+      ko: "평일 오후에 일할 수 있습니다.",
+      en: "I can work weekday afternoons.",
+    },
+    {
+      ko: "시급과 팁은 어떻게 되나요?",
+      en: "What is the hourly pay, and how are tips shared?",
+    },
+    {
+      ko: "네일 보조로 시작할 수 있나요?",
+      en: "Can I start as a nail salon assistant?",
+    },
+    {
+      ko: "창고 야간 근무도 가능한가요?",
+      en: "Can I work the overnight warehouse shift?",
+    },
+    {
+      ko: "돌봄 업무 범위를 알려 주세요.",
+      en: "Please explain what caregiving tasks are included.",
+    },
+  ],
+  "job/small-business": [
+    {
+      ko: "사업자 등록을 어디에 하나요?",
+      en: "Where do I register my small business?",
+    },
+    {
+      ko: "EIN 신청을 도와주세요.",
+      en: "I need help applying for an EIN.",
+    },
+    {
+      ko: "이 업종에 면허가 필요한가요?",
+      en: "Do I need a license for this type of business?",
+    },
+    {
+      ko: "SBDC 상담을 예약하고 싶습니다.",
+      en: "I would like to schedule an SBDC counseling appointment.",
+    },
+    {
+      ko: "사업용 계좌를 만들고 싶습니다.",
+      en: "I want to open a business bank account.",
     },
   ],
   "job/resume-interview": [
