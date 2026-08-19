@@ -124,6 +124,30 @@ export const stateGuides: StateGuide[] = [
           },
         ],
       },
+      {
+        name: "Bay Area",
+        nameKo: "베이 에어리어",
+        notes: [
+          "면허·ID는 캘리포니아 DMV 기준입니다. SF·산호세 거주자도 주 절차를 따릅니다.",
+          "베이 에어리어 DMV 오피스는 대기가 길 수 있어 온라인 예약·가능 업무를 먼저 확인하세요.",
+          "유료 다리·톨·주차 규칙은 도시·카운티마다 다르니 해당 시 교통국 안내를 보세요.",
+          "대중교통은 BART·Caltrain·Muni·VTA 등 기관이 나뉘어 있습니다.",
+        ],
+        links: [
+          {
+            label: "California DMV",
+            url: "https://www.dmv.ca.gov/",
+          },
+          {
+            label: "BART",
+            url: "https://www.bart.gov/",
+          },
+          {
+            label: "511 SF Bay",
+            url: "https://511.org/",
+          },
+        ],
+      },
     ],
   },
   {
@@ -183,6 +207,32 @@ export const stateGuides: StateGuide[] = [
       "도로 시험·운전 교육 요건은 연령·경험에 따라 달라질 수 있습니다.",
       "공식 사이트: DPS Driver License와 TxDMV를 구분해 북마크하세요.",
     ],
+    localNotes: [
+      {
+        name: "Dallas–Fort Worth",
+        nameKo: "댈러스·포트워스",
+        notes: [
+          "면허는 Texas DPS, 차량 등록은 TxDMV/카운티입니다. DFW 거주자도 주·카운티 절차를 따릅니다.",
+          "대기가 길 수 있어 DPS 예약·온라인 가능 업무를 먼저 확인하세요.",
+          "고속도로·톨(NTTA 등) 규칙은 지역 안내를 함께 보세요.",
+          "대중교통은 DART 등 지역 기관을 참고할 수 있습니다.",
+        ],
+        links: [
+          {
+            label: "Texas DPS – Driver License",
+            url: "https://www.dps.texas.gov/section/driver-license",
+          },
+          {
+            label: "TxDMV",
+            url: "https://www.txdmv.gov/",
+          },
+          {
+            label: "DART",
+            url: "https://www.dart.org/",
+          },
+        ],
+      },
+    ],
   },
   {
     code: "fl",
@@ -213,6 +263,32 @@ export const stateGuides: StateGuide[] = [
       "시티·교외 오피스 대기 시간이 다를 수 있습니다.",
       "차량 등록 sticker 갱신 일정도 함께 관리하세요.",
     ],
+    localNotes: [
+      {
+        name: "Chicago",
+        nameKo: "시카고",
+        notes: [
+          "면허는 Illinois SOS Driver Services 기준입니다. 시 거주자도 주 절차를 따릅니다.",
+          "방문 전 예약·서류 목록을 확인하고, 시티·교외 오피스 대기를 비교하세요.",
+          "시카고 주차·카메라·거주자 허가는 시 규정과 별개입니다.",
+          "대중교통은 CTA·Metra 안내를 참고할 수 있습니다.",
+        ],
+        links: [
+          {
+            label: "Illinois SOS – Drivers",
+            url: "https://www.ilsos.gov/departments/drivers/",
+          },
+          {
+            label: "CTA",
+            url: "https://www.transitchicago.com/",
+          },
+          {
+            label: "City of Chicago – Transportation",
+            url: "https://www.chicago.gov/city/en/depts/cdot.html",
+          },
+        ],
+      },
+    ],
   },
   {
     code: "nj",
@@ -227,6 +303,28 @@ export const stateGuides: StateGuide[] = [
       "GDL(단계별 면허) 규칙이 학생·초보에게 적용될 수 있습니다.",
       "타주 면허 이전 시 서류와 시력·지식 시험 요건을 확인합니다.",
       "공식 MVC 사이트의 Forms & Documents를 출발점으로 쓰세요.",
+    ],
+    localNotes: [
+      {
+        name: "Northern New Jersey",
+        nameKo: "북부 뉴저지",
+        notes: [
+          "면허·등록은 New Jersey MVC 기준입니다. 팰리세이즈파크·포트리 등도 주 절차를 따릅니다.",
+          "MVC 예약이 중요하니 방문 전 온라인 예약을 확인하세요.",
+          "뉴욕 통근이면 NYC 주차·톨·대중교통과 NJ 면허 요건을 구분해 보세요.",
+          "대중교통은 NJ Transit 안내를 참고할 수 있습니다.",
+        ],
+        links: [
+          {
+            label: "New Jersey MVC",
+            url: "https://www.nj.gov/mvc/",
+          },
+          {
+            label: "NJ Transit",
+            url: "https://www.njtransit.com/",
+          },
+        ],
+      },
     ],
   },
   {
@@ -257,6 +355,28 @@ export const stateGuides: StateGuide[] = [
       "지식 시험·도로 시험 요건과 준비물을 DDS 매뉴얼에서 확인하세요.",
       "REAL ID 서류 목록을 신청 유형에 맞게 준비합니다.",
       "차량 등록은 카운티 tag office와 연계되는 경우가 있습니다.",
+    ],
+    localNotes: [
+      {
+        name: "Atlanta",
+        nameKo: "애틀랜타",
+        notes: [
+          "면허는 Georgia DDS 기준입니다. 메트로 애틀랜타 거주자도 주 절차를 따릅니다.",
+          "DDS 예약·매뉴얼·REAL ID 서류 목록을 먼저 확인하세요.",
+          "차량 등록·tag는 카운티 office와 연계될 수 있습니다.",
+          "대중교통은 MARTA 안내를 참고할 수 있습니다.",
+        ],
+        links: [
+          {
+            label: "Georgia DDS",
+            url: "https://dds.georgia.gov/",
+          },
+          {
+            label: "MARTA",
+            url: "https://www.itsmarta.com/",
+          },
+        ],
+      },
     ],
   },
   {

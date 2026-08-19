@@ -6,7 +6,8 @@ import { getFeaturedStates, getStateGuides } from "@/lib/states";
 export const metadata: Metadata = {
   title: "주별 DMV 가이드",
   description:
-    "거주 주를 선택해 공식 DMV/DOL 링크와 핵심 차이, 시애틀 등 지역 노트를 확인하세요.",
+    "거주 주를 선택해 공식 DMV/DOL 링크와 핵심 차이, 시·지역 노트를 확인하세요.",
+  alternates: { canonical: "/guides/dmv/states" },
 };
 
 export default function StateGuidesPage() {
@@ -47,10 +48,10 @@ export default function StateGuidesPage() {
           <div className="grid md:grid-cols-[1.4fr_1fr]">
             <div className="px-5 py-6 sm:px-7">
               <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--brand)]">
-                Featured · Seattle
+                Featured
               </p>
               <h2 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-semibold text-[var(--ink)]">
-                {state.nameKo} ({state.name}) · 시애틀
+                {state.nameKo} ({state.name})
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
                 {state.summary}

@@ -59,6 +59,30 @@ export const lifeGuides: Guide[] = [
         url: "/guides/bank/open-account",
       },
       {
+        label: "아파트 임대",
+        url: "/guides/housing/rent-apartment",
+      },
+      {
+        label: "건강보험 기본",
+        url: "/guides/medical/health-insurance",
+      },
+      {
+        label: "주별 DMV",
+        url: "/guides/dmv/states",
+      },
+      {
+        label: "SSN 신청",
+        url: "/guides/tax/ssn-apply",
+      },
+      {
+        label: "주소·우편",
+        url: "/guides/life/address-mail",
+      },
+      {
+        label: "대중교통",
+        url: "/guides/life/public-transit",
+      },
+      {
         label: "USA.gov – Benefit finder",
         url: "https://www.usa.gov/benefit-finder",
       },
@@ -454,6 +478,117 @@ export const lifeGuides: Guide[] = [
         question: "한인 커뮤니티만 믿어도 되나요?",
         answer:
           "정보 수집에는 도움이 되지만, 수수료·법률·이민 약속은 반드시 공식 기관·자격 있는 전문가와 확인하세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer,
+  },
+  {
+    slug: "address-mail",
+    category: "life",
+    title: "주소·우편·USPS",
+    summary:
+      "미국 주소 쓰는 법, 우편함·아파트 유닛, USPS 주소 변경, 은행·USCIS·DMV에 주소 알리는 순서를 정리했습니다.",
+    cost: "USPS 주소 변경 등은 무료·소액 / 사설 사서함은 별도",
+    methods: ["USPS Change of Address", "단지 우편함·유닛 번호", "기관별 주소 업데이트"],
+    overview:
+      "미국에서는 은행·병원·학교·이민국·세금 안내가 우편으로 오는 경우가 많아, 정확한 주소(Street, Apt/Unit, City, State, ZIP)가 중요합니다. 아파트는 Unit/Apt 번호를 빠뜨리면 우편이 반송됩니다. 이사를 하면 USPS Change of Address로 우편 전달을 신청하고, 은행·보험·USCIS·SSA·DMV에는 각각 주소 변경이 필요할 수 있습니다. ‘USPS 직원’을 사칭해 개인정보를 묻는 문자·전화는 사기일 수 있으니 공식 usps.com만 이용하세요.",
+    requirements: [
+      "정확한 도로명 주소·유닛 번호·ZIP",
+      "이사 예정일",
+      "신분증 (일부 온라인 본인확인)",
+    ],
+    steps: [
+      "현재 주소를 Street / Apt·Unit / City / State / ZIP 순으로 적어 둡니다.",
+      "단지 우편함·키·택배 수령 방법을 임대인·매니저에 확인합니다.",
+      "이사하면 usps.com에서 Change of Address를 신청합니다.",
+      "은행·신용카드·보험·고용주·학교 주소를 업데이트합니다.",
+      "USCIS·SSA·DMV 등 공문서 주소도 해당 기관 안내대로 변경합니다.",
+      "중요 서류는 스캔·사진을 남기고, 사칭 문자에 링크를 누르지 않습니다.",
+    ],
+    links: [
+      {
+        label: "USPS – Change of Address",
+        url: "https://www.usps.com/manage/forward.htm",
+      },
+      {
+        label: "USPS – Avoid scams",
+        url: "https://www.usps.com/help/scams.htm",
+      },
+      {
+        label: "USCIS – Change of address",
+        url: "https://www.uscis.gov/addresschange",
+      },
+      {
+        label: "도착 첫 7일",
+        url: "/guides/life/first-week",
+      },
+      {
+        label: "유틸리티 신청",
+        url: "/guides/housing/utilities-setup",
+      },
+    ],
+    faq: [
+      {
+        question: "ZIP이 없으면 어떻게 하나요?",
+        answer:
+          "USPS ZIP Code Lookup으로 주소를 검색하거나, 임대 계약서·공과금 고지서를 확인하세요.",
+      },
+      {
+        question: "USPS만 바꾸면 끝나나요?",
+        answer:
+          "우편 전달은 USPS로 돕고, 은행·USCIS·DMV 등은 각 기관에 따로 알려야 하는 경우가 많습니다.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer,
+  },
+  {
+    slug: "public-transit",
+    category: "life",
+    title: "대중교통 기본",
+    summary:
+      "버스·지하철·통근열차 앱·카드 기본과, 주요 도시 공식 교통 사이트 찾는 방법을 안내합니다.",
+    cost: "단거리 수 달러대 / 월 패스는 도시마다 다름",
+    methods: ["시·카운티 교통국 앱", "교통 카드·모바일 탑승", "구글 맵·공식 trip planner"],
+    overview:
+      "미국 대도시는 버스·지하철·통근열차가 기관마다 나뉘어 있습니다(예: NYC MTA, LA Metro, Bay Area BART, 시카고 CTA, 시애틀 King County Metro). 보통 공식 앱이나 교통 카드(또는 휴대폰 탑승)로 요금을 내고, Google Maps·공식 trip planner로 환승을 봅니다. 야간·교외는 배차가 적을 수 있어 첫·막차와 안전을 확인하세요. 면허 전이거나 주차비가 부담되면 대중교통+도보가 현실적인 선택입니다. ArriveUS 주별 DMV 노트의 교통 링크도 함께 보세요.",
+    requirements: [
+      "거주·출퇴근 출발/도착지",
+      "스마트폰 또는 교통 카드 구매 수단",
+      "야간 이동 시 안전·대체 수단 계획",
+    ],
+    steps: [
+      "거주지 시·카운티 이름을 넣고 ‘transit’ / ‘metro’ / ‘bus’로 공식 교통국을 검색합니다.",
+      "앱 설치·교통 카드(또는 OMNY·Clipper 등 지역 시스템) 충전 방법을 확인합니다.",
+      "출퇴근 경로를 앱·지도로 시험해 보고, 환승·도보 시간을 여유 있게 잡습니다.",
+      "장애인·시니어·학생 할인 자격이 있으면 공식 Reduced fare 안내를 확인합니다.",
+      "비상 시 택시·라이드헤일·야간 버스 대안을 메모합니다.",
+    ],
+    links: [
+      {
+        label: "주별 DMV·지역 교통 노트",
+        url: "/guides/dmv/states",
+      },
+      {
+        label: "도착 첫 7일",
+        url: "/guides/life/first-week",
+      },
+      {
+        label: "미국 전화번호·휴대폰",
+        url: "/guides/life/phone-sim",
+      },
+    ],
+    faq: [
+      {
+        question: "전국 공통 교통 카드가 있나요?",
+        answer:
+          "없습니다. 도시·지역마다 카드·앱이 다릅니다. 거주 도시 공식 교통국을 기준으로 하세요.",
+      },
+      {
+        question: "영어 노선도를 못 읽으면요?",
+        answer:
+          "공식 앱의 지도·알람과 Google Maps 대중교통 모드를 함께 쓰고, 역무원·기사에게 목적지를 보여 주세요.",
       },
     ],
     updatedAt: "2026-08",

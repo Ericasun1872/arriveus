@@ -28,7 +28,7 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
     {
       question: "주마다 DMV 절차가 다른가요?",
       answer:
-        "네. 기관 이름(DMV/DOL/MVD 등), 서류, 필기·도로 시험, REAL ID 규칙이 주마다 다릅니다. ArriveUS는 공통 개념과 워싱턴(시애틀) 등 주별 노트를 함께 안내하니, 거주 주 공식 사이트도 반드시 확인하세요.",
+        "네. 기관 이름(DMV/DOL/MVD 등), 서류, 필기·도로 시험, REAL ID 규칙이 주마다 다릅니다. ArriveUS는 공통 개념과 주별 노트(시애틀·LA·NYC 등)를 함께 안내하니, 거주 주 공식 사이트도 반드시 확인하세요.",
     },
     {
       question: "한국 면허만으로 미국에서 운전할 수 있나요?",
@@ -77,7 +77,7 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
     {
       question: "한국어 의사는 어디서 찾나요?",
       answer:
-        "보험사 Doctor Finder의 Language 필터, 커뮤니티 클리닉, 한인 네트워크를 함께 쓰는 방법이 일반적입니다. ArriveUS의 ‘한국어 의사 찾기’ 가이드(시애틀 중심)를 참고하세요.",
+        "보험사 Doctor Finder의 Language 필터, 커뮤니티 클리닉, 한인 네트워크를 함께 쓰는 방법이 일반적입니다. ArriveUS의 ‘한국어 의사 찾기’ 가이드(시애틀·LA·뉴욕 등)를 참고하세요.",
     },
     {
       question: "한방·침이나 물리치료도 보험이 되나요?",

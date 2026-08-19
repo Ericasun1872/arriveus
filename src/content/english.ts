@@ -111,6 +111,26 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I would like information about nearby Korean community groups or library programs.",
     },
   ],
+  "life/address-mail": [
+    {
+      ko: "우편 주소 변경을 신청하고 싶습니다.",
+      en: "I would like to submit a change of address for my mail.",
+    },
+    {
+      ko: "제 아파트 유닛 번호가 포함된 주소를 확인해 주세요.",
+      en: "Please confirm my address including the apartment unit number.",
+    },
+  ],
+  "life/public-transit": [
+    {
+      ko: "이 도시 버스·지하철 앱을 알려 주세요.",
+      en: "Can you tell me which bus or subway app to use in this city?",
+    },
+    {
+      ko: "교통 카드를 어디서 충전하나요?",
+      en: "Where can I buy or reload a transit card?",
+    },
+  ],
   "dmv/learner-permit": [
     {
       ko: "Learner’s Permit를 신청하고 싶습니다.",

@@ -46,6 +46,34 @@ export const housingGuides: Guide[] = [
         label: "저소득 시니어 주거 혜택",
         url: "/guides/housing/senior-housing-low-income",
       },
+      {
+        label: "임대 사기 주의",
+        url: "/guides/housing/rental-scams",
+      },
+      {
+        label: "도착 첫 7일",
+        url: "/guides/life/first-week",
+      },
+      {
+        label: "은행 계좌 개설",
+        url: "/guides/bank/open-account",
+      },
+      {
+        label: "주소·우편",
+        url: "/guides/life/address-mail",
+      },
+    ],
+    faq: [
+      {
+        question: "크레딧이 없으면 임대가 안 되나요?",
+        answer:
+          "거절될 수도 있지만, 보증인·선수납·잔고 증빙·ITIN 정책을 받아주는 단지도 있습니다. 단지에 미리 문의하세요.",
+      },
+      {
+        question: "투어 전에 보증금을 보내라는 연락이 왔어요.",
+        answer:
+          "실물·화상 확인과 계약서 전 송금은 사기 위험이 큽니다. 임대 사기 가이드를 참고하고 보내지 마세요.",
+      },
     ],
     disclaimer,
   },
@@ -192,6 +220,26 @@ export const housingGuides: Guide[] = [
       {
         label: "USA.gov – Common scams",
         url: "https://www.usa.gov/common-scams-frauds",
+      },
+      {
+        label: "아파트 임대",
+        url: "/guides/housing/rent-apartment",
+      },
+      {
+        label: "도착 첫 7일",
+        url: "/guides/life/first-week",
+      },
+    ],
+    faq: [
+      {
+        question: "이미 보증금을 보냈어요.",
+        answer:
+          "은행에 즉시 연락하고, 메시지·영수증을 보관하세요. FTC·경찰 신고 안내는 공식 사이트에서 확인합니다.",
+      },
+      {
+        question: "단지 오피스가 있다고 하면 믿어도 되나요?",
+        answer:
+          "공식 웹사이트·전화로 매물·담당자를 교차 확인하고, 가능하면 직접 방문하세요.",
       },
     ],
     disclaimer,

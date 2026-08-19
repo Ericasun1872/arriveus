@@ -206,7 +206,7 @@ export const medicalGuides: Guide[] = [
     cost: "보험·시설 유형에 따라 상이 (ER이 가장 비싼 편)",
     methods: ["보험사 디렉터리", "클리닉 웹사이트", "전화 예약"],
     overview:
-      "평소 건강 관리의 출발점은 Primary care provider(주치의)입니다. 감기·경미한 부상처럼 당일 진료가 필요하면 Urgent care, 생명이 위험한 응급은 ER(Emergency room)을 이용합니다. 보험이 있어도 Out-of-network이면 비용이 크게 늘 수 있으므로, 방문 전 보험 카드의 멤버 포털에서 의사를 검색하는 습관이 중요합니다. 영어가 부담되면 통역(Interpreter) 서비스를 요청할 수 있는 병원이 많고, 한국어 의사를 찾으려면 보험사 Language 필터와 지역별 ‘한국어 의사 찾기’ 가이드를 함께 쓰면 됩니다. 현재는 시애틀·킹카운티 안내가 준비되어 있으며 다른 지역도 추가할 수 있습니다.",
+      "평소 건강 관리의 출발점은 Primary care provider(주치의)입니다. 감기·경미한 부상처럼 당일 진료가 필요하면 Urgent care, 생명이 위험한 응급은 ER(Emergency room)을 이용합니다. 보험이 있어도 Out-of-network이면 비용이 크게 늘 수 있으므로, 방문 전 보험 카드의 멤버 포털에서 의사를 검색하는 습관이 중요합니다. 영어가 부담되면 통역(Interpreter) 서비스를 요청할 수 있는 병원이 많고, 한국어 의사를 찾으려면 보험사 Language 필터와 지역별 ‘한국어 의사 찾기’ 가이드(시애틀·LA·뉴욕 등)를 함께 쓰면 됩니다.",
     requirements: [
       "건강보험 카드 또는 멤버 ID",
       "신분증",
@@ -216,7 +216,7 @@ export const medicalGuides: Guide[] = [
     ],
     steps: [
       "보험사 앱·웹사이트에서 In-network Primary care를 검색합니다. 한국어가 필요하면 Language 필터를 켭니다.",
-      "시애틀 등 지역 안내는 ‘한국어 의사 찾기’에서 클리닉·통역 링크를 확인합니다.",
+      "지역 안내는 ‘한국어 의사 찾기’에서 시애틀·LA·뉴욕 등 클리닉·통역 링크를 확인합니다.",
       "신규 환자(New patient) 예약을 받고, 초진에 필요한 서류를 확인합니다.",
       "경미한 증상은 Urgent care, 흉통·호흡곤란·대량 출혈 등은 911/ER을 이용합니다.",
       "방문 시 보험 카드와 신분증을 제출하고, Copay가 있는지 확인합니다.",
@@ -225,7 +225,7 @@ export const medicalGuides: Guide[] = [
     ],
     links: [
       {
-        label: "한국어 의사 찾기 (시애틀 등)",
+        label: "한국어 의사 찾기 (시애틀·LA·뉴욕 등)",
         url: "/guides/medical/korean-doctors",
       },
       {
@@ -251,6 +251,14 @@ export const medicalGuides: Guide[] = [
       {
         label: "무보험·응급실 비용 처리 가이드",
         url: "/guides/medical/medical-bills",
+      },
+      {
+        label: "911·응급·재난",
+        url: "/guides/life/emergency-911",
+      },
+      {
+        label: "공공 혜택",
+        url: "/guides/life/public-benefits",
       },
     ],
     disclaimer,

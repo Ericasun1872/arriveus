@@ -9,6 +9,7 @@ import {
   getGuide,
   formatGuideUpdatedAt,
 } from "@/lib/guides";
+import { siteConfig } from "@/lib/site";
 
 type PageProps = {
   params: Promise<{ category: string; slug: string }>;
@@ -84,8 +85,50 @@ export default async function GuidePage({ params }: PageProps) {
     );
   }
 
+  const path = `/guides/${guide.category}/${guide.slug}`;
+  const articleLd: Record<string, unknown> = {
+    "@type": "Article",
+    headline: guide.title,
+    description: guide.summary,
+    inLanguage: "ko",
+    author: { "@type": "Organization", name: siteConfig.name },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    mainEntityOfPage: `${siteConfig.url}${path}`,
+  };
+  if (guide.updatedAt) {
+    articleLd.dateModified = `${guide.updatedAt}-01`;
+  }
+  const jsonLd =
+    guide.faq && guide.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@graph": [
+            articleLd,
+            {
+              "@type": "FAQPage",
+              mainEntity: guide.faq.map((item) => ({
+                "@type": "Question",
+                name: item.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: item.answer,
+                },
+              })),
+            },
+          ],
+        }
+      : { "@context": "https://schema.org", ...articleLd };
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <nav className="mb-6 text-sm text-[var(--muted)]">
         <Link href="/" className="hover:text-[var(--brand)]">
           홈

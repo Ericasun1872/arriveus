@@ -9,7 +9,8 @@ import {
 export const metadata: Metadata = {
   title: "한국어 의사 찾기",
   description:
-    "시애틀 등 지역별로 한국어 의사·통역을 찾는 방법과 커뮤니티 클리닉·보험 검색 링크를 안내합니다.",
+    "시애틀·LA·뉴욕·베이·시카고·DFW·애틀랜타 등 지역별로 한국어 의사·통역을 찾는 방법과 커뮤니티 클리닉·보험 검색 링크를 안내합니다.",
+  alternates: { canonical: "/guides/medical/korean-doctors" },
 };
 
 export default function KoreanDoctorsPage() {
@@ -40,9 +41,8 @@ export default function KoreanDoctorsPage() {
         </h1>
         <p className="mt-3 text-sm leading-relaxed text-[var(--muted)]">
           보험 네트워크 검색과 다국어 클리닉·통역 요청 방법을 지역별로
-          모았습니다. 지금은 시애틀·킹카운티를 중심으로 안내하며, LA·뉴욕 등
-          다른 지역은 같은 형식으로 계속 추가할 수 있습니다. 특정 의원 추천이
-          아니며, 예약·보험 적용은 직접 확인하세요.
+          모았습니다. 시애틀·LA·뉴욕을 포함해 같은 형식으로 지역을 늘리고
+          있습니다. 특정 의원 추천이 아니며, 예약·보험 적용은 직접 확인하세요.
         </p>
       </header>
 
@@ -54,7 +54,7 @@ export default function KoreanDoctorsPage() {
           <div className="grid md:grid-cols-[1.4fr_1fr]">
             <div className="px-5 py-6 sm:px-7">
               <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--brand)]">
-                Featured · Seattle
+                Featured
               </p>
               <h2 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-semibold text-[var(--ink)]">
                 {region.nameKo}
@@ -70,7 +70,7 @@ export default function KoreanDoctorsPage() {
                   href={`/guides/medical/korean-doctors/${region.slug}`}
                   className="inline-flex rounded-lg bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white hover:opacity-90"
                 >
-                  시애틀 가이드 보기
+                  지역 가이드 보기
                 </Link>
                 {region.links[0] ? (
                   <a

@@ -97,7 +97,7 @@ export const koreanDoctorRegions: KoreanDoctorRegion[] = [
       "LA·오렌지카운티에서 한국어 진료·통역을 찾는 기본 경로입니다. 보험 마켓플레이스와 커뮤니티 클리닉을 함께 안내합니다.",
     tips: [
       "특정 개인 의사를 ‘추천’하지 않습니다. 보험 적용·예약은 직접 확인하세요.",
-      "코리아타운·풀erton·어바인 등에도 한인 의원이 많으니, 보험사 디렉터리에서 Language: Korean으로 검색하세요.",
+      "코리아타운·풀러턴·어바인 등에도 한인 의원이 많으니, 보험사 디렉터리에서 Language: Korean으로 검색하세요.",
       "커뮤니티 클리닉(예: Kheir)은 한국어 가능 스태프·슬라이딩 피(소득별 비용)를 문의할 수 있는 경우가 많습니다.",
     ],
     steps: [
@@ -197,6 +197,175 @@ export const koreanDoctorRegions: KoreanDoctorRegion[] = [
       {
         ko: "초진 예약을 잡고 싶습니다. 한국어로 진료받고 싶습니다.",
         en: "I would like to schedule a new patient visit with Korean language support.",
+      },
+    ],
+  },
+  {
+    slug: "bay-area",
+    nameKo: "베이 에어리어",
+    nameEn: "Bay Area",
+    areaNote: "캘리포니아 · SF·산호세·오클랜드·산마테오 등",
+    summary:
+      "샌프란시스코 베이 에어리어에서 한국어 진료·통역을 찾는 기본 경로입니다. Covered California와 Health Center 검색을 안내합니다.",
+    tips: [
+      "특정 개인 의사를 ‘추천’하지 않습니다. 네트워크·예약은 직접 확인하세요.",
+      "산타클라라·알라메다·산마테오 카운티마다 클리닉·보험 네트워크가 다를 수 있습니다.",
+      "한인 밀집 지역(산호세·써니베일 등)은 보험사 Language: Korean 검색이 유용합니다.",
+    ],
+    steps: [
+      "보험이 있으면 Covered California·보험사 Doctor Finder에서 Korean을 필터합니다.",
+      "무보험·저소득이면 HRSA Health Center Finder로 가까운 클리닉을 찾고 통역·비용을 확인합니다.",
+      "초진 시 보험 카드·신분증·약 목록을 가져가고 한국어 통역을 요청합니다.",
+      "응급이 아니면 ER보다 Urgent care·클리닉을 먼저 검토합니다.",
+    ],
+    links: [
+      {
+        label: "Covered California",
+        url: "https://www.coveredca.com/",
+      },
+      {
+        label: "HRSA – Health Center 검색",
+        url: "https://findahealthcenter.hrsa.gov/",
+      },
+      {
+        label: "Medi-Cal 안내",
+        url: "https://www.dhcs.ca.gov/services/medi-cal",
+      },
+    ],
+    phrases: [
+      {
+        ko: "한국어 가능한 의사를 찾고 싶습니다.",
+        en: "I am looking for a Korean-speaking doctor.",
+      },
+      {
+        ko: "한국어 통역을 요청할 수 있나요?",
+        en: "Can I request a Korean interpreter for my visit?",
+      },
+    ],
+  },
+  {
+    slug: "chicago",
+    nameKo: "시카고",
+    nameEn: "Chicago",
+    areaNote: "일리노이주 · 시카고·근교",
+    summary:
+      "시카고 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. Get Covered Illinois와 Health Center 검색을 안내합니다.",
+    tips: [
+      "특정 개인 의사를 ‘추천’하지 않습니다.",
+      "한인타운·교외(나퍼빌 등) 모두 보험 네트워크가 다를 수 있어 ZIP으로 검색하세요.",
+      "커뮤니티 Health Center는 슬라이딩 피·통역을 문의할 수 있는 경우가 많습니다.",
+    ],
+    steps: [
+      "보험이 있으면 Get Covered Illinois·보험사 디렉터리에서 Korean을 검색합니다.",
+      "무보험·저소득이면 HRSA Finder로 클리닉을 찾고 통역을 요청합니다.",
+      "초진에 보험 카드·약 목록을 준비하고, Urgent care vs ER를 구분합니다.",
+    ],
+    links: [
+      {
+        label: "Get Covered Illinois",
+        url: "https://getcovered.illinois.gov/",
+      },
+      {
+        label: "HRSA – Health Center 검색",
+        url: "https://findahealthcenter.hrsa.gov/",
+      },
+      {
+        label: "Illinois Medicaid",
+        url: "https://hfs.illinois.gov/medicalprograms.html",
+      },
+    ],
+    phrases: [
+      {
+        ko: "한국어 가능한 의사를 찾고 싶습니다.",
+        en: "I am looking for a Korean-speaking doctor.",
+      },
+      {
+        ko: "한국어 통역을 요청할 수 있나요?",
+        en: "Can I request a Korean interpreter for my visit?",
+      },
+    ],
+  },
+  {
+    slug: "dallas",
+    nameKo: "댈러스·DFW",
+    nameEn: "Dallas–Fort Worth",
+    areaNote: "텍사스주 · 댈러스·플래노·얼빙 등",
+    summary:
+      "DFW 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. Healthcare.gov(텍사스)와 Health Center 검색을 안내합니다.",
+    tips: [
+      "특정 개인 의사를 ‘추천’하지 않습니다.",
+      "플래노·캐럴턴·얼빙 등 한인 밀집 지역은 보험사 Korean 필터가 유용합니다.",
+      "텍사스는 주 마켓 대신 Healthcare.gov를 쓰는 경우가 많습니다.",
+    ],
+    steps: [
+      "보험이 있으면 Healthcare.gov·보험사 Doctor Finder에서 Korean을 검색합니다.",
+      "무보험·저소득이면 HRSA Finder와 지역 클리닉 비용을 확인합니다.",
+      "초진 시 통역·보험 네트워크를 확인하고, 응급이 아니면 Urgent care를 먼저 검토합니다.",
+    ],
+    links: [
+      {
+        label: "HealthCare.gov",
+        url: "https://www.healthcare.gov/",
+      },
+      {
+        label: "HRSA – Health Center 검색",
+        url: "https://findahealthcenter.hrsa.gov/",
+      },
+      {
+        label: "Texas Health & Human Services",
+        url: "https://www.hhs.texas.gov/",
+      },
+    ],
+    phrases: [
+      {
+        ko: "한국어 가능한 의사를 찾고 싶습니다.",
+        en: "I am looking for a Korean-speaking doctor.",
+      },
+      {
+        ko: "한국어 통역을 요청할 수 있나요?",
+        en: "Can I request a Korean interpreter for my visit?",
+      },
+    ],
+  },
+  {
+    slug: "atlanta",
+    nameKo: "애틀랜타",
+    nameEn: "Atlanta",
+    areaNote: "조지아주 · 애틀랜타·덜루스·존스크릭 등",
+    summary:
+      "애틀랜타 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. Georgia Access와 Health Center 검색을 안내합니다.",
+    tips: [
+      "특정 개인 의사를 ‘추천’하지 않습니다.",
+      "덜루스·존스크릭·수와니 등 한인 밀집 지역은 보험사 Language 필터로 좁히세요.",
+      "커뮤니티 클리닉·슬라이딩 피는 HRSA 검색으로 시작할 수 있습니다.",
+    ],
+    steps: [
+      "보험이 있으면 Georgia Access·보험사 디렉터리에서 Korean을 검색합니다.",
+      "무보험·저소득이면 HRSA Finder로 클리닉·통역·비용을 확인합니다.",
+      "초진 예약 시 보험·약 목록·통역을 준비하고 Urgent care vs ER를 구분합니다.",
+    ],
+    links: [
+      {
+        label: "Georgia Access",
+        url: "https://www.georgiaaccess.gov/",
+      },
+      {
+        label: "HRSA – Health Center 검색",
+        url: "https://findahealthcenter.hrsa.gov/",
+      },
+      {
+        label: "Georgia Medicaid",
+        url: "https://medicaid.georgia.gov/",
+      },
+    ],
+    phrases: [
+      {
+        ko: "한국어 가능한 의사를 찾고 싶습니다.",
+        en: "I am looking for a Korean-speaking doctor.",
+      },
+      {
+        ko: "한국어 통역을 요청할 수 있나요?",
+        en: "Can I request a Korean interpreter for my visit?",
       },
     ],
   },

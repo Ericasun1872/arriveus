@@ -104,6 +104,22 @@ export const bankGuides: Guide[] = [
         label: "ArriveUS – SSN과 ITIN",
         url: "/guides/tax/itin-ssn",
       },
+      {
+        label: "도착 첫 7일",
+        url: "/guides/life/first-week",
+      },
+    ],
+    faq: [
+      {
+        question: "학생인데 SSN이 없어도 되나요?",
+        answer:
+          "은행·상품마다 다릅니다. Student checking과 SSN 없이 개설 가능 여부를 방문 전에 문의하세요.",
+      },
+      {
+        question: "ITIN만 있어도 계좌를 열 수 있나요?",
+        answer:
+          "받아주는 곳이 있고 거절하는 곳이 있습니다. 여권·비자·주소 증명 조합을 미리 확인하세요.",
+      },
     ],
     disclaimer,
   },
@@ -146,6 +162,18 @@ export const bankGuides: Guide[] = [
       {
         label: "ArriveUS – 신용 점수 올리기",
         url: "/guides/bank/credit-build",
+      },
+    ],
+    faq: [
+      {
+        question: "신용 이력이 없으면 무조건 거절되나요?",
+        answer:
+          "일반 카드는 어려울 수 있지만 Secured card·학생/신규 상품으로 시작하는 경우가 많습니다.",
+      },
+      {
+        question: "여러 장 한 번에 신청해도 되나요?",
+        answer:
+          "짧은 기간 Hard inquiry가 쌓이면 불리할 수 있어, 한두 개부터 시작하는 편이 낫습니다.",
       },
     ],
     disclaimer,
@@ -267,6 +295,18 @@ export const bankGuides: Guide[] = [
       {
         label: "CFPB – Money transfers",
         url: "https://www.consumerfinance.gov/consumer-tools/money-transfers/",
+      },
+    ],
+    faq: [
+      {
+        question: "수수료만 보면 되나요?",
+        answer:
+          "아니요. 환율 스프레드와 도착 시간·한도를 함께 비교하세요.",
+      },
+      {
+        question: "수취인 이름이 약간 달라도 되나요?",
+        answer:
+          "여권·계좌 명의와 같게 쓰는 것이 안전합니다. 불일치 시 지연·반송될 수 있습니다.",
       },
     ],
     disclaimer,
