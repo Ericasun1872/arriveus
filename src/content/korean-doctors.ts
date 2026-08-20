@@ -369,4 +369,47 @@ export const koreanDoctorRegions: KoreanDoctorRegion[] = [
       },
     ],
   },
+  {
+    slug: "northern-virginia",
+    nameKo: "북버지니아·DC 근교",
+    nameEn: "Northern Virginia & DC metro",
+    areaNote: "버지니아 · 페어팩스·애난데일·센터빌 · DC·메릴랜드 통근권",
+    summary:
+      "북버지니아·DC 메트로에서 한국어 진료·통역을 찾는 기본 경로입니다. Virginia 보험 마켓과 Health Center 검색을 안내합니다.",
+    tips: [
+      "특정 개인 의사를 ‘추천’하지 않습니다. 네트워크·예약은 직접 확인하세요.",
+      "애난데일·센터빌·페어팩스 등 한인 밀집 지역은 보험사 Language: Korean 검색이 유용합니다.",
+      "거주 주(VA/MD/DC)와 직장 주가 다르면 보험 네트워크·주치의 지역이 달라질 수 있습니다.",
+    ],
+    steps: [
+      "보험이 있으면 Virginia 보험 마켓(또는 해당 주 마켓)·보험사 Doctor Finder에서 Korean을 검색합니다.",
+      "무보험·저소득이면 HRSA Health Center Finder로 클리닉·통역·비용을 확인합니다.",
+      "초진 시 보험 카드·약 목록을 가져가고 한국어 통역을 요청합니다.",
+      "응급이 아니면 ER보다 Urgent care·클리닉을 먼저 검토합니다.",
+    ],
+    links: [
+      {
+        label: "HealthCare.gov (보험 마켓)",
+        url: "https://www.healthcare.gov/",
+      },
+      {
+        label: "HRSA – Health Center 검색",
+        url: "https://findahealthcenter.hrsa.gov/",
+      },
+      {
+        label: "DC Health Link (DC 거주 시)",
+        url: "https://dchealthlink.com/",
+      },
+    ],
+    phrases: [
+      {
+        ko: "한국어 가능한 의사를 찾고 싶습니다.",
+        en: "I am looking for a Korean-speaking doctor.",
+      },
+      {
+        ko: "한국어 통역을 요청할 수 있나요?",
+        en: "Can I request a Korean interpreter for my visit?",
+      },
+    ],
+  },
 ];

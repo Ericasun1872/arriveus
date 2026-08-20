@@ -61,7 +61,7 @@ export const categories: Category[] = [
     slug: "housing",
     name: "주거",
     nameEn: "Housing",
-    description: "임대, 시니어 주거, 유틸리티, 보증금",
+    description: "임대, 리스·룸메이트, 시니어 주거, 유틸리티, 보증금",
     accent: "#1F6F8B",
     icon: "housing",
   },

@@ -1003,6 +1003,30 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I prefer to meet in person before signing or paying.",
     },
   ],
+  "housing/lease-basics": [
+    {
+      ko: "중도 해지(Early termination) 비용을 알려 주세요.",
+      en: "What is the early termination fee if I break the lease?",
+    },
+    {
+      ko: "유틸리티가 월세에 포함되는지 확인해 주세요.",
+      en: "Please confirm which utilities are included in the rent.",
+    },
+    {
+      ko: "게스트 규정이 어떻게 되나요?",
+      en: "What is the guest policy?",
+    },
+  ],
+  "housing/roommate": [
+    {
+      ko: "룸메이트를 Lease에 추가할 수 있나요?",
+      en: "Can I add a roommate to the lease?",
+    },
+    {
+      ko: "서브리스(전대) 허가가 필요한가요?",
+      en: "Do I need written approval to sublease?",
+    },
+  ],
   "housing/senior-housing-55": [
     {
       ko: "55세 이상 커뮤니티 투어를 예약하고 싶습니다.",

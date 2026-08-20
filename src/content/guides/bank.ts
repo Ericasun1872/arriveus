@@ -220,6 +220,18 @@ export const bankGuides: Guide[] = [
         url: "/guides/bank/first-credit-card",
       },
     ],
+    faq: [
+      {
+        question: "점수가 얼마나 빨리 오르나요?",
+        answer:
+          "사람·이용 패턴마다 다르지만, 연체 없이 몇 달이 지나면 변화가 보이는 경우가 많습니다. 단기간 ‘점수 보장’ 서비스는 경계하세요.",
+      },
+      {
+        question: "카드를 해지하면 점수가 떨어지나요?",
+        answer:
+          "오래된 계정을 닫으면 평균 신용 기간·한도에 영향을 줄 수 있습니다. 필요하면 한도·연회비만 먼저 조정하세요.",
+      },
+    ],
     disclaimer,
   },
   {
@@ -255,6 +267,18 @@ export const bankGuides: Guide[] = [
       {
         label: "CFPB – Opening a bank account",
         url: "https://www.consumerfinance.gov/ask-cfpb/how-do-i-open-a-checking-account-en-905/",
+      },
+    ],
+    faq: [
+      {
+        question: "Routing number와 Account number는 어디서 보나요?",
+        answer:
+          "은행 앱·온라인 뱅킹의 Direct Deposit 안내, 또는 수표 하단에 있습니다. 모바일만 쓰는 계좌는 앱 메뉴를 확인하세요.",
+      },
+      {
+        question: "첫 급여가 안 들어왔어요.",
+        answer:
+          "페이롤 반영일과 계좌 번호를 다시 확인하고, HR·은행에 문의하세요. 첫 달은 수표로 받는 경우도 있습니다.",
       },
     ],
     disclaimer,
@@ -341,6 +365,18 @@ export const bankGuides: Guide[] = [
       {
         label: "CFPB – Debit cards",
         url: "https://www.consumerfinance.gov/ask-cfpb/what-is-a-debit-card-en-76/",
+      },
+    ],
+    faq: [
+      {
+        question: "오버드래프트 수수료를 없앨 수 있나요?",
+        answer:
+          "많은 은행에서 overdraft opt-out이 가능합니다. 앱·고객센터에서 설정을 확인하고 잔액 알림을 켜세요.",
+      },
+      {
+        question: "직불카드도 신용 점수가 쌓이나요?",
+        answer:
+          "보통 아니요. 신용 점수는 신용카드·대출 등 신용 계정의 영향을 받습니다.",
       },
     ],
     disclaimer,

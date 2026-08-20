@@ -43,6 +43,14 @@ export const housingGuides: Guide[] = [
         url: "/guides/housing/senior-housing-55",
       },
       {
+        label: "리스(임대차) 읽기",
+        url: "/guides/housing/lease-basics",
+      },
+      {
+        label: "룸메이트·서브리스",
+        url: "/guides/housing/roommate",
+      },
+      {
         label: "저소득 시니어 주거 혜택",
         url: "/guides/housing/senior-housing-low-income",
       },
@@ -111,6 +119,22 @@ export const housingGuides: Guide[] = [
         label: "FCC – Internet consumer tips",
         url: "https://www.fcc.gov/consumers/guides/getting-broadband",
       },
+      {
+        label: "아파트 임대",
+        url: "/guides/housing/rent-apartment",
+      },
+    ],
+    faq: [
+      {
+        question: "월세에 유틸리티가 포함돼 있는지 어떻게 아나요?",
+        answer:
+          "Lease와 Move-in packet에 세입자 부담 항목이 적혀 있습니다. 불명확하면 단지에 서면으로 확인하세요.",
+      },
+      {
+        question: "신용이 없으면 보증금을 내야 하나요?",
+        answer:
+          "전기·가스 등에서 Deposit을 요구할 수 있습니다. 금액·반환 조건을 영수증에 남기세요.",
+      },
     ],
     disclaimer,
   },
@@ -146,6 +170,18 @@ export const housingGuides: Guide[] = [
       {
         label: "USA.gov – Housing help",
         url: "https://www.usa.gov/housing",
+      },
+    ],
+    faq: [
+      {
+        question: "보증금은 언제 돌려받나요?",
+        answer:
+          "주·계약마다 반환 기한이 다릅니다. Lease와 거주 주 규정을 확인하고, 공제 내역을 서면으로 요청하세요.",
+      },
+      {
+        question: "벽에 못 자국도 공제되나요?",
+        answer:
+          "단지·주 기준에 따라 다릅니다. 정상 마모와 파손 구분을 Lease·Move-out 안내에서 확인하세요.",
       },
     ],
     disclaimer,
@@ -186,6 +222,26 @@ export const housingGuides: Guide[] = [
       {
         label: "ArriveUS – 유틸리티 신청",
         url: "/guides/housing/utilities-setup",
+      },
+      {
+        label: "주소·우편",
+        url: "/guides/life/address-mail",
+      },
+      {
+        label: "리스(임대차) 읽기",
+        url: "/guides/housing/lease-basics",
+      },
+    ],
+    faq: [
+      {
+        question: "입주 전에 Renters insurance가 꼭 필요한가요?",
+        answer:
+          "단지가 요구하면 입주 조건인 경우가 많습니다. 요구하지 않아도 소지품·배상 대비로 가입하는 분이 많습니다.",
+      },
+      {
+        question: "퇴거일을 하루만 넘겨도 되나요?",
+        answer:
+          "Lease 날짜를 넘기면 추가 월세·위약금이 붙을 수 있습니다. 연장이 필요하면 미리 서면으로 요청하세요.",
       },
     ],
     disclaimer,
@@ -242,6 +298,124 @@ export const housingGuides: Guide[] = [
           "공식 웹사이트·전화로 매물·담당자를 교차 확인하고, 가능하면 직접 방문하세요.",
       },
     ],
+    disclaimer,
+  },
+  {
+    slug: "lease-basics",
+    category: "housing",
+    title: "리스(임대차) 읽기",
+    summary:
+      "Lease에서 월세·기간·해지·펫·게스트·수리 책임 등 서명 전에 꼭 볼 조항을 한국어로 정리했습니다.",
+    cost: "Application fee·Holding fee는 단지마다 다름 (환불 여부 확인)",
+    methods: ["조항 체크리스트", "서면 Q&A", "번역·지인 교차 확인"],
+    overview:
+      "미국 아파트 Lease는 보통 12개월 고정이 많고, 서명하면 중도 해지(Early termination) 위약금·남은 기간 월세 책임이 생길 수 있습니다. 서명 전에 (1) 월세·Due date·연체료, (2) 계약 기간·갱신·통지 기한, (3) 보증금·공제, (4) 유틸리티 부담, (5) 펫·흡연·게스트, (6) 수리·출입(Entry) , (7) 주차·저장고, (8) Renters insurance 요구를 표시해 두세요. 영어가 어려우면 중요한 숫자·날짜만이라도 메모하고, 구두 약속은 이메일로 남기세요. ArriveUS는 계약 대행·법률 자문을 하지 않습니다.",
+    requirements: [
+      "Lease 초안 PDF 또는 인쇄본",
+      "월세·입주일을 적은 메모",
+      "펫·주차·동거인 계획",
+      "질문 목록 (해지·수리·게스트)",
+    ],
+    steps: [
+      "첫 페이지에서 당사자 이름, 주소·유닛, 월세, Lease 시작·종료일을 확인합니다.",
+      "연체료(Late fee), NSF(부도) 수수료, 자동이체 할인을 찾습니다.",
+      "Early termination / Break lease / Military clause 조항과 비용을 확인합니다.",
+      "유틸리티·인터넷·쓰레기·주차비가 월세에 포함인지 표시합니다.",
+      "단지 출입·수리 요청·24시간 통지 규칙을 읽고, 구두 설명과 다르면 이메일로 확인합니다.",
+      "서명 전 Application/Holding fee 환불 조건과 취소 기한을 확인합니다.",
+    ],
+    links: [
+      {
+        label: "CFPB – Renting",
+        url: "https://www.consumerfinance.gov/consumer-tools/renter-protections/",
+      },
+      {
+        label: "USA.gov – Housing help",
+        url: "https://www.usa.gov/housing",
+      },
+      {
+        label: "아파트 임대",
+        url: "/guides/housing/rent-apartment",
+      },
+      {
+        label: "룸메이트·서브리스",
+        url: "/guides/housing/roommate",
+      },
+      {
+        label: "보증금",
+        url: "/guides/housing/security-deposit",
+      },
+    ],
+    faq: [
+      {
+        question: "서명 후 마음이 바뀌면요?",
+        answer:
+          "Cooling-off가 없는 경우가 많고, Holding fee·위약금이 붙을 수 있습니다. 서명 전 취소 조항을 확인하세요.",
+      },
+      {
+        question: "한국어 번역본을 달라고 할 수 있나요?",
+        answer:
+          "단지가 제공하지 않을 수 있습니다. 핵심 조항을 표시해 두고 신뢰할 수 있는 사람에게 확인받으세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer,
+  },
+  {
+    slug: "roommate",
+    category: "housing",
+    title: "룸메이트·서브리스",
+    summary:
+      "룸메이트와 살 때 월세 분담·Lease 명의, 서브리스(전대) 허가, 분쟁을 줄이는 기본 약속을 안내합니다.",
+    cost: "Application fee는 사람마다 / 무단 전대 시 퇴거·위약 위험",
+    methods: ["공동 Lease", "마스터 테넌트 + 동거", "단지 승인 서브리스"],
+    overview:
+      "비용을 나누려고 룸메이트를 구하는 경우가 많지만, Lease에 이름이 있는 사람(tenants)과 단순 동거인(occupants) 책임이 다를 수 있습니다. 한 사람만 서명했는데 다른 사람이 월세를 안 내면, 서명자가 전액을 물어야 하는 구조가 흔합니다. 서브리스(Sublease)는 단지·집주인 서면 허가가 필요한 경우가 많고, 무단 전대는 계약 위반입니다. 카톡·Airbnb식 단기 전대 광고는 사기·규정 위반 위험이 큽니다. 월세·유틸·청소·게스트·퇴거 일정을 짧은 메모라도 합의하세요.",
+    requirements: [
+      "단지·집주인의 동거/서브리스 정책",
+      "누가 Lease에 서명하는지",
+      "월세·보증금·유틸 분담 비율",
+      "퇴거·교체 시 절차 합의",
+    ],
+    steps: [
+      "단지에 Roommate / Additional occupant / Sublease 규칙을 문의합니다.",
+      "가능하면 모든 성인이 Lease에 함께 서명합니다 (공동 책임 범위를 이해한 뒤).",
+      "월세 납부 방법(한 계좌 vs 각자), 연체 시 누가 연락받을지 정합니다.",
+      "공용 공간·청소·손님·반려동물 규칙을 문자·문서로 남깁니다.",
+      "중도 퇴거·교체 시 Application·승인 절차와 비용을 미리 확인합니다.",
+      "서브리스는 반드시 서면 허가를 받고, 원 Lease 금지 조항을 다시 읽습니다.",
+    ],
+    links: [
+      {
+        label: "CFPB – Renting",
+        url: "https://www.consumerfinance.gov/consumer-tools/renter-protections/",
+      },
+      {
+        label: "리스(임대차) 읽기",
+        url: "/guides/housing/lease-basics",
+      },
+      {
+        label: "아파트 임대",
+        url: "/guides/housing/rent-apartment",
+      },
+      {
+        label: "임대 사기 주의",
+        url: "/guides/housing/rental-scams",
+      },
+    ],
+    faq: [
+      {
+        question: "제가 서명만 했는데 룸메이트가 월세를 안 내면요?",
+        answer:
+          "단지에는 서명자가 전액 책임이 되는 경우가 많습니다. 분담 약속과 별개로 Lease를 확인하세요.",
+      },
+      {
+        question: "크레딧이 없는 친구를 올릴 수 있나요?",
+        answer:
+          "단지 심사에 따라 거절되거나 Guarantor·선수납을 요구할 수 있습니다. 사전 문의가 안전합니다.",
+      },
+    ],
+    updatedAt: "2026-08",
     disclaimer,
   },
 ];

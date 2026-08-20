@@ -117,7 +117,7 @@ export default async function CategoryPage({ params }: PageProps) {
             한국어 의사 찾기 · 주요 도시
           </h2>
           <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
-            시애틀·LA·뉴욕·베이·시카고·DFW·애틀랜타 등 보험 검색·클리닉·통역
+            시애틀·LA·뉴욕·베이·시카고·DFW·애틀랜타·북VA 등 보험 검색·클리닉·통역
             요청 방법을 지역별로 안내합니다.
           </p>
           <Link

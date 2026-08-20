@@ -248,6 +248,28 @@ export const stateGuides: StateGuide[] = [
       "REAL ID와 일반 면허 서류 요구가 다를 수 있습니다.",
       "공식 handbook과 온라인 서비스를 FLHSMV에서 확인하세요.",
     ],
+    localNotes: [
+      {
+        name: "Miami–Orlando",
+        nameKo: "마이애미·올랜도",
+        notes: [
+          "면허·ID는 플로리다 FLHSMV 기준입니다. 서비스는 카운티 tax collector / driver license office에서 처리되는 경우가 많습니다.",
+          "방문 전 예약·필요 서류·REAL ID 목록을 카운티 안내에서 확인하세요.",
+          "관광·단기 체류와 거주자 면허 요건이 다를 수 있으니 체류 목적을 구분해 보세요.",
+          "대중교통은 지역 기관(예: Miami-Dade Transit, Lynx) 안내를 참고할 수 있습니다.",
+        ],
+        links: [
+          {
+            label: "FLHSMV",
+            url: "https://www.flhsmv.gov/",
+          },
+          {
+            label: "Miami-Dade Transit",
+            url: "https://www.miamidade.gov/global/transportation/home.page",
+          },
+        ],
+      },
+    ],
   },
   {
     code: "il",
@@ -341,6 +363,28 @@ export const stateGuides: StateGuide[] = [
       "Driver guide와 practice exam 링크를 DMV 사이트에서 제공합니다.",
       "차량 검사(inspection) 요건이 별도로 있을 수 있습니다.",
     ],
+    localNotes: [
+      {
+        name: "Northern Virginia",
+        nameKo: "북버지니아",
+        notes: [
+          "페어팩스·알링턴·알렉산드리아 등도 버지니아 DMV 절차를 따릅니다 (DC 면허와 별개).",
+          "온라인 갱신·주소 변경 가능 업무를 먼저 확인하고, 방문 시 예약을 권장합니다.",
+          "차량 safety inspection 스티커 기한을 따로 관리하세요.",
+          "DC·메릴랜드 통근이면 톨·주차·차량 보험 보장 지역을 함께 확인하세요.",
+        ],
+        links: [
+          {
+            label: "Virginia DMV",
+            url: "https://www.dmv.virginia.gov/",
+          },
+          {
+            label: "Virginia DMV – Northern Virginia",
+            url: "https://www.dmv.virginia.gov/locations",
+          },
+        ],
+      },
+    ],
   },
   {
     code: "ga",
@@ -392,6 +436,28 @@ export const stateGuides: StateGuide[] = [
       "Learner’s permit·도로시험 일정과  Mandatory driver education 요건을 확인하세요.",
       "공식 Driver Manual로 필기시험을 준비합니다.",
       "Mass.gov RMV 페이지에서 위치·수수료·온라인 서비스를 확인하세요.",
+    ],
+    localNotes: [
+      {
+        name: "Boston",
+        nameKo: "보스턴",
+        notes: [
+          "면허·등록은 Massachusetts RMV 기준입니다. 시 거주자도 주 절차를 따릅니다.",
+          "대부분 업무는 예약 후 방문이 일반적이니 Mass.gov에서 예약·서류를 확인하세요.",
+          "시내 주차·거주자 허가·카메라 단속은 시 규정과 별개입니다.",
+          "대중교통은 MBTA 안내를 참고할 수 있습니다.",
+        ],
+        links: [
+          {
+            label: "Massachusetts RMV",
+            url: "https://www.mass.gov/orgs/massachusetts-registry-of-motor-vehicles",
+          },
+          {
+            label: "MBTA",
+            url: "https://www.mbta.com/",
+          },
+        ],
+      },
     ],
   },
 ];
