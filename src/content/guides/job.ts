@@ -124,6 +124,23 @@ export const jobGuides: Guide[] = [
         url: "/guides/immigration/employment-green-card",
       },
     ],
+    faq: [
+      {
+        question: "I-9에 ITIN을 써도 되나요?",
+        answer:
+          "아니요. ITIN은 근로 허가 증명이 아닙니다. USCIS I-9 Acceptable Documents(List A 또는 B+C) 원본을 쓰세요.",
+      },
+      {
+        question: "W-4는 어떻게 고르면 되나요?",
+        answer:
+          "원천징수 금액은 가구·소득에 따라 다릅니다. IRS Tax Withholding Estimator와 Form W-4 안내를 참고하세요.",
+      },
+      {
+        question: "SSN이 아직 없으면 입사가 안 되나요?",
+        answer:
+          "회사·시점에 따라 다를 수 있습니다. HR에 일정을 알리고 SSA 신청을 진행하세요. I-9 기한은 USCIS·회사 안내를 따르세요.",
+      },
+    ],
     updatedAt: "2026-08",
     disclaimer,
   },
@@ -177,8 +194,12 @@ export const jobGuides: Guide[] = [
         url: "https://www.usa.gov/jobs",
       },
       {
-        label: "ArriveUS 채용 공고",
-        url: "/jobs",
+        label: "온라인 구직·공고 검색",
+        url: "/guides/job/job-search",
+      },
+      {
+        label: "임금·취업 사기 주의",
+        url: "/guides/job/wage-scams",
       },
       {
         label: "미국식 이력서·면접",
@@ -187,6 +208,10 @@ export const jobGuides: Guide[] = [
       {
         label: "입사 근로 서류 (I-9, W-4)",
         url: "/guides/job/work-documents",
+      },
+      {
+        label: "채용·광고 문의",
+        url: "/jobs",
       },
     ],
     faq: [
@@ -276,7 +301,15 @@ export const jobGuides: Guide[] = [
         url: "/guides/job/small-business",
       },
       {
-        label: "ArriveUS 채용 공고",
+        label: "온라인 구직·공고 검색",
+        url: "/guides/job/job-search",
+      },
+      {
+        label: "임금·취업 사기 주의",
+        url: "/guides/job/wage-scams",
+      },
+      {
+        label: "채용·광고 문의",
         url: "/jobs",
       },
     ],
@@ -392,5 +425,130 @@ export const jobGuides: Guide[] = [
     updatedAt: "2026-08",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 법률·세무·사업·이민 자문이 아닙니다. 허가·세금·대출·체류 자격은 주·시·연방 규정과 개인 상황에 따라 다르므로 SBA·세무 전문가·자격 있는 변호사 등 공인 창구에서 최종 확인하세요. 선입금만 받고 허가·대출을 보장한다는 대행 광고는 경계하세요.",
+  },
+  {
+    slug: "job-search",
+    category: "job",
+    title: "온라인 구직·공고 검색",
+    summary:
+      "USA.gov·CareerOneStop·Indeed 등에서 공고를 찾고, 지원 전 Work authorization·사기 공고를 걸러내는 기본 방법입니다.",
+    cost: "공식·일반 구직 사이트는 대개 무료 / 유료 ‘취업 보장’ 서비스는 경계",
+    methods: [
+      "USA.gov / CareerOneStop",
+      "회사 채용 페이지·Indeed 등",
+      "한인 네트워크·현장 방문",
+    ],
+    overview:
+      "미국 구직은 ‘한 사이트만’이 아니라 공식 안내(USA.gov Jobs), 직업·지역 검색(CareerOneStop), 일반 채용 보드, 회사 채용 페이지, 한인 소개가 섞입니다. 지원 전에 합법 근로 가능 여부(시민·영주·EAD·비자)를 확인하고, I-9 서류는 입사 때 준비합니다. ‘선입금만 내면 취업·영주권 보장’, ‘재택인데 장비비 먼저 송금’ 같은 공고는 사기 위험이 큽니다. 현장 직종은 ArriveUS 현장 취업·홈케어 가이드를, 영문 Resume는 이력서 가이드를 함께 보세요.",
+    requirements: [
+      "목표 직무·지역·가능 요일",
+      "영문 Resume 또는 간단 경력 메모",
+      "근로 허가 상태 파악",
+      "지원용 이메일·미국 전화번호",
+    ],
+    steps: [
+      "USA.gov Jobs와 CareerOneStop Find Jobs에서 키워드·도시를 넣어 검색합니다.",
+      "회사 공식 Careers 페이지와 신뢰할 수 있는 보드를 비교해 지원합니다.",
+      "공고에서 시급·스케줄·업무·Work authorization 문구를 확인합니다.",
+      "지원 전 Resume를 공고 키워드에 맞게 짧게 수정합니다.",
+      "면접·오퍼 후에는 I-9·W-4 가이드로 입사 서류를 준비합니다.",
+      "임금·스케줄이 약속과 다르면 Worker.gov 안내를 참고합니다.",
+    ],
+    links: [
+      {
+        label: "USA.gov – Jobs",
+        url: "https://www.usa.gov/jobs",
+      },
+      {
+        label: "CareerOneStop – Find Jobs",
+        url: "https://www.careeronestop.org/JobSearch/find-jobs.aspx",
+      },
+      {
+        label: "Worker.gov",
+        url: "https://www.worker.gov/",
+      },
+      {
+        label: "임금·취업 사기 주의",
+        url: "/guides/job/wage-scams",
+      },
+      {
+        label: "미국식 이력서·면접",
+        url: "/guides/job/resume-interview",
+      },
+      {
+        label: "현장 취업",
+        url: "/guides/job/everyday-jobs",
+      },
+    ],
+    faq: [
+      {
+        question: "유료 취업 알선에 돈을 내야 하나요?",
+        answer:
+          "합법 구직은 보통 무료입니다. 선입금·‘취업 보장’을 요구하면 사기·불법 가능성이 있어 거절하세요.",
+      },
+      {
+        question: "영주권 스폰서 공고만 찾아도 되나요?",
+        answer:
+          "가능하지만 드물고 대기가 깁니다. 취업 이민 가이드와 변호사 상담을 참고하고, ‘보장’ 광고는 경계하세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer,
+  },
+  {
+    slug: "wage-scams",
+    category: "job",
+    title: "임금·취업 사기 주의",
+    summary:
+      "선입금 취업, 가짜 채용, 임금 체불·깎기 등 자주 나오는 패턴과 Worker.gov 등 공식 대처 창구를 안내합니다.",
+    cost: "피해액은 케이스마다 다름 / 상담·신고 창구는 무료인 경우 많음",
+    methods: ["조건 서면 확인", "Worker.gov", "임금 기록 보관"],
+    overview:
+      "정착 초기에는 ‘지금 돈만 내면 일자리·서류 해결’, ‘팁만 주고 시급 없음’, ‘트레이닝비 먼저’ 같은 제안에 노출되기 쉽습니다. 합법 고용은 보통 I-9·시급·페이롤 기록이 있고, 근로자 권리 안내는 Worker.gov에서 볼 수 있습니다. ArriveUS는 불법 취업 방법을 안내하지 않으며, 임금 체불·위험 작업·사기로부터 지키는 공식 경로를 우선합니다.",
+    requirements: [
+      "시급·근무시간·업무를 적은 메모·문자",
+      "받은 금액·날짜 기록",
+      "고용주 이름·주소·연락처",
+    ],
+    steps: [
+      "채용·근무 조건을 문자·이메일로 남기고, 선입금·선물카드 송금 요구는 거절합니다.",
+      "일한 시간과 받은 금액을 기록합니다.",
+      "임금이 늦거나 깎이면 Worker.gov에서 해당 주제 안내를 확인합니다.",
+      "안전하지 않은 작업·보복이 있으면 공식 신고·상담 창구를 검토합니다.",
+      "‘영주권·취업 보장 대행’ 광고는 USCIS Avoid scams와 교차 확인합니다.",
+    ],
+    links: [
+      {
+        label: "Worker.gov",
+        url: "https://www.worker.gov/",
+      },
+      {
+        label: "USCIS – Avoid scams",
+        url: "https://www.uscis.gov/avoid-scams",
+      },
+      {
+        label: "FTC – Job scams",
+        url: "https://consumer.ftc.gov/articles/job-scams",
+      },
+      {
+        label: "온라인 구직·공고 검색",
+        url: "/guides/job/job-search",
+      },
+    ],
+    faq: [
+      {
+        question: "트레이닝비를 먼저 내라고 해요.",
+        answer:
+          "합법 고용에서도 교육비가 있는 경우는 있으나, ‘내면 바로 배정·고수익 보장’이면 조건을 다시 확인하고 Worker.gov·사기 안내를 보세요.",
+      },
+      {
+        question: "팁만 주고 시급이 없어요.",
+        answer:
+          "업종·주마다 팁 크레딧 규칙이 다릅니다. 약속·기록이 불명확하면 Worker.gov 임금 안내를 확인하세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·취업 알선 자문이 아닙니다. 임금·안전·이민 문제는 공식 기관과 자격 있는 전문가에게 확인하세요. 불법 취업·가짜 서류 방법은 안내하지 않습니다.",
   },
 ];

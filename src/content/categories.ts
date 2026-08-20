@@ -53,7 +53,7 @@ export const categories: Category[] = [
     slug: "job",
     name: "취업",
     nameEn: "Jobs",
-    description: "현장 취업, 홈케어·돌봄, 스몰 비즈니스, 이력서",
+    description: "구직·현장 취업, 홈케어, 임금 사기 주의, 이력서",
     accent: "#3D3A8C",
     icon: "job",
   },

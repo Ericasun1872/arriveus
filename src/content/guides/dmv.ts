@@ -43,6 +43,23 @@ export const dmvGuides: Guide[] = [
         url: "https://www.nhtsa.gov/road-safety/teen-driving",
       },
     ],
+    faq: [
+      {
+        question: "Permit으로 혼자 운전해도 되나요?",
+        answer:
+          "대부분 주에서는 면허 있는 성인 동승이 필요합니다. 야간·탑승 인원 제한도 흔하니 거주 주 GDL/Handbook을 확인하세요.",
+      },
+      {
+        question: "성인 초보도 Permit이 필요한가요?",
+        answer:
+          "주마다 다릅니다. 일부는 성인도 Permit 후 도로시험을 보고, 일부는 다른 경로가 있습니다. 거주 주 New driver 안내를 보세요.",
+      },
+      {
+        question: "연습 시간은 얼마나 채워야 하나요?",
+        answer:
+          "주간·야간 최소 연습 시간이 정해진 주가 많습니다. DMV Teen/New driver 페이지와 로그 양식을 확인하세요.",
+      },
+    ],
     disclaimer: dmvDisclaimer,
   },
   {
@@ -54,16 +71,16 @@ export const dmvGuides: Guide[] = [
     cost: "연습은 무료 (실제 시험 응시료는 주마다 상이)",
     methods: ["온라인 연습", "Driver Handbook 학습"],
     overview:
-      "필기시험(Knowledge / Written test)은 도로 표지, 우선권, 속도, 음주운전, 학교 구역 등 규칙을 확인합니다. 문제 수·합격 점수·언어(영어 외 선택)는 주마다 다릅니다. 아래 연습 문제는 공통적으로 자주 나오는 유형이며 실제 시험 문제와 동일하지 않습니다. 반드시 거주 주 Driver Handbook와 공식 practice test를 함께 보세요.",
+      "필기시험(Knowledge / Written test)은 도로 표지, 우선권, 속도, 음주운전, 학교 구역, 고속도로·주차 규칙 등을 확인합니다. 문제 수·합격 점수·언어(영어 외 선택)·컴퓨터/지필 방식은 주마다 다릅니다. 아래 연습 문제는 공통적으로 자주 나오는 유형이며 실제 시험과 동일하지 않습니다. 가장 확실한 준비는 (1) 거주 주 Driver Handbook 통독, (2) 주 공식 practice test, (3) 틀린 유형 복습입니다. ArriveUS 주별 DMV 가이드에서 handbook 링크를 찾을 수 있습니다.",
     requirements: [
       "거주 주 Driver Handbook (PDF/앱)",
       "필기시험 예약 또는 워크인 가능 여부 확인",
       "신분증 및 Permit/면허 신청에 필요한 서류",
     ],
     steps: [
-      "거주 주 DMV에서 공식 Handbook를 다운로드합니다.",
-      "표지·우선권·속도·음주·학교 구역 챕터를 중심으로 학습합니다.",
-      "아래 ‘연습 문제’ 탭에서 문제를 풀고 틀린 유형을 복습합니다.",
+      "주별 DMV 가이드 또는 주 공식 사이트에서 Handbook를 다운로드합니다.",
+      "표지·우선권·속도·음주·학교 구역·고속도로 챕터를 중심으로 학습합니다.",
+      "아래 ‘연습 문제’ 탭에서 문제를 풀고 틀린 유형을 Handbook에서 다시 읽습니다.",
       "가능하면 주 공식 practice test도 추가로 풀어봅니다.",
       "시험 당일 여유 있게 도착해 시력 검사와 필기시험을 응시합니다.",
     ],
@@ -72,8 +89,38 @@ export const dmvGuides: Guide[] = [
         label: "USA.gov – State motor vehicle services",
         url: "https://www.usa.gov/state-motor-vehicle-services",
       },
+      {
+        label: "주별 DMV 가이드 (Handbook 링크)",
+        url: "/guides/dmv/states",
+      },
+      {
+        label: "학습 허가증 (Learner Permit)",
+        url: "/guides/dmv/learner-permit",
+      },
+      {
+        label: "운전면허 신규 발급",
+        url: "/guides/dmv/first-license",
+      },
     ],
     practiceQuestions: dmvPracticeQuestions,
+    updatedAt: "2026-08",
+    faq: [
+      {
+        question: "연습 문제가 실제 시험과 같나요?",
+        answer:
+          "아니요. 학습용 유형입니다. 반드시 거주 주 Driver Handbook와 공식 practice test를 함께 보세요.",
+      },
+      {
+        question: "영어로만 볼 수 있나요?",
+        answer:
+          "많은 주에서 다른 언어 선택이 가능합니다. 가능 언어·통역 규칙은 거주 주 DMV에서 확인하세요.",
+      },
+      {
+        question: "몇 문제 맞춰야 합격인가요?",
+        answer:
+          "문제 수·합격 점수는 주마다 다릅니다. 공식 Handbook·시험 안내의 합격 기준을 기준으로 준비하세요.",
+      },
+    ],
     disclaimer:
       "연습 문제는 학습용이며 실제 DMV 시험과 다를 수 있습니다. 거주 주 공식 자료를 기준으로 준비하세요.",
   },
@@ -235,16 +282,42 @@ export const dmvGuides: Guide[] = [
         url: "https://www.usa.gov/state-motor-vehicle-services",
       },
       {
+        label: "주별 DMV 가이드",
+        url: "/guides/dmv/states",
+      },
+      {
         label: "NHTSA – Learning to drive",
         url: "https://www.nhtsa.gov/risky-driving",
       },
       {
-        label: "ArriveUS – 필기시험 연습",
+        label: "필기시험 연습",
         url: "/guides/dmv/written-test",
       },
       {
-        label: "ArriveUS – 자동차 보험 기초",
+        label: "자동차 보험 기초",
         url: "/guides/dmv/auto-insurance",
+      },
+      {
+        label: "운전면허 신규 발급",
+        url: "/guides/dmv/first-license",
+      },
+    ],
+    updatedAt: "2026-08",
+    faq: [
+      {
+        question: "시험용 차는 꼭 내 차여야 하나요?",
+        answer:
+          "등록·보험이 유효하고 안전 점검을 통과하면 빌린 차·학원 차도 가능한 주가 많습니다. 사전에 DMV·보험 허용 여부를 확인하세요.",
+      },
+      {
+        question: "불합격하면 바로 다시 볼 수 있나요?",
+        answer:
+          "대기 기간·재응시 횟수·추가 수수료가 주마다 다릅니다. 피드백을 받아 연습한 뒤 공식 안내대로 재예약하세요.",
+      },
+      {
+        question: "시험 중 휴대폰을 써도 되나요?",
+        answer:
+          "보통 금지이며 즉시 실격 사유가 될 수 있습니다. 멀리 두고 감독관 지시만 따르세요.",
       },
     ],
     disclaimer: dmvDisclaimer,
@@ -290,6 +363,23 @@ export const dmvGuides: Guide[] = [
       {
         label: "ArriveUS – 차량 등록",
         url: "/guides/dmv/vehicle-registration",
+      },
+    ],
+    faq: [
+      {
+        question: "최소 Liability만 들면 충분한가요?",
+        answer:
+          "주 최소 요건을 충족할 수는 있지만, 사고 시 본인 차·추가 손해가 크게 남을 수 있습니다. 견적서·약관과 주 보험국 안내를 비교하세요.",
+      },
+      {
+        question: "Permit만 있어도 보험에 가입되나요?",
+        answer:
+          "보험사·상품마다 다릅니다. 견적 전에 Permit/면허 상태와 주 최소 요건을 알려 주세요.",
+      },
+      {
+        question: "보험 카드는 어디에 두나요?",
+        answer:
+          "차에 두고 등록·도로시험·검문에 Proof of insurance로 씁니다. 디지털 ID도 인정 여부를 주·보험사에 확인하세요.",
       },
     ],
     disclaimer:
@@ -405,6 +495,23 @@ export const dmvGuides: Guide[] = [
         url: "/guides/dmv/states/wa",
       },
     ],
+    faq: [
+      {
+        question: "REAL ID 없으면 비행기를 못 타나요?",
+        answer:
+          "주 발급 REAL ID 대신 여권 등 TSA가 인정하는 다른 신분증명서로 탑승할 수 있는 경우가 많습니다. TSA Identification 목록을 확인하세요.",
+      },
+      {
+        question: "워싱턴에서 영주권자도 EDL을 받을 수 있나요?",
+        answer:
+          "Washington DOL 안내에 따르면 EDL/EID는 미국 시민만 신청할 수 있습니다. 비시민은 일반 면허와 여권 등 대체 서류를 준비하세요.",
+      },
+      {
+        question: "면허에 별(★)이 있으면 REAL ID인가요?",
+        answer:
+          "많은 주에서 별 표시가 REAL ID 준수 표시입니다. 주마다 표기가 다르니 카드 뒷면·발급 주 DMV 안내로 확인하세요.",
+      },
+    ],
     disclaimer:
       "REAL ID·EDL 자격과 여행 서류 요건은 연방·주 정책이 바뀔 수 있습니다. 워싱턴주 EDL/EID는 시민 대상이라는 DOL 안내를 반영했으나, 신청 전 공식 페이지를 다시 확인하세요. 본 가이드는 법률 자문이 아닙니다.",
   },
@@ -516,6 +623,23 @@ export const dmvGuides: Guide[] = [
       {
         label: "ArriveUS – 자동차 보험 기초",
         url: "/guides/dmv/auto-insurance",
+      },
+    ],
+    faq: [
+      {
+        question: "딜러에서 사면 등록을 알아서 해 주나요?",
+        answer:
+          "Temporary tag와 등록 대행을 해주는 경우가 많습니다. 개인 거래면 Title 이전·등록을 직접 해야 하니 거주 주 DMV를 확인하세요.",
+      },
+      {
+        question: "보험 없이 등록할 수 있나요?",
+        answer:
+          "대부분 주에서는 유효한 보험 증명이 등록·운행 조건입니다. 주 최소 요건을 DMV/보험국에서 확인하세요.",
+      },
+      {
+        question: "등록 만료를 놓치면요?",
+        answer:
+          "연체 수수료·단속 위험이 커질 수 있습니다. 만료일을 기록하고 거주 주 갱신 안내를 따르세요.",
       },
     ],
     disclaimer:

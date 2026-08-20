@@ -50,6 +50,23 @@ export const immigrationGuides: Guide[] = [
         url: "/guides/immigration/biometrics-interview",
       },
     ],
+    faq: [
+      {
+        question: "Receipt Number만으로도 상태를 볼 수 있나요?",
+        answer:
+          "Case Status Online으로 진행 상황은 볼 수 있습니다. 주소 변경·일부 제출·메시지는 myUSCIS 로그인이 필요합니다.",
+      },
+      {
+        question: "이사를 하면 어디에 주소를 바꿔야 하나요?",
+        answer:
+          "USCIS 온라인 주소 변경(또는 AR-11 안내), USPS, SSA를 각각 업데이트하세요. uscis.gov/addresschange를 확인하세요.",
+      },
+      {
+        question: "상태가 오래 멈춰 있으면 바로 문의하나요?",
+        answer:
+          "먼저 Processing Times 도구로 평균 기간을 확인하세요. 그다음 USCIS Contact Center·계정 안내를 따르세요.",
+      },
+    ],
     updatedAt: "2026-08",
     disclaimer,
   },
@@ -94,6 +111,23 @@ export const immigrationGuides: Guide[] = [
       {
         label: "귀화(N-400) 개요",
         url: "/guides/immigration/naturalization-n400",
+      },
+    ],
+    faq: [
+      {
+        question: "바이오메트릭스에 뭘 가져가나요?",
+        answer:
+          "Appointment Notice에 적힌 목록을 따릅니다. 보통 여권·사진 ID·접수증을 챙기고 일찍 도착하세요. USCIS 준비 안내도 확인하세요.",
+      },
+      {
+        question: "일정을 못 지키면 어떻게 하나요?",
+        answer:
+          "Notice에 적힌 방법 또는 USCIS Contact Center로 가능한 빨리 재예약을 요청하세요. 무단 불참은 거절·포기로 이어질 수 있습니다.",
+      },
+      {
+        question: "인터뷰에 통역을 데려가도 되나요?",
+        answer:
+          "양식·케이스마다 통역 규칙이 다릅니다. 사전에 USCIS 안내를 확인하고, 허용되지 않는 통역을 쓰지 마세요.",
       },
     ],
     updatedAt: "2026-08",
@@ -159,6 +193,23 @@ export const immigrationGuides: Guide[] = [
         url: "/guides/immigration/naturalization-n400",
       },
     ],
+    faq: [
+      {
+        question: "I-485와 I-140은 같은 건가요?",
+        answer:
+          "아니요. I-140은 고용주 청원, I-485는 신분 조정(영주권 신청의 한 경로)입니다. 용도는 uscis.gov/forms에서 확인하세요.",
+      },
+      {
+        question: "이 페이지 안내만 보고 제출해도 되나요?",
+        answer:
+          "아니요. 지도일 뿐입니다. 제출 전 해당 양식 Instructions·수수료·Edition date를 공식 Forms 페이지에서 확인하세요.",
+      },
+      {
+        question: "영주권 카드 갱신은 어떤 양식인가요?",
+        answer:
+          "보통 I-90입니다. 조건부 영주권(2년) 조건 제거는 I-751입니다. 본인 카드 유형을 USCIS에서 확인하세요.",
+      },
+    ],
     updatedAt: "2026-08",
     disclaimer,
   },
@@ -215,6 +266,23 @@ export const immigrationGuides: Guide[] = [
       {
         label: "취업 이민(EB-3) 개요",
         url: "/guides/immigration/employment-green-card",
+      },
+    ],
+    faq: [
+      {
+        question: "영주권 몇 년이면 N-400을 낼 수 있나요?",
+        answer:
+          "일반·배우자 등 카테고리마다 거주·실체류 요건이 다릅니다. 최신 자격은 uscis.gov/n-400과 Citizenship 안내에서 확인하세요.",
+      },
+      {
+        question: "영어·시민 시험은 필수인가요?",
+        answer:
+          "많은 경우 필요합니다. 나이·장애 등 면제·완화 규정이 있으니 USCIS Citizenship 안내에서 본인 해당 여부를 확인하세요.",
+      },
+      {
+        question: "시민이 되면 SSN이 바뀌나요?",
+        answer:
+          "숫자는 보통 그대로입니다. SSA에 시민권 취득을 알려 기록을 갱신하세요. N-400에서 함께 요청했는지 확인합니다.",
       },
     ],
     updatedAt: "2026-08",

@@ -704,6 +704,14 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       ko: "분기 예상세를 온라인으로 납부하고 싶습니다.",
       en: "I want to pay my quarterly estimated taxes online.",
     },
+    {
+      ko: "자영업 소득에 대한 예상세 납부 일정을 알려 주세요.",
+      en: "Please tell me the due dates for estimated taxes on self-employment income.",
+    },
+    {
+      ko: "IRS Direct Pay로 납부할 수 있나요?",
+      en: "Can I pay with IRS Direct Pay?",
+    },
   ],
   "tax/state-taxes": [
     {
@@ -713,6 +721,14 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "주 세무국 웹사이트를 알려 주세요.",
       en: "Can you point me to the state tax agency website?",
+    },
+    {
+      ko: "연방 신고와 주 신고를 같이 해야 하나요?",
+      en: "Do I need to file both a federal and a state return?",
+    },
+    {
+      ko: "다른 주로 이사했는데 어느 주에 신고하나요?",
+      en: "I moved to another state—which state return do I need to file?",
     },
   ],
   "immigration/uscis-account": [
@@ -911,6 +927,42 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Thank you for the opportunity to interview.",
     },
   ],
+  "job/job-search": [
+    {
+      ko: "이 지역에서 일자리를 찾고 있습니다.",
+      en: "I am looking for jobs in this area.",
+    },
+    {
+      ko: "이 포지션에 온라인으로 지원하고 싶습니다.",
+      en: "I would like to apply for this position online.",
+    },
+    {
+      ko: "합법적으로 미국에서 일할 수 있습니다.",
+      en: "I am authorized to work in the United States.",
+    },
+    {
+      ko: "이력서를 이메일로 보내도 될까요?",
+      en: "May I email you my resume?",
+    },
+  ],
+  "job/wage-scams": [
+    {
+      ko: "시급과 지급일을 서면으로 확인해 주세요.",
+      en: "Please confirm the hourly wage and payday in writing.",
+    },
+    {
+      ko: "선입금이나 선물카드 구매를 요구하지 말아 주세요.",
+      en: "Please do not ask me to pay an upfront fee or buy gift cards.",
+    },
+    {
+      ko: "일한 시간과 받은 금액을 확인해 주세요.",
+      en: "Please confirm my hours worked and the amount I was paid.",
+    },
+    {
+      ko: "임금이 약속과 다릅니다. 기록을 다시 보고 싶습니다.",
+      en: "My pay does not match what was promised. I would like to review the records.",
+    },
+  ],
   "job/work-documents": [
     {
       ko: "I-9 서류를 제출하러 왔습니다.",
@@ -1025,6 +1077,14 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "서브리스(전대) 허가가 필요한가요?",
       en: "Do I need written approval to sublease?",
+    },
+    {
+      ko: "월세·유틸리티를 어떻게 나누나요?",
+      en: "How should we split rent and utilities?",
+    },
+    {
+      ko: "보증금은 누가 내고, 퇴거 시 어떻게 돌려받나요?",
+      en: "Who pays the security deposit, and how is it returned when we move out?",
     },
   ],
   "housing/senior-housing-55": [

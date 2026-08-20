@@ -9,7 +9,7 @@ import {
 export const metadata: Metadata = {
   title: "한국어 의사 찾기",
   description:
-    "시애틀·LA·뉴욕·베이·시카고·DFW·애틀랜타 등 지역별로 한국어 의사·통역을 찾는 방법과 커뮤니티 클리닉·보험 검색 링크를 안내합니다.",
+    "시애틀·LA·뉴욕·베이·시카고·DFW·휴스턴·마이애미·보스턴 등 지역별로 한국어 의사·통역을 찾는 방법과 커뮤니티 클리닉·보험 검색 링크를 안내합니다.",
   alternates: { canonical: "/guides/medical/korean-doctors" },
 };
 

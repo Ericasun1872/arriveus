@@ -52,6 +52,23 @@ export const medicalGuides: Guide[] = [
         url: "/guides/medical/low-income-insurance",
       },
     ],
+    faq: [
+      {
+        question: "Open Enrollment이 아니면 가입이 안 되나요?",
+        answer:
+          "보통 연말 Open Enrollment가 기본입니다. 직장 보험 상실·이사·결혼 등 Qualifying life event가 있으면 Special Enrollment이 열릴 수 있습니다. Healthcare.gov에서 확인하세요.",
+      },
+      {
+        question: "직장 보험과 Marketplace 중 뭐가 나을까요?",
+        answer:
+          "직장 보험이 있으면 먼저 비용·네트워크를 비교하세요. Marketplace 지원금은 직장 보험 제안 여부에 따라 달라질 수 있습니다.",
+      },
+      {
+        question: "유학생도 Marketplace를 쓰나요?",
+        answer:
+          "학교 필수 보험이 있는 경우가 많습니다. 비자·자격에 따라 Marketplace 대상이 아닐 수 있으니 학교·Healthcare.gov를 확인하세요.",
+      },
+    ],
     disclaimer,
   },
   {
@@ -118,6 +135,23 @@ export const medicalGuides: Guide[] = [
       {
         label: "무보험·응급실 비용 처리",
         url: "/guides/medical/medical-bills",
+      },
+    ],
+    faq: [
+      {
+        question: "소득이 낮으면 Medicaid가 자동인가요?",
+        answer:
+          "자동은 아닙니다. Healthcare.gov 또는 주 Medicaid 포털에서 신청·심사가 필요합니다. 기준은 주·가구마다 다릅니다.",
+      },
+      {
+        question: "지원금을 받으면 연말에 돈을 더 내야 하나요?",
+        answer:
+          "소득을 낮게 추정하면 세금 신고 때 Premium Tax Credit 정산으로 차액이 날 수 있습니다. 소득·이사가 바뀌면 계정에 바로 신고하세요.",
+      },
+      {
+        question: "체류 서류가 없으면 가입이 되나요?",
+        answer:
+          "성인 연방 Medicaid·Marketplace 지원은 대상이 아닌 경우가 많습니다. 임신·응급·주 자체 프로그램·HRSA 클리닉은 별도로 Healthcare.gov·주 안내를 확인하세요.",
       },
     ],
     updatedAt: "2026-08",
@@ -259,6 +293,23 @@ export const medicalGuides: Guide[] = [
       {
         label: "공공 혜택",
         url: "/guides/life/public-benefits",
+      },
+    ],
+    faq: [
+      {
+        question: "Urgent care와 ER 중 어디로 가나요?",
+        answer:
+          "경미한 당일 증상은 Urgent care, 흉통·호흡곤란·대량 출혈 등은 911/ER이 맞습니다. 애매하면 보험사 Nurse line이나 911에 문의하세요.",
+      },
+      {
+        question: "네트워크 밖 의사를 만나면요?",
+        answer:
+          "Out-of-network이면 본인 부담이 크게 늘 수 있습니다. 방문 전 보험사 포털에서 In-network인지 확인하세요.",
+      },
+      {
+        question: "한국어 통역을 요청할 수 있나요?",
+        answer:
+          "많은 병원이 Interpreter 서비스를 제공합니다. 예약·방문 시 Language/Interpreter를 요청하고, 지역별 ‘한국어 의사 찾기’ 가이드도 참고하세요.",
       },
     ],
     disclaimer,

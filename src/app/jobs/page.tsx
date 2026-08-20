@@ -9,10 +9,11 @@ import {
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "채용 공고",
+  title: "채용 공고·문의",
   description:
-    "미국 내 채용과 한국·원격(미국→한국) 채용을 구분해 안내합니다. ArriveUS 채용 광고 문의도 받을 수 있습니다.",
+    "채용 공고는 검수 후 게시 예정입니다. 지금은 취업 가이드를 이용하고, 광고·게재 문의는 이메일로 보내 주세요.",
   alternates: { canonical: "/jobs" },
+  robots: { index: false, follow: true },
 };
 
 function JobCard({ job }: { job: JobPosting }) {

@@ -22,8 +22,8 @@ export const startPaths: StartPath[] = [
   {
     slug: "work",
     title: "일을 찾고 있어요",
-    description: "현장 취업·홈케어·이력서·근로 서류",
-    href: "/guides/job/everyday-jobs",
+    description: "온라인 구직·현장 취업·홈케어·이력서",
+    href: "/guides/job/job-search",
   },
   {
     slug: "drive",

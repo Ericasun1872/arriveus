@@ -17,12 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${base}/saved`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.3,
-    },
-    {
       url: `${base}/about`,
       lastModified: now,
       changeFrequency: "monthly",
@@ -39,12 +33,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.85,
-    },
-    {
-      url: `${base}/jobs`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.5,
     },
     {
       url: `${base}/guides/dmv/states`,

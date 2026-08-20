@@ -138,21 +138,21 @@ export default async function CategoryPage({ params }: PageProps) {
             채용 가이드 · 공고 문의
           </h2>
           <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
-            현장 취업·홈케어 가이드를 먼저 보세요. 채용 공고 게재는 준비 중이며
-            사업체 문의는 이메일로 받습니다.
+            온라인 구직·현장 취업·홈케어 가이드를 먼저 보세요. 채용 공고 게재는
+            준비 중이며 사업체 문의는 이메일로 받습니다.
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <Link
-              href="/guides/job/everyday-jobs"
+              href="/guides/job/job-search"
               className="inline-flex rounded-lg bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white hover:opacity-90"
             >
-              현장 취업 가이드
+              온라인 구직 가이드
             </Link>
             <Link
               href="/jobs"
               className="inline-flex rounded-lg border border-[var(--brand-border)] bg-white/70 px-4 py-2.5 text-sm font-semibold text-[var(--brand)] hover:bg-white"
             >
-              공고·문의
+              채용·광고 문의
             </Link>
           </div>
         </section>

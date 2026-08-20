@@ -61,7 +61,7 @@ export default function StateGuidesPage() {
                   href={`/guides/dmv/states/${state.code}`}
                   className="inline-flex rounded-lg bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white hover:opacity-90"
                 >
-                  워싱턴주·시애틀 가이드 보기
+                  주 가이드 보기
                 </Link>
                 <a
                   href={state.dmvUrl}
@@ -69,17 +69,17 @@ export default function StateGuidesPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 rounded-lg border border-[var(--border)] px-4 py-2.5 text-sm font-medium text-[var(--brand)] hover:bg-[var(--brand-soft)]"
                 >
-                  공식 DOL 사이트
+                  공식 사이트
                   <ExternalLinkIcon />
                 </a>
               </div>
             </div>
             <div className="bg-[linear-gradient(160deg,#163f7d,#2f6fbd)] px-5 py-6 text-white sm:px-7">
-              <p className="text-sm font-medium text-white/80">왜 시애틀인가</p>
+              <p className="text-sm font-medium text-white/80">이 카드에서 확인</p>
               <ul className="mt-3 space-y-2 text-sm leading-relaxed text-white/90">
-                <li>면허·등록은 주 DOL 기준</li>
-                <li>시내 주차·교통은 시(SDOT) 규정 별도</li>
-                <li>공식 링크와 지역 노트를 한곳에 정리</li>
+                <li>주 공식 DMV/DOL 링크</li>
+                <li>핵심 서류·시험 차이</li>
+                <li>주요 도시 지역 노트</li>
               </ul>
             </div>
           </div>
@@ -112,9 +112,9 @@ export default function StateGuidesPage() {
                 <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-[var(--muted)]">
                   {state.summary}
                 </p>
-                {state.localNotes?.some((note) => note.name === "Seattle") ? (
+                {state.localNotes && state.localNotes.length > 0 ? (
                   <span className="mt-3 inline-flex w-fit rounded-md bg-[var(--brand-soft)] px-2 py-0.5 text-xs font-medium text-[var(--brand)]">
-                    시애틀 포함
+                    지역 노트 {state.localNotes.length}곳
                   </span>
                 ) : null}
               </Link>

@@ -412,4 +412,130 @@ export const koreanDoctorRegions: KoreanDoctorRegion[] = [
       },
     ],
   },
+  {
+    slug: "miami",
+    nameKo: "마이애미",
+    nameEn: "Miami",
+    areaNote: "플로리다주 · 마이애미·브로워드 일대",
+    summary:
+      "마이애미 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. HealthCare.gov와 Health Center 검색을 안내합니다.",
+    tips: [
+      "특정 개인 의사를 ‘추천’하지 않습니다.",
+      "한인·다국어 클리닉은 보험사 Language 필터와 HRSA 검색을 함께 쓰세요.",
+      "플로리다는 주 마켓 대신 HealthCare.gov를 쓰는 경우가 많습니다.",
+    ],
+    steps: [
+      "보험이 있으면 HealthCare.gov·보험사 Doctor Finder에서 Korean을 검색합니다.",
+      "무보험·저소득이면 HRSA Finder로 클리닉·통역·비용을 확인합니다.",
+      "초진 시 통역을 요청하고, 응급이 아니면 Urgent care를 먼저 검토합니다.",
+    ],
+    links: [
+      {
+        label: "HealthCare.gov",
+        url: "https://www.healthcare.gov/",
+      },
+      {
+        label: "HRSA – Health Center 검색",
+        url: "https://findahealthcenter.hrsa.gov/",
+      },
+      {
+        label: "Florida Medicaid",
+        url: "https://www.flmedicaidmanagedcare.com/",
+      },
+    ],
+    phrases: [
+      {
+        ko: "한국어 가능한 의사를 찾고 싶습니다.",
+        en: "I am looking for a Korean-speaking doctor.",
+      },
+      {
+        ko: "한국어 통역을 요청할 수 있나요?",
+        en: "Can I request a Korean interpreter for my visit?",
+      },
+    ],
+  },
+  {
+    slug: "houston",
+    nameKo: "휴스턴",
+    nameEn: "Houston",
+    areaNote: "텍사스주 · 휴스턴·근교",
+    summary:
+      "휴스턴 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. HealthCare.gov와 Health Center 검색을 안내합니다.",
+    tips: [
+      "특정 개인 의사를 ‘추천’하지 않습니다.",
+      "스프링·케이티 등 근교도 보험 네트워크가 다를 수 있어 ZIP으로 검색하세요.",
+      "텍사스는 HealthCare.gov를 이용하는 경우가 많습니다.",
+    ],
+    steps: [
+      "보험이 있으면 HealthCare.gov·보험사 디렉터리에서 Korean을 검색합니다.",
+      "무보험·저소득이면 HRSA Finder와 지역 클리닉 비용을 확인합니다.",
+      "초진에 보험·약 목록·통역을 준비하고 Urgent care vs ER를 구분합니다.",
+    ],
+    links: [
+      {
+        label: "HealthCare.gov",
+        url: "https://www.healthcare.gov/",
+      },
+      {
+        label: "HRSA – Health Center 검색",
+        url: "https://findahealthcenter.hrsa.gov/",
+      },
+      {
+        label: "Texas Health & Human Services",
+        url: "https://www.hhs.texas.gov/",
+      },
+    ],
+    phrases: [
+      {
+        ko: "한국어 가능한 의사를 찾고 싶습니다.",
+        en: "I am looking for a Korean-speaking doctor.",
+      },
+      {
+        ko: "한국어 통역을 요청할 수 있나요?",
+        en: "Can I request a Korean interpreter for my visit?",
+      },
+    ],
+  },
+  {
+    slug: "boston",
+    nameKo: "보스턴",
+    nameEn: "Boston",
+    areaNote: "매사추세츠주 · 보스턴·근교",
+    summary:
+      "보스턴 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. Massachusetts Health Connector와 Health Center 검색을 안내합니다.",
+    tips: [
+      "특정 개인 의사를 ‘추천’하지 않습니다.",
+      "케임브리지·퀸시 등 근교도 네트워크가 다를 수 있습니다.",
+      "커뮤니티 Health Center는 슬라이딩 피·통역을 문의할 수 있는 경우가 많습니다.",
+    ],
+    steps: [
+      "보험이 있으면 Massachusetts Health Connector·보험사에서 Korean을 검색합니다.",
+      "무보험·저소득이면 HRSA Finder로 클리닉을 찾고 통역을 요청합니다.",
+      "초진 시 보험 카드·약 목록을 준비하고 Urgent care vs ER를 구분합니다.",
+    ],
+    links: [
+      {
+        label: "Massachusetts Health Connector",
+        url: "https://www.mahealthconnector.org/",
+      },
+      {
+        label: "HRSA – Health Center 검색",
+        url: "https://findahealthcenter.hrsa.gov/",
+      },
+      {
+        label: "MassHealth",
+        url: "https://www.mass.gov/topics/masshealth",
+      },
+    ],
+    phrases: [
+      {
+        ko: "한국어 가능한 의사를 찾고 싶습니다.",
+        en: "I am looking for a Korean-speaking doctor.",
+      },
+      {
+        ko: "한국어 통역을 요청할 수 있나요?",
+        en: "Can I request a Korean interpreter for my visit?",
+      },
+    ],
+  },
 ];

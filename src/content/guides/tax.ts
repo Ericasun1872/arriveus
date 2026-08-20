@@ -56,6 +56,23 @@ export const taxGuides: Guide[] = [
         url: "/guides/tax/itin-ssn",
       },
     ],
+    faq: [
+      {
+        question: "급여에서 세금이 빠졌는데도 신고해야 하나요?",
+        answer:
+          "원천징수와 연말 신고는 별개입니다. 환급·추가 납부 여부는 신고로 확정되는 경우가 많습니다. 최신 기준은 IRS Filing 안내를 확인하세요.",
+      },
+      {
+        question: "F-1 비자도 일반 1040으로 내면 되나요?",
+        answer:
+          "체류일수·비자 예외에 따라 Resident / Nonresident가 갈립니다. Substantial Presence Test와 Form 1040-NR 여부를 IRS 국제세 안내에서 확인하세요.",
+      },
+      {
+        question: "W-2가 안 오면 어떻게 하나요?",
+        answer:
+          "전 직장 HR·페이롤에 재발급을 요청하세요. 그래도 없으면 IRS에 문의하는 경로가 안내되어 있습니다.",
+      },
+    ],
     updatedAt: "2026-08",
     disclaimer,
   },
@@ -106,6 +123,23 @@ export const taxGuides: Guide[] = [
       {
         label: "SSN 신청 절차",
         url: "/guides/tax/ssn-apply",
+      },
+    ],
+    faq: [
+      {
+        question: "Free File과 광고 소프트웨어가 헷갈려요.",
+        answer:
+          "irs.gov Free File에서 시작하는 것이 안전합니다. 검색 광고·유료 ‘Free’ 상품과 혼동하지 마세요.",
+      },
+      {
+        question: "e-file이 Reject되면요?",
+        answer:
+          "안내 코드를 보고 이름·SSN·작년 AGI 등을 수정해 재제출합니다. Where’s My Refund·소프트웨어 메시지도 함께 확인하세요.",
+      },
+      {
+        question: "주세가 없는 주도 있나요?",
+        answer:
+          "워싱턴 등 일부 주는 주 소득세가 없습니다. 거주 주 세무청·IRS State links에서 확인하세요.",
       },
     ],
     updatedAt: "2026-08",
@@ -239,6 +273,23 @@ export const taxGuides: Guide[] = [
       {
         label: "첫 미국 세금 신고",
         url: "/guides/tax/file-taxes",
+      },
+    ],
+    faq: [
+      {
+        question: "ITIN으로 취업해도 되나요?",
+        answer:
+          "아니요. ITIN은 세금 신고용이며 근로 허가가 아닙니다. I-9에는 쓸 수 없습니다. IRS ITIN·USCIS I-9 안내를 확인하세요.",
+      },
+      {
+        question: "SSN과 ITIN을 둘 다 가질 수 있나요?",
+        answer:
+          "SSN을 받으면 보통 ITIN은 더 이상 쓰지 않고, IRS 안내에 따라 전환·정리가 필요할 수 있습니다.",
+      },
+      {
+        question: "은행·세금에 어떤 번호를 쓰나요?",
+        answer:
+          "자격이 있으면 SSN, 세금만 필요하면 ITIN입니다. 이름 철자를 서류와 같게 맞추세요.",
       },
     ],
     updatedAt: "2026-08",
