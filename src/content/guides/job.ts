@@ -498,29 +498,53 @@ export const jobGuides: Guide[] = [
   {
     slug: "wage-scams",
     category: "job",
-    title: "임금·취업 사기 주의",
+    title: "임금 체불·취업 사기·신고 창구",
     summary:
-      "선입금 취업, 가짜 채용, 임금 체불·깎기 등 자주 나오는 패턴과 Worker.gov 등 공식 대처 창구를 안내합니다.",
-    cost: "피해액은 케이스마다 다름 / 상담·신고 창구는 무료인 경우 많음",
-    methods: ["조건 서면 확인", "Worker.gov", "임금 기록 보관"],
+      "선입금·가짜 채용·임금 체불 패턴과 Worker.gov, 연방 Wage and Hour, 주 L&I(예: 워싱턴) 등 공식 신고·상담 입구를 안내합니다.",
+    cost: "피해액은 케이스마다 다름 / 공식 상담·신고 창구는 무료인 경우 많음",
+    methods: [
+      "근무·임금 기록 보관",
+      "Worker.gov / DOL Wage and Hour",
+      "거주 주 노동청·L&I 신고",
+    ],
     overview:
-      "정착 초기에는 ‘지금 돈만 내면 일자리·서류 해결’, ‘팁만 주고 시급 없음’, ‘트레이닝비 먼저’ 같은 제안에 노출되기 쉽습니다. 합법 고용은 보통 I-9·시급·페이롤 기록이 있고, 근로자 권리 안내는 Worker.gov에서 볼 수 있습니다. ArriveUS는 불법 취업 방법을 안내하지 않으며, 임금 체불·위험 작업·사기로부터 지키는 공식 경로를 우선합니다.",
+      "정착 초기에는 ‘지금 돈만 내면 일자리·서류 해결’, ‘팁만 주고 시급 없음’, ‘트레이닝비 먼저’, ‘영주권 보장 선입금’ 같은 제안에 노출되기 쉽습니다. 합법 고용은 보통 I-9·시급·페이롤 기록이 있습니다.\n\n임금이 약속과 다르거나 안 나오면, 먼저 근무 시간과 받은 금액을 모은 뒤 공식 창구를 고릅니다. Worker.gov는 주제별(임금, 안전, 보복 등) 안내 출발점입니다. 연방 최저임금·오버타임 등은 미국 노동부 Wage and Hour Division(WHD) 신고가 해당될 수 있고, 주·시마다 더 강한 규칙이 있으면 주 노동청에 따로(또는 함께) 접수하는 경우가 많습니다. 워싱턴주에서는 Labor & Industries(L&I)가 임금·근로 조건 불만의 흔한 입구입니다. 다른 주는 Department of Labor, Industrial Relations, Workforce Commission 등 이름이 다르니 Worker.gov나 USA.gov에서 거주 주 창구를 찾으세요.\n\nArriveUS는 불법 취업 방법·양식 대행을 안내하지 않습니다. 신고 자격·기한·증빙은 기관·케이스마다 다르므로 공식 페이지와, 필요하면 근로·이민 변호사를 확인하세요.",
     requirements: [
-      "시급·근무시간·업무를 적은 메모·문자",
-      "받은 금액·날짜 기록",
-      "고용주 이름·주소·연락처",
+      "시급·근무시간·업무를 적은 메모·문자·오퍼",
+      "출퇴근·일한 시간 기록 (달력·앱·수기 모두 가능)",
+      "받은 금액·날짜·pay stub(있으면) 기록",
+      "고용주·사업체 이름·주소·연락처·근무지",
+      "동료 연락처·목격자 메모 (가능한 범위)",
     ],
     steps: [
-      "채용·근무 조건을 문자·이메일로 남기고, 선입금·선물카드 송금 요구는 거절합니다.",
-      "일한 시간과 받은 금액을 기록합니다.",
-      "임금이 늦거나 깎이면 Worker.gov에서 해당 주제 안내를 확인합니다.",
-      "안전하지 않은 작업·보복이 있으면 공식 신고·상담 창구를 검토합니다.",
-      "‘영주권·취업 보장 대행’ 광고는 USCIS Avoid scams와 교차 확인합니다.",
+      "채용·근무 조건을 문자·이메일로 남기고, 선입금·선물카드 송금·‘영주권 보장’ 대행비 요구는 거절합니다.",
+      "일한 시간과 받은 금액을 날짜별로 기록합니다. 약속과 다르면 고용주에게 먼저 서면으로 확인을 요청해도 됩니다.",
+      "Worker.gov에서 임금·팁·오버타임·보복 등 해당 주제를 읽고, 연방·주 중 어디에 문의할지 안내를 따릅니다.",
+      "연방 Wage and Hour 대상이면 DOL WHD File a Complaint 안내로 접수·상담 방법을 확인합니다.",
+      "거주 주 노동청에도 접수할 수 있는지 확인합니다. 워싱턴주면 L&I Worker rights complaints·File a complaint 페이지에서 온라인·양식·전화 접수 방법을 확인합니다.",
+      "산업 재해·위험한 작업·보복이 있으면 Worker.gov 안전·보복 안내와 OSHA·주 안전 창구도 함께 검토합니다.",
+      "‘영주권·취업 보장 대행’ 광고는 USCIS Avoid scams·취업 이민 가이드와 교차 확인합니다.",
     ],
     links: [
       {
         label: "Worker.gov",
         url: "https://www.worker.gov/",
+      },
+      {
+        label: "DOL – Wage and Hour (File a complaint)",
+        url: "https://www.dol.gov/agencies/whd/contact/complaints",
+      },
+      {
+        label: "USA.gov – Labor laws and worker protection",
+        url: "https://www.usa.gov/labor-laws",
+      },
+      {
+        label: "Washington L&I – Worker rights complaints",
+        url: "https://www.lni.wa.gov/workers-rights/workplace-complaints/worker-rights-complaints",
+      },
+      {
+        label: "Washington L&I – File a complaint",
+        url: "https://www.lni.wa.gov/FileAComplaint",
       },
       {
         label: "USCIS – Avoid scams",
@@ -529,6 +553,10 @@ export const jobGuides: Guide[] = [
       {
         label: "FTC – Job scams",
         url: "https://consumer.ftc.gov/articles/job-scams",
+      },
+      {
+        label: "취업 이민(EB-3) 개요",
+        url: "/guides/immigration/employment-green-card",
       },
       {
         label: "온라인 구직·공고 검색",
@@ -544,11 +572,26 @@ export const jobGuides: Guide[] = [
       {
         question: "팁만 주고 시급이 없어요.",
         answer:
-          "업종·주마다 팁 크레딧 규칙이 다릅니다. 약속·기록이 불명확하면 Worker.gov 임금 안내를 확인하세요.",
+          "업종·주마다 팁 크레딧 규칙이 다릅니다. 약속·기록이 불명확하면 Worker.gov 임금 안내와 주 노동청을 확인하세요.",
+      },
+      {
+        question: "L&I가 뭔가요? 모든 주에서 쓰나요?",
+        answer:
+          "워싱턴주 Labor & Industries처럼 주 노동·산업안전 기관의 약칭으로 자주 쓰입니다. 다른 주는 이름이 다릅니다. Worker.gov·USA.gov에서 거주 주 근로자 권리·불만 창구를 찾으세요.",
+      },
+      {
+        question: "신분이 불안정해도 임금 신고를 할 수 있나요?",
+        answer:
+          "많은 임금·안전 규칙은 신분과 별개로 근로자에게 적용된다는 안내가 있지만, 개별 케이스는 기관·변호사 확인이 필요합니다. ArriveUS는 불법 취업 방법을 안내하지 않습니다.",
+      },
+      {
+        question: "연방과 주 중 어디에 신고하나요?",
+        answer:
+          "사안에 따라 둘 다 해당되거나 한쪽만 해당될 수 있습니다. Worker.gov와 DOL WHD·주 노동청 안내를 비교하고, 가능하면 공식 상담 전화·온라인으로 확인하세요.",
       },
     ],
     updatedAt: "2026-08",
     disclaimer:
-      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·취업 알선 자문이 아닙니다. 임금·안전·이민 문제는 공식 기관과 자격 있는 전문가에게 확인하세요. 불법 취업·가짜 서류 방법은 안내하지 않습니다.",
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·취업 알선·이민 자문이 아닙니다. 신고 자격·기한·결과·보복 보호는 기관과 케이스마다 다르므로 공식 안내와 자격 있는 전문가에게 확인하세요. 불법 취업·가짜 서류 방법은 안내하지 않습니다.",
   },
 ];

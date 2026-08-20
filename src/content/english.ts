@@ -797,6 +797,10 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Will the employer handle the PERM and Form I-140 process?",
     },
     {
+      ko: "변호사비와 정부 수수료는 누가 부담하나요?",
+      en: "Who will pay the attorney fees and government filing fees?",
+    },
+    {
       ko: "우선순위 날짜와 Visa Bulletin을 확인하고 싶습니다.",
       en: "I would like to check my priority date against the Visa Bulletin.",
     },
@@ -961,6 +965,14 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "임금이 약속과 다릅니다. 기록을 다시 보고 싶습니다.",
       en: "My pay does not match what was promised. I would like to review the records.",
+    },
+    {
+      ko: "임금 체불 신고를 어디에 하면 되나요?",
+      en: "Where can I file a wage complaint?",
+    },
+    {
+      ko: "워싱턴 L&I에 임금 불만을 접수하고 싶습니다.",
+      en: "I would like to file a wage complaint with Washington L&I.",
     },
   ],
   "job/work-documents": [
