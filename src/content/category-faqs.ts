@@ -141,6 +141,16 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
         "많은 분들이 식당·네일·창고·돌봄·청소·한인 업장에서 먼저 시작합니다. ArriveUS의 현장 취업 가이드를 보시고, 혼자 고객을 받으면 스몰 비즈니스 가이드·SBA 상담으로 이어가면 됩니다.",
     },
     {
+      question: "온라인에서 공고는 어디서 보나요?",
+      answer:
+        "USA.gov Jobs·CareerOneStop Find Jobs와 회사 Careers 페이지, Indeed 등을 함께 쓰세요. ArriveUS ‘온라인 구직·공고 검색’ 가이드에 순서와 사기 주의가 있습니다.",
+    },
+    {
+      question: "임금이 안 나오거나 취업 사기를 당하면요?",
+      answer:
+        "근무·임금 기록을 남기고 Worker.gov·연방 Wage and Hour·거주 주 노동청(워싱턴이면 L&I) 안내를 확인하세요. ArriveUS ‘임금 체불·취업 사기·신고 창구’ 가이드를 참고하세요.",
+    },
+    {
       question: "스몰 비즈니스는 어디서 도움을 받나요?",
       answer:
         "SBA Local assistance로 SBDC·SCORE 등 무료·저비용 상담을 찾을 수 있습니다. ‘지원금 대행비’를 먼저 받는 업체보다 공식 창구와 ArriveUS 스몰 비즈니스 가이드를 우선하세요.",

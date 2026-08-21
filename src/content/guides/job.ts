@@ -491,6 +491,21 @@ export const jobGuides: Guide[] = [
         answer:
           "가능하지만 드물고 대기가 깁니다. 취업 이민 가이드와 변호사 상담을 참고하고, ‘보장’ 광고는 경계하세요.",
       },
+      {
+        question: "Indeed와 CareerOneStop 중 뭘 쓰나요?",
+        answer:
+          "둘 다 쓸 수 있습니다. CareerOneStop·USA.gov Jobs는 공식·직업 정보에 강하고, Indeed·회사 Careers 페이지는 공고 양이 많습니다. 조건을 비교해 지원하세요.",
+      },
+      {
+        question: "공고에 Work authorization이라고만 나와요.",
+        answer:
+          "합법 근로 가능 여부를 묻는 경우가 많습니다. 시민·영주·EAD·비자 조건을 본인 서류 기준으로 확인하고, 가짜 서류 제안은 거절하세요.",
+      },
+      {
+        question: "채용인데 장비비·선물카드를 먼저 내라고 해요.",
+        answer:
+          "전형적인 취업 사기 신호입니다. 보내지 말고 ‘임금 체불·취업 사기·신고 창구’ 가이드와 FTC·Worker.gov 안내를 보세요.",
+      },
     ],
     updatedAt: "2026-08",
     disclaimer,

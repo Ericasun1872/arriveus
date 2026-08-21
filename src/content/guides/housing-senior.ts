@@ -138,6 +138,33 @@ export const seniorHousingGuides: Guide[] = [
         url: "/guides/housing/senior-housing-55",
       },
     ],
+    faq: [
+      {
+        question: "Public Housing과 Section 8(바우처) 차이는요?",
+        answer:
+          "Public Housing은 PHA가 관리하는 단지에 입주하는 형태가 많고, Housing Choice Voucher(Section 8)는 민간 임대에서 바우처로 월세 일부를 지원받는 형태가 일반적입니다. 대기·자격은 프로그램마다 다릅니다.",
+      },
+      {
+        question: "영주권·시민이 아니면 신청할 수 없나요?",
+        answer:
+          "프로그램·가구 구성에 따라 다릅니다. 일부는 적격 이민 신분이 필요하고, 가구원 중 일부만 해당되는 경우도 있습니다. 해당 PHA·단지 공고를 확인하세요.",
+      },
+      {
+        question: "대기가 너무 길면 어떻게 하나요?",
+        answer:
+          "여러 PHA·시니어 단지·주·시 고령 지원을 동시에 알아보는 경우가 많습니다. 대기 중 주소·전화가 바뀌면 바로 업데이트하세요. 연락 두절 시 순번이 무효가 될 수 있습니다.",
+      },
+      {
+        question: "시애틀 링크만 있는데 다른 도시는요?",
+        answer:
+          "King County·Seattle Housing Authority는 예시입니다. HUD PHA contacts·Resource Locator에서 거주(이사 예정) 지역 PHA·시니어 단지를 검색하세요.",
+      },
+      {
+        question: "민간 55+ 단지와 같이 신청해도 되나요?",
+        answer:
+          "네. 저소득 지원 주거와 민간 55+는 별개 경로입니다. 예산·자격에 맞춰 둘 다 비교해도 됩니다.",
+      },
+    ],
     updatedAt: "2026-08",
     disclaimer,
   },

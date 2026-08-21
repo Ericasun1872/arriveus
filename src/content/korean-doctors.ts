@@ -416,18 +416,21 @@ export const koreanDoctorRegions: KoreanDoctorRegion[] = [
     slug: "miami",
     nameKo: "마이애미",
     nameEn: "Miami",
-    areaNote: "플로리다주 · 마이애미·브로워드 일대",
+    areaNote: "플로리다주 · 마이애미·브로워드·팜비치 일대",
     summary:
-      "마이애미 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. HealthCare.gov와 Health Center 검색을 안내합니다.",
+      "마이애미 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. HealthCare.gov, HRSA Health Center, Florida Medicaid 검색을 안내합니다.",
     tips: [
-      "특정 개인 의사를 ‘추천’하지 않습니다.",
+      "특정 개인 의사를 ‘추천’하지 않습니다. 보험 적용·예약은 직접 확인하세요.",
       "한인·다국어 클리닉은 보험사 Language 필터와 HRSA 검색을 함께 쓰세요.",
-      "플로리다는 주 마켓 대신 HealthCare.gov를 쓰는 경우가 많습니다.",
+      "플로리다는 주 자체 Marketplace 대신 HealthCare.gov를 쓰는 경우가 많습니다.",
+      "브로워드·팜비치도 네트워크가 다를 수 있어 ZIP·카운티로 검색하세요.",
     ],
     steps: [
-      "보험이 있으면 HealthCare.gov·보험사 Doctor Finder에서 Korean을 검색합니다.",
-      "무보험·저소득이면 HRSA Finder로 클리닉·통역·비용을 확인합니다.",
-      "초진 시 통역을 요청하고, 응급이 아니면 Urgent care를 먼저 검토합니다.",
+      "보험이 있으면 HealthCare.gov·보험사 Doctor Finder에서 Korean / Interpreter를 검색합니다.",
+      "Primary care·치과 등 과목을 정한 뒤 In-network 여부와 통역 가능 여부를 확인합니다.",
+      "무보험·저소득이면 HRSA Finder로 클리닉·슬라이딩 피·통역을 확인합니다.",
+      "초진 시 보험 카드·신분증·약 목록을 가져가고 접수 때 한국어 통역을 요청합니다.",
+      "응급이 아니면 ER보다 Urgent care·클리닉을 먼저 검토합니다.",
     ],
     links: [
       {
@@ -442,6 +445,10 @@ export const koreanDoctorRegions: KoreanDoctorRegion[] = [
         label: "Florida Medicaid",
         url: "https://www.flmedicaidmanagedcare.com/",
       },
+      {
+        label: "Florida Healthy Kids (아동 보험 안내)",
+        url: "https://www.healthykids.org/",
+      },
     ],
     phrases: [
       {
@@ -452,24 +459,35 @@ export const koreanDoctorRegions: KoreanDoctorRegion[] = [
         ko: "한국어 통역을 요청할 수 있나요?",
         en: "Can I request a Korean interpreter for my visit?",
       },
+      {
+        ko: "이 클리닉은 제 보험 네트워크인가요?",
+        en: "Is this clinic in my insurance network?",
+      },
+      {
+        ko: "슬라이딩 스케일 비용이 가능한가요?",
+        en: "Do you offer a sliding-scale fee?",
+      },
     ],
   },
   {
     slug: "houston",
     nameKo: "휴스턴",
     nameEn: "Houston",
-    areaNote: "텍사스주 · 휴스턴·근교",
+    areaNote: "텍사스주 · 휴스턴·스프링·케이티 등 근교",
     summary:
-      "휴스턴 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. HealthCare.gov와 Health Center 검색을 안내합니다.",
+      "휴스턴 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. HealthCare.gov, HRSA, Texas HHS 검색을 안내합니다.",
     tips: [
-      "특정 개인 의사를 ‘추천’하지 않습니다.",
-      "스프링·케이티 등 근교도 보험 네트워크가 다를 수 있어 ZIP으로 검색하세요.",
+      "특정 개인 의사를 ‘추천’하지 않습니다. 보험 적용·예약은 직접 확인하세요.",
+      "스프링·케이티·슈거랜드 등 근교도 보험 네트워크가 다를 수 있어 ZIP으로 검색하세요.",
       "텍사스는 HealthCare.gov를 이용하는 경우가 많습니다.",
+      "대형 병원 시스템과 커뮤니티 클리닉을 함께 비교하면 통역·대기 시간이 다를 수 있습니다.",
     ],
     steps: [
       "보험이 있으면 HealthCare.gov·보험사 디렉터리에서 Korean을 검색합니다.",
-      "무보험·저소득이면 HRSA Finder와 지역 클리닉 비용을 확인합니다.",
+      "필요한 과목과 In-network 여부를 확인한 뒤 통역 가능 여부를 전화로 묻습니다.",
+      "무보험·저소득이면 HRSA Finder와 Texas HHS 안내로 클리닉·비용을 확인합니다.",
       "초진에 보험·약 목록·통역을 준비하고 Urgent care vs ER를 구분합니다.",
+      "응급이 아니면 ER보다 Urgent care·클리닉을 먼저 검토합니다.",
     ],
     links: [
       {
@@ -484,6 +502,10 @@ export const koreanDoctorRegions: KoreanDoctorRegion[] = [
         label: "Texas Health & Human Services",
         url: "https://www.hhs.texas.gov/",
       },
+      {
+        label: "Texas Medicaid & CHIP",
+        url: "https://www.hhs.texas.gov/services/health/medicaid-chip",
+      },
     ],
     phrases: [
       {
@@ -494,24 +516,35 @@ export const koreanDoctorRegions: KoreanDoctorRegion[] = [
         ko: "한국어 통역을 요청할 수 있나요?",
         en: "Can I request a Korean interpreter for my visit?",
       },
+      {
+        ko: "이 ZIP 코드 근처 클리닉을 알려 주세요.",
+        en: "Can you recommend a clinic near this ZIP code?",
+      },
+      {
+        ko: "초진 예약과 필요 서류를 알려 주세요.",
+        en: "I would like to schedule a new-patient visit. What should I bring?",
+      },
     ],
   },
   {
     slug: "boston",
     nameKo: "보스턴",
     nameEn: "Boston",
-    areaNote: "매사추세츠주 · 보스턴·근교",
+    areaNote: "매사추세츠주 · 보스턴·케임브리지·퀸시 등",
     summary:
-      "보스턴 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. Massachusetts Health Connector와 Health Center 검색을 안내합니다.",
+      "보스턴 일대에서 한국어 진료·통역을 찾는 기본 경로입니다. Massachusetts Health Connector, MassHealth, Health Center 검색을 안내합니다.",
     tips: [
-      "특정 개인 의사를 ‘추천’하지 않습니다.",
-      "케임브리지·퀸시 등 근교도 네트워크가 다를 수 있습니다.",
+      "특정 개인 의사를 ‘추천’하지 않습니다. 보험 적용·예약은 직접 확인하세요.",
+      "케임브리지·퀸시·브루클린 등 근교도 네트워크가 다를 수 있습니다.",
       "커뮤니티 Health Center는 슬라이딩 피·통역을 문의할 수 있는 경우가 많습니다.",
+      "MassHealth와 Connector 플랜은 의사 네트워크가 다를 수 있어 가입 상품을 먼저 확인하세요.",
     ],
     steps: [
-      "보험이 있으면 Massachusetts Health Connector·보험사에서 Korean을 검색합니다.",
-      "무보험·저소득이면 HRSA Finder로 클리닉을 찾고 통역을 요청합니다.",
+      "보험이 있으면 Massachusetts Health Connector·보험사에서 Korean / Interpreter를 검색합니다.",
+      "Primary care 등 과목을 정한 뒤 In-network와 통역 가능 여부를 확인합니다.",
+      "무보험·저소득이면 HRSA Finder·MassHealth 자격 안내를 확인하고 통역을 요청합니다.",
       "초진 시 보험 카드·약 목록을 준비하고 Urgent care vs ER를 구분합니다.",
+      "응급이 아니면 ER보다 Urgent care·클리닉을 먼저 검토합니다.",
     ],
     links: [
       {
@@ -526,6 +559,10 @@ export const koreanDoctorRegions: KoreanDoctorRegion[] = [
         label: "MassHealth",
         url: "https://www.mass.gov/topics/masshealth",
       },
+      {
+        label: "Mass.gov – Find a health center",
+        url: "https://www.mass.gov/info-details/find-a-community-health-center",
+      },
     ],
     phrases: [
       {
@@ -535,6 +572,14 @@ export const koreanDoctorRegions: KoreanDoctorRegion[] = [
       {
         ko: "한국어 통역을 요청할 수 있나요?",
         en: "Can I request a Korean interpreter for my visit?",
+      },
+      {
+        ko: "MassHealth / Connector 플랜으로 진료가 가능한가요?",
+        en: "Do you accept my MassHealth or Health Connector plan?",
+      },
+      {
+        ko: "커뮤니티 헬스센터 예약을 하고 싶습니다.",
+        en: "I would like to make an appointment at a community health center.",
       },
     ],
   },

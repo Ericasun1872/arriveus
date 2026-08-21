@@ -98,6 +98,7 @@ export const stateGuides: StateGuide[] = [
       "REAL ID, AB 60 등 신분·서류 옵션이 다양하니 신청 유형을 먼저 고르세요.",
       "필기·도로시험과 Driver Handbook는 DMV 공식 사이트에서 확인합니다.",
       "차량 smog(배기가스) 검사 요건이 있는 지역이 있습니다.",
+      "LA·베이 지역 노트와 한국어 의사 가이드도 함께 보면 정착 동선이 잡히기 쉽습니다.",
     ],
     localNotes: [
       {
@@ -164,6 +165,7 @@ export const stateGuides: StateGuide[] = [
       "뉴욕시는 주차·톨게이트·교통 규칙이 까다로울 수 있어 시 안내도 함께 보세요.",
       "타주 면허 이전과 신규 발급 서류 목록이 다릅니다.",
       "Learner permit·도로시험 일정은 지역 오피스마다 다를 수 있습니다.",
+      "대중교통(OMNY/MTA)을 먼저 쓰고 DMV는 예약·서류 준비 후 방문하는 경우가 많습니다.",
     ],
     localNotes: [
       {
@@ -229,6 +231,34 @@ export const stateGuides: StateGuide[] = [
           {
             label: "DART",
             url: "https://www.dart.org/",
+          },
+        ],
+      },
+      {
+        name: "Houston",
+        nameKo: "휴스턴",
+        notes: [
+          "면허는 Texas DPS, 차량 등록·타이틀은 TxDMV/카운티입니다. 휴스턴·근교도 주 절차를 따릅니다.",
+          "DPS 오피스 대기가 길 수 있어 예약·온라인 가능 업무를 먼저 확인하세요.",
+          "고속도로·톨·주차 규칙은 시·카운티·관리기관 안내를 함께 보세요.",
+          "대중교통은 METRO (Houston) 앱·카드를 참고할 수 있습니다.",
+        ],
+        links: [
+          {
+            label: "Texas DPS – Driver License",
+            url: "https://www.dps.texas.gov/section/driver-license",
+          },
+          {
+            label: "TxDMV",
+            url: "https://www.txdmv.gov/",
+          },
+          {
+            label: "METRO Houston",
+            url: "https://www.ridemetro.org/",
+          },
+          {
+            label: "한국어 의사 찾기 – 휴스턴",
+            url: "/guides/medical/korean-doctors/houston",
           },
         ],
       },

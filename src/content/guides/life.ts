@@ -98,6 +98,16 @@ export const lifeGuides: Guide[] = [
         answer:
           "큰 흐름은 비슷하지만 DMV·학교·복지 신청은 주·카운티 규칙이 다릅니다. 거주 지역 공식 사이트와 ArriveUS 주별·주제 가이드를 함께 보세요.",
       },
+      {
+        question: "SSN이 없어도 첫 주를 시작할 수 있나요?",
+        answer:
+          "네. 전화번호·임시 주소·일부 은행·prepaid 통신은 SSN 전에도 가능한 경우가 많습니다. 취업·세금용 SSN/ITIN은 필요 시점에 세금 가이드를 보세요.",
+      },
+      {
+        question: "체크리스트를 다 못 끝내면요?",
+        answer:
+          "괜찮습니다. 연락·거처·돈·응급 경로만 먼저 잡고, 학교·DMV·보험은 여유 날 이어서 진행하세요.",
+      },
     ],
     updatedAt: "2026-08",
     disclaimer,
@@ -289,6 +299,16 @@ export const lifeGuides: Guide[] = [
         answer:
           "자녀 ELL과 별도로 성인 ESL이 있는 지역이 많습니다. 학교·도서관에 학부모 수업을 문의하세요.",
       },
+      {
+        question: "온라인 수업도 있나요?",
+        answer:
+          "도서관·커뮤니티칼리지·비영리에서 온라인·하이브리드 ESL을 여는 경우가 있습니다. 거주 지역 공식 사이트에서 Adult education / ESL을 검색하세요.",
+      },
+      {
+        question: "유료 학원이 더 빠른가요?",
+        answer:
+          "개인 목표·시간에 따라 다릅니다. 먼저 무료·저비용 공립 경로를 알아보고, 필요하면 유료 수업을 보완하세요.",
+      },
     ],
     updatedAt: "2026-08",
     disclaimer,
@@ -415,6 +435,16 @@ export const lifeGuides: Guide[] = [
         answer:
           "지역·보험에 따라 본인 부담이 있을 수 있습니다. 생명이 위급하면 비용보다 안전을 우선하고, 이후 청구서는 의료 가이드를 참고하세요.",
       },
+      {
+        question: "급하지 않은 일은 어디로 전화하나요?",
+        answer:
+          "지역 non-emergency police·시 안내 번호를 검색해 두세요. 311을 쓰는 도시도 있습니다. 위급하면 항상 911입니다.",
+      },
+      {
+        question: "재난 경보는 어떻게 받나요?",
+        answer:
+          "휴대폰 Wireless Emergency Alerts와 거주 지역 비상관리·날씨 앱을 확인하세요. 대피 안내는 공식 방송·시·카운티 공지를 우선합니다.",
+      },
     ],
     updatedAt: "2026-08",
     disclaimer,
@@ -479,6 +509,16 @@ export const lifeGuides: Guide[] = [
         answer:
           "정보 수집에는 도움이 되지만, 수수료·법률·이민 약속은 반드시 공식 기관·자격 있는 전문가와 확인하세요.",
       },
+      {
+        question: "관할 영사관은 어떻게 찾나요?",
+        answer:
+          "외교부·주미 공관 사이트에서 거주 주·도시를 담당하는 대사관·총영사관을 확인하세요. 예약·수수료는 해당 공관 공지를 따릅니다.",
+      },
+      {
+        question: "긴급 사고 때는 무엇을 먼저 하나요?",
+        answer:
+          "생명이 위급하면 911 등 현지 응급을 먼저 하고, 이후 필요 시 공관 영사 조력을 문의하세요.",
+      },
     ],
     updatedAt: "2026-08",
     disclaimer,
@@ -539,6 +579,16 @@ export const lifeGuides: Guide[] = [
         answer:
           "우편 전달은 USPS로 돕고, 은행·USCIS·DMV 등은 각 기관에 따로 알려야 하는 경우가 많습니다.",
       },
+      {
+        question: "아파트 Unit 번호를 빠뜨리면요?",
+        answer:
+          "우편이 반송되거나 옆집으로 갈 수 있습니다. Street와 Apt/Unit을 항상 함께 적으세요.",
+      },
+      {
+        question: "USPS 사칭 문자가 왔어요.",
+        answer:
+          "링크를 누르거나 개인정보를 보내지 마세요. 주소 변경·추적은 공식 usps.com만 이용하세요.",
+      },
     ],
     updatedAt: "2026-08",
     disclaimer,
@@ -589,6 +639,16 @@ export const lifeGuides: Guide[] = [
         question: "영어 노선도를 못 읽으면요?",
         answer:
           "공식 앱의 지도·알람과 Google Maps 대중교통 모드를 함께 쓰고, 역무원·기사에게 목적지를 보여 주세요.",
+      },
+      {
+        question: "야간에 버스가 없면요?",
+        answer:
+          "첫·막차와 배차 간격을 앱에서 확인하고, 택시·라이드헤일·지인 픽업 대안을 미리 적어 두세요.",
+      },
+      {
+        question: "시니어·학생 할인이 있나요?",
+        answer:
+          "많은 교통국에 Reduced fare가 있습니다. 나이·학생증·장애 증명 요건은 공식 사이트를 확인하세요.",
       },
     ],
     updatedAt: "2026-08",

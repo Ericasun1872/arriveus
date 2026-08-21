@@ -14,6 +14,10 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       ko: "은행 계좌와 건강보험을 어디서 시작하나요?",
       en: "Where should I start for a bank account and health insurance?",
     },
+    {
+      ko: "SSN이 아직 없어도 계좌를 열 수 있나요?",
+      en: "Can I open an account before I have a Social Security Number?",
+    },
   ],
   "life/phone-sim": [
     {
@@ -110,6 +114,10 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       ko: "근처 한인 커뮤니티나 도서관 프로그램을 알고 싶습니다.",
       en: "I would like information about nearby Korean community groups or library programs.",
     },
+    {
+      ko: "긴급 상황에서 영사 조력을 요청하고 싶습니다.",
+      en: "I need consular assistance in an emergency.",
+    },
   ],
   "life/address-mail": [
     {
@@ -120,6 +128,14 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       ko: "제 아파트 유닛 번호가 포함된 주소를 확인해 주세요.",
       en: "Please confirm my address including the apartment unit number.",
     },
+    {
+      ko: "은행과 USCIS에도 새 주소를 알려야 하나요?",
+      en: "Do I also need to update my address with my bank and USCIS?",
+    },
+    {
+      ko: "우편이 반송되었습니다. 주소를 다시 확인해 주세요.",
+      en: "My mail was returned. Please help me verify the address.",
+    },
   ],
   "life/public-transit": [
     {
@@ -129,6 +145,14 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "교통 카드를 어디서 충전하나요?",
       en: "Where can I buy or reload a transit card?",
+    },
+    {
+      ko: "이 주소까지 가는 버스 노선을 알려 주세요.",
+      en: "Which bus goes to this address?",
+    },
+    {
+      ko: "시니어·학생 할인 요금이 있나요?",
+      en: "Is there a reduced fare for seniors or students?",
     },
   ],
   "dmv/learner-permit": [
