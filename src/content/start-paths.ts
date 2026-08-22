@@ -28,7 +28,7 @@ export const startPaths: StartPath[] = [
   {
     slug: "drive",
     title: "운전·면허가 급해요",
-    description: "주별 DMV·면허 이전·보험",
+    description: "주별 DMV·면허·렌트·차 구입",
     href: "/guides/dmv/states",
   },
   {

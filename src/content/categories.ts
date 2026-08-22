@@ -13,7 +13,7 @@ export const categories: Category[] = [
     slug: "dmv",
     name: "DMV",
     nameEn: "Driver & Vehicle",
-    description: "면허, 보험, 주별 가이드",
+    description: "면허, 보험, 렌트·신용 없이 차 사기, 주별 가이드",
     accent: "#1B4F9C",
     icon: "car",
   },

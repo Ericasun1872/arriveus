@@ -335,6 +335,42 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I bought the car through a private sale.",
     },
   ],
+  "dmv/car-rental": [
+    {
+      ko: "사흘간 렌터카를 예약하고 싶습니다.",
+      en: "I would like to reserve a rental car for three days.",
+    },
+    {
+      ko: "신용카드가 없어도 직불카드로 빌릴 수 있나요?",
+      en: "Can I rent with a debit card if I do not have a credit card?",
+    },
+    {
+      ko: "렌트 보험이 요금에 포함되나요?",
+      en: "Is rental insurance included in the rate?",
+    },
+    {
+      ko: "추가 운전자를 등록할 수 있나요?",
+      en: "Can I add an additional driver?",
+    },
+  ],
+  "dmv/buy-car-no-credit": [
+    {
+      ko: "미국 신용점수가 없는데 중고차를 사고 싶습니다.",
+      en: "I want to buy a used car, but I do not have a U.S. credit score yet.",
+    },
+    {
+      ko: "자동차 대출 pre-approval 금리를 비교하고 싶습니다.",
+      en: "I would like to compare pre-approval rates for an auto loan.",
+    },
+    {
+      ko: "이 차의 Title에 담보(lien)가 있는지 확인해 주세요.",
+      en: "Please confirm whether there is a lien on this car’s title.",
+    },
+    {
+      ko: "구매 전 정비소 점검을 받을 수 있나요?",
+      en: "Can I get a pre-purchase inspection at a mechanic?",
+    },
+  ],
   "bank/open-account": [
     {
       ko: "체킹 계좌를 개설하고 싶습니다.",

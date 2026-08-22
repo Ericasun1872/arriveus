@@ -364,6 +364,14 @@ export const dmvGuides: Guide[] = [
         label: "ArriveUS – 차량 등록",
         url: "/guides/dmv/vehicle-registration",
       },
+      {
+        label: "렌터카·단기 이용",
+        url: "/guides/dmv/car-rental",
+      },
+      {
+        label: "신용 없이 차 사기",
+        url: "/guides/dmv/buy-car-no-credit",
+      },
     ],
     faq: [
       {
@@ -624,6 +632,14 @@ export const dmvGuides: Guide[] = [
         label: "ArriveUS – 자동차 보험 기초",
         url: "/guides/dmv/auto-insurance",
       },
+      {
+        label: "신용 없이 차 사기",
+        url: "/guides/dmv/buy-car-no-credit",
+      },
+      {
+        label: "렌터카·단기 이용",
+        url: "/guides/dmv/car-rental",
+      },
     ],
     faq: [
       {
@@ -644,6 +660,195 @@ export const dmvGuides: Guide[] = [
     ],
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 법률·공식 자문이 아닙니다. 최종 안내는 거주 주 DMV/DOL 공식 정보를 확인하세요.",
+  },
+  {
+    slug: "car-rental",
+    category: "dmv",
+    title: "렌터카·단기 이용",
+    summary:
+      "며칠~몇 달 차가 필요할 때 일반 렌터카, 라이드셰어 연계 렌트, 카셰어·우버/리프트 선택의 차이와 예약 전 확인할 점을 정리합니다.",
+    cost: "일·주·월 요금 + 보험·보증금·연령 할증 / 도시·시즌마다 크게 다름",
+    methods: [
+      "일반 렌터카 (공항·시내)",
+      "라이드셰어·앱 연계 렌트",
+      "카셰어·라이드헤일(우버·리프트)",
+    ],
+    overview:
+      "미국에 막 와서 신용·보험·등록이 아직이면, 당장 중고차를 사기보다 단기 이동 수단을 먼저 고르는 경우가 많습니다. 선택지는 크게 (1) Hertz·Enterprise·Avis 같은 일반 렌터카, (2) 우버 등 앱에서 안내하는 파트너 렌트(예: Uber Rent처럼 ‘앱에서 빌리는’ 형태—상품·지역·자격은 수시로 바뀜), (3) Zipcar 등 시간제 카셰어, (4) 차를 안 빌리고 우버·리프트·대중교통만 쓰는 방법입니다.\n\n일반 렌터카는 예약·차량 선택이 익숙하지만, 신용카드 보증금(홀드), 25세 미만 할증, 추가 운전자 요금, LDW/CDW 보험 옵션이 붙는 경우가 많습니다. 체크·직불카드만으로도 받는 지점이 있으나 보증금이 크거나 거절될 수 있어 예약 전 지점에 ‘debit / no credit history’ 정책을 확인하세요. 본인 신용카드의 rental insurance 혜택이 있으면 중복 가입을 줄일 수 있습니다.\n\n앱 연계 렌트는 ‘며칠만·앱으로’ 편할 수 있으나, 라이드셰어 운전자 전용·특정 도시만·보험 조건이 일반 렌트와 다를 수 있습니다. 카셰어는 시내 단거리에 유리하고, 출퇴근·공항·교외는 일반 렌트나 라이드헤일이 나을 수 있습니다. 관광·출장 며칠이면 렌트, 한두 달 이상·매일 출퇴근이면 총비용(렌트+보험+주유)과 중고차·대중교통을 비교하는 것이 좋습니다. ArriveUS는 특정 브랜드를 추천하지 않으며, 계약서·보험 범위를 직접 확인하세요.",
+    requirements: [
+      "유효한 운전면허 (주·해외·국제운전허가 인정 여부는 업체·주마다 다름)",
+      "여권·추가 ID (요청 시)",
+      "결제·보증금용 카드 (신용이 유리, 직불은 정책 확인)",
+      "예약자 연령 (보통 21+ , 25세 미만 할증 흔함)",
+      "보험 선택: 업체 상품 vs 본인·카드 혜택",
+    ],
+    steps: [
+      "며칠인지, 공항 픽업인지, 출퇴근용인지 기간·용도를 정합니다.",
+      "일반 렌트 / 앱 연계 렌트 / 카셰어 / 우버·리프트만 이용을 비용·자격으로 비교합니다.",
+      "예약 전 업체·앱에 직불카드·보증금·연령·추가 운전자·보험 포함 범위를 확인합니다.",
+      "픽업 때 차량 흠집·연료·마일 제한·반납 시간을 사진·계약서로 남깁니다.",
+      "사고·고장 시 연락처와 보험 처리 절차를 계약서에서 다시 확인합니다.",
+      "한 달 이상이면 ‘신용 없이 차 사기’·보험·등록 가이드와 총비용을 비교해 다음 단계를 정합니다.",
+    ],
+    links: [
+      {
+        label: "USA.gov – Driving if you are not a citizen",
+        url: "https://www.usa.gov/non-citizen-driving",
+      },
+      {
+        label: "USA.gov – Car complaints (rentals included)",
+        url: "https://www.usa.gov/car-complaints",
+      },
+      {
+        label: "NAIC – Auto insurance basics",
+        url: "https://content.naic.org/consumer/auto-insurance.htm",
+      },
+      {
+        label: "신용 없이 차 사기",
+        url: "/guides/dmv/buy-car-no-credit",
+      },
+      {
+        label: "자동차 보험 기초",
+        url: "/guides/dmv/auto-insurance",
+      },
+      {
+        label: "대중교통 기본",
+        url: "/guides/life/public-transit",
+      },
+    ],
+    faq: [
+      {
+        question: "신용이 없어도 렌터카를 빌릴 수 있나요?",
+        answer:
+          "일부 업체·지점은 직불카드와 큰 보증금으로 가능하지만 거절도 흔합니다. 예약 전 해당 지점 정책을 확인하고, 안 되면 카셰어·라이드헤일·대중교통을 검토하세요.",
+      },
+      {
+        question: "우버에서 빌리는 렌트가 더 나은가요?",
+        answer:
+          "편의·요금·자격이 지역·시점에 따라 다릅니다. 라이드셰어 운전자 전용인 경우도 있어, 일반 렌트·카셰어와 총비용·보험·반납 조건을 같은 기준으로 비교하세요. ArriveUS는 특정 앱을 추천하지 않습니다.",
+      },
+      {
+        question: "며칠만이면 렌트가 낫나요, 우버만 쓰는 게 낫나요?",
+        answer:
+          "시내 단거리·주차 스트레스가 크면 우버·리프트·대중교통이 싸는 경우가 많고, 교외·짐·여러 날 이동이면 렌트가 나을 수 있습니다. 예상 이동 횟수로 대략 합산을 해보세요.",
+      },
+      {
+        question: "렌트 보험을 꼭 사야 하나요?",
+        answer:
+          "본인 자동차 보험·신용카드 rental coverage가 렌트차를 덮는지 먼저 확인하세요. 없으면 업체 옵션을 검토하되, 적용 범위·자기부담금을 계약서에서 확인합니다.",
+      },
+      {
+        question: "한국 면허로 렌트가 되나요?",
+        answer:
+          "업체·주마다 다릅니다. 여권+한국 면허, 또는 IDP(국제운전허가)를 요구하는 곳이 있으니 예약 전에 물어보세요. 장기 거주면 주 면허 가이드도 함께 보세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·보험·금융 자문이 아닙니다. 렌트 요금·보험·자격은 업체·지역·시점에 따라 다르므로 계약서와 공식 안내를 확인하세요. 특정 렌트·라이드셰어 브랜드를 추천하지 않습니다.",
+  },
+  {
+    slug: "buy-car-no-credit",
+    category: "dmv",
+    title: "신용 없이 차 사기",
+    summary:
+      "미국 신용점수가 없거나 낮을 때 현금·크레딧유니온·공동서명·Buy Here Pay Here 위험을 구분하고, 대출 전 확인할 공식 안내를 정리합니다.",
+    cost: "차량 가격 + 세금·등록·보험 / 할부 시 APR·수수료가 신용에 따라 크게 달라짐",
+    methods: [
+      "현금·저축 후 구매",
+      "신용 쌓은 뒤 은행·크레딧유니온 대출",
+      "공동서명(Co-signer) · 신중히",
+    ],
+    overview:
+      "미국에서는 중고·신차 할부(Auto loan) 심사가 신용점수·소득·체류·다운페이에 크게 좌우됩니다. 막 도착해 신용 이력이 없으면 ‘승인 자체가 안 되거나’, 승인이 나와도 APR(이자)이 매우 높아지는 경험을 하는 분이 많습니다. 그래서 현금으로 저가 중고를 사거나, 비싼 이자 대출·Buy Here Pay Here(딜러 자체 할부)로 급한 불을 끄는 경우가 생깁니다.\n\n비교적 안전한 큰 그림은 (1) 당장은 렌트·대중교통·라이드헤일로 이동하고, (2) 은행·Secured card로 신용을 쌓으며, (3) 다운페이를 모은 뒤 크레딧유니온·은행 pre-approval을 비교하고, (4) 보험·등록·정비 비용까지 넣어 예산을 잡는 것입니다. 현금 구매도 Title·lien·사고 이력(예: VIN 조회)·시운전·사전 점검을 건너뛰면 손해가 큽니다.\n\n경계할 것: ‘신용 없이도 무조건 승인’, ‘오늘만 특가·지금 사인’, 선입금만 받고 차를 안 주는 개인 거래, 계약서에 없는 구두 약속, 매우 높은 이자·장기간 balloon 구조. Buy Here Pay Here는 신용이 약할 때 쓰이지만 이자가 높고 회수(repossession) 위험이 커 CFPB·FTC 소비자 안내를 꼭 읽으세요. 공동서명자는 상대 연체 시 본인 신용·상환 의무가 생길 수 있습니다. ArriveUS는 대출·딜러를 알선하지 않으며, 불법·가짜 신용 서류 방법을 안내하지 않습니다.",
+    requirements: [
+      "예산: 차값 + 세금·등록·보험·정비·주유",
+      "운전면허(또는 주에서 요구하는 자격)와 보험 가입 계획",
+      "현금 구매 시: 안전한 결제·Bill of sale·Title 확인",
+      "대출 검토 시: 소득·체류 관련 서류, 다운페이, pre-approval 비교",
+      "VIN·사고·리콜 조회에 쓸 차량 정보",
+    ],
+    steps: [
+      "당장 필요한 기간을 나눕니다. 며칠~몇 주면 렌터카 가이드, 장기면 구매·대출 준비를 진행합니다.",
+      "월 보험·등록·주유·정비까지 포함한 ‘유지비’를 먼저 적습니다. 차값만 보지 마세요.",
+      "신용이 없으면 Secured card·첫 신용카드·신용 쌓기 가이드로 이력을 만들기 시작합니다(급하게 고금리만 받지 않기).",
+      "현금·저가 중고를 볼 때는 Title 명의·담보(lien)·Bill of sale·사전 점검(mechanic)을 확인합니다.",
+      "대출이 필요하면 딜러 금융만 듣지 말고, 크레딧유니온·은행 pre-approval APR·기간·월납을 비교합니다(CFPB 안내).",
+      "Buy Here Pay Here·‘무조건 승인’ 광고는 계약 총비용·연체 시 조항을 읽고, 부담되면 거절합니다.",
+      "구매 후 보험·차량 등록 가이드로 Title·번호판·만료일을 바로 처리합니다.",
+    ],
+    links: [
+      {
+        label: "CFPB – Auto loans",
+        url: "https://www.consumerfinance.gov/consumer-tools/auto-loans/",
+      },
+      {
+        label: "CFPB – What to know before you buy a car",
+        url: "https://www.consumerfinance.gov/about-us/blog/what-know-shopping-auto-loan/",
+      },
+      {
+        label: "FTC – Understanding vehicle financing",
+        url: "https://consumer.ftc.gov/articles/understanding-vehicle-financing",
+      },
+      {
+        label: "FTC – Buying a used car",
+        url: "https://consumer.ftc.gov/articles/buying-used-car",
+      },
+      {
+        label: "NHTSA – VIN / safety recalls",
+        url: "https://www.nhtsa.gov/recalls",
+      },
+      {
+        label: "렌터카·단기 이용",
+        url: "/guides/dmv/car-rental",
+      },
+      {
+        label: "자동차 보험 기초",
+        url: "/guides/dmv/auto-insurance",
+      },
+      {
+        label: "차량 등록",
+        url: "/guides/dmv/vehicle-registration",
+      },
+      {
+        label: "첫 신용카드 만들기",
+        url: "/guides/bank/first-credit-card",
+      },
+      {
+        label: "신용 점수 올리기",
+        url: "/guides/bank/credit-build",
+      },
+    ],
+    faq: [
+      {
+        question: "신용점수 없이 할부가 아예 안 되나요?",
+        answer:
+          "거절되는 경우가 많고, 돼도 이자가 매우 높을 수 있습니다. 다운페이·공동서명·크레딧유니온·현금 저가 중고를 비교하고, ‘무조건 승인’만 믿지 마세요.",
+      },
+      {
+        question: "현금으로 사는 게 제일 안전한가요?",
+        answer:
+          "이자 부담은 없지만 Title·사기·고장 리스크는 그대로입니다. VIN·사전 점검·정식 Bill of sale·등록을 꼭 하세요.",
+      },
+      {
+        question: "Buy Here Pay Here는 뭔가요?",
+        answer:
+          "딜러가 직접 할부해 주는 형태가 많습니다. 신용이 약할 때 쓰이지만 이자·수수료·회수 조건이 불리한 경우가 있어 CFPB·FTC 안내와 총비용을 확인하세요.",
+      },
+      {
+        question: "가족이 공동서명(Co-sign)해 주면요?",
+        answer:
+          "승인은 쉬워질 수 있지만, 연체·미납 시 공동서명자 신용과 상환 의무에 영향을 줄 수 있습니다. 조건을 함께 읽고 결정하세요.",
+      },
+      {
+        question: "당장 차가 급하면요?",
+        answer:
+          "고금리 장기 할부만 급하게 받기보다, 렌터카·대중교통·라이드헤일로 기간을 벌고 신용·다운페이를 준비하는 편이 손해가 적은 경우가 많습니다.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·금융·보험 자문이나 대출·딜러 알선이 아닙니다. APR·승인·계약은 개인 신용·소득·체류에 따라 다르므로 CFPB·FTC·은행·자격 있는 상담사 안내를 확인하세요. 가짜 신용·불법 서류 방법은 안내하지 않습니다.",
   },
 ];
 
