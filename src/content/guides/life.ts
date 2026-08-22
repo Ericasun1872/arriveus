@@ -75,6 +75,10 @@ export const lifeGuides: Guide[] = [
         url: "/guides/tax/ssn-apply",
       },
       {
+        label: "직장 비자·장기체류 (비이민)",
+        url: "/guides/immigration/work-visa-long-stay",
+      },
+      {
         label: "주소·우편",
         url: "/guides/life/address-mail",
       },

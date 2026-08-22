@@ -143,6 +143,11 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       answer:
         "USCIS는 만료 180일 전 갱신(I-765) 신청을 권장합니다. ArriveUS ‘EAD 갱신’ 가이드와 공식 자동연장 공지를 확인하세요.",
     },
+    {
+      question: "영주권이 아니라 직장 때문에 오래 살아요.",
+      answer:
+        "비이민 취업 비자(H-1B·L-1 등)와 영주권은 별개입니다. ArriveUS ‘직장 비자·장기체류’ 개요와 도착 첫 7일·주 면허 가이드를 함께 보세요.",
+    },
   ],
   job: [
     {

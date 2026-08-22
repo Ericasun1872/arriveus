@@ -45,7 +45,7 @@ export const categories: Category[] = [
     slug: "immigration",
     name: "이민국",
     nameEn: "USCIS",
-    description: "계정·케이스, EAD, 가족·취업 이민, 학생·OPT, 귀화",
+    description: "계정·케이스, 직장 비자 장기체류, EAD, 가족·취업 이민, 학생·OPT",
     accent: "#5C4A2E",
     icon: "immigration",
   },

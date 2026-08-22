@@ -38,9 +38,15 @@ export const startPaths: StartPath[] = [
     href: "/guides/housing/senior-housing-55",
   },
   {
+    slug: "work-stay",
+    title: "직장으로 장기 체류해요",
+    description: "비이민 취업 비자 개요와 정착 연결",
+    href: "/guides/immigration/work-visa-long-stay",
+  },
+  {
     slug: "immigration",
     title: "이민국 서류가 필요해요",
-    description: "USCIS 계정·양식·귀화·취업 이민",
+    description: "USCIS 계정·양식·영주권·OPT",
     href: "/guides/immigration",
   },
 ];

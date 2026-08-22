@@ -363,6 +363,10 @@ export const immigrationGuides: Guide[] = [
         label: "자주 쓰는 USCIS 양식 지도",
         url: "/guides/immigration/common-forms",
       },
+      {
+        label: "직장 비자·장기체류 (비이민) 개요",
+        url: "/guides/immigration/work-visa-long-stay",
+      },
     ],
     updatedAt: "2026-08",
     faq: [
@@ -529,6 +533,112 @@ export const immigrationGuides: Guide[] = [
     ],
     updatedAt: "2026-08",
     disclaimer,
+  },
+  {
+    slug: "work-visa-long-stay",
+    category: "immigration",
+    title: "직장 비자·장기체류 (비이민) 개요",
+    summary:
+      "영주권이 아니라 직장·파견·주재원 등으로 오래 머무를 때 쓰는 비이민 취업 비자의 큰 그림과, 정착(전화·면허·세금)과 구분할 점을 정리합니다.",
+    cost: "비자·청원·변호사 수수료는 카테고리·고용주마다 다름",
+    methods: [
+      "고용주 청원·비이민 비자 (H-1B, L-1 등)",
+      "신분 유지·I-94·여행",
+      "정착은 생활·DMV 가이드와 병행",
+    ],
+    overview:
+      "‘이민(영주권)’과 ‘직장 때문에 오래 살기’는 자주 섞여 들리지만 절차가 다릅니다. 영주권(Green card)은 영구 거주 쪽으로 가는 경로이고, H-1B·L-1·E-2·H-2B 같은 비이민(Nonimmigrant) 취업 비자는 보통 기간·고용주·직무 조건이 정해진 임시 체류·근로입니다. 회사 주재원, 전문직 파견, 투자·무역, 계절 근로 등 목적에 따라 카테고리가 갈리며, ArriveUS는 개별 비자 승인 전략이나 신청 대행을 하지 않습니다.\n\n흔한 큰 그림만 보면, 많은 취업 비자는 미국 고용주(또는 관련 법인)가 USCIS에 청원(Petition)을 넣고, 승인 후 해외 영사관 비자 인터뷰나 미국 내 신분 변경·연장을 진행하는 식입니다. 어떤 신분은 그 신분 자체로 특정 고용주에서 일할 수 있고(예: 전형적 H-1B·L-1), 어떤 상황은 별도 EAD가 필요할 수 있습니다. ‘비자가 있으면 아무 회사나’, ‘관광 비자로 먼저 일해도 된다’는 식으로 안내하는 광고는 위험합니다.\n\n정착 생활은 영주권자와 겹칩니다. 미국에 거주·출근할 계획이면 전화번호·은행·임대·주 운전면허·보험·세금(W-2/SSN)·I-9는 생활·DMV·취업 가이드를 따르면 됩니다. IDP만으로 장기 거주 운전을 대체하기 어려운 경우가 많습니다. 나중에 취업 이민(영주권)으로 이어지는 케이스가 있어도, 비이민 유지와 영주권 절차는 별개로 변호사와 구분해 보세요.",
+    requirements: [
+      "본인 목표: 임시 근무·파견인지, 영주권 트랙인지 구분",
+      "고용 오퍼·직무·근무지·임금·스폰서(고용주) 정보",
+      "여권·이전 미국 입국·I-94·비자 스탬프 이력",
+      "회사·이민 변호사 연락처 (진행 주체 확인)",
+      "도착 후 정착용: 주소·SSN 신청 일정·주 면허 계획",
+    ],
+    steps: [
+      "목표가 ‘기간 정해진 직장 체류’인지 ‘영주권’인지 먼저 나눕니다. 후자는 취업 이민(EB) 가이드를 따로 보세요.",
+      "고용주·변호사가 어떤 비이민 카테고리(H-1B, L-1, E-2 등)를 검토 중인지, 누가 수수료를 내는지 서면으로 확인합니다.",
+      "USCIS Temporary Workers 안내에서 해당 카테고리의 기본 요건·고용주 역할을 읽습니다(개별 자격 판정은 변호사).",
+      "승인·비자·입국 후 I-94 체류 만료일과 여권 만료를 캘린더에 넣고, 연장·이직·근무지 변경은 미리 상담합니다.",
+      "미국에 거주·출근하면 ‘도착 첫 7일’·은행·주 면허 이전·보험·I-9 가이드로 정착을 진행합니다. 관광 단기와 거주자 면허 요건을 구분하세요.",
+      "‘비자·영주권 보장 선입금’, 관광 신분으로의 불법 근로 권유는 거절하고 USCIS Avoid scams를 참고합니다.",
+    ],
+    links: [
+      {
+        label: "USCIS – Temporary Workers",
+        url: "https://www.uscis.gov/working-in-the-united-states/temporary-workers",
+      },
+      {
+        label: "USCIS – Working in the United States",
+        url: "https://www.uscis.gov/working-in-the-united-states",
+      },
+      {
+        label: "Department of State – Employment visas",
+        url: "https://travel.state.gov/content/travel/en/us-visas/employment.html",
+      },
+      {
+        label: "I-94 조회",
+        url: "https://i94.cbp.dhs.gov/",
+      },
+      {
+        label: "USCIS – Avoid scams",
+        url: "https://www.uscis.gov/avoid-scams",
+      },
+      {
+        label: "도착 첫 7일 체크리스트",
+        url: "/guides/life/first-week",
+      },
+      {
+        label: "타주·해외 면허 이전",
+        url: "/guides/dmv/license-transfer",
+      },
+      {
+        label: "입사 근로 서류 (I-9, W-4)",
+        url: "/guides/job/work-documents",
+      },
+      {
+        label: "취업 이민(EB-3) 개요",
+        url: "/guides/immigration/employment-green-card",
+      },
+      {
+        label: "학생(F-1)·OPT 개요",
+        url: "/guides/immigration/f1-opt",
+      },
+      {
+        label: "EAD 갱신",
+        url: "/guides/immigration/ead-renewal",
+      },
+    ],
+    faq: [
+      {
+        question: "직장 장기체류인데 영주권 가이드를 봐야 하나요?",
+        answer:
+          "당장이 비이민 비자면 이 가이드와 생활·DMV가 우선입니다. 나중에 취업 이민을 검토할 때만 EB 개요를 추가로 보세요. 두 절차를 한 번에 ‘보장’한다는 광고는 경계하세요.",
+      },
+      {
+        question: "H-1B·L-1·E-2 중 무엇이 맞나요?",
+        answer:
+          "학력·직무·회사 관계·투자·무역 등 사실에 따라 다릅니다. ArriveUS는 카테고리를 골라 드리지 않습니다. 고용주·자격 있는 이민 변호사와 USCIS Temporary Workers 안내를 확인하세요.",
+      },
+      {
+        question: "비자가 있으면 주 운전면허는 필요 없나요?",
+        answer:
+          "비자·I-94와 운전 자격은 별개인 경우가 많습니다. 해당 주에서 거주자로 보이면 기한 안에 주 면허가 필요할 수 있어 면허 이전 가이드·주 DMV를 확인하세요.",
+      },
+      {
+        question: "회사를 옮기면 비자는 그대로인가요?",
+        answer:
+          "카테고리마다 다릅니다. 새 고용주 청원·이전(portability)·여행 제한이 있을 수 있으니, 이직 전에 변호사·HR과 확인하세요.",
+      },
+      {
+        question: "가족도 같이 올 수 있나요?",
+        answer:
+          "배우자·자녀용 동반 신분(예: H-4, L-2 등)이 있는 경우가 많습니다. 가족 근로 허가는 별도 규칙이 있으니 공식 안내·변호사를 확인하세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 이민·법률·취업 알선 자문이 아닙니다. 비자 카테고리·자격·수수료·이직·여행은 수시로 바뀌고 개인 사실이 핵심이므로 USCIS·국무부 공식 안내와 자격 있는 이민 변호사·Accredited Representative를 확인하세요. 특정 비자 승인을 보장하지 않습니다.",
   },
   {
     slug: "f1-opt",

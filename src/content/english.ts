@@ -899,6 +899,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I want to confirm the requirements to maintain my F-1 status.",
     },
   ],
+  "immigration/work-visa-long-stay": [
+    {
+      ko: "회사 스폰서 취업 비자 진행 상황을 알고 싶습니다.",
+      en: "I would like an update on my employer-sponsored work visa case.",
+    },
+    {
+      ko: "제 I-94 체류 만료일을 확인해 주세요.",
+      en: "Please help me check the admit-until date on my I-94.",
+    },
+    {
+      ko: "이 비자로 주 운전면허를 신청할 수 있나요?",
+      en: "Can I apply for a state driver’s license with this visa status?",
+    },
+    {
+      ko: "영주권이 아니라 임시 근무 체류입니다. 정착 순서를 알려 주세요.",
+      en: "I am here for temporary work, not permanent residence. What should I set up first?",
+    },
+  ],
   "job/everyday-jobs": [
     {
       ko: "일자리 있으면 지원하고 싶습니다.",
