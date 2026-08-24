@@ -231,12 +231,16 @@ export const housingGuides: Guide[] = [
         label: "리스(임대차) 읽기",
         url: "/guides/housing/lease-basics",
       },
+      {
+        label: "세입자 보험 (Renters insurance)",
+        url: "/guides/housing/renters-insurance",
+      },
     ],
     faq: [
       {
         question: "입주 전에 Renters insurance가 꼭 필요한가요?",
         answer:
-          "단지가 요구하면 입주 조건인 경우가 많습니다. 요구하지 않아도 소지품·배상 대비로 가입하는 분이 많습니다.",
+          "단지가 요구하면 입주 조건인 경우가 많습니다. 자세한 가입·증서 제출은 ‘세입자 보험’ 가이드를 보세요.",
       },
       {
         question: "퇴거일을 하루만 넘겨도 되나요?",
@@ -345,6 +349,14 @@ export const housingGuides: Guide[] = [
         label: "보증금",
         url: "/guides/housing/security-deposit",
       },
+      {
+        label: "세입자 보험 (Renters insurance)",
+        url: "/guides/housing/renters-insurance",
+      },
+      {
+        label: "입주·퇴거 체크리스트",
+        url: "/guides/housing/move-in-out",
+      },
     ],
     faq: [
       {
@@ -417,5 +429,81 @@ export const housingGuides: Guide[] = [
     ],
     updatedAt: "2026-08",
     disclaimer,
+  },
+  {
+    slug: "renters-insurance",
+    category: "housing",
+    title: "세입자 보험 (Renters insurance)",
+    summary:
+      "임대인이 요구하는 Renters insurance가 무엇인지, 보통 무엇을 보장하는지, 가입·증서 제출 시 확인할 점을 정리합니다.",
+    cost: "월 보험료는 지역·보장·디덕터블에 따라 다름 (종종 월 수십 달러대부터)",
+    methods: ["보험사·에이전트 견적", "단지 요구 한도 확인", "증서(Evidence of insurance) 제출"],
+    overview:
+      "미국 아파트·타운하우스 Lease에는 Renters insurance(세입자 보험) 가입과 단지에 증서 제출을 요구하는 경우가 많습니다. 건물 구조는 건물주 보험이 다루는 경우가 많고, 세입자 보험은 보통 내 짐(Personal property), 과실로 이웃·단지에 끼친 손해(Liability), 임시 거처(Loss of use) 등을 다루는 식으로 구성됩니다. ‘월세에 포함’과 혼동하지 마세요.\n\n가입 전 Lease에 적힌 최소 Liability 한도(예: $100,000), 단지를 Additional interest / interested party로 넣는 요건, 제출 기한을 확인합니다. 보험료만 싼 상품이 짐 보장·디덕터블이 불리할 수 있어 견적서 보장 항목을 비교하세요. 룸메이트가 있으면 각자 가입인지 한 증권에 이름을 올리는지 단지·보험사에 묻습니다.\n\n도난·누수·화재 후에는 사진을 남기고 보험사에 청구하며, 단지 신고 절차도 따릅니다. ArriveUS는 특정 보험사를 추천하지 않습니다.",
+    requirements: [
+      "Lease의 보험 조항(최소 한도·제출 기한·단지 표기 이름)",
+      "거주 주소·입주 예정일",
+      "대략적인 짐 가치(가전·가구·전자기기)",
+      "결제 수단·이메일(증서 PDF 수신)",
+    ],
+    steps: [
+      "Lease·입주 안내에서 Renters insurance 필수 여부와 Liability 최소 한도를 확인합니다.",
+      "단지에 제출할 공식 이름(Property / Additional interest)과 이메일·포털을 물어봅니다.",
+      "2–3곳에서 견적을 비교하고, Personal property·Liability·디덕터블·임시 거처를 확인합니다.",
+      "가입 후 Evidence of insurance / Declaration을 단지에 기한 안에 제출합니다.",
+      "이사·룸메이트 변경·반려동물이 생기면 보험사·단지에 업데이트를 알립니다.",
+      "피해가 나면 안전 확인 → 사진 → 단지/보험 청구 순으로 진행합니다.",
+    ],
+    links: [
+      {
+        label: "NAIC – Renters insurance",
+        url: "https://content.naic.org/consumer/renters-insurance.htm",
+      },
+      {
+        label: "Insurance Information Institute – Renters",
+        url: "https://www.iii.org/article/spotlight-on-renters-insurance",
+      },
+      {
+        label: "CFPB – Renting",
+        url: "https://www.consumerfinance.gov/consumer-tools/renter-protections/",
+      },
+      {
+        label: "리스(임대차) 읽기",
+        url: "/guides/housing/lease-basics",
+      },
+      {
+        label: "입주·퇴거 체크리스트",
+        url: "/guides/housing/move-in-out",
+      },
+      {
+        label: "아파트 임대",
+        url: "/guides/housing/rent-apartment",
+      },
+    ],
+    faq: [
+      {
+        question: "건물주 보험이 있으면 세입자 보험은 필요 없나요?",
+        answer:
+          "건물 구조와 세입자 짐·책임은 따로인 경우가 많습니다. Lease가 요구하면 가입·증서 제출이 필요합니다.",
+      },
+      {
+        question: "얼마나 보장해야 하나요?",
+        answer:
+          "Lease 최소 Liability를 맞추고, 짐 가치는 본인 목록에 맞게 정합니다. 견적서에서 한도와 디덕터블을 확인하세요.",
+      },
+      {
+        question: "룸메이트와 한 증권으로 가능한가요?",
+        answer:
+          "보험사·단지 정책에 따라 다릅니다. 이름·주소가 증권과 Lease에 맞는지 미리 확인하세요.",
+      },
+      {
+        question: "증서를 안 내면요?",
+        answer:
+          "단지 규정 위반·벌금·Lease 위반으로 이어질 수 있습니다. 입주 전·기한 안에 제출하세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 보험·법률 자문이 아닙니다. 보장 범위·요율·단지 요건은 상품·계약마다 다르므로 약관·Lease와 면허 있는 보험 상담사를 확인하세요. 특정 보험사를 추천하지 않습니다.",
   },
 ];

@@ -55,6 +55,11 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       answer:
         "요금·자격·보험·도시가 시점에 따라 다릅니다. ArriveUS는 특정 앱을 추천하지 않으니, 같은 기간으로 총비용과 계약 조건을 비교하세요. ‘렌터카·단기 이용’ 가이드를 참고하세요.",
     },
+    {
+      question: "교통사고나 티켓이 나면요?",
+      answer:
+        "안전·911 → 정보·사진 → 보험 → 티켓 기한 순으로 챙기세요. ArriveUS ‘교통사고·단속·티켓’ 가이드를 참고하세요.",
+    },
   ],
   bank: [
     {
@@ -166,6 +171,16 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
         "근무·임금 기록을 남기고 Worker.gov·연방 Wage and Hour·거주 주 노동청(워싱턴이면 L&I) 안내를 확인하세요. ArriveUS ‘임금 체불·취업 사기·신고 창구’ 가이드를 참고하세요.",
     },
     {
+      question: "일하다 다치면요?",
+      answer:
+        "고용주에게 알리고 Workers’ compensation(산재) 경로를 확인하세요. ArriveUS ‘산재·직장 부상’ 가이드와 Worker.gov·주 기관 안내를 참고하세요.",
+    },
+    {
+      question: "해고되면 실업급여는 어디서요?",
+      answer:
+        "거주(또는 근무) 주 Unemployment Insurance 사이트에서 신청합니다. USA.gov·CareerOneStop과 ArriveUS ‘실업급여 신청’ 가이드를 보세요.",
+    },
+    {
       question: "스몰 비즈니스는 어디서 도움을 받나요?",
       answer:
         "SBA Local assistance로 SBDC·SCORE 등 무료·저비용 상담을 찾을 수 있습니다. ‘지원금 대행비’를 먼저 받는 업체보다 공식 창구와 ArriveUS 스몰 비즈니스 가이드를 우선하세요.",
@@ -211,6 +226,11 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       question: "룸메이트와 살아도 되나요?",
       answer:
         "단지 정책과 Lease 명의가 중요합니다. ArriveUS ‘룸메이트·서브리스’ 가이드에서 공동 서명·전대 허가를 확인하세요.",
+    },
+    {
+      question: "Renters insurance가 뭔가요?",
+      answer:
+        "세입자 짐·책임 등을 다루는 보험으로, 많은 Lease가 가입·증서 제출을 요구합니다. ArriveUS ‘세입자 보험’ 가이드를 참고하세요.",
     },
   ],
 };

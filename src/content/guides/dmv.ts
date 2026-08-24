@@ -372,6 +372,10 @@ export const dmvGuides: Guide[] = [
         label: "신용 없이 차 사기",
         url: "/guides/dmv/buy-car-no-credit",
       },
+      {
+        label: "교통사고·단속·티켓",
+        url: "/guides/dmv/car-accident",
+      },
     ],
     faq: [
       {
@@ -849,6 +853,96 @@ export const dmvGuides: Guide[] = [
     updatedAt: "2026-08",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 법률·금융·보험 자문이나 대출·딜러 알선이 아닙니다. APR·승인·계약은 개인 신용·소득·체류에 따라 다르므로 CFPB·FTC·은행·자격 있는 상담사 안내를 확인하세요. 가짜 신용·불법 서류 방법은 안내하지 않습니다.",
+  },
+  {
+    slug: "car-accident",
+    category: "dmv",
+    title: "교통사고·단속·티켓",
+    summary:
+      "사고·경찰 정차·티켓이 났을 때 현장에서 할 일, 보험 연락, 티켓 대응의 기본 순서와 공식 안내 창구를 정리합니다.",
+    cost: "티켓·벌금·보험 디덕터블·렌트/수리비는 케이스마다 다름",
+    methods: ["현장 안전·기록", "보험·경찰 리포트", "티켓 납부·Contest·법원"],
+    overview:
+      "미국에서 운전하다 사고·단속을 당하면 영어·절차가 낯설어 당황하기 쉽습니다. 큰 원칙은 (1) 안전한 곳으로 옮기고 위급하면 911, (2) 상대·목격자 정보와 사진·영상을 남기고, (3) 보험사에 알리고, (4) 경찰 리포트·티켓 기한을 캘린더에 넣는 것입니다.\n\n경미한 접촉도 주·시에 따라 경찰 신고가 필요할 수 있고, 렌트·리스 차량은 업체·대출 기관 안내도 따릅니다. 보험 카드(또는 디지털 증명)와 면허·등록을 차에 두는 습관이 도움이 됩니다. 티켓(Citation)은 그냥 무시하면 면허·등록·체포 영장 위험이 커질 수 있어, 납부·교통학교·Contest(다툼) 중 무엇을 할지 티켓에 적힌 기한·법원 안내를 확인하세요.\n\n경찰 정차 때는 안전하게 정차하고, 요청 시 면허·등록·보험을 제시하며, 이해할 수 없으면 interpreter를 요청할 수 있는 경우가 있습니다. ArriveUS는 개별 사건 변호를 하지 않으니, 부상·큰 손해·형사 이슈는 변호사·보험 안내를 우선하세요.",
+    requirements: [
+      "운전면허·차량 등록·보험 증명",
+      "사고 상대 이름·연락처·보험·차량 번호판 메모",
+      "현장 사진·영상 (손상·위치·신호등)",
+      "경찰 리포트 번호(발급된 경우)",
+      "티켓·법원 안내문의 기한·사건 번호",
+    ],
+    steps: [
+      "위급·부상·화재면 911. 가능하면 갓길 등 안전한 곳으로 옮기고 비상등을 켭니다.",
+      "상대 운전자·목격자 연락처, 보험사·증권번호, 번호판을 적고 차량·현장 사진을 남깁니다.",
+      "경찰이 오면 사실만 짧게 말하고, 리포트 번호·받는 방법을 확인합니다.",
+      "보험사(렌트면 렌트 업체·카드 보험 포함)에 알리고, 수리·렌트카·의료 청구 안내를 따릅니다.",
+      "티켓을 받으면 기한 안에 납부·교통학교·Contest 중 선택지를 공식 안내에서 확인합니다. 무시하지 마세요.",
+      "주소가 바뀌었거나 우편을 못 받으면 법원·DMV에 연락해 일정을 놓치지 않습니다.",
+    ],
+    links: [
+      {
+        label: "NHTSA – Road safety",
+        url: "https://www.nhtsa.gov/road-safety",
+      },
+      {
+        label: "USA.gov – Car complaints & consumer help",
+        url: "https://www.usa.gov/car-complaints",
+      },
+      {
+        label: "USA.gov – Report a crime / police report",
+        url: "https://www.usa.gov/report-crime",
+      },
+      {
+        label: "USA.gov – Legal aid",
+        url: "https://www.usa.gov/legal-aid",
+      },
+      {
+        label: "NAIC – Auto insurance basics",
+        url: "https://content.naic.org/consumer/auto-insurance.htm",
+      },
+      {
+        label: "자동차 보험 기초",
+        url: "/guides/dmv/auto-insurance",
+      },
+      {
+        label: "렌터카·단기 이용",
+        url: "/guides/dmv/car-rental",
+      },
+      {
+        label: "911·응급·재난",
+        url: "/guides/life/emergency-911",
+      },
+    ],
+    faq: [
+      {
+        question: "영어가 안 되면 어떻게 말하나요?",
+        answer:
+          "위급하면 911에 주소와 ‘car accident’를 말하고 interpreter를 요청하세요. 현장에서는 면허·보험을 보여 주고, 잘 모르면 ‘I need an interpreter’라고 하세요.",
+      },
+      {
+        question: "경찰 리포트가 꼭 필요한가요?",
+        answer:
+          "주·시·피해 규모·보험사 요구에 따라 다릅니다. 부상·큰 손해가 있거나 상대가 정보를 안 주면 신고를 검토하고, 보험사에도 확인하세요.",
+      },
+      {
+        question: "티켓을 그냥 안 내면요?",
+        answer:
+          "연체·면허 정지·추가 벌금·영장으로 이어질 수 있습니다. 티켓에 적힌 기한과 선택지(납부·학교·Contest)를 확인하세요.",
+      },
+      {
+        question: "렌트카 사고면 누구에게 연락하나요?",
+        answer:
+          "렌트 계약의 사고 연락처·보험 옵션과 본인/카드 보험을 함께 확인합니다. 픽업 때 받은 안내를 우선하세요.",
+      },
+      {
+        question: "과실이 애매하면요?",
+        answer:
+          "현장에서 잘잘못을 단정하지 말고 사실·사진·리포트를 남긴 뒤 보험·필요 시 변호사와 확인하세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·보험·형사 자문이 아닙니다. 사고·티켓·과실은 주·시·계약마다 다르므로 경찰·법원·보험사 공식 안내와 필요 시 변호사를 확인하세요.",
   },
 ];
 

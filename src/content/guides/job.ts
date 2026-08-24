@@ -577,6 +577,14 @@ export const jobGuides: Guide[] = [
         label: "온라인 구직·공고 검색",
         url: "/guides/job/job-search",
       },
+      {
+        label: "산재·직장 부상",
+        url: "/guides/job/workplace-injury",
+      },
+      {
+        label: "실업급여 신청",
+        url: "/guides/job/unemployment",
+      },
     ],
     faq: [
       {
@@ -608,5 +616,171 @@ export const jobGuides: Guide[] = [
     updatedAt: "2026-08",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 법률·취업 알선·이민 자문이 아닙니다. 신고 자격·기한·결과·보복 보호는 기관과 케이스마다 다르므로 공식 안내와 자격 있는 전문가에게 확인하세요. 불법 취업·가짜 서류 방법은 안내하지 않습니다.",
+  },
+  {
+    slug: "workplace-injury",
+    category: "job",
+    title: "산재·직장 부상",
+    summary:
+      "일하다 다쳤을 때 보고·기록·Workers’ compensation(산재보험) 창구를 찾는 기본 순서와 Worker.gov·주 기관 안내를 정리합니다.",
+    cost: "산재 보험 청구·의료비 처리는 케이스·주마다 다름 / 공식 상담은 무료인 경우 많음",
+    methods: ["고용주·응급 보고", "Workers’ comp 청구", "OSHA·주 노동청"],
+    overview:
+      "식당·창고·돌봄·청소 등 현장 직종에서는 미끄러짐·들기·베임·차량 사고 같은 직장 부상이 생길 수 있습니다. 많은 주에서 고용주는 Workers’ compensation(산재) 보험을 통해 업무상 부상·질병의 의료·일부 임금 보전을 다루는 체계를 둡니다. 이름은 주마다 다르고(워싱턴은 L&I 등), 청구 기한·양식·의사 선택이 다릅니다.\n\n기본 흐름은 부상 즉시(또는 가능한 빨리) 감독자·고용주에게 알리고, 응급이면 911/ER, 그다음 산재 청구·의료 기록을 남기는 것입니다. ‘참아라’, ‘신고하면 해고’라는 말에 주저하지 말고, Worker.gov와 거주 주 산재·근로자 권리 안내를 확인하세요. 임금 체불과 산재는 창구가 다를 수 있어 ArriveUS 임금 사기 가이드와 구분해 보세요.\n\nArriveUS는 불법 취업 방법을 안내하지 않으며, 개별 산재 승인을 대행하지 않습니다. 보복·중대 부상은 공식 기관·변호사 상담을 검토하세요.",
+    requirements: [
+      "부상 날짜·시간·장소·어떻게 다쳤는지 메모",
+      "목격자 이름·연락처(있으면)",
+      "고용주·감독자 보고 기록(문자·이메일 권장)",
+      "병원·Urgent care 기록·진단서·약 영수증",
+      "페이 stub·근무 일정(임금 보전 관련 시)",
+    ],
+    steps: [
+      "생명이 위급하면 911. 가능하면 감독자·고용주에게 바로 알립니다.",
+      "어디서·어떻게 다쳤는지, 누구에게 보고했는지 날짜와 함께 적어둡니다.",
+      "고용주가 안내하는 산재(Workers’ comp) 절차·양식을 확인하고, 안 알려 주면 주 산재 기관·Worker.gov를 직접 찾습니다.",
+      "워싱턴주면 L&I 등 주 안내에서 File a claim / Injured worker 경로를 확인합니다. 다른 주도 주 노동·산재 사이트 이름을 검색하세요.",
+      "의사가 업무상 부상임을 알 수 있게 말하고, 진단·제한 근무(light duty) 서류를 보관합니다.",
+      "보복·위험한 작업 강요가 있으면 Worker.gov 보복·OSHA·주 창구도 함께 검토합니다.",
+    ],
+    links: [
+      {
+        label: "Worker.gov",
+        url: "https://www.worker.gov/",
+      },
+      {
+        label: "USA.gov – Workers’ compensation",
+        url: "https://www.usa.gov/workers-compensation",
+      },
+      {
+        label: "DOL – Workers’ compensation",
+        url: "https://www.dol.gov/general/topic/workcomp",
+      },
+      {
+        label: "OSHA – Workers’ rights",
+        url: "https://www.osha.gov/workers",
+      },
+      {
+        label: "Washington L&I – File a workers’ comp claim",
+        url: "https://www.lni.wa.gov/claims/for-workers/file-a-claim/",
+      },
+      {
+        label: "임금 체불·취업 사기·신고 창구",
+        url: "/guides/job/wage-scams",
+      },
+      {
+        label: "911·응급·재난",
+        url: "/guides/life/emergency-911",
+      },
+      {
+        label: "현장 취업",
+        url: "/guides/job/everyday-jobs",
+      },
+    ],
+    faq: [
+      {
+        question: "작은 부상도 보고해야 하나요?",
+        answer:
+          "나중에 악화될 수 있어 빨리 알리는 편이 안전한 경우가 많습니다. 주·보험 규칙상 기한이 있을 수 있으니 지체하지 마세요.",
+      },
+      {
+        question: "고용주가 산재 신고를 막으면요?",
+        answer:
+          "주 산재 기관·Worker.gov 안내로 본인이 청구할 수 있는 경우가 있습니다. 보복이 있으면 공식 보복 신고 창구도 확인하세요.",
+      },
+      {
+        question: "산재와 일반 건강 보험 차이는요?",
+        answer:
+          "업무상 부상은 보통 Workers’ comp 경로를 타는 경우가 많습니다. 어느 보험으로 청구할지 의료기관·고용주·주 안내에 확인하세요.",
+      },
+      {
+        question: "신분이 불안정해도 산재를 신청할 수 있나요?",
+        answer:
+          "많은 안내에서 근로자 보호는 신분과 별개로 설명되지만, 개별 케이스는 기관·변호사 확인이 필요합니다.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·의료·산재 대행 자문이 아닙니다. 자격·기한·보상은 주·고용주·부상마다 다르므로 공식 기관과 자격 있는 전문가에게 확인하세요.",
+  },
+  {
+    slug: "unemployment",
+    category: "job",
+    title: "실업급여 신청",
+    summary:
+      "해고·근무 시간 축소 후 주 실업보험(Unemployment Insurance) 신청 입구, 준비물, 비자·체류와 겹칠 때 확인할 점을 안내합니다.",
+    cost: "신청 자체는 보통 무료 / 급여액·기간은 주·소득 이력에 따라 다름",
+    methods: ["거주 주 UI 온라인 신청", "주간 인증(Weekly certification)", "재취업 활동 기록"],
+    overview:
+      "미국에서 실직하거나 시간이 크게 줄면, 거주 주 Unemployment Insurance(UI, 실업급여)를 신청할 수 있는 경우가 있습니다. 연방 틀 안에서 주가 운영하므로 신청 사이트·자격·주당 금액·대기 주(waiting week)가 주마다 다릅니다. USA.gov·CareerOneStop에서 주 실업 기관을 찾은 뒤, 본인 계정으로 신청하는 것이 일반적입니다.\n\n보통 최근 근로·임금 이력, 이직 사유(해고·권고사직 등), 구직 의사·가능 여부가 중요합니다. 승인 후에도 매주(또는 안내 주기)로 구직 활동을 보고하는 Weekly certification을 놓치면 지급이 끊길 수 있습니다. ‘대행비 선입금·무조건 승인’ 광고는 피하세요.\n\n직장 비자·EAD 등 체류 신분이 있는 분은 UI 자격과 이민 신분 유지가 별개 이슈일 수 있습니다. ArriveUS는 개별 자격 판정을 하지 않으니, 신청 전 주 UI 안내와 필요 시 이민 변호사를 확인하세요. 공공 혜택 전반은 생활 카테고리의 공공 혜택 가이드도 참고하세요.",
+    requirements: [
+      "SSN(또는 주가 허용하는 신원 정보)",
+      "최근 고용주 이름·주소·근무 기간·이직일·이직 사유",
+      "Pay stub·W-2 등 임금 증빙(요청 시)",
+      "미국 전화번호·이메일·주소",
+      "구직 활동 기록용 메모(지원한 회사·날짜)",
+    ],
+    steps: [
+      "실직·시간 축소 직후 USA.gov Unemployment 또는 CareerOneStop에서 거주 주 UI 사이트를 찾습니다.",
+      "안내된 기한 안에 온라인(또는 안내된 방법)으로 신청하고, 이직 사유를 사실에 맞게 적습니다.",
+      "Identity 확인·추가 서류 요청이 오면 마감 전에 제출합니다.",
+      "승인·대기 중에도 Weekly certification과 구직 활동 보고 방법을 캘린더에 넣습니다.",
+      "재취업·시간제 수입이 생기면 안내에 따라 보고합니다. 미보고는 환수·처벌 위험이 있습니다.",
+      "거절·이의신청(Appeal) 안내가 오면 기한 안에 공식 절차를 따르고, 체류 신분 이슈는 변호사와 구분해 상담합니다.",
+    ],
+    links: [
+      {
+        label: "USA.gov – Unemployment benefits",
+        url: "https://www.usa.gov/unemployment-benefits",
+      },
+      {
+        label: "CareerOneStop – Find unemployment benefits",
+        url: "https://www.careeronestop.org/LocalHelp/UnemploymentBenefits/find-unemployment-benefits.aspx",
+      },
+      {
+        label: "Worker.gov",
+        url: "https://www.worker.gov/",
+      },
+      {
+        label: "공공 혜택 (SNAP·WIC 등)",
+        url: "/guides/life/public-benefits",
+      },
+      {
+        label: "온라인 구직·공고 검색",
+        url: "/guides/job/job-search",
+      },
+      {
+        label: "직장 비자·장기체류 (비이민)",
+        url: "/guides/immigration/work-visa-long-stay",
+      },
+      {
+        label: "임금 체불·취업 사기·신고 창구",
+        url: "/guides/job/wage-scams",
+      },
+    ],
+    faq: [
+      {
+        question: "자발적으로 그만둬도 받을 수 있나요?",
+        answer:
+          "주·사유에 따라 다릅니다. ‘정당한 사유’ 기준이 있는 주가 많아 이직 사유를 사실대로 적고 주 안내를 확인하세요.",
+      },
+      {
+        question: "신청은 얼마나 빨리 해야 하나요?",
+        answer:
+          "실직 후 되도록 빨리 하는 편이 좋습니다. 주마다 소급·대기 규칙이 있으니 주 UI 사이트를 바로 확인하세요.",
+      },
+      {
+        question: "주간 인증을 빼먹으면요?",
+        answer:
+          "해당 주 지급이 안 되거나 재인증이 필요할 수 있습니다. 안내된 주기·방법을 지키세요.",
+      },
+      {
+        question: "비자 체류 중에도 UI가 되나요?",
+        answer:
+          "근로 이력·신분·주 규칙에 따라 다릅니다. 주 UI 자격과 이민 신분 유지는 별도로, 필요하면 변호사와 확인하세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·복지·이민 자문이 아닙니다. 실업급여 자격·금액·이민 영향은 주·개인 상황에 따라 다르므로 주 UI 공식 안내와 자격 있는 전문가에게 확인하세요. 신청 대행 사기를 주의하세요.",
   },
 ];

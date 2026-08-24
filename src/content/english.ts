@@ -371,6 +371,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Can I get a pre-purchase inspection at a mechanic?",
     },
   ],
+  "dmv/car-accident": [
+    {
+      ko: "교통사고가 났습니다. 경찰과 보험에 무엇을 말해야 하나요?",
+      en: "I was in a car accident. What should I tell the police and my insurance company?",
+    },
+    {
+      ko: "한국어 통역이 필요합니다.",
+      en: "I need a Korean interpreter.",
+    },
+    {
+      ko: "티켓 납부 기한과 방법을 알려 주세요.",
+      en: "Please tell me the deadline and how to pay this ticket.",
+    },
+    {
+      ko: "경찰 리포트 번호를 알려 주세요.",
+      en: "Can I get the police report number?",
+    },
+  ],
   "bank/open-account": [
     {
       ko: "체킹 계좌를 개설하고 싶습니다.",
@@ -1053,6 +1071,42 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I would like to file a wage complaint with Washington L&I.",
     },
   ],
+  "job/workplace-injury": [
+    {
+      ko: "직장에서 다쳤습니다. 산재 청구를 시작하고 싶습니다.",
+      en: "I was injured at work. I would like to start a workers’ compensation claim.",
+    },
+    {
+      ko: "부상을 감독자에게 보고했습니다.",
+      en: "I reported the injury to my supervisor.",
+    },
+    {
+      ko: "업무상 부상으로 진료를 받으러 왔습니다.",
+      en: "I am here for treatment for a work-related injury.",
+    },
+    {
+      ko: "진단서와 근무 제한 서류를 받아 갈 수 있나요?",
+      en: "Can I get a doctor’s note and work restriction documentation?",
+    },
+  ],
+  "job/unemployment": [
+    {
+      ko: "실업급여를 신청하고 싶습니다.",
+      en: "I would like to apply for unemployment benefits.",
+    },
+    {
+      ko: "이직 날짜와 사유를 확인해 주세요.",
+      en: "Please confirm my last day of work and the reason for separation.",
+    },
+    {
+      ko: "주간 인증(Weekly certification)은 어떻게 하나요?",
+      en: "How do I complete my weekly certification?",
+    },
+    {
+      ko: "구직 활동 기록을 제출해야 하나요?",
+      en: "Do I need to submit a record of my job search activities?",
+    },
+  ],
   "job/work-documents": [
     {
       ko: "I-9 서류를 제출하러 왔습니다.",
@@ -1157,6 +1211,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "게스트 규정이 어떻게 되나요?",
       en: "What is the guest policy?",
+    },
+  ],
+  "housing/renters-insurance": [
+    {
+      ko: "세입자 보험에 가입하고 증서를 받고 싶습니다.",
+      en: "I would like to buy renters insurance and get a certificate of insurance.",
+    },
+    {
+      ko: "단지에 제출할 최소 Liability 한도가 얼마인가요?",
+      en: "What is the minimum liability coverage the property requires?",
+    },
+    {
+      ko: "단지를 Additional interest로 넣어 주세요.",
+      en: "Please list the property as an additional interest on my policy.",
+    },
+    {
+      ko: "보험 증서를 이메일로 보내 주세요.",
+      en: "Please email me the evidence of insurance.",
     },
   ],
   "housing/roommate": [
