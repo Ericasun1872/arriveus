@@ -155,6 +155,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Is there a reduced fare for seniors or students?",
     },
   ],
+  "life/korean-documents": [
+    {
+      ko: "이 한국 공문서에 아포스티유가 필요한지 확인해 주세요.",
+      en: "Can you confirm whether this Korean public document needs an apostille?",
+    },
+    {
+      ko: "영문 공증 번역이 필요한가요?",
+      en: "Do you require a certified English translation?",
+    },
+    {
+      ko: "원본과 번역본을 함께 제출하면 되나요?",
+      en: "Should I submit both the original and the translation?",
+    },
+    {
+      ko: "서류 형식 요건을 이메일로 보내 주세요.",
+      en: "Please email me the document format requirements.",
+    },
+  ],
   "dmv/learner-permit": [
     {
       ko: "Learner’s Permit를 신청하고 싶습니다.",
@@ -387,6 +405,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "경찰 리포트 번호를 알려 주세요.",
       en: "Can I get the police report number?",
+    },
+  ],
+  "dmv/state-id": [
+    {
+      ko: "운전면허 없이 주 신분증(ID)을 신청하고 싶습니다.",
+      en: "I would like to apply for a state ID card without a driver’s license.",
+    },
+    {
+      ko: "REAL ID 준수 신분증이 필요한가요?",
+      en: "Do I need a REAL ID–compliant identification card?",
+    },
+    {
+      ko: "비시민도 State ID를 받을 수 있나요?",
+      en: "Can a non-citizen get a state identification card?",
+    },
+    {
+      ko: "어떤 서류를 가져와야 하나요?",
+      en: "What documents should I bring?",
     },
   ],
   "bank/open-account": [
@@ -933,6 +969,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "영주권이 아니라 임시 근무 체류입니다. 정착 순서를 알려 주세요.",
       en: "I am here for temporary work, not permanent residence. What should I set up first?",
+    },
+  ],
+  "immigration/i94-travel": [
+    {
+      ko: "I-94를 조회하고 PDF로 저장하고 싶습니다.",
+      en: "I would like to look up my I-94 and save it as a PDF.",
+    },
+    {
+      ko: "한국 여행 전 재입국에 필요한 서류를 확인하고 싶습니다.",
+      en: "I want to confirm which documents I need to re-enter after travel to Korea.",
+    },
+    {
+      ko: "H-4 배우자도 EAD를 신청할 수 있나요?",
+      en: "Can an H-4 spouse apply for an EAD?",
+    },
+    {
+      ko: "L-2 신분으로 일할 수 있는지 알고 싶습니다.",
+      en: "I would like to know whether I can work in L-2 status.",
     },
   ],
   "job/everyday-jobs": [

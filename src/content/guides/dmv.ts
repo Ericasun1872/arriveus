@@ -506,6 +506,10 @@ export const dmvGuides: Guide[] = [
         label: "ArriveUS – 워싱턴주·시애틀 가이드",
         url: "/guides/dmv/states/wa",
       },
+      {
+        label: "주 신분증 (운전 안 하는 ID)",
+        url: "/guides/dmv/state-id",
+      },
     ],
     faq: [
       {
@@ -943,6 +947,86 @@ export const dmvGuides: Guide[] = [
     updatedAt: "2026-08",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 법률·보험·형사 자문이 아닙니다. 사고·티켓·과실은 주·시·계약마다 다르므로 경찰·법원·보험사 공식 안내와 필요 시 변호사를 확인하세요.",
+  },
+  {
+    slug: "state-id",
+    category: "dmv",
+    title: "주 신분증 (운전 안 하는 ID)",
+    summary:
+      "운전면허 없이 은행·학교·병원·항공에서 쓰는 주 발급 ID(State ID / Identification card) 신청 개념과 REAL ID·여권과의 차이를 정리합니다.",
+    cost: "발급·갱신 수수료는 주마다 상이",
+    methods: ["주 DMV/DOL State ID", "여권·영주권 등 대체 신분", "REAL ID 준수 여부 확인"],
+    overview:
+      "차를 안 몰아도 미국에서 사진이 있는 정부 발급 신분증이 필요한 경우가 많습니다. 많은 주에서 운전면허가 아닌 Identification card / State ID를 DMV·DOL 등에서 발급합니다. 은행 계좌, 아파트 지원, 병원, 나이 확인, 일부 시험·면허에 쓰입니다.\n\nREAL ID는 ‘별(★) 등 표시가 있는 주 발급 신분증이 연방 기준을 충족한다’는 개념으로, 국내선 탑승·일부 연방 시설에서 요구될 수 있습니다. 운전 안 하는 ID도 REAL ID 준수 버전을 주는 주가 있고, 일반(standard) ID만 주는 경우도 있습니다. 워싱턴주는 비시민이 EDL/EID(REAL ID 준수 Enhanced)를 못 받는 경우가 많아, 비행기는 여권 등으로 준비하는 경우가 많습니다. REAL ID 가이드와 함께 보세요.\n\n이미 유효한 여권·영주권 카드가 있으면 당장 State ID 없이도 되는 일도 있지만, 일상에서 여권을 들고 다니기 부담되면 주 ID를 검토합니다. 서류·거주지·합법 신분 증명은 면허 신청과 비슷한 경우가 많으니 거주 주 공식 체크리스트를 확인하세요.",
+    requirements: [
+      "거주 주 State ID / Identification card 서류 목록",
+      "신원·생년월일 증명 (여권 등)",
+      "거주지 증명 (임대·공과금 등, 주마다)",
+      "SSN 관련 증명 또는 주가 허용하는 대체 (해당 시)",
+      "합법 체류·신분 관련 서류 (비자·I-94·영주권 등 주 요구)",
+    ],
+    steps: [
+      "거주 주 DMV/DOL에서 Driver license가 아닌 ID / Identification card 페이지를 엽니다.",
+      "REAL ID 준수 ID가 필요한지, 아니면 여권으로 국내선을 대체할지 정합니다.",
+      "필요 원본 서류·예약·수수료를 확인한 뒤 방문해 사진·서명을 진행합니다.",
+      "카드 수령 후 은행·단지·학교에 쓸 수 있는지, 만료일을 기록합니다.",
+      "주소가 바뀌면 면허와 마찬가지로 주 ID 주소 변경 안내를 따릅니다.",
+    ],
+    links: [
+      {
+        label: "USA.gov – State motor vehicle services",
+        url: "https://www.usa.gov/state-motor-vehicle-services",
+      },
+      {
+        label: "TSA – Identification",
+        url: "https://www.tsa.gov/travel/security-screening/identification",
+      },
+      {
+        label: "DHS – REAL ID",
+        url: "https://www.dhs.gov/real-id",
+      },
+      {
+        label: "Washington DOL – ID cards",
+        url: "https://dol.wa.gov/id-cards",
+      },
+      {
+        label: "REAL ID",
+        url: "/guides/dmv/real-id",
+      },
+      {
+        label: "운전면허 신규 발급",
+        url: "/guides/dmv/first-license",
+      },
+      {
+        label: "타주·해외 면허 이전",
+        url: "/guides/dmv/license-transfer",
+      },
+    ],
+    faq: [
+      {
+        question: "면허와 ID를 둘 다 받을 수 있나요?",
+        answer:
+          "보통 한 주에서 운전면허와 별도 State ID를 동시에 들고 다니게 하지 않는 경우가 많습니다. 거주 주 안내를 확인하세요.",
+      },
+      {
+        question: "여권만 있으면 State ID는 필요 없나요?",
+        answer:
+          "여행·많은 신분 확인에는 여권이 충분할 수 있습니다. 다만 일상·은행·단지에서 주 ID를 선호하는 곳이 있어 선택입니다.",
+      },
+      {
+        question: "비시민도 State ID를 받을 수 있나요?",
+        answer:
+          "주·체류 서류에 따라 다릅니다. REAL ID 준수 여부와 Enhanced 카드 자격은 주마다 다르니 공식 체크리스트를 보세요.",
+      },
+      {
+        question: "국내선은 State ID로 타나요?",
+        answer:
+          "REAL ID 준수 주 ID이거나 TSA가 인정하는 다른 신분(여권 등)이 필요합니다. TSA Identification 안내를 확인하세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·공식 자문이 아닙니다. ID 자격·서류·REAL ID 규칙은 주마다 다르므로 거주 주 DMV/DOL과 TSA·DHS 안내를 확인하세요.",
   },
 ];
 

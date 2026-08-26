@@ -501,6 +501,10 @@ export const lifeGuides: Guide[] = [
         label: "ESL·영어 공부",
         url: "/guides/life/esl-english",
       },
+      {
+        label: "한국 서류·아포스티유·번역",
+        url: "/guides/life/korean-documents",
+      },
     ],
     faq: [
       {
@@ -653,6 +657,93 @@ export const lifeGuides: Guide[] = [
         question: "시니어·학생 할인이 있나요?",
         answer:
           "많은 교통국에 Reduced fare가 있습니다. 나이·학생증·장애 증명 요건은 공식 사이트를 확인하세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer,
+  },
+  {
+    slug: "korean-documents",
+    category: "life",
+    title: "한국 서류·아포스티유·번역",
+    summary:
+      "학교·SSN·이민국·결혼·면허에 쓸 한국 공문서의 아포스티유(Apostille)·영문 번역·사본 인증을 어디서 확인하는지 기본 경로를 안내합니다.",
+    cost: "아포스티유·번역·공증 수수료는 기관·분량마다 다름",
+    methods: [
+      "한국 아포스티유·외교부/관할 기관",
+      "공인·공증 번역",
+      "미국 측 요청 기관에 형식 확인",
+    ],
+    overview:
+      "미국에 오면 학교 등록, SSN, USCIS, 은행, 결혼·가족관계, 일부 면허에서 한국에서 발급받은 출생·혼인·가족관계·학력·범죄경력 등 서류를 요구하는 경우가 있습니다. 기관마다 ‘원본만’, ‘아포스티유(Apostille) 필요’, ‘영문 번역+공증’, ‘대사관/영사 확인’ 요구가 달라, 먼저 받는 쪽에서 형식을 확인하는 것이 비용·시간을 줄입니다.\n\n아포스티유는 헤이그 협약에 따른 공문서 인증으로, 한국에서 발급한 공문서에 대해 외교부 등 안내 절차로 받는 경우가 많습니다. 민간 번역만으로 부족한 요청도 있고, 반대로 학교·단지가 간단 번역으로 충분한 경우도 있습니다. ‘무조건 아포스티유+공증 패키지’를 비싸게 파는 대행만 믿지 말고, 요청 기관 안내와 한국 공식(외교부·정부24 등) 경로를 교차 확인하세요.\n\n미국 안에서 발급한 서류를 한국·제3국에 쓸 때도 주 정부·미 국무부 인증이 필요할 수 있습니다. ArriveUS는 대행 업체를 추천하지 않습니다.",
+    requirements: [
+      "어떤 기관이 어떤 서류·형식을 원하는지 적은 메모(이메일·체크리스트)",
+      "한국 공문서 원본 또는 재발급 가능 여부",
+      "번역이 필요하면 번역할 언어(보통 영어)와 공증/자격 번역 요건",
+      "제출 마감일·사본 보관용 스캔",
+    ],
+    steps: [
+      "학교·USCIS·SSA·DMV·은행 등 요청 기관에 ‘Apostille / certified translation / original’ 중 무엇을 원하는지 확인합니다.",
+      "한국 발급 공문서면 외교부·정부24 등 공식 안내에서 아포스티유·발급 절차를 확인합니다.",
+      "번역이 필요하면 요청 기관이 인정하는 번역·공증 형태인지 먼저 묻고 진행합니다.",
+      "원본·아포스티유·번역본을 함께 스캔·사진으로 보관하고, 제출 전 이름 철자·날짜를 여권과 맞춥니다.",
+      "미국 서류를 해외에 쓸 때는 해당 주·국무부 Authentication 안내를 따릅니다.",
+      "선입금만 받고 ‘무조건 통과’를 약속하는 서류 대행은 거절합니다.",
+    ],
+    links: [
+      {
+        label: "외교부 – 아포스티유·공문서 (대한민국)",
+        url: "https://www.mofa.go.kr/",
+      },
+      {
+        label: "정부24 (대한민국)",
+        url: "https://www.gov.kr/",
+      },
+      {
+        label: "U.S. Department of State – Authentications",
+        url: "https://travel.state.gov/content/travel/en/legal/travel-legal-considerations/internl-judicial-asst/authentications-and-apostilles.html",
+      },
+      {
+        label: "HCCH – Apostille Section",
+        url: "https://www.hcch.net/en/instruments/conventions/specialised-sections/apostille",
+      },
+      {
+        label: "영사관·한인 커뮤니티",
+        url: "/guides/life/korean-community",
+      },
+      {
+        label: "학교·자녀·보육",
+        url: "/guides/life/school-kids",
+      },
+      {
+        label: "SSN 신청",
+        url: "/guides/tax/ssn-apply",
+      },
+      {
+        label: "자주 쓰는 USCIS 양식 지도",
+        url: "/guides/immigration/common-forms",
+      },
+    ],
+    faq: [
+      {
+        question: "모든 한국 서류에 아포스티유가 필요하나요?",
+        answer:
+          "아닙니다. 요청 기관마다 다릅니다. 먼저 학교·USCIS·은행 안내에 적힌 형식을 확인하세요.",
+      },
+      {
+        question: "사설 번역만으로 충분한가요?",
+        answer:
+          "기관이 ‘certified / notarized translation’을 요구하면 형식 요건을 맞춰야 합니다. 요구문을 번역가·공증에 보여 주세요.",
+      },
+      {
+        question: "미국에서 한국 서류를 다시 발급받나요?",
+        answer:
+          "종류에 따라 한국 온라인·영사 창구·한국 방문이 필요할 수 있습니다. 관할 공관·정부24 안내를 확인하세요.",
+      },
+      {
+        question: "대행업체에 맡기면 빠른가요?",
+        answer:
+          "수수료·일정을 계약서로 확인하고, 공식 기관 안내와 비교하세요. ‘보장·선입금만’ 광고는 경계합니다.",
       },
     ],
     updatedAt: "2026-08",

@@ -608,6 +608,10 @@ export const immigrationGuides: Guide[] = [
         label: "EAD 갱신",
         url: "/guides/immigration/ead-renewal",
       },
+      {
+        label: "I-94·여행·동반 배우자 근로",
+        url: "/guides/immigration/i94-travel",
+      },
     ],
     faq: [
       {
@@ -633,7 +637,7 @@ export const immigrationGuides: Guide[] = [
       {
         question: "가족도 같이 올 수 있나요?",
         answer:
-          "배우자·자녀용 동반 신분(예: H-4, L-2 등)이 있는 경우가 많습니다. 가족 근로 허가는 별도 규칙이 있으니 공식 안내·변호사를 확인하세요.",
+          "배우자·자녀용 동반 신분(예: H-4, L-2 등)이 있는 경우가 많습니다. I-94·여행·배우자 EAD는 ‘I-94·여행·동반 배우자 근로’ 가이드와 공식 안내·변호사를 확인하세요.",
       },
     ],
     updatedAt: "2026-08",
@@ -694,5 +698,94 @@ export const immigrationGuides: Guide[] = [
     ],
     updatedAt: "2026-08",
     disclaimer,
+  },
+  {
+    slug: "i94-travel",
+    category: "immigration",
+    title: "I-94·여행·동반 배우자 근로",
+    summary:
+      "I-94 조회·체류 만료, 해외 여행 전 확인할 점, H-4·L-2 등 동반 배우자의 취업허가(EAD) 개념을 입문으로 정리합니다.",
+    cost: "I-94 조회 무료 / EAD·여행 관련 수수료는 카테고리마다 다름",
+    methods: ["CBP I-94", "여행 전 비자·청원 상태 확인", "H-4/L-2 EAD (해당 시)"],
+    overview:
+      "비이민으로 미국에 들어오면 보통 CBP I-94에 체류 만료일(Admit Until Date)과 신분 분류가 기록됩니다. 종이 I-94 대신 온라인 조회가 일반적입니다. 만료·신분과 다른 활동을 하면 체류 위반 위험이 커지므로, 입국·재입국 직후 I-94를 저장해 두는 습관이 좋습니다.\n\n해외 여행(한국 방문 등) 전에는 비자 스탬프 유효기간, 승인된 청원(I-797), 자동재입국·Advance Parole(해당 시), 동반 가족 서류가 맞는지 고용주·변호사와 확인합니다. ‘비자만 있으면 무조건 재입국’이 아닐 수 있습니다.\n\n주 신청자(예: H-1B, L-1)의 배우자·자녀는 H-4, L-2 같은 동반 신분인 경우가 많습니다. 배우자 근로는 카테고리·조건에 따라 EAD(I-765)가 필요한 경우가 있고(예: 특정 H-4), L-2 배우자는 규칙이 달라질 수 있어 반드시 최신 USCIS 안내를 보세요. ArriveUS는 개별 여행·EAD 자격 판정을 하지 않습니다.",
+    requirements: [
+      "여권·비자 스탬프·I-797 등 청원 승인 서류(해당 시)",
+      "최근 입국 정보로 I-94 조회",
+      "여행 계획(출국·재입국 예정일)",
+      "동반 가족: 관계 증명·각자의 I-94·EAD 필요 여부",
+    ],
+    steps: [
+      "i94.cbp.dhs.gov에서 본인·동반 가족 I-94를 조회·저장하고 Admit Until Date를 캘린더에 넣습니다.",
+      "날짜가 여권·비자와 다르거나 오류가 보이면 CBP·변호사 안내로 정정 방법을 확인합니다.",
+      "해외 여행 전 고용주·이민 변호사에게 재입국에 필요한 서류·위험(청원 대기·신분 변경 중 등)을 확인합니다.",
+      "동반 배우자가 일하려면 해당 신분(H-4/L-2 등)의 최신 USCIS 근로·EAD 안내를 읽고, 필요 시 I-765를 준비합니다.",
+      "EAD가 있으면 만료 180일 전 갱신 등 EAD 가이드도 함께 보세요.",
+      "여행·근로 ‘보장 대행’ 광고는 거절하고 USCIS Avoid scams를 참고합니다.",
+    ],
+    links: [
+      {
+        label: "CBP – I-94",
+        url: "https://i94.cbp.dhs.gov/",
+      },
+      {
+        label: "USCIS – Temporary Workers",
+        url: "https://www.uscis.gov/working-in-the-united-states/temporary-workers",
+      },
+      {
+        label: "USCIS – H-4 EAD (certain H-4 spouses)",
+        url: "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations-and-fashion-models/employment-authorization-for-certain-h-4-dependent-spouses",
+      },
+      {
+        label: "USCIS – Form I-765",
+        url: "https://www.uscis.gov/i-765",
+      },
+      {
+        label: "USCIS – Avoid scams",
+        url: "https://www.uscis.gov/avoid-scams",
+      },
+      {
+        label: "직장 비자·장기체류 (비이민) 개요",
+        url: "/guides/immigration/work-visa-long-stay",
+      },
+      {
+        label: "EAD 갱신",
+        url: "/guides/immigration/ead-renewal",
+      },
+      {
+        label: "입사 근로 서류 (I-9, W-4)",
+        url: "/guides/job/work-documents",
+      },
+    ],
+    faq: [
+      {
+        question: "I-94는 어디서 보나요?",
+        answer:
+          "대부분 CBP I-94 웹사이트에서 여권 정보로 조회합니다. 입국 기록·만료일을 PDF로 저장해 두세요.",
+      },
+      {
+        question: "비자 만료와 I-94 만료가 다르면요?",
+        answer:
+          "흔히 다를 수 있습니다. 체류는 보통 I-94 Admit Until Date가 핵심인 경우가 많지만, 여행·재입국은 비자·청원 상태도 중요하니 변호사·공식 안내를 확인하세요.",
+      },
+      {
+        question: "H-4 배우자는 누구나 일할 수 있나요?",
+        answer:
+          "아닙니다. 특정 조건의 H-4만 EAD 대상인 경우가 있습니다. 최신 USCIS H-4 EAD 안내를 확인하세요.",
+      },
+      {
+        question: "L-2 배우자 근로는요?",
+        answer:
+          "규칙이 바뀔 수 있습니다. 최신 USCIS L-2·취업허가 안내와 변호사 확인이 필요합니다.",
+      },
+      {
+        question: "신분 변경·연장 중에도 여행해도 되나요?",
+        answer:
+          "케이스에 따라 위험할 수 있습니다. 출국 전 반드시 고용주·변호사와 확인하세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 이민·법률 자문이 아닙니다. I-94·여행·동반 배우자 근로는 카테고리·시점에 따라 다르므로 CBP·USCIS 공식 안내와 자격 있는 이민 변호사를 확인하세요.",
   },
 ];

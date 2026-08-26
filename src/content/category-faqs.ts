@@ -19,6 +19,11 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
         "아닙니다. 소득·가구·체류 자격·주 규칙에 따라 다릅니다. USA.gov Benefit finder와 주 공식 신청 창구를 이용하고, 선입금 대행은 피하세요.",
     },
     {
+      question: "한국 서류에 아포스티유가 필요해요.",
+      answer:
+        "요청 기관마다 형식이 다릅니다. ArriveUS ‘한국 서류·아포스티유·번역’ 가이드에서 확인 순서를 보세요.",
+    },
+    {
       question: "영어를 못해도 911을 쳐야 하나요?",
       answer:
         "생명이 위급하면 바로 911에 연락하세요. 주소와 상황을 짧게 말하고 통역을 요청할 수 있습니다.",
@@ -59,6 +64,11 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       question: "교통사고나 티켓이 나면요?",
       answer:
         "안전·911 → 정보·사진 → 보험 → 티켓 기한 순으로 챙기세요. ArriveUS ‘교통사고·단속·티켓’ 가이드를 참고하세요.",
+    },
+    {
+      question: "운전은 안 하는데 신분증이 필요해요.",
+      answer:
+        "많은 주에서 운전면허 아닌 State ID를 발급합니다. ArriveUS ‘주 신분증’·REAL ID 가이드와 거주 주 DMV를 확인하세요.",
     },
   ],
   bank: [
@@ -152,6 +162,11 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       question: "영주권이 아니라 직장 때문에 오래 살아요.",
       answer:
         "비이민 취업 비자(H-1B·L-1 등)와 영주권은 별개입니다. ArriveUS ‘직장 비자·장기체류’ 개요와 도착 첫 7일·주 면허 가이드를 함께 보세요.",
+    },
+    {
+      question: "I-94·해외 여행·배우자 취업은요?",
+      answer:
+        "I-94 만료·재입국·H-4/L-2 EAD는 카테고리마다 다릅니다. ArriveUS ‘I-94·여행·동반 배우자 근로’ 가이드와 USCIS·CBP 안내를 확인하세요.",
     },
   ],
   job: [
