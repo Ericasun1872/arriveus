@@ -376,6 +376,10 @@ export const dmvGuides: Guide[] = [
         label: "교통사고·단속·티켓",
         url: "/guides/dmv/car-accident",
       },
+      {
+        label: "교통 티켓·벌금·운전 점수",
+        url: "/guides/dmv/traffic-ticket",
+      },
     ],
     faq: [
       {
@@ -916,6 +920,10 @@ export const dmvGuides: Guide[] = [
         label: "911·응급·재난",
         url: "/guides/life/emergency-911",
       },
+      {
+        label: "교통 티켓·벌금·운전 점수",
+        url: "/guides/dmv/traffic-ticket",
+      },
     ],
     faq: [
       {
@@ -931,7 +939,7 @@ export const dmvGuides: Guide[] = [
       {
         question: "티켓을 그냥 안 내면요?",
         answer:
-          "연체·면허 정지·추가 벌금·영장으로 이어질 수 있습니다. 티켓에 적힌 기한과 선택지(납부·학교·Contest)를 확인하세요.",
+          "연체·면허 정지·추가 벌금·영장으로 이어질 수 있습니다. 납부·교통학교·Contest·첫 위반 유예 등은 ‘교통 티켓·벌금·운전 점수’ 가이드를 보세요.",
       },
       {
         question: "렌트카 사고면 누구에게 연락하나요?",
@@ -947,6 +955,97 @@ export const dmvGuides: Guide[] = [
     updatedAt: "2026-08",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 법률·보험·형사 자문이 아닙니다. 사고·티켓·과실은 주·시·계약마다 다르므로 경찰·법원·보험사 공식 안내와 필요 시 변호사를 확인하세요.",
+  },
+  {
+    slug: "traffic-ticket",
+    category: "dmv",
+    title: "교통 티켓·벌금·운전 점수",
+    summary:
+      "과속·운전 중 휴대폰 등 티켓이 현장 또는 우편으로 왔을 때 읽는 법, 납부·Contest·교통학교·첫 위반 유예, 운전 점수와 면허 정지 개념을 정리합니다.",
+    cost: "벌금·법원 수수료·교통학교·보험료 변동은 케이스마다 다름",
+    methods: ["우편·현장 Citation 확인", "납부 / Contest / 교통학교", "유예·점수 면제 옵션(법원 안내)", "DMV 운전 기록·점수"],
+    overview:
+      "미국에서 흔한 이동 위반(Moving violation)에는 과속(Speeding), 운전 중 휴대폰(Handheld phone / distracted driving), 신호·정지선 위반, 차로 변경 실수 등이 있습니다. 현장에서 Citation(티켓)을 받기도 하고, 카메라·우편 단속·법원 고지서가 집으로 오기도 합니다. 처음이면 ‘편지처럼 생긴 고지서’만 보고 무시하기 쉬운데, 기한·사건 번호·선택지(납부·다툼·학교·유예)를 놓치면 연체·추가 벌금·면허·등록 문제로 커질 수 있습니다.\n\n많은 법원·주에서 첫 위반·경미한 과속에 대해 Deferred disposition / diversion / traffic school / defensive driving처럼, 일정 기간 추가 위반이 없고 조건을 지키면 유죄 기록·점수 반영을 줄이거나 사건을 기각하는 옵션을 안내합니다. 어떤 분은 우편 고지서에 ‘첫 티켓’ 관련 서면(편지·양식)을 내고, 예: 1년 안에 같은 종류의 티켓을 다시 받지 않으면 점수를 면제·유예한다는 조건을 본 경험이 있습니다. 이름·기간·자격·수수료는 주·시·법원마다 완전히 다르므로, 고지서에 적힌 옵션과 해당 법원 웹사이트만 따르세요. ‘무조건 점수가 안 쌓인다’고 단정할 수 없습니다.\n\n운전 점수(Points)는 주 DMV가 운전 기록에 위반을 누적하는 방식입니다. 점수가 일정 수준을 넘으면 경고·교육·면허 정지(Suspension)·취소로 이어질 수 있고, 보험사도 기록·클레임을 보고 보험료를 올릴 수 있습니다. 점수 숫자·정지 기준은 주마다 다르니 거주 주 DMV Driving record / Points 안내를 확인하세요.\n\nArriveUS는 개별 사건을 변호하지 않습니다. DUI·무면허·사고 동반·매우 높은 과속·형사 이슈는 변호사·legal aid를 우선하세요.",
+    requirements: [
+      "티켓·우편 고지서 원본 (사건 번호·위반 코드·기한)",
+      "운전면허·등록·보험 정보 (요청 시)",
+      "법원·시 웹사이트 납부·Contest·학교·유예 안내",
+      "캘린더에 적은 출석·납부·유예 기간 만료일",
+      "주소가 맞는지 (이사했다면 법원·DMV에 주소 업데이트)",
+    ],
+    steps: [
+      "고지서를 끝까지 읽습니다. 위반 종류, Due / Appearance date, 납부 금액, Contest(다툼), Traffic school / Defensive driving, Deferred / Diversion / First offense 관련 문구가 있는지 표시합니다.",
+      "공식 납부·문의 창구인지 확인합니다. 고지서의 법원·시 이름·웹 주소와 일치하는지 보고, ‘지금 결제하면 티켓 취소’류 스캠 문자는 무시합니다.",
+      "선택지를 고릅니다. (A) 기한 내 납부(유죄·점수·보험 영향 가능) (B) Contest / Not guilty로 출석·온라인 이의 (C) 교통학교·방어운전 과정 (D) 첫 위반 유예·점수 면제 양식·서면이 있으면 안내대로 작성·발송·온라인 제출.",
+      "유예·면제 옵션을 쓰면 조건을 메모합니다. 예: 일정 기간(몇 개월~1년 등) 추가 티켓 금지, 수수료 납부, 수업 수료증 제출. 기간 안에 또 받으면 원래 사건이 유죄·점수 반영으로 바뀔 수 있습니다.",
+      "기한·출석일을 캘린더에 넣고, 영수증·제출 확인·이메일·트래킹을 보관합니다. 우편 제출이면 도착 여부와 법원 접수 여부를 확인하세요.",
+      "필요하면 거주 주 DMV에서 Driving record / Points를 조회하고, 보험사에는 계약·청구 안내에 따라 알립니다. 점수가 쌓이거나 정지 통지가 오면 DMV 공식 안내를 따릅니다.",
+    ],
+    links: [
+      {
+        label: "USA.gov – State motor vehicle services",
+        url: "https://www.usa.gov/state-motor-vehicle-services",
+      },
+      {
+        label: "USA.gov – Legal aid",
+        url: "https://www.usa.gov/legal-aid",
+      },
+      {
+        label: "NHTSA – Distracted driving",
+        url: "https://www.nhtsa.gov/risky-driving/distracted-driving",
+      },
+      {
+        label: "NHTSA – Speeding",
+        url: "https://www.nhtsa.gov/risky-driving/speeding",
+      },
+      {
+        label: "교통사고·단속·티켓",
+        url: "/guides/dmv/car-accident",
+      },
+      {
+        label: "자동차 보험 기초",
+        url: "/guides/dmv/auto-insurance",
+      },
+      {
+        label: "주소 변경",
+        url: "/guides/dmv/address-change",
+      },
+    ],
+    faq: [
+      {
+        question: "티켓이 우편으로만 오면 어떻게 하나요?",
+        answer:
+          "현장 티켓과 같이 기한·사건 번호·선택지를 확인하세요. 첫 위반 유예·교통학교·납부·Contest 안내가 적혀 있는 경우가 많습니다. 무시하지 마세요.",
+      },
+      {
+        question: "첫 과속인데 점수를 안 받게 할 수 있나요?",
+        answer:
+          "법원·주에 따라 Deferred disposition, diversion, traffic school, first offense 서면 등으로 일정 기간 무위반 시 기각·점수 면제를 주는 경우가 있습니다. 고지서·법원 안내의 자격·기간·수수료만 따르세요. 모든 티켓에 해당하지는 않습니다.",
+      },
+      {
+        question: "그냥 벌금만 내면 끝인가요?",
+        answer:
+          "납부는 보통 유죄(또는 이에 준하는 처리)로 기록·점수·보험료에 영향을 줄 수 있습니다. 학교·유예·Contest 옵션이 있으면 비교한 뒤 결정하세요.",
+      },
+      {
+        question: "점수가 높으면 면허가 정지되나요?",
+        answer:
+          "많은 주에서 일정 기간 점수가 기준을 넘으면 교육·정지·취소로 이어질 수 있습니다. 기준 숫자는 주마다 다르니 DMV Points / Suspension 안내를 확인하세요.",
+      },
+      {
+        question: "운전 중 전화 티켓도 같은가요?",
+        answer:
+          "절차(기한·납부·Contest·학교·유예)는 비슷할 수 있지만 벌금·점수·자격은 위반 코드마다 다릅니다. 고지서의 위반명과 법원 안내를 기준으로 하세요.",
+      },
+      {
+        question: "주소를 안 바꿔서 고지서를 못 받으면요?",
+        answer:
+          "그래도 책임이 생길 수 있습니다. DMV·법원에 주소를 업데이트하고, 놓친 기한이 있으면 바로 법원에 연락하세요. ArriveUS 주소 변경 가이드도 참고하세요.",
+      },
+    ],
+    updatedAt: "2026-08",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·형사·보험 자문이 아닙니다. 티켓·점수·유예·정지 규칙은 주·시·법원마다 다르므로 고지서·법원·DMV 공식 안내와 필요 시 변호사를 확인하세요.",
   },
   {
     slug: "state-id",

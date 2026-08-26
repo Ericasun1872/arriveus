@@ -407,6 +407,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Can I get the police report number?",
     },
   ],
+  "dmv/traffic-ticket": [
+    {
+      ko: "우편으로 과속 티켓을 받았습니다. 어떻게 납부하거나 이의하나요?",
+      en: "I received a speeding ticket by mail. How do I pay or contest it?",
+    },
+    {
+      ko: "첫 위반입니다. 점수 유예나 교통학교 옵션이 있나요?",
+      en: "This is my first offense. Is deferred disposition or traffic school available?",
+    },
+    {
+      ko: "기한과 사건 번호를 알려 주세요.",
+      en: "Please tell me the deadline and the case number.",
+    },
+    {
+      ko: "제 운전 기록과 점수를 확인하고 싶습니다.",
+      en: "I would like to check my driving record and points.",
+    },
+  ],
   "dmv/state-id": [
     {
       ko: "운전면허 없이 주 신분증(ID)을 신청하고 싶습니다.",
