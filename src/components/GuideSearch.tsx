@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useDeferredValue, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { scoreSearchMatch } from "@/lib/search";
 
 export type SearchIndexItem = {
@@ -13,12 +13,17 @@ export type SearchIndexItem = {
   haystack: string;
 };
 
-export function GuideSearch({ items }: { items: SearchIndexItem[] }) {
-  const [query, setQuery] = useState("");
-  const deferred = useDeferredValue(query);
+export function GuideSearch({
+  items,
+  initialQuery = "",
+}: {
+  items: SearchIndexItem[];
+  initialQuery?: string;
+}) {
+  const [query, setQuery] = useState(initialQuery);
 
   const results = useMemo(() => {
-    const q = deferred.normalize("NFC").trim();
+    const q = query.normalize("NFC").trim();
     if (!q) return [] as SearchIndexItem[];
     return items
       .map((item) => ({
@@ -34,33 +39,40 @@ export function GuideSearch({ items }: { items: SearchIndexItem[] }) {
           b.score - a.score || a.item.title.localeCompare(b.item.title, "ko"),
       )
       .map((row) => row.item);
-  }, [deferred, items]);
+  }, [items, query]);
 
   return (
-    <form
-      onSubmit={(event) => {
-        event.preventDefault();
-      }}
-    >
+    <form action="/search" method="get">
       <label htmlFor="guide-search" className="sr-only">
         가이드 검색
       </label>
-      <input
-        id="guide-search"
-        type="search"
-        value={query}
-        onChange={(event) => setQuery(event.target.value)}
-        placeholder="예: 전화번호, SNAP, 면허, 강제 퇴거"
-        className="w-full rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm text-[var(--ink)] outline-none ring-[var(--brand)] placeholder:text-[var(--muted)] focus:ring-2"
-        autoComplete="off"
-        enterKeyHint="search"
-        lang="ko"
-        spellCheck={false}
-      />
+      <div className="flex flex-col gap-2 sm:flex-row">
+        <input
+          id="guide-search"
+          name="q"
+          type="search"
+          defaultValue={initialQuery}
+          onInput={(event) => setQuery(event.currentTarget.value)}
+          placeholder="예: 강제 퇴거, 전화번호, SNAP"
+          className="w-full rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm text-[var(--ink)] outline-none ring-[var(--brand)] placeholder:text-[var(--muted)] focus:ring-2"
+          autoComplete="off"
+          autoCorrect="off"
+          autoCapitalize="none"
+          enterKeyHint="search"
+          lang="ko"
+          spellCheck={false}
+        />
+        <button
+          type="submit"
+          className="shrink-0 rounded-xl bg-[var(--brand)] px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+        >
+          검색
+        </button>
+      </div>
       <p className="mt-2 text-xs text-[var(--muted)]">
         {query.trim()
           ? `${results.length}개 결과`
-          : "제목·요약·카테고리 키워드로 검색합니다."}
+          : "제목을 입력한 뒤 검색을 누르거나 Enter를 누르세요."}
       </p>
       {query.trim() ? (
         <ul className="mt-6 grid gap-3">

@@ -37,16 +37,24 @@ export function Header() {
               </Link>
             );
           })}
-          <Link
-            href="/search"
-            className={`rounded-md px-2 py-2 text-[13px] transition-colors ${
-              pathname === "/search"
-                ? "bg-[var(--brand-soft)] font-medium text-[var(--brand)]"
-                : "text-[var(--muted)] hover:bg-[var(--surface-muted)] hover:text-[var(--ink)]"
-            }`}
-          >
-            검색
-          </Link>
+          <form action="/search" method="get" className="ml-1 flex items-center">
+            <label htmlFor="header-guide-search" className="sr-only">
+              가이드 검색
+            </label>
+            <input
+              id="header-guide-search"
+              name="q"
+              type="search"
+              placeholder="강제 퇴거"
+              className="w-36 rounded-lg border border-[var(--border)] bg-[var(--surface)] px-2.5 py-1.5 text-[13px] text-[var(--ink)] outline-none ring-[var(--brand)] placeholder:text-[var(--muted)] focus:ring-2 xl:w-44"
+              autoComplete="off"
+              autoCorrect="off"
+              autoCapitalize="none"
+              enterKeyHint="search"
+              lang="ko"
+              spellCheck={false}
+            />
+          </form>
           <Link
             href="/saved"
             className={`rounded-md px-2 py-2 text-[13px] transition-colors ${
@@ -81,6 +89,37 @@ export function Header() {
           className="border-t border-[var(--border)] px-4 py-3 lg:hidden"
           aria-label="모바일 메뉴"
         >
+          <form
+            action="/search"
+            method="get"
+            className="mb-3"
+            onSubmit={() => setOpen(false)}
+          >
+            <label htmlFor="mobile-guide-search" className="sr-only">
+              가이드 검색
+            </label>
+            <div className="flex gap-2">
+              <input
+                id="mobile-guide-search"
+                name="q"
+                type="search"
+                placeholder="강제 퇴거, SNAP…"
+                className="min-w-0 flex-1 rounded-lg border border-[var(--border)] bg-white px-3 py-2.5 text-sm text-[var(--ink)] outline-none ring-[var(--brand)] placeholder:text-[var(--muted)] focus:ring-2"
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="none"
+                enterKeyHint="search"
+                lang="ko"
+                spellCheck={false}
+              />
+              <button
+                type="submit"
+                className="shrink-0 rounded-lg bg-[var(--brand)] px-3 py-2.5 text-sm font-semibold text-white"
+              >
+                검색
+              </button>
+            </div>
+          </form>
           <ul className="grid grid-cols-2 gap-2">
             {categories.map((category) => (
               <li key={category.slug}>

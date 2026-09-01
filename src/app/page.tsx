@@ -41,16 +41,39 @@ export default function HomePage() {
               DMV부터 은행, 의료, 생활(첫 주), 세금, 이민국, 취업, 주거까지 —
               한국인 기준으로 정리한 단계별 가이드입니다.
             </p>
-            <div
-              className="animate-rise mt-3 flex flex-wrap gap-3"
+            <form
+              action="/search"
+              method="get"
+              className="animate-rise mt-3 flex max-w-lg gap-2"
               style={{ animationDelay: "200ms" }}
             >
-              <Link
-                href="/search"
-                className="inline-flex items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-semibold text-[var(--brand)] transition hover:bg-white/90"
+              <label htmlFor="home-guide-search" className="sr-only">
+                가이드 검색
+              </label>
+              <input
+                id="home-guide-search"
+                name="q"
+                type="search"
+                placeholder="강제 퇴거, 전화번호, SNAP"
+                className="min-w-0 flex-1 rounded-lg bg-white px-4 py-3 text-sm text-[var(--ink)] outline-none ring-2 ring-white/70 placeholder:text-[var(--muted)]"
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="none"
+                enterKeyHint="search"
+                lang="ko"
+                spellCheck={false}
+              />
+              <button
+                type="submit"
+                className="shrink-0 rounded-lg bg-white px-4 py-3 text-sm font-semibold text-[var(--brand)] transition hover:bg-white/90"
               >
-                검색·상황별 시작
-              </Link>
+                검색
+              </button>
+            </form>
+            <div
+              className="animate-rise mt-3 flex flex-wrap gap-3"
+              style={{ animationDelay: "260ms" }}
+            >
               <Link
                 href="/guides/life/first-week"
                 className="inline-flex items-center justify-center rounded-lg border border-white/40 bg-white/12 px-5 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"

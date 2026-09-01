@@ -27,9 +27,9 @@ export function scoreSearchMatch(
   query: string,
   fields?: { title?: string; summary?: string },
 ): number {
-  if (!queryMatchesHaystack(haystack, query)) return 0;
   const hay = foldSearchText(haystack);
   const compact = foldSearchText(query);
+  if (!compact) return 0;
   const tokens = query
     .normalize("NFC")
     .trim()
@@ -37,9 +37,14 @@ export function scoreSearchMatch(
     .split(/\s+/)
     .map(foldSearchText)
     .filter(Boolean);
-  let score = compact && hay.includes(compact) ? 10 : 0;
-  for (const token of tokens) {
-    if (hay.includes(token)) score += 1;
+  const matchedTokens = tokens.filter((token) => hay.includes(token));
+  const phraseHit = hay.includes(compact);
+  if (!phraseHit && matchedTokens.length === 0) return 0;
+
+  let score = phraseHit ? 10 : 0;
+  score += matchedTokens.length;
+  if (phraseHit || matchedTokens.length === tokens.length) {
+    score += 5;
   }
   if (fields?.title && compact && foldSearchText(fields.title).includes(compact)) {
     score += 100;
