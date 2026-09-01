@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useDeferredValue, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
+import { scoreSearchMatch } from "@/lib/search";
 
 export type SearchIndexItem = {
   category: string;
@@ -12,48 +13,66 @@ export type SearchIndexItem = {
   haystack: string;
 };
 
-export function GuideSearch({ items }: { items: SearchIndexItem[] }) {
-  const [query, setQuery] = useState("");
-  const deferred = useDeferredValue(query);
+export function GuideSearch({
+  items,
+  initialQuery = "",
+}: {
+  items: SearchIndexItem[];
+  initialQuery?: string;
+}) {
+  const [query, setQuery] = useState(initialQuery);
 
   const results = useMemo(() => {
-    const q = deferred.trim().toLowerCase();
+    const q = query.normalize("NFC").trim();
     if (!q) return [] as SearchIndexItem[];
-    const tokens = q.split(/\s+/).filter(Boolean);
     return items
-      .map((item) => {
-        const score = tokens.reduce(
-          (sum, token) => sum + (item.haystack.includes(token) ? 1 : 0),
-          0,
-        );
-        return { item, score };
-      })
-      .filter((row) => row.score === tokens.length)
+      .map((item) => ({
+        item,
+        score: scoreSearchMatch(item.haystack, q, {
+          title: item.title,
+          summary: item.summary,
+        }),
+      }))
+      .filter((row) => row.score > 0)
       .sort(
         (a, b) =>
           b.score - a.score || a.item.title.localeCompare(b.item.title, "ko"),
       )
       .map((row) => row.item);
-  }, [deferred, items]);
+  }, [items, query]);
 
   return (
-    <div>
+    <form action="/search" method="get">
       <label htmlFor="guide-search" className="sr-only">
         가이드 검색
       </label>
-      <input
-        id="guide-search"
-        type="search"
-        value={query}
-        onChange={(event) => setQuery(event.target.value)}
-        placeholder="예: 전화번호, SNAP, 면허, 임대 사기"
-        className="w-full rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm text-[var(--ink)] outline-none ring-[var(--brand)] placeholder:text-[var(--muted)] focus:ring-2"
-        autoComplete="off"
-      />
+      <div className="flex flex-col gap-2 sm:flex-row">
+        <input
+          id="guide-search"
+          name="q"
+          type="search"
+          defaultValue={initialQuery}
+          onInput={(event) => setQuery(event.currentTarget.value)}
+          placeholder="예: 강제 퇴거, 전화번호, SNAP"
+          className="w-full rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm text-[var(--ink)] outline-none ring-[var(--brand)] placeholder:text-[var(--muted)] focus:ring-2"
+          autoComplete="off"
+          autoCorrect="off"
+          autoCapitalize="none"
+          enterKeyHint="search"
+          lang="ko"
+          spellCheck={false}
+        />
+        <button
+          type="submit"
+          className="shrink-0 rounded-xl bg-[var(--brand)] px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90"
+        >
+          검색
+        </button>
+      </div>
       <p className="mt-2 text-xs text-[var(--muted)]">
         {query.trim()
           ? `${results.length}개 결과`
-          : "제목·요약·카테고리 키워드로 검색합니다."}
+          : "제목을 입력한 뒤 검색을 누르거나 Enter를 누르세요."}
       </p>
       {query.trim() ? (
         <ul className="mt-6 grid gap-3">
@@ -83,6 +102,6 @@ export function GuideSearch({ items }: { items: SearchIndexItem[] }) {
           ) : null}
         </ul>
       ) : null}
-    </div>
+    </form>
   );
 }

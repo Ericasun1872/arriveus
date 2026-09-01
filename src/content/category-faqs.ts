@@ -252,5 +252,10 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       answer:
         "세입자 짐·책임 등을 다루는 보험으로, 많은 Lease가 가입·증서 제출을 요구합니다. ArriveUS ‘세입자 보험’ 가이드를 참고하세요.",
     },
+    {
+      question: "월세를 못 내면 바로 강제 퇴거되나요?",
+      answer:
+        "보통은 연체료·서면 통지·법원 절차를 거칩니다. 밀리기 전에 단지에 분할 납부를 요청하고, 211·긴급 임대 지원·Legal aid를 함께 찾으세요. ArriveUS ‘월세 연체·강제 퇴거’ 가이드에 강제 퇴거 전 해결 방법이 있습니다.",
+    },
   ],
 };

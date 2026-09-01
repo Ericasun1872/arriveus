@@ -38,6 +38,12 @@ export const startPaths: StartPath[] = [
     href: "/guides/housing/senior-housing-55",
   },
   {
+    slug: "rent-hardship",
+    title: "월세가 밀릴 것 같아요",
+    description: "연체·강제 퇴거 전과 긴급 임대 지원",
+    href: "/guides/housing/rent-hardship-eviction",
+  },
+  {
     slug: "work-stay",
     title: "직장으로 장기 체류해요",
     description: "비이민 취업 비자 개요와 정착 연결",

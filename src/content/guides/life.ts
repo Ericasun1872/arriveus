@@ -370,6 +370,10 @@ export const lifeGuides: Guide[] = [
         label: "저소득 의료 보험",
         url: "/guides/medical/low-income-insurance",
       },
+      {
+        label: "월세 연체·강제 퇴거",
+        url: "/guides/housing/rent-hardship-eviction",
+      },
     ],
     faq: [
       {
@@ -381,6 +385,11 @@ export const lifeGuides: Guide[] = [
         question: "대행업체에 맡기면 빠른가요?",
         answer:
           "공식 신청은 본인·가구가 직접 하는 것이 안전합니다. 선입금 대행·보장성 광고는 피하세요.",
+      },
+      {
+        question: "월세가 밀렸는데 혜택으로 해결할 수 있나요?",
+        answer:
+          "SNAP 등은 식비를 덜어 월세 여력을 만드는 데 도움이 될 수 있지만, 월세 자체는 211·주·시 긴급 임대 지원을 따로 찾습니다. ‘월세 연체·강제 퇴거’ 가이드를 함께 보세요.",
       },
     ],
     updatedAt: "2026-08",

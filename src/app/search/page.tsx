@@ -11,7 +11,17 @@ export const metadata: Metadata = {
   alternates: { canonical: "/search" },
 };
 
-export default function SearchPage() {
+type PageProps = {
+  searchParams: Promise<{ q?: string | string[] }>;
+};
+
+function queryFromSearchParams(value: string | string[] | undefined) {
+  if (Array.isArray(value)) return value[0] ?? "";
+  return value ?? "";
+}
+
+export default async function SearchPage({ searchParams }: PageProps) {
+  const initialQuery = queryFromSearchParams((await searchParams).q);
   const items = getSearchIndex();
 
   return (
@@ -33,7 +43,7 @@ export default function SearchPage() {
         </p>
       </header>
 
-      <GuideSearch items={items} />
+      <GuideSearch key={initialQuery} items={items} initialQuery={initialQuery} />
 
       <section className="mt-12">
         <h2 className="font-[family-name:var(--font-display)] text-xl font-semibold text-[var(--ink)]">
