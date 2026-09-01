@@ -59,6 +59,10 @@ export const housingGuides: Guide[] = [
         url: "/guides/housing/rental-scams",
       },
       {
+        label: "월세 연체·강제 퇴거",
+        url: "/guides/housing/rent-hardship-eviction",
+      },
+      {
         label: "도착 첫 7일",
         url: "/guides/life/first-week",
       },
@@ -81,6 +85,11 @@ export const housingGuides: Guide[] = [
         question: "투어 전에 보증금을 보내라는 연락이 왔어요.",
         answer:
           "실물·화상 확인과 계약서 전 송금은 사기 위험이 큽니다. 임대 사기 가이드를 참고하고 보내지 마세요.",
+      },
+      {
+        question: "입주 후 월세를 못 내면 어떻게 되나요?",
+        answer:
+          "연체료·서면 통지 후 법원 Eviction으로 이어질 수 있습니다. 밀리기 전에 단지에 알리고, 강제 퇴거 전 해결 방법은 ‘월세 연체·강제 퇴거’ 가이드를 보세요.",
       },
     ],
     disclaimer,
@@ -171,6 +180,10 @@ export const housingGuides: Guide[] = [
         label: "USA.gov – Housing help",
         url: "https://www.usa.gov/housing",
       },
+      {
+        label: "월세 연체·강제 퇴거",
+        url: "/guides/housing/rent-hardship-eviction",
+      },
     ],
     faq: [
       {
@@ -194,7 +207,7 @@ export const housingGuides: Guide[] = [
       "이사 당일 전후로 할 일: 열쇠, 유틸리티, 주소 변경, 청소, 보증금까지 한곳에 정리했습니다.",
     methods: ["입주 전", "입주 당일", "퇴거 전"],
     overview:
-      "미국 이사는 날짜(Move-in / Move-out date)가 Lease에 고정되어 있는 경우가 많습니다. 입주 전에는 유틸리티·인터넷 개통, 보험(Renters insurance) 요구 여부를 확인하고, 입주 당일에는 하자 기록과 우편함·택배함을 챙깁니다. 퇴거 전에는 단지 Move-out 안내, 청소, 주소 변경(USPS·은행·DMV), 유틸리티 해지를 일정에 맞춰 진행하세요.",
+      "미국 이사는 날짜(Move-in / Move-out date)가 Lease에 고정되어 있는 경우가 많습니다. 입주 전에는 유틸리티·인터넷 개통, 보험(Renters insurance) 요구 여부를 확인하고, 입주 당일에는 하자 기록과 우편함·택배함을 챙깁니다. 퇴거 전에는 단지 Move-out 안내, 청소, 주소 변경(USPS·은행·DMV), 유틸리티 해지를 일정에 맞춰 진행하세요. 계획된 이사와 달리 월세를 못 내면 연체료·서면 통지·법원 Eviction(강제 퇴거)으로 이어질 수 있습니다. 강제 퇴거 전 분할 납부·긴급 지원은 ‘월세 연체·강제 퇴거’ 가이드를 보세요.",
     requirements: [
       "Lease와 Move-in / Move-out 안내문",
       "유틸리티·인터넷 계정 정보",
@@ -235,6 +248,10 @@ export const housingGuides: Guide[] = [
         label: "세입자 보험 (Renters insurance)",
         url: "/guides/housing/renters-insurance",
       },
+      {
+        label: "월세 연체·강제 퇴거",
+        url: "/guides/housing/rent-hardship-eviction",
+      },
     ],
     faq: [
       {
@@ -247,8 +264,139 @@ export const housingGuides: Guide[] = [
         answer:
           "Lease 날짜를 넘기면 추가 월세·위약금이 붙을 수 있습니다. 연장이 필요하면 미리 서면으로 요청하세요.",
       },
+      {
+        question: "입주 후 월세를 못 내면 바로 강제 퇴거되나요?",
+        answer:
+          "보통은 연체료·서면 통지·법원 절차를 거칩니다. 통지 전에 단지와 분할 납부를 말하고, 211·긴급 임대 지원·법률 구조를 같이 찾는 경우가 많습니다. ‘월세 연체·강제 퇴거’ 가이드를 보세요.",
+      },
     ],
     disclaimer,
+  },
+  {
+    slug: "rent-hardship-eviction",
+    category: "housing",
+    title: "월세 연체·강제 퇴거",
+    summary:
+      "월세를 못 낼 때 흔한 흐름(연체료·통지·법원·집행)과, 강제 퇴거 전에 할 수 있는 분할 납부·긴급 임대 지원·법률 도움을 한국어로 정리했습니다.",
+    cost: "연체료·미납 월세·법원·이사 비용은 케이스마다 다름 / 긴급 지원·법률 상담은 자격되면 무료·저비용인 경우 있음",
+    methods: [
+      "단지에 즉시 서면 연락",
+      "분할 납부(Payment plan)",
+      "211·주·시 긴급 임대 지원",
+      "HUD 주거 상담·Legal aid",
+      "합의 퇴거(서면) 또는 법원 대응",
+    ],
+    overview:
+      "미국 아파트는 월세 Due date를 넘기면 Late fee가 붙고, 계속 밀리면 임대인이 서면 통지(Pay or quit / Notice to pay 등, 주마다 이름·기간이 다름)를 보내는 경우가 많습니다. 통지 기한 안에 전액 납부하거나 서면 합의를 못 하면 Eviction(강제 퇴거) 소송을 낼 수 있습니다. 많은 주에서 집주인이 법원 명령 없이 자물쇠를 바꾸거나 짐을 내다 버리거나 전기를 끊는 식의 ‘자가 집행(Self-help eviction)’은 불법인 경우가 많습니다. 반대로 법원 판결 후 Sheriff·Constable이 집행하면 실제로 나가야 합니다. 통지 일수·보호 조항은 주·시마다 완전히 다릅니다.\n\n강제 퇴거 전에 해결할 방법은 있습니다. (1) 밀리기 전·직후 단지에 이메일로 상황을 알리고 분할 납부·유예(Payment plan / repayment agreement)를 구체적으로 요청합니다. (2) 211, USA.gov 긴급 임대 지원, 시·카운티·비영리 프로그램에 동시에 문의·신청합니다. 코로나 시기 연방 ERA(Emergency Rental Assistance) 전국 신청은 종료되었고, 지금은 주·시·비영리 창구가 중심입니다. (3) HUD 승인 주거 상담사, Legal aid, LawHelp.org로 통지·법원 서류 대응을 받습니다. (4) 실직이면 실업급여, 식비 부담이면 SNAP 등 다른 공식 혜택으로 월세 여력을 만드는 것도 검토합니다. (5) 남을 수 없으면 이사 날짜·열쇠 반납·미납 처리(Cash for keys 등)를 서면으로 합의하면, 강제 퇴거 기록이 남는 것보다 나을 수 있습니다. 구두 약속만 믿지 마세요.\n\n법원 소환장(Summons)·소장(Complaint)이 오면 기한 안에 Answer를 내거나 출석해야 합니다. 무시하면 궐석 판결(Default)로 퇴거가 확정되기 쉽습니다. 판결은 Tenant screening에 수년간 남을 수 있고, 미납은 추심·신용에도 영향을 줄 수 있습니다. 수리 문제로 월세를 임의로 안 내는 것은 주법에 따라 위험할 수 있습니다. ArriveUS는 개별 사건을 변호하지 않습니다. 주·시 법과 Lease가 우선입니다.",
+    requirements: [
+      "Lease의 월세 Due date·유예(Grace period)·연체료·퇴거 조항",
+      "납부 영수증·은행 내역·미납 금액 계산",
+      "받은 통지·법원 서류 전부 (날짜·사건 번호)",
+      "소득 감소 증빙(실직·병원비 등, 지원 신청 시)",
+      "211·시/카운티 긴급 지원·Legal aid 연락처",
+      "합의 퇴거를 대비한 새 거처·이사 일정 메모",
+    ],
+    steps: [
+      "밀릴 것 같으면 Due date 전에 단지에 이메일로 알리고, Lease의 유예·연체료를 확인합니다. 전화만 하지 말고 서면으로 남깁니다.",
+      "분할 납부·납부일 연기를 구체적으로 제안합니다(언제 얼마를 낼지). 합의되면 이메일을 다시 받아 둡니다.",
+      "동시에 211, USA.gov 긴급 임대 지원, 시·카운티·비영리, HUD 주거 상담을 찾습니다. ‘퇴거 막아 준다’며 선입금을 받는 업체는 피하세요.",
+      "실직·소득 감소면 실업급여·SNAP 등 공식 혜택도 함께 신청해 월세 여력을 만듭니다.",
+      "Pay or quit / eviction notice를 받으면 날짜를 캘린더에 넣고, 기한 안에 납부·합의하거나 Legal aid에 서류를 보여 줍니다. 자물쇠 교체·단전 협박은 주 세입자 권리·법률 구조를 확인하세요.",
+      "법원 서류가 오면 기한 안에 Answer·출석·통역 요청을 합니다. 합의 퇴거를 하더라도 이사일·열쇠·미납·보증금 조건을 서면으로 남기고, 판결 후에는 Sheriff 집행 전에 짐과 주소를 정리합니다.",
+    ],
+    links: [
+      {
+        label: "USA.gov – Avoid eviction",
+        url: "https://www.usa.gov/avoid-eviction",
+      },
+      {
+        label: "USA.gov – Emergency rent assistance",
+        url: "https://www.usa.gov/emergency-pay-rent",
+      },
+      {
+        label: "CFPB – What to do if you’re facing eviction",
+        url: "https://www.consumerfinance.gov/housing/housing-insecurity/help-for-renters/what-to-do-if-youre-facing-eviction/",
+      },
+      {
+        label: "211 – 지역 긴급 지원 찾기",
+        url: "https://www.211.org/",
+      },
+      {
+        label: "CFPB – HUD 주거 상담사 찾기",
+        url: "https://www.consumerfinance.gov/find-a-housing-counselor/",
+      },
+      {
+        label: "USA.gov – Legal aid",
+        url: "https://www.usa.gov/legal-aid",
+      },
+      {
+        label: "USA.gov – Tenant rights",
+        url: "https://www.usa.gov/tenant-rights",
+      },
+      {
+        label: "LawHelp.org",
+        url: "https://www.lawhelp.org/",
+      },
+      {
+        label: "입주·퇴거 체크리스트",
+        url: "/guides/housing/move-in-out",
+      },
+      {
+        label: "리스(임대차) 읽기",
+        url: "/guides/housing/lease-basics",
+      },
+      {
+        label: "보증금",
+        url: "/guides/housing/security-deposit",
+      },
+      {
+        label: "룸메이트·서브리스",
+        url: "/guides/housing/roommate",
+      },
+      {
+        label: "공공 혜택 (SNAP·WIC 등)",
+        url: "/guides/life/public-benefits",
+      },
+      {
+        label: "실업급여 신청",
+        url: "/guides/job/unemployment",
+      },
+    ],
+    faq: [
+      {
+        question: "월세를 하루만 늦어도 바로 쫓겨나나요?",
+        answer:
+          "보통은 바로 강제 퇴거되지 않고, 연체료와 서면 통지·법원 절차를 거칩니다. 다만 유예 기간과 통지 일수는 주·계약마다 다릅니다. 늦을 것 같으면 Due date 전에 단지에 서면으로 알리세요.",
+      },
+      {
+        question: "강제 퇴거 전에 해결할 방법은 있나요?",
+        answer:
+          "있습니다. 단지에 분할 납부를 요청하고, 211·주·시·비영리 긴급 임대 지원, HUD 주거 상담, Legal aid를 동시에 찾는 것이 일반적입니다. 남을 수 없으면 이사일을 서면으로 합의해 강제 퇴거 기록을 피하는 경우도 있습니다.",
+      },
+      {
+        question: "집주인이 열쇠를 바꾸거나 전기를 끊어도 되나요?",
+        answer:
+          "많은 주에서 법원 명령 없는 자물쇠 교체·짐 반출·단전은 불법인 경우가 많습니다. 주 세입자 안내와 Legal aid를 확인하고, 협박·실행 기록은 사진·메시지로 남기세요.",
+      },
+      {
+        question: "코로나 때처럼 연방 월세 지원을 신청할 수 있나요?",
+        answer:
+          "연방 ERA 전국 신청은 종료되었습니다. 지금은 211과 USA.gov 긴급 임대 지원으로 주·시·비영리 프로그램을 찾는 방식이 일반적입니다. 자격·잔액은 지역마다 다릅니다.",
+      },
+      {
+        question: "법원 서류를 무시하면요?",
+        answer:
+          "기한 안에 답변·출석하지 않으면 궐석 판결로 퇴거가 확정되기 쉽습니다. 서류의 날짜·사건 번호를 확인하고 Legal aid·법원 Self-help에 바로 문의하세요.",
+      },
+      {
+        question: "룸메이트가 월세를 안 내면 저만 쫓겨나나요?",
+        answer:
+          "Lease에 같이 서명했다면 단지에는 전액 공동 책임인 경우가 많습니다. 분담 약속과 별개로 ‘룸메이트·서브리스’ 가이드와 단지 정책을 확인하세요.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 부동산·법률 자문이 아닙니다. 강제 퇴거·통지 기한·세입자 보호는 주·시·계약마다 다르므로 Lease와 공식 안내, 필요 시 Legal aid·변호사를 확인하세요. 개별 사건을 대행하지 않습니다.",
   },
   {
     slug: "rental-scams",
@@ -322,7 +470,7 @@ export const housingGuides: Guide[] = [
     ],
     steps: [
       "첫 페이지에서 당사자 이름, 주소·유닛, 월세, Lease 시작·종료일을 확인합니다.",
-      "연체료(Late fee), NSF(부도) 수수료, 자동이체 할인을 찾습니다.",
+      "연체료(Late fee), NSF(부도) 수수료, 자동이체 할인, 연체 시 통지·퇴거 조항을 찾습니다.",
       "Early termination / Break lease / Military clause 조항과 비용을 확인합니다.",
       "유틸리티·인터넷·쓰레기·주차비가 월세에 포함인지 표시합니다.",
       "단지 출입·수리 요청·24시간 통지 규칙을 읽고, 구두 설명과 다르면 이메일로 확인합니다.",
@@ -357,6 +505,10 @@ export const housingGuides: Guide[] = [
         label: "입주·퇴거 체크리스트",
         url: "/guides/housing/move-in-out",
       },
+      {
+        label: "월세 연체·강제 퇴거",
+        url: "/guides/housing/rent-hardship-eviction",
+      },
     ],
     faq: [
       {
@@ -368,6 +520,11 @@ export const housingGuides: Guide[] = [
         question: "한국어 번역본을 달라고 할 수 있나요?",
         answer:
           "단지가 제공하지 않을 수 있습니다. 핵심 조항을 표시해 두고 신뢰할 수 있는 사람에게 확인받으세요.",
+      },
+      {
+        question: "연체료 조항만 보면 되나요?",
+        answer:
+          "Late fee와 함께 Pay or quit·퇴거 통지 조항도 표시해 두세요. 월세를 못 낼 때의 흐름은 ‘월세 연체·강제 퇴거’ 가이드를 참고하세요.",
       },
     ],
     updatedAt: "2026-08",
@@ -414,12 +571,16 @@ export const housingGuides: Guide[] = [
         label: "임대 사기 주의",
         url: "/guides/housing/rental-scams",
       },
+      {
+        label: "월세 연체·강제 퇴거",
+        url: "/guides/housing/rent-hardship-eviction",
+      },
     ],
     faq: [
       {
         question: "제가 서명만 했는데 룸메이트가 월세를 안 내면요?",
         answer:
-          "단지에는 서명자가 전액 책임이 되는 경우가 많습니다. 분담 약속과 별개로 Lease를 확인하세요.",
+          "단지에는 서명자가 전액 책임이 되는 경우가 많습니다. 분담 약속과 별개로 Lease를 확인하고, 단지 통지·강제 퇴거 흐름은 ‘월세 연체·강제 퇴거’ 가이드를 보세요.",
       },
       {
         question: "크레딧이 없는 친구를 올릴 수 있나요?",

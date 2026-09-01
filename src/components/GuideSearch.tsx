@@ -46,7 +46,7 @@ export function GuideSearch({ items }: { items: SearchIndexItem[] }) {
         type="search"
         value={query}
         onChange={(event) => setQuery(event.target.value)}
-        placeholder="예: 전화번호, SNAP, 면허, 임대 사기"
+        placeholder="예: 전화번호, SNAP, 면허, 강제 퇴거"
         className="w-full rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm text-[var(--ink)] outline-none ring-[var(--brand)] placeholder:text-[var(--muted)] focus:ring-2"
         autoComplete="off"
       />

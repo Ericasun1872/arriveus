@@ -33,6 +33,12 @@ export const tips: Tip[] = [
   },
   {
     title: "오늘의 미국 생활 팁",
+    body: "월세가 밀릴 것 같으면 Due date 전에 단지에 서면으로 알리세요. 분할 납부·211 긴급 지원을 강제 퇴거 전에 찾는 경우가 많습니다.",
+    href: "/guides/housing/rent-hardship-eviction",
+    linkLabel: "월세 연체·강제 퇴거 가이드",
+  },
+  {
+    title: "오늘의 미국 생활 팁",
     body: "식품비가 부담되면 USA.gov Food help·SNAP 안내로 거주 주 신청 창구를 확인하세요. 선입금 대행은 피하세요.",
     href: "/guides/life/public-benefits",
     linkLabel: "공공 혜택 가이드",

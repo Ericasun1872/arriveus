@@ -756,6 +756,10 @@ export const jobGuides: Guide[] = [
         label: "임금 체불·취업 사기·신고 창구",
         url: "/guides/job/wage-scams",
       },
+      {
+        label: "월세 연체·강제 퇴거",
+        url: "/guides/housing/rent-hardship-eviction",
+      },
     ],
     faq: [
       {

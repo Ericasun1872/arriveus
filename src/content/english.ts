@@ -1257,6 +1257,28 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I am here to return the keys.",
     },
   ],
+  "housing/rent-hardship-eviction": [
+    {
+      ko: "이번 달 월세가 늦을 것 같습니다. 분할 납부를 할 수 있을까요?",
+      en: "I am going to be late on rent this month. Can we set up a payment plan?",
+    },
+    {
+      ko: "Pay or quit 통지를 받았습니다. 밀린 월세를 어떻게 맞출지 상의하고 싶습니다.",
+      en: "I received a notice to pay or quit. I would like to discuss how to catch up.",
+    },
+    {
+      ko: "긴급 임대 지원을 신청했습니다. 접수 번호를 보내 드립니다.",
+      en: "I applied for emergency rental assistance. Here is my confirmation number.",
+    },
+    {
+      ko: "퇴거 심리에 통역이 필요합니다.",
+      en: "I need an interpreter for my eviction hearing.",
+    },
+    {
+      ko: "법원으로 가지 않고, 이사 날짜를 서면으로 합의할 수 있을까요?",
+      en: "Can we agree in writing on a move-out date instead of going to court?",
+    },
+  ],
   "housing/rental-scams": [
     {
       ko: "투어 전에 보증금을 보내야 하나요?",
