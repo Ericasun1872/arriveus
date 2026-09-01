@@ -4,6 +4,7 @@ import { getEnglishPhrases } from "@/content/english";
 import { guides } from "@/content/guides";
 import { newGuideRefs } from "@/content/new-guides";
 import type { Category, FaqItem, Guide } from "@/content/types";
+import { scoreSearchMatch } from "@/lib/search";
 
 const DEFAULT_UPDATED_AT = "2026-08";
 
@@ -84,30 +85,32 @@ export function getSearchIndex() {
           guide.summary,
           guide.overview,
           ...(guide.methods ?? []),
+          ...(guide.faq ?? []).flatMap((item) => [item.question, item.answer]),
+          guide.slug.replaceAll("-", " "),
           category?.name,
           category?.nameEn,
           category?.description,
         ]
           .filter(Boolean)
           .join(" ")
+          .normalize("NFC")
           .toLowerCase(),
       };
     });
 }
 
 export function searchGuides(query: string): Guide[] {
-  const q = query.trim().toLowerCase();
+  const q = query.normalize("NFC").trim();
   if (!q) return [];
-  const tokens = q.split(/\s+/).filter(Boolean);
   return getSearchIndex()
-    .map((item) => {
-      const score = tokens.reduce(
-        (sum, token) => sum + (item.haystack.includes(token) ? 1 : 0),
-        0,
-      );
-      return { item, score };
-    })
-    .filter((row) => row.score === tokens.length)
+    .map((item) => ({
+      item,
+      score: scoreSearchMatch(item.haystack, q, {
+        title: item.title,
+        summary: item.summary,
+      }),
+    }))
+    .filter((row) => row.score > 0)
     .sort(
       (a, b) =>
         b.score - a.score || a.item.title.localeCompare(b.item.title, "ko"),

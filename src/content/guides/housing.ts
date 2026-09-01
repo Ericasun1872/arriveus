@@ -275,7 +275,7 @@ export const housingGuides: Guide[] = [
   {
     slug: "rent-hardship-eviction",
     category: "housing",
-    title: "월세 연체·강제 퇴거",
+    title: "월세 연체·강제 퇴거 (Eviction)",
     summary:
       "월세를 못 낼 때 흔한 흐름(연체료·통지·법원·집행)과, 강제 퇴거 전에 할 수 있는 분할 납부·긴급 임대 지원·법률 도움을 한국어로 정리했습니다.",
     cost: "연체료·미납 월세·법원·이사 비용은 케이스마다 다름 / 긴급 지원·법률 상담은 자격되면 무료·저비용인 경우 있음",

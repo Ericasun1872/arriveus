@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useDeferredValue, useMemo, useState } from "react";
+import { scoreSearchMatch } from "@/lib/search";
 
 export type SearchIndexItem = {
   category: string;
@@ -17,18 +18,17 @@ export function GuideSearch({ items }: { items: SearchIndexItem[] }) {
   const deferred = useDeferredValue(query);
 
   const results = useMemo(() => {
-    const q = deferred.trim().toLowerCase();
+    const q = deferred.normalize("NFC").trim();
     if (!q) return [] as SearchIndexItem[];
-    const tokens = q.split(/\s+/).filter(Boolean);
     return items
-      .map((item) => {
-        const score = tokens.reduce(
-          (sum, token) => sum + (item.haystack.includes(token) ? 1 : 0),
-          0,
-        );
-        return { item, score };
-      })
-      .filter((row) => row.score === tokens.length)
+      .map((item) => ({
+        item,
+        score: scoreSearchMatch(item.haystack, q, {
+          title: item.title,
+          summary: item.summary,
+        }),
+      }))
+      .filter((row) => row.score > 0)
       .sort(
         (a, b) =>
           b.score - a.score || a.item.title.localeCompare(b.item.title, "ko"),
@@ -37,7 +37,11 @@ export function GuideSearch({ items }: { items: SearchIndexItem[] }) {
   }, [deferred, items]);
 
   return (
-    <div>
+    <form
+      onSubmit={(event) => {
+        event.preventDefault();
+      }}
+    >
       <label htmlFor="guide-search" className="sr-only">
         가이드 검색
       </label>
@@ -49,6 +53,9 @@ export function GuideSearch({ items }: { items: SearchIndexItem[] }) {
         placeholder="예: 전화번호, SNAP, 면허, 강제 퇴거"
         className="w-full rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm text-[var(--ink)] outline-none ring-[var(--brand)] placeholder:text-[var(--muted)] focus:ring-2"
         autoComplete="off"
+        enterKeyHint="search"
+        lang="ko"
+        spellCheck={false}
       />
       <p className="mt-2 text-xs text-[var(--muted)]">
         {query.trim()
@@ -83,6 +90,6 @@ export function GuideSearch({ items }: { items: SearchIndexItem[] }) {
           ) : null}
         </ul>
       ) : null}
-    </div>
+    </form>
   );
 }
