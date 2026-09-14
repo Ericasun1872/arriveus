@@ -484,6 +484,14 @@ export const jobGuides: Guide[] = [
         url: "/guides/job/resume-interview",
       },
       {
+        label: "오피스·LinkedIn 구직",
+        url: "/guides/job/office-linkedin",
+      },
+      {
+        label: "신분·EAD별 합법 근로",
+        url: "/guides/job/work-authorization",
+      },
+      {
         label: "현장 취업",
         url: "/guides/job/everyday-jobs",
       },
@@ -507,7 +515,7 @@ export const jobGuides: Guide[] = [
       {
         question: "공고에 Work authorization이라고만 나와요.",
         answer:
-          "합법 근로 가능 여부를 묻는 경우가 많습니다. 시민·영주·EAD·비자 조건을 본인 서류 기준으로 확인하고, 가짜 서류 제안은 거절하세요.",
+          "합법 근로 가능 여부를 묻는 경우가 많습니다. ‘신분·EAD별 합법 근로’ 가이드에서 본인 서류를 확인하고, 가짜 서류 제안은 거절하세요.",
       },
       {
         question: "채용인데 장비비·선물카드를 먼저 내라고 해요.",
@@ -515,7 +523,7 @@ export const jobGuides: Guide[] = [
           "전형적인 취업 사기 신호입니다. 보내지 말고 ‘임금 체불·취업 사기·신고 창구’ 가이드와 FTC·Worker.gov 안내를 보세요.",
       },
     ],
-    updatedAt: "2026-08",
+    updatedAt: "2026-09",
     disclaimer,
   },
   {
