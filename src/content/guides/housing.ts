@@ -519,31 +519,40 @@ export const housingGuides: Guide[] = [
     category: "housing",
     title: "집 구입·모기지 기초",
     summary:
-      "렌트에서 구매로 넘어갈 때 보는 Pre-approval, 다운페이, Closing, 검사(Inspection)·감정(Appraisal) 큰 흐름과 사기 주의를 정리합니다.",
+      "렌트에서 구매로 넘어갈 때 보는 구입 전 서류(신용·세금·은행·월급 명세서) 준비 순서, Pre-approval, 다운페이, Closing, 검사·감정 큰 흐름을 정리합니다.",
     cost: "다운페이·Closing cost·검사·감정·보험·재산세는 지역·대출마다 다름",
-    methods: ["모기지 Pre-approval", "Buyer’s agent / 직접 협상", "Inspection·Appraisal·Closing"],
+    methods: ["서류·신용 준비", "모기지 Pre-approval", "Buyer’s agent / 직접 협상", "Inspection·Appraisal·Closing"],
     overview:
-      "미국 집 구입은 ‘마음에 드는 집을 고르고 바로 소유’가 아니라, 보통 (1) 예산·신용·소득으로 모기지 Pre-approval (2) 매물 보기·오퍼 (3) 계약(Purchase agreement) 후 Inspection·Appraisal (4) 대출 최종 승인 (5) Closing(소유권·자금·서류 이전) 순입니다. 렌트와 달리 Earnest money, Contingency(검사·대출·감정 조건), Title(소유권) 보험, HOA, 재산세(Property tax), Homeowners insurance가 한꺼번에 따라옵니다.\n\n신용 이력이 짧거나 비시민이면 대출 상품·다운페이 요건이 달라질 수 있어, 여러 은행·크레딧유니온·모기지 렌더에 Pre-approval을 문의하는 것이 일반적입니다. 첫 주택·다운페이 보조·FHA 등 공공 프로그램은 ‘첫 주택 구매 지원’ 가이드를 함께 보세요. ‘오늘만 특가·선입금만 내면 집 예약’류 광고, 소유권 확인 없이 송금 요구는 사기 위험이 큽니다. CFPB Buying a House·HUD 주택 상담을 공식 출발점으로 두세요.\n\nArriveUS는 특정 중개·렌더를 추천하지 않으며, 개별 대출·계약 자문을 하지 않습니다. 큰 금액 계약 전에는 변호사·HUD 승인 상담·라이선스 있는 전문가와 확인하세요.",
+      "미국 집 구입은 ‘마음에 드는 집을 고르고 바로 소유’가 아니라, 보통 (1) 예산·신용·소득 서류를 모아 모기지 Pre-approval (2) 매물 보기·오퍼 (3) 계약(Purchase agreement) 후 Inspection·Appraisal (4) 대출 최종 승인 (5) Closing(소유권·자금·서류 이전) 순입니다. 렌트와 달리 Earnest money, Contingency(검사·대출·감정 조건), Title(소유권) 보험, HOA, 재산세(Property tax), Homeowners insurance가 한꺼번에 따라옵니다.\n\n매물을 보기 전에 렌더가 흔히 요구하는 서류부터 순서를 잡으면 좋습니다. (1) 신용 점수·리포트 확인·오류 정정 (2) 최근 2년분 세금 신고서(Tax returns)와 W-2/1099 (3) 최근 2–3개월 은행 명세서(Bank statements)·다운페이 자금 출처 (4) 최근 30–60일 Pay stubs(월급 명세서) (5) 신분증·SSN/ITIN·고용 확인 후 Pre-approval 신청. 자영업·프리랜서는 손익 계산서·사업 계좌가 더 필요할 수 있고, 증여 자금이면 Gift letter가 따릅니다. 정확한 목록·개월 수는 렌더마다 다르니 Pre-approval 전에 체크리스트를 받으세요.\n\n신용 이력이 짧거나 비시민이면 대출 상품·다운페이 요건이 달라질 수 있어, 여러 은행·크레딧유니온·모기지 렌더에 Pre-approval을 문의하는 것이 일반적입니다. 첫 주택·다운페이 보조·FHA 등 공공 프로그램은 ‘첫 주택 구매 지원’ 가이드를 함께 보세요. ‘오늘만 특가·선입금만 내면 집 예약’류 광고, 소유권 확인 없이 송금 요구는 사기 위험이 큽니다. CFPB Buying a House·HUD 주택 상담을 공식 출발점으로 두세요.\n\nArriveUS는 특정 중개·렌더를 추천하지 않으며, 개별 대출·계약 자문을 하지 않습니다. 큰 금액 계약 전에는 변호사·HUD 승인 상담·라이선스 있는 전문가와 확인하세요.",
     requirements: [
-      "신용 리포트·소득 증빙(Pay stub·세금 신고)·은행 잔고",
-      "신분·SSN/ITIN 등 렌더가 요구하는 서류",
-      "다운페이·Closing cost 자금 출처 설명(Gift letter 등 해당 시)",
-      "예산(월 상환·보험·세금·HOA·수리)",
-      "오퍼·계약서·Inspection 리포트 보관",
+      "신용 점수·리포트 (오류 있으면 정정 요청)",
+      "최근 세금 신고서(보통 2년)·W-2/1099",
+      "최근 은행 명세서(보통 2–3개월)와 다운페이 자금 출처",
+      "최근 Pay stubs(월급 명세서, 보통 30–60일분)",
+      "신분증·SSN/ITIN 등 렌더가 요구하는 신분 서류",
+      "고용 확인·자영업이면 손익·사업 계좌 (해당 시)",
+      "Gift letter 등 증여·이체 설명 (해당 시)",
+      "예산(월 상환·보험·세금·HOA·수리)·오퍼·Inspection 리포트",
     ],
     steps: [
-      "월 상환·보험·재산세까지 넣어 예산을 정하고, 렌더 2–3곳에서 Pre-approval 편지를 받습니다.",
-      "첫 구매·소득 요건이 되면 HUD 상담·주 다운페이 보조 해당 여부를 ‘첫 주택 구매 지원’ 가이드로 먼저 확인합니다.",
+      "예산(월 상환·보험·재산세·HOA)을 잡고, AnnualCreditReport.com 등으로 신용 리포트를 확인·오류를 고칩니다. 점수가 낮으면 신용 가이드로 먼저 정리합니다.",
+      "세금 신고서(최근 2년)·W-2/1099 PDF를 모읍니다. 아직 신고 전이면 세무 일정과 렌더 요구를 맞춥니다.",
+      "다운페이용 계좌의 은행 명세서(보통 최근 2–3개월)를 받고, 큰 입금 출처(급여·저축·증여)를 설명할 수 있게 준비합니다.",
+      "최근 Pay stubs와 고용주 연락처(또는 자영업 소득 서류)를 준비합니다.",
+      "렌더 2–3곳에 서류 목록을 확인한 뒤 Pre-approval을 신청하고, Loan Estimate를 비교합니다.",
+      "첫 구매·소득 요건이 되면 HUD 상담·주 다운페이 보조 해당 여부를 ‘첫 주택 구매 지원’ 가이드로 확인합니다.",
       "매물을 보고 오퍼할 때 Earnest money·Closing 일정·Inspection/Financing contingency를 적습니다.",
-      "계약 후 Home inspection을 하고, 큰 하자는 수리·크레딧·해지를 계약 조건에 따라 협상합니다.",
-      "Appraisal(감정)과 대출 Underwriting을 진행하고, Title·Homeowners insurance를 준비합니다.",
-      "Closing Disclosure를 대출 확정 전 비교·확인한 뒤 Closing에서 서명·자금·열쇠를 마무리합니다.",
-      "소유 후 재산세·HOA·보험 자동이체·주소 변경(USPS·DMV)을 정리합니다.",
+      "계약 후 Home inspection·Appraisal·Underwriting을 진행하고, Title·Homeowners insurance를 준비합니다.",
+      "Closing Disclosure를 확인한 뒤 Closing에서 서명·자금·열쇠를 마무리하고, 주소·세금·보험을 정리합니다.",
     ],
     links: [
       {
         label: "CFPB – Buying a House",
         url: "https://www.consumerfinance.gov/owning-a-home/",
+      },
+      {
+        label: "CFPB – Create a loan application packet",
+        url: "https://www.consumerfinance.gov/owning-a-home/prepare/create-a-loan-application-packet/",
       },
       {
         label: "HUD – Buying a home",
@@ -554,16 +563,24 @@ export const housingGuides: Guide[] = [
         url: "https://www.usa.gov/buying-home",
       },
       {
+        label: "AnnualCreditReport.com",
+        url: "https://www.annualcreditreport.com/",
+      },
+      {
         label: "첫 주택 구매 지원 (정부·공공)",
         url: "/guides/housing/first-time-buyer-help",
       },
       {
-        label: "아파트 임대",
-        url: "/guides/housing/rent-apartment",
-      },
-      {
         label: "신용 점수 올리기",
         url: "/guides/bank/credit-build",
+      },
+      {
+        label: "첫 미국 세금 신고",
+        url: "/guides/tax/file-taxes",
+      },
+      {
+        label: "아파트 임대",
+        url: "/guides/housing/rent-apartment",
       },
       {
         label: "주소·우편",
@@ -571,6 +588,21 @@ export const housingGuides: Guide[] = [
       },
     ],
     faq: [
+      {
+        question: "집 보기 전에 무엇을 먼저 준비하나요?",
+        answer:
+          "흔히 신용 확인 → 세금 신고서·W-2 → 은행 명세서 → Pay stub → Pre-approval 순입니다. 렌더 체크리스트가 최종 기준입니다.",
+      },
+      {
+        question: "세금 자료는 몇 년치가 필요한가요?",
+        answer:
+          "많은 렌더가 최근 2년분 세금 신고와 W-2/1099를 요청합니다. 자영업·이직이면 더 필요할 수 있으니 미리 물어보세요.",
+      },
+      {
+        question: "은행 명세서에서 큰 입금이 있으면요?",
+        answer:
+          "급여·저축·증여 출처를 설명해야 하는 경우가 많습니다. 증여면 Gift letter 등 서류를 준비하세요.",
+      },
       {
         question: "다운페이는 항상 20%인가요?",
         answer:
@@ -599,7 +631,7 @@ export const housingGuides: Guide[] = [
     ],
     updatedAt: "2026-09",
     disclaimer:
-      "ArriveUS 가이드는 일반적인 참고 정보이며 부동산·대출·법률·세무 자문이 아닙니다. 계약·이자·자격은 개인·지역·상품마다 다르므로 CFPB·HUD·라이선스 있는 전문가 안내를 확인하세요. 특정 중개·은행을 추천하지 않습니다.",
+      "ArriveUS 가이드는 일반적인 참고 정보이며 부동산·대출·법률·세무 자문이 아닙니다. 서류 목록·개월 수·이자·자격은 렌더·상품·개인마다 다르므로 CFPB·HUD·라이선스 있는 전문가 안내를 확인하세요. 특정 중개·은행을 추천하지 않습니다.",
   },
   {
     slug: "first-time-buyer-help",

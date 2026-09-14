@@ -1389,6 +1389,10 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I would like to get a mortgage pre-approval.",
     },
     {
+      ko: "어떤 서류를 준비해야 하나요? 세금 신고서, 은행 명세서, 월급 명세서요.",
+      en: "What documents do I need? Tax returns, bank statements, and pay stubs?",
+    },
+    {
       ko: "다운페이와 Closing cost가 대략 얼마인지 알려 주세요.",
       en: "Please tell me the estimated down payment and closing costs.",
     },
