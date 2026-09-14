@@ -761,6 +761,42 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "My vision suddenly got worse.",
     },
   ],
+  "medical/mental-health": [
+    {
+      ko: "상담(테라피) 예약을 잡고 싶습니다.",
+      en: "I would like to schedule a therapy appointment.",
+    },
+    {
+      ko: "한국어 통역이 가능한가요?",
+      en: "Do you offer Korean interpretation?",
+    },
+    {
+      ko: "제 보험의 behavioral health 네트워크인가요?",
+      en: "Are you in-network for my behavioral health benefits?",
+    },
+    {
+      ko: "정신과 진료와 상담의 차이를 설명해 주세요.",
+      en: "Please explain the difference between psychiatry and therapy.",
+    },
+  ],
+  "medical/pharmacy": [
+    {
+      ko: "처방전을 이 약국으로 보내 주세요.",
+      en: "Please send my prescription to this pharmacy.",
+    },
+    {
+      ko: "제네릭으로 가능한가요? 보험 적용 금액이 얼마인가요?",
+      en: "Is a generic available, and what is my insurance copay?",
+    },
+    {
+      ko: "리필이 남았는지 확인해 주세요.",
+      en: "Can you check how many refills I have left?",
+    },
+    {
+      ko: "다른 약국으로 처방을 옮겨 주세요.",
+      en: "Please transfer my prescription to another pharmacy.",
+    },
+  ],
   "tax/file-taxes": [
     {
       ko: "세금 신고를 도와주실 수 있나요?",
@@ -879,6 +915,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "다른 주로 이사했는데 어느 주에 신고하나요?",
       en: "I moved to another state—which state return do I need to file?",
+    },
+  ],
+  "tax/fbar-foreign": [
+    {
+      ko: "해외금융계좌 보고(FBAR) 대상인지 확인하고 싶습니다.",
+      en: "I would like to know if I need to file an FBAR for my foreign accounts.",
+    },
+    {
+      ko: "한국 은행 계좌도 보고해야 하나요?",
+      en: "Do I need to report my Korean bank accounts?",
+    },
+    {
+      ko: "Form 8938과 FBAR의 차이를 설명해 주세요.",
+      en: "Please explain the difference between Form 8938 and the FBAR.",
+    },
+    {
+      ko: "한국에서 낸 세금을 미국에서 공제·세액공제할 수 있나요?",
+      en: "Can I claim a foreign tax credit or deduction for taxes I paid in Korea?",
     },
   ],
   "immigration/uscis-account": [
@@ -1319,6 +1373,42 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
     {
       ko: "보험 증서를 이메일로 보내 주세요.",
       en: "Please email me the evidence of insurance.",
+    },
+  ],
+  "housing/buy-home": [
+    {
+      ko: "모기지 Pre-approval을 받고 싶습니다.",
+      en: "I would like to get a mortgage pre-approval.",
+    },
+    {
+      ko: "다운페이와 Closing cost가 대략 얼마인지 알려 주세요.",
+      en: "Please tell me the estimated down payment and closing costs.",
+    },
+    {
+      ko: "홈 인스펙션을 예약하고 싶습니다.",
+      en: "I would like to schedule a home inspection.",
+    },
+    {
+      ko: "Closing Disclosure를 설명해 주세요.",
+      en: "Please walk me through the Closing Disclosure.",
+    },
+  ],
+  "housing/eviction-landlord": [
+    {
+      ko: "퇴거 통지서를 받았습니다. 어떻게 대응해야 하나요?",
+      en: "I received an eviction notice. What should I do next?",
+    },
+    {
+      ko: "법률 구조(legal aid) 연락처를 알려 주세요.",
+      en: "Can you give me contact information for legal aid?",
+    },
+    {
+      ko: "보증금 반환과 공제 내역을 서면으로 받고 싶습니다.",
+      en: "I would like a written itemization of my security deposit deductions.",
+    },
+    {
+      ko: "수리 요청을 이메일로 남겨 두었습니다.",
+      en: "I sent a written repair request by email.",
     },
   ],
   "housing/roommate": [

@@ -31,9 +31,15 @@ export function Footer() {
             <Link href="/privacy" className="hover:underline">
               개인정보
             </Link>
-            <Link href="/jobs" className="hover:underline">
-              채용 문의
+            <Link href="/terms" className="hover:underline">
+              이용약관
             </Link>
+            <a
+              href={`mailto:${siteConfig.contactEmail}?subject=${encodeURIComponent("ArriveUS 채용·광고 문의")}`}
+              className="hover:underline"
+            >
+              채용·광고 문의
+            </a>
             <a
               href={`mailto:${siteConfig.contactEmail}`}
               className="hover:underline"

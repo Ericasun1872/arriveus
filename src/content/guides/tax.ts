@@ -55,6 +55,10 @@ export const taxGuides: Guide[] = [
         label: "SSN과 ITIN 비교",
         url: "/guides/tax/itin-ssn",
       },
+      {
+        label: "FBAR·해외금융·한미 세금",
+        url: "/guides/tax/fbar-foreign",
+      },
     ],
     faq: [
       {
@@ -410,5 +414,82 @@ export const taxGuides: Guide[] = [
     ],
     updatedAt: "2026-08",
     disclaimer,
+  },
+  {
+    slug: "fbar-foreign",
+    category: "tax",
+    title: "FBAR·해외금융·한미 세금",
+    summary:
+      "한국 계좌·해외금융계좌 보고(FBAR), FATCA Form 8938 개념, 한국 소득·외국납부세액공제 입문을 정리합니다. 개별 신고 대행은 하지 않습니다.",
+    cost: "신고 자체 수수료는 보통 없음 / 미보고 과태료·세무사 수임은 케이스마다 큼",
+    methods: ["FinCEN FBAR (FinCEN 114)", "IRS Form 8938 (해당 시)", "외국 소득·Form 1116 등", "세무 전문가"],
+    overview:
+      "미국에 세금 신고 의무가 있는 사람(시민·영주권자·일정 거주자 등)은 한국 은행·증권 계좌처럼 해외금융계좌 합계가 기준을 넘으면 FinCEN에 FBAR(Report of Foreign Bank and Financial Accounts, FinCEN Form 114)를 내야 할 수 있습니다. FBAR는 세금 ‘납부서’가 아니라 계좌 보고이며, 보통 은행 비밀과 별개로 미국 측 의무입니다. 이와 별도로 IRS Form 8938(FATCA) 자산 보고 기준이 겹치거나 다를 수 있습니다.\n\n한국에서 이자·배당·임대·급여 소득이 있어도 미국 신고에 포함하는 경우가 많고, 한국에 낸 세금은 Foreign tax credit(예: Form 1116) 등으로 조율하는 경우가 있습니다. 한·미 조세조약·비거주자 규칙은 신분·체류일·소득 종류에 따라 달라 IRS·세무 전문가 확인이 필요합니다.\n\nArriveUS는 신고를 대리하지 않으며, ‘숨기면 된다’는 조언을 하지 않습니다. 기준 금액·마감·과태료는 해마다 바뀔 수 있어 IRS FBAR·FinCEN 안내를 직접 보세요.",
+    requirements: [
+      "해외 계좌 목록(은행·증권·가상자산 관련 여부 확인)",
+      "연중 최고 잔액·이자·배당 자료",
+      "한국 원천징수·납부 영수증",
+      "미국 세금 신분(시민/영주/거주 외국인 등)",
+      "기존 미국 신고서·ITIN/SSN",
+    ],
+    steps: [
+      "본인이 FBAR·Form 8938 대상인지 IRS·FinCEN 최신 기준(금액·거주지)으로 확인합니다.",
+      "한국·기타 해외 계좌의 연중 최고 잔액을 은행 앱·잔고증명으로 모읍니다.",
+      "해당하면 BSA e-Filing으로 FBAR를 기한 안에 제출하고, 세금 신고와 일정을 혼동하지 않습니다.",
+      "해외 소득을 미국 신고에 반영할지, 외국납부세액공제·조약 적용은 소프트웨어·세무사와 확인합니다.",
+      "과거에 빠뜨렸다면 IRS·FinCEN의 자진 시정 안내를 읽고 전문가와 검토합니다. 카톡 ‘삭감 대행’은 경계하세요.",
+      "기록이 쌓이면 매년 같은 체크리스트로 반복합니다.",
+    ],
+    links: [
+      {
+        label: "IRS – FBAR",
+        url: "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+      },
+      {
+        label: "FinCEN – FBAR",
+        url: "https://www.fincen.gov/report-foreign-bank-and-financial-accounts",
+      },
+      {
+        label: "IRS – FATCA Form 8938",
+        url: "https://www.irs.gov/businesses/corporations/fatca-information-individuals",
+      },
+      {
+        label: "IRS – Foreign tax credit",
+        url: "https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit",
+      },
+      {
+        label: "첫 미국 세금 신고",
+        url: "/guides/tax/file-taxes",
+      },
+      {
+        label: "주세 기본",
+        url: "/guides/tax/state-taxes",
+      },
+    ],
+    faq: [
+      {
+        question: "한국 계좌가 있으면 무조건 FBAR인가요?",
+        answer:
+          "합계·최고 잔액이 기준을 넘고 보고 대상 신분이면 해당할 수 있습니다. 최신 달러 기준은 IRS·FinCEN에서 확인하세요.",
+      },
+      {
+        question: "세금 신고(1040)만 하면 FBAR도 끝난 건가요?",
+        answer:
+          "아닙니다. FBAR는 FinCEN 쪽 별도 전자 보고인 경우가 많습니다. 8938은 세금 신고에 첨부하는 식입니다.",
+      },
+      {
+        question: "한국에 세금을 냈으면 미국에서는 안 내도 되나요?",
+        answer:
+          "이중과세 완화(외국납부세액공제·공제·조약) 개념이 있으나 ‘자동으로 면제’는 아닙니다. 소득 종류별로 전문가와 확인하세요.",
+      },
+      {
+        question: "안 내면 어떻게 되나요?",
+        answer:
+          "고의·비고의에 따라 과태료가 커질 수 있습니다. 정확한 금액·절차는 공식 안내·세무 변호사를 보세요.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 세무·법률 자문이 아닙니다. FBAR·FATCA·조약·과태료는 신분·금액·연도에 따라 다르므로 IRS·FinCEN 공식 안내와 자격 있는 세무 전문가만 따르세요. 탈세·허위 보고 방법은 안내하지 않습니다.",
   },
 ];

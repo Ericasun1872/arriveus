@@ -124,6 +124,16 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       answer:
         "많은 경우 별도 Dental·Vision 플랜입니다. Original Medicare도 일상 치과·안경은 거의 안 되는 편입니다. ArriveUS 치과·시력 가이드를 참고하세요.",
     },
+    {
+      question: "우울·불안할 때 어디로 가나요?",
+      answer:
+        "위급하면 911 또는 988입니다. 일상 상담은 보험 Behavioral health·주치의 의뢰를 이용하세요. ArriveUS ‘정신건강·상담’ 가이드를 참고하세요.",
+    },
+    {
+      question: "처방약은 어떻게 받나요?",
+      answer:
+        "의사가 약국으로 전자처방하는 경우가 많습니다. Formulary·리필·Prior auth는 ‘약국·처방전’ 가이드를 보세요.",
+    },
   ],
   tax: [
     {
@@ -145,6 +155,11 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       question: "프리랜서인데 분기마다 세금을 내야 하나요?",
       answer:
         "원천징수가 거의 없으면 Estimated tax(예상세) 대상이 될 수 있습니다. ArriveUS 예상세 가이드와 IRS 1040-ES 안내를 확인하세요.",
+    },
+    {
+      question: "한국 계좌도 미국에 보고해야 하나요?",
+      answer:
+        "합계·신분 기준을 넘으면 FBAR 등 해외금융 보고가 필요할 수 있습니다. ArriveUS ‘FBAR·해외금융·한미 세금’ 가이드와 IRS·FinCEN 안내를 확인하세요.",
     },
   ],
   immigration: [
@@ -256,6 +271,16 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       question: "Renters insurance가 뭔가요?",
       answer:
         "세입자 짐·책임 등을 다루는 보험으로, 많은 Lease가 가입·증서 제출을 요구합니다. ArriveUS ‘세입자 보험’ 가이드를 참고하세요.",
+    },
+    {
+      question: "집을 사고 싶은데 무엇부터요?",
+      answer:
+        "예산·신용으로 모기지 Pre-approval부터 보는 경우가 많습니다. ArriveUS ‘집 구입·모기지 기초’ 가이드를 참고하세요.",
+    },
+    {
+      question: "퇴거 통지를 받으면요?",
+      answer:
+        "기한·사유를 확인하고 무시하지 마세요. Legal aid와 ‘퇴거·집주인 분쟁’ 가이드를 우선하세요.",
     },
   ],
 };

@@ -59,6 +59,14 @@ export const housingGuides: Guide[] = [
         url: "/guides/housing/rental-scams",
       },
       {
+        label: "집 구입·모기지 기초",
+        url: "/guides/housing/buy-home",
+      },
+      {
+        label: "퇴거·집주인 분쟁",
+        url: "/guides/housing/eviction-landlord",
+      },
+      {
         label: "도착 첫 7일",
         url: "/guides/life/first-week",
       },
@@ -505,5 +513,163 @@ export const housingGuides: Guide[] = [
     updatedAt: "2026-08",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 보험·법률 자문이 아닙니다. 보장 범위·요율·단지 요건은 상품·계약마다 다르므로 약관·Lease와 면허 있는 보험 상담사를 확인하세요. 특정 보험사를 추천하지 않습니다.",
+  },
+  {
+    slug: "buy-home",
+    category: "housing",
+    title: "집 구입·모기지 기초",
+    summary:
+      "렌트에서 구매로 넘어갈 때 보는 Pre-approval, 다운페이, Closing, 검사(Inspection)·감정(Appraisal) 큰 흐름과 사기 주의를 정리합니다.",
+    cost: "다운페이·Closing cost·검사·감정·보험·재산세는 지역·대출마다 다름",
+    methods: ["모기지 Pre-approval", "Buyer’s agent / 직접 협상", "Inspection·Appraisal·Closing"],
+    overview:
+      "미국 집 구입은 ‘마음에 드는 집을 고르고 바로 소유’가 아니라, 보통 (1) 예산·신용·소득으로 모기지 Pre-approval (2) 매물 보기·오퍼 (3) 계약(Purchase agreement) 후 Inspection·Appraisal (4) 대출 최종 승인 (5) Closing(소유권·자금·서류 이전) 순입니다. 렌트와 달리 Earnest money, Contingency(검사·대출·감정 조건), Title(소유권) 보험, HOA, 재산세(Property tax), Homeowners insurance가 한꺼번에 따라옵니다.\n\n신용 이력이 짧거나 비시민이면 대출 상품·다운페이 요건이 달라질 수 있어, 여러 은행·크레딧유니온·모기지 렌더에 Pre-approval을 문의하는 것이 일반적입니다. ‘오늘만 특가·선입금만 내면 집 예약’류 광고, 소유권 확인 없이 송금 요구는 사기 위험이 큽니다. CFPB Buying a House·HUD 주택 상담을 공식 출발점으로 두세요.\n\nArriveUS는 특정 중개·렌더를 추천하지 않으며, 개별 대출·계약 자문을 하지 않습니다. 큰 금액 계약 전에는 변호사·HUD 승인 상담·라이선스 있는 전문가와 확인하세요.",
+    requirements: [
+      "신용 리포트·소득 증빙(Pay stub·세금 신고)·은행 잔고",
+      "신분·SSN/ITIN 등 렌더가 요구하는 서류",
+      "다운페이·Closing cost 자금 출처 설명(Gift letter 등 해당 시)",
+      "예산(월 상환·보험·세금·HOA·수리)",
+      "오퍼·계약서·Inspection 리포트 보관",
+    ],
+    steps: [
+      "월 상환·보험·재산세까지 넣어 예산을 정하고, 렌더 2–3곳에서 Pre-approval 편지를 받습니다.",
+      "매물을 보고 오퍼할 때 Earnest money·Closing 일정·Inspection/Financing contingency를 적습니다.",
+      "계약 후 Home inspection을 하고, 큰 하자는 수리·크레딧·해지를 계약 조건에 따라 협상합니다.",
+      "Appraisal(감정)과 대출 Underwriting을 진행하고, Title·Homeowners insurance를 준비합니다.",
+      "Closing Disclosure를 대출 확정 전 비교·확인한 뒤 Closing에서 서명·자금·열쇠를 마무리합니다.",
+      "소유 후 재산세·HOA·보험 자동이체·주소 변경(USPS·DMV)을 정리합니다.",
+    ],
+    links: [
+      {
+        label: "CFPB – Buying a House",
+        url: "https://www.consumerfinance.gov/owning-a-home/",
+      },
+      {
+        label: "HUD – Buying a home",
+        url: "https://www.hud.gov/buying",
+      },
+      {
+        label: "USA.gov – Buying a home",
+        url: "https://www.usa.gov/buying-home",
+      },
+      {
+        label: "아파트 임대",
+        url: "/guides/housing/rent-apartment",
+      },
+      {
+        label: "신용 점수 올리기",
+        url: "/guides/bank/credit-build",
+      },
+      {
+        label: "주소·우편",
+        url: "/guides/life/address-mail",
+      },
+    ],
+    faq: [
+      {
+        question: "다운페이는 항상 20%인가요?",
+        answer:
+          "아닙니다. 상품·신용·보험(PMI 등)에 따라 더 낮을 수 있지만 월 비용·자격 조건이 달라집니다. Pre-approval에서 확인하세요.",
+      },
+      {
+        question: "비시민도 집을 살 수 있나요?",
+        answer:
+          "많은 경우 가능하지만 대출·세금·체류와 별개입니다. 렌더·세무·필요 시 변호사와 확인하세요.",
+      },
+      {
+        question: "Closing cost가 뭔가요?",
+        answer:
+          "소유권 이전·대출·타이틀·에스크로 등 Closing 때 내는 수수료·선수금입니다. Closing Disclosure에 항목이 나옵니다.",
+      },
+      {
+        question: "검사에서 문제가 나오면요?",
+        answer:
+          "계약 Contingency에 따라 수리 요청·가격 조정·해지가 가능할 수 있습니다. 기한 안에 서면으로 진행하세요.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 부동산·대출·법률·세무 자문이 아닙니다. 계약·이자·자격은 개인·지역·상품마다 다르므로 CFPB·HUD·라이선스 있는 전문가 안내를 확인하세요. 특정 중개·은행을 추천하지 않습니다.",
+  },
+  {
+    slug: "eviction-landlord",
+    category: "housing",
+    title: "퇴거·집주인 분쟁",
+    summary:
+      "연체·퇴거(Eviction) 통지, 수리 불이행, 보증금 분쟁 시 흔한 절차와 공식 도움 창구를 체크리스트로 정리합니다.",
+    cost: "연체료·법원 비용·이사비·법률 상담비는 케이스마다 다름",
+    methods: ["Lease·통지서 확인", "서면 기록", "법률 구조·주거 상담", "법원 일정 준수"],
+    overview:
+      "미국에서는 집주인이 마음대로 바로 ‘문 잠그고 짐을 버리게’ 하는 것이 대부분 불법에 가깝고, 퇴거(Eviction)는 보통 서면 통지 → (해결 안 되면) 법원 소송 → 판결 → 집행 순을 밟습니다. 다만 주·시마다 Notice 기간·사유(월세 미납, Lease 위반, 계약 만료 등)가 다릅니다. 통지를 무시하면 궐석 판결·기록·강제 집행으로 커질 수 있습니다.\n\n집주인이 수리를 안 하거나, 입주 때와 다른 요금을 요구하거나, 보증금(Security deposit)을 부당하게 깎는 경우도 흔합니다. 사진·문자·이메일·영수증을 남기고, USA.gov Housing·CFPB Renter protections·주 Legal aid·지역 Tenant hotline을 활용하세요. ‘오늘 현금으로 끝내자’는 구두 합의만으로 끝내면 나중에 증거가 없어질 수 있습니다.\n\nArriveUS는 개별 소송을 대리하지 않습니다. 가정폭력·긴급 위험은 911, 주거 긴급은 211/지역 주거 상담도 검토하세요.",
+    requirements: [
+      "Lease·입주 점검 사진·월세 납부 영수증",
+      "집주인·관리실 통지서·이메일·문자 사본",
+      "법원 서류(Summons / Complaint)와 출석 기한",
+      "수리 요청·응답 기록",
+      "Legal aid·주거 상담 연락처",
+    ],
+    steps: [
+      "통지·법원 서류를 받으면 날짜·사유·답변(Answer) 기한을 캘린더에 적고 무시하지 않습니다.",
+      "Lease와 납부·수리 기록을 모아 사실만 정리합니다. 협상·납부 계획도 가능하면 서면으로 남깁니다.",
+      "USA.gov Housing help·주 Legal aid·테넌트 유니온/핫라인에 서류를 들고 상담을 요청합니다.",
+      "법원 출석이 있으면 통역이 필요하면 미리 요청하고, 합의서 내용을 서명 전에 읽습니다.",
+      "보증금 분쟁은 주가 정한 반환 기한·항목별 공제 설명 요구 절차를 따릅니다.",
+      "이사하게 되면 열쇠 반납·최종 검침·주소 변경·보증금 추적 번호를 남깁니다.",
+    ],
+    links: [
+      {
+        label: "USA.gov – Housing help",
+        url: "https://www.usa.gov/housing",
+      },
+      {
+        label: "CFPB – Renter protections",
+        url: "https://www.consumerfinance.gov/consumer-tools/renter-protections/",
+      },
+      {
+        label: "USA.gov – Legal aid",
+        url: "https://www.usa.gov/legal-aid",
+      },
+      {
+        label: "리스(임대차) 읽기",
+        url: "/guides/housing/lease-basics",
+      },
+      {
+        label: "보증금·디파짓",
+        url: "/guides/housing/security-deposit",
+      },
+      {
+        label: "입주·퇴거 체크리스트",
+        url: "/guides/housing/move-in-out",
+      },
+      {
+        label: "임대 사기 주의",
+        url: "/guides/housing/rental-scams",
+      },
+    ],
+    faq: [
+      {
+        question: "월세를 하루만 늦어도 바로 쫓겨나나요?",
+        answer:
+          "보통은 서면 통지·법정 절차가 필요합니다. 다만 Late fee·통지 기간은 Lease·주법에 따릅니다. 통지를 받으면 바로 기록을 모으세요.",
+      },
+      {
+        question: "집주인이 자물쇠를 바꿔도 되나요?",
+        answer:
+          "많은 주에서 ‘자력 구제’ 강제 퇴거는 불법입니다. 위험하면 경찰·법률 구조에 알리고, 증거를 남기세요.",
+      },
+      {
+        question: "수리를 안 해 주면 월세를 안 내도 되나요?",
+        answer:
+          "임의로 안 내면 퇴거 사유가 될 수 있습니다. 주마다 Repair and deduct·에스크로 등 절차가 다르니 Legal aid에 먼저 확인하세요.",
+      },
+      {
+        question: "보증금을 돌려받지 못하면요?",
+        answer:
+          "주가 정한 기한·항목 설명을 요구하고, 소액재판·법률 구조를 검토하세요. 입주·퇴거 사진이 중요합니다.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·부동산 자문이 아닙니다. 퇴거·임대차 분쟁은 주·시·계약마다 다르므로 공식 안내·Legal aid·자격 있는 변호사를 확인하세요.",
   },
 ];

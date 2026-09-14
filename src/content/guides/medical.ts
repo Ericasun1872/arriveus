@@ -51,6 +51,14 @@ export const medicalGuides: Guide[] = [
         label: "저소득층 보험 가입 안내",
         url: "/guides/medical/low-income-insurance",
       },
+      {
+        label: "정신건강·상담",
+        url: "/guides/medical/mental-health",
+      },
+      {
+        label: "약국·처방전",
+        url: "/guides/medical/pharmacy",
+      },
     ],
     faq: [
       {
@@ -703,5 +711,147 @@ export const medicalGuides: Guide[] = [
     updatedAt: "2026-08",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 안과·시력·보험 자문이 아닙니다. 보장과 비용은 플랜·제공자마다 다르므로 보험사와 클리닉에서 최종 확인하세요. 급격한 시력 변화·심한 통증·외상은 911/ER을 이용하세요.",
+  },
+  {
+    slug: "mental-health",
+    category: "medical",
+    title: "정신건강·상담",
+    summary:
+      "우울·불안·스트레스 때 쓰는 988, 주치의·상담(Therapy)·정신과, 보험 네트워크와 위기 대응의 기본 경로를 정리합니다.",
+    cost: "보험 Copay/Coinsurance·본인부담은 플랜·제공자마다 다름 / 위기선은 보통 무료",
+    methods: ["988 Suicide & Crisis Lifeline", "주치의·Behavioral health", "Therapist / Psychiatrist", "커뮤니티·학교 상담"],
+    overview:
+      "미국에 정착하며 외로움·불안·우울·트라우마를 겪는 분은 많습니다. 정신건강도 의료의 일부입니다. 당장 위급하면 911, 자살·위기 생각은 988(전화·문자)로 연결할 수 있습니다. 한국어 지원 여부는 통화 시 interpreter를 요청해 확인하세요.\n\n일상적으로는 (1) 주치의(PCP)에게 증상을 말하고 Behavioral health 의뢰를 받거나 (2) 보험 In-network Therapist(상담)·Psychiatrist(정신과·약물)를 찾거나 (3) 학교·직장 EAP·커뮤니티 클리닉을 씁니다. Therapy와 약물 처방은 역할이 다를 수 있습니다. 한인 상담사·교회 상담도 도움이 될 수 있으나, 위기·자해 위험은 전문 위기선·ER을 우선하세요.\n\nArriveUS는 진단·치료를 하지 않습니다. ‘약만 먹으면 된다’는 인터넷 처방·검증되지 않은 텔레헬스 광고는 경계하세요.",
+    requirements: [
+      "보험 멤버 ID·Behavioral health 전화 번호",
+      "증상·수면·약물·알레르기 메모",
+      "위기 시 비상 연락처",
+      "선호 언어(한국어)·대면/화상 여부",
+    ],
+    steps: [
+      "위급·자해 위험이 있으면 911 또는 988에 연락합니다. 혼자 견디지 마세요.",
+      "보험 카드 뒷면 Behavioral health / Mental health 번호로 In-network 상담·정신과를 묻습니다.",
+      "주치의에게 증상을 말하고 Referral·검사가 필요한지 확인합니다.",
+      "첫 상담에서 언어·비용(Copay)·취소 정책·약물 처방이 가능한지 확인합니다.",
+      "약물이 나오면 Pharmacy 가이드처럼 약국·리필·부작용을 기록합니다.",
+      "효과가 없거나 악화되면 제공자에게 알리고, 필요하면 2차 의견을 구합니다.",
+    ],
+    links: [
+      {
+        label: "988 Suicide & Crisis Lifeline",
+        url: "https://988lifeline.org/",
+      },
+      {
+        label: "SAMHSA – FindTreatment",
+        url: "https://findtreatment.gov/",
+      },
+      {
+        label: "USA.gov – Mental health",
+        url: "https://www.usa.gov/mental-health-services",
+      },
+      {
+        label: "병원·의사 찾기",
+        url: "/guides/medical/find-doctor",
+      },
+      {
+        label: "약국·처방전",
+        url: "/guides/medical/pharmacy",
+      },
+      {
+        label: "911·응급·재난",
+        url: "/guides/life/emergency-911",
+      },
+    ],
+    faq: [
+      {
+        question: "보험 없이 상담을 받을 수 있나요?",
+        answer:
+          "커뮤니티 클리닉·슬라이딩 스케일·학교·종교 기관 상담이 있는 경우가 있습니다. FindTreatment.gov와 지역 211을 검색하세요.",
+      },
+      {
+        question: "Therapist와 Psychiatrist 차이는요?",
+        answer:
+          "Therapist는 상담이 중심이고, Psychiatrist는 의사로 약물 처방이 가능한 경우가 많습니다. 플랜·주마다 직함 규정이 다릅니다.",
+      },
+      {
+        question: "한국어로 상담하고 싶어요.",
+        answer:
+          "보험 디렉터리 Language 필터·한인 네트워크·통역을 함께 쓰세요. 위기선에서는 interpreter를 요청할 수 있습니다.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 의료·정신건강 자문이 아닙니다. 위기·자해·타해 위험이 있으면 911 또는 988을 이용하세요. 진단·처방은 자격 있는 의료인과 확인하세요.",
+  },
+  {
+    slug: "pharmacy",
+    category: "medical",
+    title: "약국·처방전",
+    summary:
+      "처방전(Rx) 받기, 약국 선택, 보험 Formulary·Prior authorization, 리필·이송(Transfer)의 기본 순서를 정리합니다.",
+    cost: "Copay·본인부담은 플랜·약·약국마다 다름",
+    methods: ["의사 전자처방", "체인·독립 약국", "메일 오더", "GoodRx 등 할인 비교(보험 외)"],
+    overview:
+      "미국에서 처방약(Prescription)은 보통 의사·클리닉이 약국으로 e-Prescribe하고, 환자가 약국 앱·창구에서 찾아 갑니다. 보험마다 Formulary(급여 약 목록)·Tier·Prior authorization(사전승인)·Quantity limit가 있어, 같은 약도 약국·보험에 따라 가격이 크게 달라질 수 있습니다.\n\n리필(Refill) 횟수·만료, 만성약 90일 메일 오더, 약국 간 Transfer도 자주 나옵니다. 항생제·향정신성 등 Controlled substance는 규칙이 더 엄격합니다. 처방 없이 ‘한국 약 대행 수입’·검증되지 않은 해외 사이트는 세관·안전 위험이 있습니다.\n\n응급·알레르기·과다복용 의심은 911/Poison Control(1-800-222-1222)을 우선하세요.",
+    requirements: [
+      "보험 멤버 ID·Rx BIN/PCN/Group(카드에 있는 경우)",
+      "처방한 의사·클리닉 이름",
+      "약 이름·용량·알레르기·복용 중인 약 목록",
+      "선호 약국 주소·앱 계정",
+    ],
+    steps: [
+      "클리닉에서 어느 약국으로 보낼지 정하고, 보험 카드를 제시합니다.",
+      "약국 문자·앱에서 Ready 알림을 확인한 뒤 ID·보험으로 Pickup합니다.",
+      "가격이 높으면 Formulary 대체약·Prior auth·다른 약국·제조사 쿠폰·할인 카드를 약사·클리닉에 묻습니다.",
+      "리필이 남았는지, 자동 리필·90일 공급이 가능한지 확인합니다.",
+      "이사·여행 시 Transfer 또는 새 처방이 필요한지 약국에 문의합니다.",
+      "부작용·상호작용이 있으면 약사·처방 의사에게 알리고, 위급하면 ER/911입니다.",
+    ],
+    links: [
+      {
+        label: "USA.gov – Prescription drugs",
+        url: "https://www.usa.gov/prescription-drugs",
+      },
+      {
+        label: "FDA – Buying medicines online",
+        url: "https://www.fda.gov/drugs/buy-medicines-internet-scams",
+      },
+      {
+        label: "Poison Control",
+        url: "https://www.poison.org/",
+      },
+      {
+        label: "건강보험 가입",
+        url: "/guides/medical/health-insurance",
+      },
+      {
+        label: "병원비·청구서",
+        url: "/guides/medical/medical-bills",
+      },
+      {
+        label: "정신건강·상담",
+        url: "/guides/medical/mental-health",
+      },
+    ],
+    faq: [
+      {
+        question: "보험이 약을 거부하면요?",
+        answer:
+          "Prior authorization·대체약·이의(Appeal)가 가능한 경우가 많습니다. 약국 거절 사유와 클리닉에 문의하세요.",
+      },
+      {
+        question: "한국에서 가져온 약을 계속 먹어도 되나요?",
+        answer:
+          "세관·처방 규칙·성분 문제가 있을 수 있습니다. 미국 의사·약사와 확인하세요. 개인 수입 ‘대행’은 위험합니다.",
+      },
+      {
+        question: "제네릭이 뭔가요?",
+        answer:
+          "브랜드와 같은 성분의 복제약으로, 보험이 제네릭을 우선하는 경우가 많습니다. 약사에게 가능 여부를 묻세요.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 의료·약학 자문이 아닙니다. 처방·복용·가격은 의사·약사·보험사 안내를 따르세요. 과다복용·심한 알레르기는 911을 이용하세요.",
   },
 ];

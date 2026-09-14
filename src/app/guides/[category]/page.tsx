@@ -9,6 +9,7 @@ import {
   getCategoryFaqs,
   getGuidesByCategory,
 } from "@/lib/guides";
+import { siteConfig } from "@/lib/site";
 
 type PageProps = {
   params: Promise<{ category: string }>;
@@ -150,7 +151,7 @@ export default async function CategoryPage({ params }: PageProps) {
               온라인 구직 가이드
             </Link>
             <Link
-              href="/jobs"
+              href={`mailto:${siteConfig.contactEmail}?subject=${encodeURIComponent("ArriveUS 채용 광고 문의")}`}
               className="inline-flex rounded-lg border border-[var(--brand-border)] bg-white/70 px-4 py-2.5 text-sm font-semibold text-[var(--brand)] hover:bg-white"
             >
               채용·광고 문의
