@@ -625,6 +625,14 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I would like to compare Medicare Part D prescription drug plans.",
     },
     {
+      ko: "Annual Notice of Change(ANOC)를 받았는데 약 값이 바뀌나요?",
+      en: "I received an Annual Notice of Change. Will my prescription costs change?",
+    },
+    {
+      ko: "Open Enrollment 기간에 약 플랜을 바꾸고 싶습니다.",
+      en: "I want to change my Medicare drug plan during Open Enrollment.",
+    },
+    {
       ko: "가입이 늦으면 페널티가 있나요?",
       en: "Is there a late enrollment penalty if I delay Medicare?",
     },

@@ -171,22 +171,24 @@ export const medicalGuides: Guide[] = [
     category: "medical",
     title: "65세 메디케어 가입 (Medicare)",
     summary:
-      "65세 Medicare Part A·B·C·D 차이, 가입 시기, 지연 페널티, Original vs Advantage 비교와 신청 절차를 정리한 가이드입니다.",
-    cost: "Part A는 근로 크레딧에 따라 보험료 0원인 경우 많음 / Part B·D는 월 보험료·자기부담 있음 (연도·소득에 따라 변동)",
+      "65세 Medicare Part A·B·C·D 차이, 가입 시기, 지연 페널티, 그리고 처방약(Part D) 요금이 해마다 바뀔 수 있는 이유와 연간 점검 방법을 정리합니다.",
+    cost: "Part A는 근로 크레딧에 따라 보험료 0원인 경우 많음 / Part B·D·약 본인부담은 연도·소득·플랜·Formulary에 따라 변동",
     methods: [
       "Original Medicare (A+B) + Part D",
       "Medicare Advantage (Part C)",
       "Medigap(보충보험, Advantage와 동시 가입 불가)",
+      "매년 Plan Finder·ANOC로 약 비용 재비교",
       "SSA / Medicare.gov 온라인·전화 신청",
     ],
     overview:
-      "Medicare는 주로 65세 이상(일부는 장애·특정 질환으로 65세 미만)을 위한 미국 연방 건강보험입니다. 한국의 국민건강보험처럼 ‘전 국민 자동 가입’이 아니라, 자격·가입 시기·어떤 Part를 고르는지에 따라 보장과 비용이 달라집니다. 크게 Part A(병원·입원 등), Part B(외래·의사 진료 등), Part D(처방약)로 나뉘고, Part A+B를 민간 플랜으로 묶은 형태가 Part C(Medicare Advantage)입니다. Original Medicare를 쓰면 의사·병원 선택의 폭이 넓은 편이고, Advantage는 네트워크·추가 혜택(치과·시력 등)이 플랜마다 다릅니다. Medigap은 Original Medicare의 본인 부담을 줄이는 보충보험이며 Advantage와 함께 쓸 수 없습니다. 영주권자 등 합법 체류자도 근로 크레딧(대략 10년분)·배우자 자격·거주 요건 등에 따라 가입 조건이 달라질 수 있고, 체류 서류가 없는 경우에는 일반적으로 Medicare 대상이 아닙니다. 가입이 늦으면 불이익이 생길 수 있습니다. Part B는 자격이 있는데도 직장 보험 등 예외 없이 가입을 미루면, 늦은 기간(12개월 단위)마다 표준 보험료의 약 10%가 가산되는 지연 가입 페널티가 붙을 수 있고, 이 가산은 보통 계속 유지됩니다. Part D도 처방약 ‘인정 보장(creditable coverage)’ 없이 일정 기간(보통 63일 이상) 공백이 있으면 월 페널티가 붙을 수 있습니다. 반대로 직장·배우자 직장 보험처럼 인정되는 보장이 있으면 Special Enrollment로 페널티 없이 나중에 가입하는 길이 있는 경우가 많습니다. 65세가 되기 몇 달 전 Initial Enrollment Period를 Medicare.gov·Social Security에서 미리 확인하세요.",
+      "Medicare는 주로 65세 이상(일부는 장애·특정 질환으로 65세 미만)을 위한 미국 연방 건강보험입니다. 한국의 국민건강보험처럼 ‘전 국민 자동 가입’이 아니라, 자격·가입 시기·어떤 Part를 고르는지에 따라 보장과 비용이 달라집니다. 크게 Part A(병원·입원 등), Part B(외래·의사 진료 등), Part D(처방약)로 나뉘고, Part A+B를 민간 플랜으로 묶은 형태가 Part C(Medicare Advantage)입니다. Original Medicare를 쓰면 의사·병원 선택의 폭이 넓은 편이고, Advantage는 네트워크·추가 혜택(치과·시력 등)이 플랜마다 다릅니다. Medigap은 Original Medicare의 본인 부담을 줄이는 보충보험이며 Advantage와 함께 쓸 수 없습니다. 영주권자 등 합법 체류자도 근로 크레딧(대략 10년분)·배우자 자격·거주 요건 등에 따라 가입 조건이 달라질 수 있고, 체류 서류가 없는 경우에는 일반적으로 Medicare 대상이 아닙니다. 가입이 늦으면 불이익이 생길 수 있습니다. Part B는 자격이 있는데도 직장 보험 등 예외 없이 가입을 미루면, 늦은 기간(12개월 단위)마다 표준 보험료의 약 10%가 가산되는 지연 가입 페널티가 붙을 수 있고, 이 가산은 보통 계속 유지됩니다. Part D도 처방약 ‘인정 보장(creditable coverage)’ 없이 일정 기간(보통 63일 이상) 공백이 있으면 월 페널티가 붙을 수 있습니다. 반대로 직장·배우자 직장 보험처럼 인정되는 보장이 있으면 Special Enrollment로 페널티 없이 나중에 가입하는 길이 있는 경우가 많습니다. 65세가 되기 몇 달 전 Initial Enrollment Period를 Medicare.gov·Social Security에서 미리 확인하세요.\n\n이미 드시던 약이 있어도 Part D·Advantage 약 보장의 월 보험료·디덕터블·Copay·Formulary(급여 약 목록)·Tier·Preferred pharmacy는 해마다 바뀔 수 있습니다. 매년 가을 플랜이 보내는 Annual Notice of Change(ANOC)에 내년(1월부터) 변경이 요약됩니다. 약을 그대로 먹어도 요금이 오르거나, 약이 Tier가 바뀌거나 목록에서 빠질 수 있으니 Open Enrollment(보통 10/15–12/7)에 Medicare Plan Finder에 약 목록을 넣어 다시 비교하는 습관이 중요합니다. 변경이 있으면 의사·약사와 대체약·Exception(예외 신청)을 상의하세요. 상세 약국 절차는 ArriveUS ‘약국·처방전’ 가이드도 참고하세요.",
     requirements: [
       "만 65세 도래(또는 해당되는 장애·특수 자격)",
       "Social Security / Medicare 자격 조회에 필요한 SSN·신분 정보",
       "합법 체류·거주 관련 서류 (해당 시) 및 근로·크레딧 이력",
       "현재 직장·배우자 보험이 있으면 그 보장 내용 (지연 가입 예외·Creditable coverage 확인용)",
-      "복용 약 목록 (Part D 플랜 비교용)",
+      "복용 약 목록·용량·약국 이름 (Part D 플랜·연간 재비교용)",
+      "가을에 받는 ANOC·Evidence of Coverage 안내문",
     ],
     steps: [
       "65세가 되기 약 3개월 전, SSA.gov 또는 Medicare.gov에서 Medicare 자격·Initial Enrollment Period(보통 생일 전 3개월~당월~후 3개월)를 확인합니다.",
@@ -196,6 +198,7 @@ export const medicalGuides: Guide[] = [
       "가입을 미룰 경우 Part B·D 지연 페널티 대상인지, 직장 보험이 ‘인정 보장’인지 보험사·SSA에 확인합니다. 막연히 ‘나중에’ 하면 보험료가 영구히 오를 수 있습니다.",
       "필요하면 Medigap(보충보험) 또는 Extra Help·Medicaid 중복 자격도 거주 주 기준으로 확인합니다.",
       "가입 확인서·Medicare 카드·멤버 ID를 저장하고, 병원 방문 전에 ‘Medicare를 받는지(Accept Medicare)’를 확인합니다.",
+      "매년 가을 ANOC를 읽고, Open Enrollment에 Plan Finder에 현재 약·약국을 넣어 내년 예상 비용을 다시 비교합니다. 필요하면 플랜을 바꿉니다.",
     ],
     links: [
       {
@@ -207,12 +210,20 @@ export const medicalGuides: Guide[] = [
         url: "https://www.medicare.gov/basics/get-started-with-medicare",
       },
       {
-        label: "Social Security – Medicare",
-        url: "https://www.ssa.gov/medicare/",
+        label: "Medicare – Annual Notice of Change (ANOC)",
+        url: "https://www.medicare.gov/basics/forms-publications-mailings/mailings/costs-and-coverage/upcoming-plan-changes",
       },
       {
         label: "Medicare Plan Finder",
         url: "https://www.medicare.gov/plan-compare",
+      },
+      {
+        label: "Social Security – Medicare",
+        url: "https://www.ssa.gov/medicare/",
+      },
+      {
+        label: "약국·처방전",
+        url: "/guides/medical/pharmacy",
       },
       {
         label: "건강보험 가입 가이드",
@@ -235,9 +246,25 @@ export const medicalGuides: Guide[] = [
         answer:
           "의사·병원 선택의 폭(Original)과 네트워크·추가 혜택(Advantage)의 트레이드오프입니다. 복용 약·주치의·예산에 맞춰 Plan Finder로 비교하는 것이 좋습니다.",
       },
+      {
+        question: "예전에 먹던 약 값이 해마다 달라지나요?",
+        answer:
+          "그럴 수 있습니다. Part D·Advantage 약 플랜은 보험료·디덕터블·Copay·Formulary·Tier가 연도마다 바뀔 수 있습니다. 가을 ANOC를 읽고 Open Enrollment에 Plan Finder로 다시 비교하세요.",
+      },
+      {
+        question: "ANOC가 뭐고 언제 오나요?",
+        answer:
+          "Annual Notice of Change로, 보통 가을에 플랜이 보내 내년(1월부터) 보장·비용 변경을 요약합니다. 못 받으면 플랜에 요청하세요.",
+      },
+      {
+        question: "약 보장 기간을 바꿀 수 있는 때는요?",
+        answer:
+          "많은 경우 Open Enrollment(보통 10/15–12/7)에 Part D·Advantage를 바꾸면 다음 해 1월 1일부터 적용됩니다. 최신 일정은 Medicare.gov를 확인하세요.",
+      },
     ],
+    updatedAt: "2026-09",
     disclaimer:
-      "ArriveUS 가이드는 일반적인 참고 정보이며 의료·보험 자문이 아닙니다. Medicare 자격·보험료·페널티·플랜 내용은 연도와 개인 상황(근로 이력, 체류 신분, 소득, 직장 보험 등)에 따라 달라지므로 Medicare.gov·Social Security·공인 상담 채널에서 최종 확인하세요.",
+      "ArriveUS 가이드는 일반적인 참고 정보이며 의료·보험 자문이 아닙니다. Medicare 자격·보험료·페널티·플랜·처방약 비용은 연도와 개인 상황(근로 이력, 체류 신분, 소득, 직장 보험, 복용 약 등)에 따라 달라지므로 Medicare.gov·Social Security·공인 상담 채널에서 최종 확인하세요.",
   },
   {
     slug: "find-doctor",
@@ -792,18 +819,20 @@ export const medicalGuides: Guide[] = [
     cost: "Copay·본인부담은 플랜·약·약국마다 다름",
     methods: ["의사 전자처방", "체인·독립 약국", "메일 오더", "GoodRx 등 할인 비교(보험 외)"],
     overview:
-      "미국에서 처방약(Prescription)은 보통 의사·클리닉이 약국으로 e-Prescribe하고, 환자가 약국 앱·창구에서 찾아 갑니다. 보험마다 Formulary(급여 약 목록)·Tier·Prior authorization(사전승인)·Quantity limit가 있어, 같은 약도 약국·보험에 따라 가격이 크게 달라질 수 있습니다.\n\n리필(Refill) 횟수·만료, 만성약 90일 메일 오더, 약국 간 Transfer도 자주 나옵니다. 항생제·향정신성 등 Controlled substance는 규칙이 더 엄격합니다. 처방 없이 ‘한국 약 대행 수입’·검증되지 않은 해외 사이트는 세관·안전 위험이 있습니다.\n\n응급·알레르기·과다복용 의심은 911/Poison Control(1-800-222-1222)을 우선하세요.",
+      "미국에서 처방약(Prescription)은 보통 의사·클리닉이 약국으로 e-Prescribe하고, 환자가 약국 앱·창구에서 찾아 갑니다. 보험마다 Formulary(급여 약 목록)·Tier·Prior authorization(사전승인)·Quantity limit가 있어, 같은 약도 약국·보험에 따라 가격이 크게 달라질 수 있습니다.\n\n리필(Refill) 횟수·만료, 만성약 90일 메일 오더, 약국 간 Transfer도 자주 나옵니다. 항생제·향정신성 등 Controlled substance는 규칙이 더 엄격합니다. 처방 없이 ‘한국 약 대행 수입’·검증되지 않은 해외 사이트는 세관·안전 위험이 있습니다.\n\n65세 Medicare(Part D 또는 Advantage 약 보장)를 쓰는 분은, 예전에 먹던 약이어도 해마다 보험료·Copay·Formulary가 바뀔 수 있습니다. 가을 ANOC와 Open Enrollment에 Plan Finder로 다시 비교하는 방법은 ‘65세 메디케어’ 가이드를 보세요.\n\n응급·알레르기·과다복용 의심은 911/Poison Control(1-800-222-1222)을 우선하세요.",
     requirements: [
       "보험 멤버 ID·Rx BIN/PCN/Group(카드에 있는 경우)",
       "처방한 의사·클리닉 이름",
       "약 이름·용량·알레르기·복용 중인 약 목록",
       "선호 약국 주소·앱 계정",
+      "Medicare면 Part D/Advantage 멤버 ID·ANOC(해당 시)",
     ],
     steps: [
       "클리닉에서 어느 약국으로 보낼지 정하고, 보험 카드를 제시합니다.",
       "약국 문자·앱에서 Ready 알림을 확인한 뒤 ID·보험으로 Pickup합니다.",
       "가격이 높으면 Formulary 대체약·Prior auth·다른 약국·제조사 쿠폰·할인 카드를 약사·클리닉에 묻습니다.",
       "리필이 남았는지, 자동 리필·90일 공급이 가능한지 확인합니다.",
+      "Medicare 약 보장이면 매년 가을 약 목록·비용을 Plan Finder로 재확인하고, 필요하면 플랜을 바꿉니다.",
       "이사·여행 시 Transfer 또는 새 처방이 필요한지 약국에 문의합니다.",
       "부작용·상호작용이 있으면 약사·처방 의사에게 알리고, 위급하면 ER/911입니다.",
     ],
@@ -819,6 +848,14 @@ export const medicalGuides: Guide[] = [
       {
         label: "Poison Control",
         url: "https://www.poison.org/",
+      },
+      {
+        label: "Medicare Plan Finder",
+        url: "https://www.medicare.gov/plan-compare",
+      },
+      {
+        label: "65세 메디케어 가입",
+        url: "/guides/medical/medicare",
       },
       {
         label: "건강보험 가입",
@@ -849,9 +886,14 @@ export const medicalGuides: Guide[] = [
         answer:
           "브랜드와 같은 성분의 복제약으로, 보험이 제네릭을 우선하는 경우가 많습니다. 약사에게 가능 여부를 묻세요.",
       },
+      {
+        question: "메디케어인데 작년에 먹던 약 값이 올랐어요.",
+        answer:
+          "Part D·Advantage는 해마다 조건이 바뀔 수 있습니다. ANOC를 확인하고 Open Enrollment에 Plan Finder로 비교하세요. ‘65세 메디케어’ 가이드를 참고하세요.",
+      },
     ],
     updatedAt: "2026-09",
     disclaimer:
-      "ArriveUS 가이드는 일반적인 참고 정보이며 의료·약학 자문이 아닙니다. 처방·복용·가격은 의사·약사·보험사 안내를 따르세요. 과다복용·심한 알레르기는 911을 이용하세요.",
+      "ArriveUS 가이드는 일반적인 참고 정보이며 의료·약학 자문이 아닙니다. 처방·복용·가격은 의사·약사·보험사·Medicare.gov 안내를 따르세요. 과다복용·심한 알레르기는 911을 이용하세요.",
   },
 ];

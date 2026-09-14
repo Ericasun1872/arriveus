@@ -132,7 +132,12 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
     {
       question: "처방약은 어떻게 받나요?",
       answer:
-        "의사가 약국으로 전자처방하는 경우가 많습니다. Formulary·리필·Prior auth는 ‘약국·처방전’ 가이드를 보세요.",
+        "의사가 약국으로 전자처방하는 경우가 많습니다. Formulary·리필·Prior auth는 ‘약국·처방전’ 가이드를 보세요. 메디케어면 약 값이 해마다 바뀔 수 있어 ‘65세 메디케어’ 가이드의 함께 확인하세요.",
+    },
+    {
+      question: "메디케어 약값이 작년이랑 다른데요?",
+      answer:
+        "Part D·Advantage는 해마다 Formulary·본인부담이 바뀔 수 있습니다. 가을 ANOC와 Open Enrollment에 Plan Finder로 비교하세요.",
     },
   ],
   tax: [
