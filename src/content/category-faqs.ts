@@ -71,6 +71,11 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
         "기한·사건 번호·납부·Contest·교통학교·첫 위반 유예(기간 내 무위반 시 점수 면제 등) 문구를 확인하세요. 무시하면 연체·면허 문제로 커질 수 있습니다.",
     },
     {
+      question: "DUI·음주운전에 걸리면요?",
+      answer:
+        "일반 티켓과 다릅니다. 체포·Jail 부킹·견인, 형사 법원과 DMV 행정 정지가 따로 움직일 수 있고 비용도 여러 갈래입니다. ArriveUS ‘DUI·음주·약물 운전 단속’ 가이드와 변호사를 우선하세요.",
+    },
+    {
       question: "운전은 안 하는데 신분증이 필요해요.",
       answer:
         "많은 주에서 운전면허 아닌 State ID를 발급합니다. ArriveUS ‘주 신분증’·REAL ID 가이드와 거주 주 DMV를 확인하세요.",

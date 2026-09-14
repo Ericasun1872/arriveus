@@ -380,6 +380,10 @@ export const dmvGuides: Guide[] = [
         label: "교통 티켓·벌금·운전 점수",
         url: "/guides/dmv/traffic-ticket",
       },
+      {
+        label: "DUI·음주·약물 운전 단속",
+        url: "/guides/dmv/dui",
+      },
     ],
     faq: [
       {
@@ -924,6 +928,10 @@ export const dmvGuides: Guide[] = [
         label: "교통 티켓·벌금·운전 점수",
         url: "/guides/dmv/traffic-ticket",
       },
+      {
+        label: "DUI·음주·약물 운전 단속",
+        url: "/guides/dmv/dui",
+      },
     ],
     faq: [
       {
@@ -965,7 +973,7 @@ export const dmvGuides: Guide[] = [
     cost: "벌금·법원 수수료·교통학교·보험료 변동은 케이스마다 다름",
     methods: ["우편·현장 Citation 확인", "납부 / Contest / 교통학교", "유예·점수 면제 옵션(법원 안내)", "DMV 운전 기록·점수"],
     overview:
-      "미국에서 흔한 이동 위반(Moving violation)에는 과속(Speeding), 운전 중 휴대폰(Handheld phone / distracted driving), 신호·정지선 위반, 차로 변경 실수 등이 있습니다. 현장에서 Citation(티켓)을 받기도 하고, 카메라·우편 단속·법원 고지서가 집으로 오기도 합니다. 처음이면 ‘편지처럼 생긴 고지서’만 보고 무시하기 쉬운데, 기한·사건 번호·선택지(납부·다툼·학교·유예)를 놓치면 연체·추가 벌금·면허·등록 문제로 커질 수 있습니다.\n\n많은 법원·주에서 첫 위반·경미한 과속에 대해 Deferred disposition / diversion / traffic school / defensive driving처럼, 일정 기간 추가 위반이 없고 조건을 지키면 유죄 기록·점수 반영을 줄이거나 사건을 기각하는 옵션을 안내합니다. 어떤 분은 우편 고지서에 ‘첫 티켓’ 관련 서면(편지·양식)을 내고, 예: 1년 안에 같은 종류의 티켓을 다시 받지 않으면 점수를 면제·유예한다는 조건을 본 경험이 있습니다. 이름·기간·자격·수수료는 주·시·법원마다 완전히 다르므로, 고지서에 적힌 옵션과 해당 법원 웹사이트만 따르세요. ‘무조건 점수가 안 쌓인다’고 단정할 수 없습니다.\n\n운전 점수(Points)는 주 DMV가 운전 기록에 위반을 누적하는 방식입니다. 점수가 일정 수준을 넘으면 경고·교육·면허 정지(Suspension)·취소로 이어질 수 있고, 보험사도 기록·클레임을 보고 보험료를 올릴 수 있습니다. 점수 숫자·정지 기준은 주마다 다르니 거주 주 DMV Driving record / Points 안내를 확인하세요.\n\nArriveUS는 개별 사건을 변호하지 않습니다. DUI·무면허·사고 동반·매우 높은 과속·형사 이슈는 변호사·legal aid를 우선하세요.",
+      "미국에서 흔한 이동 위반(Moving violation)에는 과속(Speeding), 운전 중 휴대폰(Handheld phone / distracted driving), 신호·정지선 위반, 차로 변경 실수 등이 있습니다. 현장에서 Citation(티켓)을 받기도 하고, 카메라·우편 단속·법원 고지서가 집으로 오기도 합니다. 처음이면 ‘편지처럼 생긴 고지서’만 보고 무시하기 쉬운데, 기한·사건 번호·선택지(납부·다툼·학교·유예)를 놓치면 연체·추가 벌금·면허·등록 문제로 커질 수 있습니다.\n\n많은 법원·주에서 첫 위반·경미한 과속에 대해 Deferred disposition / diversion / traffic school / defensive driving처럼, 일정 기간 추가 위반이 없고 조건을 지키면 유죄 기록·점수 반영을 줄이거나 사건을 기각하는 옵션을 안내합니다. 어떤 분은 우편 고지서에 ‘첫 티켓’ 관련 서면(편지·양식)을 내고, 예: 1년 안에 같은 종류의 티켓을 다시 받지 않으면 점수를 면제·유예한다는 조건을 본 경험이 있습니다. 이름·기간·자격·수수료는 주·시·법원마다 완전히 다르므로, 고지서에 적힌 옵션과 해당 법원 웹사이트만 따르세요. ‘무조건 점수가 안 쌓인다’고 단정할 수 없습니다.\n\n운전 점수(Points)는 주 DMV가 운전 기록에 위반을 누적하는 방식입니다. 점수가 일정 수준을 넘으면 경고·교육·면허 정지(Suspension)·취소로 이어질 수 있고, 보험사도 기록·클레임을 보고 보험료를 올릴 수 있습니다. 점수 숫자·정지 기준은 주마다 다르니 거주 주 DMV Driving record / Points 안내를 확인하세요.\n\nArriveUS는 개별 사건을 변호하지 않습니다. DUI·무면허·사고 동반·매우 높은 과속·형사 이슈는 ‘DUI·음주·약물 운전 단속’ 가이드와 변호사·legal aid를 우선하세요.",
     requirements: [
       "티켓·우편 고지서 원본 (사건 번호·위반 코드·기한)",
       "운전면허·등록·보험 정보 (요청 시)",
@@ -1010,6 +1018,10 @@ export const dmvGuides: Guide[] = [
         label: "주소 변경",
         url: "/guides/dmv/address-change",
       },
+      {
+        label: "DUI·음주·약물 운전 단속",
+        url: "/guides/dmv/dui",
+      },
     ],
     faq: [
       {
@@ -1042,10 +1054,110 @@ export const dmvGuides: Guide[] = [
         answer:
           "그래도 책임이 생길 수 있습니다. DMV·법원에 주소를 업데이트하고, 놓친 기한이 있으면 바로 법원에 연락하세요. ArriveUS 주소 변경 가이드도 참고하세요.",
       },
+      {
+        question: "DUI·음주운전도 이 가이드인가요?",
+        answer:
+          "아니요. DUI는 형사·DMV 행정 절차가 따로 움직입니다. ‘DUI·음주·약물 운전 단속’ 가이드와 변호사를 우선하세요.",
+      },
     ],
     updatedAt: "2026-08",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 법률·형사·보험 자문이 아닙니다. 티켓·점수·유예·정지 규칙은 주·시·법원마다 다르므로 고지서·법원·DMV 공식 안내와 필요 시 변호사를 확인하세요.",
+  },
+  {
+    slug: "dui",
+    category: "dmv",
+    title: "DUI·음주·약물 운전 단속",
+    summary:
+      "음주·약물 운전(DUI/DWI) 단속·체포 직후 어디로 가는지, 흔한 비용 항목, 형사 법원과 DMV 면허 정지가 따로 움직이는 점을 체크리스트로 정리합니다.",
+    cost: "보석·견인·변호사·벌금·교육·인터락·보험료 등—금액은 주·사건마다 크게 다름",
+    methods: ["현장 정차·체포·부킹", "보석·석방·견인소", "형사 법원 + DMV 행정", "변호사·legal aid"],
+    overview:
+      "DUI(Driving Under the Influence) / DWI 등 명칭은 주마다 다르지만, 알코올·약물 영향 아래 운전으로 단속되면 일반 과속 티켓보다 훨씬 무겁습니다. 가장 좋은 대처는 마시거나 약이 있으면 운전하지 않는 것(라이드셰어·지정 운전자·대중교통)입니다.\n\n단속에 걸리면 흔한 흐름은 대략 이렇습니다. (1) 갓길 등 안전 정차 후 면허·등록·보험 제시 (2) 현장 검사·체포 여부는 경찰·주 절차에 따름 (3) 체포되면 보통 경찰서·카운티 Jail로 이동해 Booking(지문·사진·소지품 보관) (4) Bail(보석)·OR(본인 출석 약속) 등으로 석방되거나, 법원 일정까지 구금될 수 있음 (5) 차는 Tow(견인)되어 Impound lot에 가는 경우가 많음. 석방 서류에 다음 출석일·조건·차 찾는 방법이 적혀 있는지 꼭 확인하세요. 정확한 장소·시간은 관할·사건마다 다릅니다.\n\n비용도 ‘티켓 한 장’이 아닙니다. 흔히 겹치는 청구·지출은 보석금(또는 bail bond 수수료), 견인·보관료, 변호사 수임, 법원 벌금·수수료, DUI 교육·알코올 평가, Ignition interlock(시동 잠금장치) 설치·월 비용, DMV 행정 수수료, 보험료 인상입니다. ArriveUS는 금액을 보장하지 않으며, 청구서·영수증·법원·DMV 안내를 기준으로 하세요.\n\n중요한 점은 형사 사건(Criminal court)과 DMV/DOL 행정 면허 정지(Administrative suspension)가 따로 진행되는 경우가 많다는 것입니다. 법원만 기다리다 DMV 이의·청문 기한을 놓치면 면허가 먼저 정지될 수 있습니다. 영어가 어려우면 interpreter·변호사·USA.gov Legal aid를 요청하세요. 이민 신분·취업·유학에도 영향이 있을 수 있어, 필요하면 형사 변호사와 별도로 이민 상담을 검토합니다.\n\nArriveUS는 개별 사건을 변호하지 않으며, 현장 검사 거부·진술 전략 등 법률 전술을 안내하지 않습니다. 체포·기소되면 가능한 한 빨리 자격 있는 변호사 또는 legal aid에 연락하세요.",
+    requirements: [
+      "석방·법원 서류 (사건 번호·다음 출석일·조건)",
+      "DMV/DOL 행정 정지·청문 관련 통지·기한",
+      "견인소(Impound) 위치·보관료·차량 인수 조건",
+      "변호사·legal aid 연락처",
+      "보험사 연락·증권 정보 (계약·청구 안내에 따라)",
+    ],
+    steps: [
+      "안전히 정차하고 요청 시 면허·등록·보험을 제시합니다. 영어가 안 되면 interpreter가 필요하다고 말합니다.",
+      "체포·부킹이 되면 Jail/경찰서에서 받는 서류의 출석일·보석·석방 조건을 사진·메모로 남깁니다. 가족·친구에게 위치와 사건 번호를 알립니다.",
+      "차가 견인됐다면 Impound lot 이름·주소·영업시간·보관료·인수에 필요한 ID·소유 증명을 확인합니다.",
+      "석방 직후 형사 법원 기한과 DMV 행정 면허 통지·이의/청문 기한을 캘린더에 따로 적습니다. 두 트랙을 혼동하지 마세요.",
+      "변호사 또는 legal aid에 연락하고, 보험·직장·학교 안내에 따라 필요한 통지를 합니다. 임의로 기한을 넘기지 마세요.",
+      "이후 벌금·교육·인터락·보호관찰 등 법원·DMV 명령을 문서로 확인하고, 영수증을 보관합니다.",
+    ],
+    links: [
+      {
+        label: "NHTSA – Drunk driving",
+        url: "https://www.nhtsa.gov/risky-driving/drunk-driving",
+      },
+      {
+        label: "NHTSA – Drug-impaired driving",
+        url: "https://www.nhtsa.gov/risky-driving/drug-impaired-driving",
+      },
+      {
+        label: "USA.gov – Legal aid",
+        url: "https://www.usa.gov/legal-aid",
+      },
+      {
+        label: "USA.gov – State motor vehicle services",
+        url: "https://www.usa.gov/state-motor-vehicle-services",
+      },
+      {
+        label: "교통사고·단속·티켓",
+        url: "/guides/dmv/car-accident",
+      },
+      {
+        label: "교통 티켓·벌금·운전 점수",
+        url: "/guides/dmv/traffic-ticket",
+      },
+      {
+        label: "자동차 보험 기초",
+        url: "/guides/dmv/auto-insurance",
+      },
+      {
+        label: "911·응급·재난",
+        url: "/guides/life/emergency-911",
+      },
+    ],
+    faq: [
+      {
+        question: "단속에 잡히면 바로 어디로 가나요?",
+        answer:
+          "체포되면 보통 경찰서나 카운티 Jail에서 Booking을 합니다. 이후 보석·OR 등으로 석방되거나 구금이 이어질 수 있고, 차는 견인소로 가는 경우가 많습니다. 관할·사건마다 다릅니다.",
+      },
+      {
+        question: "비용은 대략 무엇이 나오나요?",
+        answer:
+          "보석(또는 bail bond 수수료), 견인·보관료, 변호사, 법원 벌금·수수료, DUI 교육·평가, 시동 잠금장치, DMV 수수료, 보험료 인상 등이 겹칠 수 있습니다. 금액은 보장할 수 없으니 청구서·공식 안내를 보세요.",
+      },
+      {
+        question: "법원만 가면 면허가 유지되나요?",
+        answer:
+          "아니요. 많은 주에서 DMV 행정 정지가 형사 사건과 별도로 빨리 진행됩니다. DMV 통지의 이의·청문 기한을 따로 확인하세요.",
+      },
+      {
+        question: "과속 티켓처럼 우편으로 끝내나요?",
+        answer:
+          "DUI는 보통 형사 절차라 출석·변호사·DMV 행정이 따릅니다. ‘교통 티켓’ 가이드의 납부·유예 방식으로 처리한다고 가정하지 마세요.",
+      },
+      {
+        question: "영어가 안 되면요?",
+        answer:
+          "Interpreter를 요청하고, USA.gov Legal aid·변호사에게 언어 지원을 물어보세요. 중요한 기한은 번역·메모로 남기세요.",
+      },
+      {
+        question: "이민 신분에도 영향이 있나요?",
+        answer:
+          "유죄·특정 기록은 비자·영주·시민권·취업에 영향을 줄 수 있습니다. 형사 변호사와 필요 시 이민 변호사를 함께 검토하세요. ArriveUS는 이민 대리를 하지 않습니다.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률·형사·이민·보험 자문이 아닙니다. DUI/DWI 절차·처벌·비용·면허 정지는 주·시·사건마다 다르므로 변호사·법원·DMV 공식 안내를 확인하세요. 음주·약물 운전 방법이나 단속 회피 전술은 안내하지 않습니다.",
   },
   {
     slug: "state-id",

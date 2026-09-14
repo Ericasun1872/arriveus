@@ -425,6 +425,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I would like to check my driving record and points.",
     },
   ],
+  "dmv/dui": [
+    {
+      ko: "한국어 통역이 필요합니다.",
+      en: "I need a Korean interpreter.",
+    },
+    {
+      ko: "변호사나 legal aid를 만나고 싶습니다.",
+      en: "I would like to speak with an attorney or legal aid.",
+    },
+    {
+      ko: "다음 출석일과 사건 번호를 알려 주세요.",
+      en: "Please tell me my next court date and case number.",
+    },
+    {
+      ko: "차가 어느 견인소에 있는지, 찾는 방법을 알려 주세요.",
+      en: "Where was my car towed, and how can I retrieve it?",
+    },
+  ],
   "dmv/state-id": [
     {
       ko: "운전면허 없이 주 신분증(ID)을 신청하고 싶습니다.",
