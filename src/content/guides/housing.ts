@@ -523,7 +523,7 @@ export const housingGuides: Guide[] = [
     cost: "다운페이·Closing cost·검사·감정·보험·재산세는 지역·대출마다 다름",
     methods: ["모기지 Pre-approval", "Buyer’s agent / 직접 협상", "Inspection·Appraisal·Closing"],
     overview:
-      "미국 집 구입은 ‘마음에 드는 집을 고르고 바로 소유’가 아니라, 보통 (1) 예산·신용·소득으로 모기지 Pre-approval (2) 매물 보기·오퍼 (3) 계약(Purchase agreement) 후 Inspection·Appraisal (4) 대출 최종 승인 (5) Closing(소유권·자금·서류 이전) 순입니다. 렌트와 달리 Earnest money, Contingency(검사·대출·감정 조건), Title(소유권) 보험, HOA, 재산세(Property tax), Homeowners insurance가 한꺼번에 따라옵니다.\n\n신용 이력이 짧거나 비시민이면 대출 상품·다운페이 요건이 달라질 수 있어, 여러 은행·크레딧유니온·모기지 렌더에 Pre-approval을 문의하는 것이 일반적입니다. ‘오늘만 특가·선입금만 내면 집 예약’류 광고, 소유권 확인 없이 송금 요구는 사기 위험이 큽니다. CFPB Buying a House·HUD 주택 상담을 공식 출발점으로 두세요.\n\nArriveUS는 특정 중개·렌더를 추천하지 않으며, 개별 대출·계약 자문을 하지 않습니다. 큰 금액 계약 전에는 변호사·HUD 승인 상담·라이선스 있는 전문가와 확인하세요.",
+      "미국 집 구입은 ‘마음에 드는 집을 고르고 바로 소유’가 아니라, 보통 (1) 예산·신용·소득으로 모기지 Pre-approval (2) 매물 보기·오퍼 (3) 계약(Purchase agreement) 후 Inspection·Appraisal (4) 대출 최종 승인 (5) Closing(소유권·자금·서류 이전) 순입니다. 렌트와 달리 Earnest money, Contingency(검사·대출·감정 조건), Title(소유권) 보험, HOA, 재산세(Property tax), Homeowners insurance가 한꺼번에 따라옵니다.\n\n신용 이력이 짧거나 비시민이면 대출 상품·다운페이 요건이 달라질 수 있어, 여러 은행·크레딧유니온·모기지 렌더에 Pre-approval을 문의하는 것이 일반적입니다. 첫 주택·다운페이 보조·FHA 등 공공 프로그램은 ‘첫 주택 구매 지원’ 가이드를 함께 보세요. ‘오늘만 특가·선입금만 내면 집 예약’류 광고, 소유권 확인 없이 송금 요구는 사기 위험이 큽니다. CFPB Buying a House·HUD 주택 상담을 공식 출발점으로 두세요.\n\nArriveUS는 특정 중개·렌더를 추천하지 않으며, 개별 대출·계약 자문을 하지 않습니다. 큰 금액 계약 전에는 변호사·HUD 승인 상담·라이선스 있는 전문가와 확인하세요.",
     requirements: [
       "신용 리포트·소득 증빙(Pay stub·세금 신고)·은행 잔고",
       "신분·SSN/ITIN 등 렌더가 요구하는 서류",
@@ -533,6 +533,7 @@ export const housingGuides: Guide[] = [
     ],
     steps: [
       "월 상환·보험·재산세까지 넣어 예산을 정하고, 렌더 2–3곳에서 Pre-approval 편지를 받습니다.",
+      "첫 구매·소득 요건이 되면 HUD 상담·주 다운페이 보조 해당 여부를 ‘첫 주택 구매 지원’ 가이드로 먼저 확인합니다.",
       "매물을 보고 오퍼할 때 Earnest money·Closing 일정·Inspection/Financing contingency를 적습니다.",
       "계약 후 Home inspection을 하고, 큰 하자는 수리·크레딧·해지를 계약 조건에 따라 협상합니다.",
       "Appraisal(감정)과 대출 Underwriting을 진행하고, Title·Homeowners insurance를 준비합니다.",
@@ -553,6 +554,10 @@ export const housingGuides: Guide[] = [
         url: "https://www.usa.gov/buying-home",
       },
       {
+        label: "첫 주택 구매 지원 (정부·공공)",
+        url: "/guides/housing/first-time-buyer-help",
+      },
+      {
         label: "아파트 임대",
         url: "/guides/housing/rent-apartment",
       },
@@ -569,7 +574,7 @@ export const housingGuides: Guide[] = [
       {
         question: "다운페이는 항상 20%인가요?",
         answer:
-          "아닙니다. 상품·신용·보험(PMI 등)에 따라 더 낮을 수 있지만 월 비용·자격 조건이 달라집니다. Pre-approval에서 확인하세요.",
+          "아닙니다. 상품·신용·보험(PMI 등)에 따라 더 낮을 수 있지만 월 비용·자격 조건이 달라집니다. Pre-approval과 ‘첫 주택 구매 지원’ 가이드를 함께 보세요.",
       },
       {
         question: "비시민도 집을 살 수 있나요?",
@@ -586,10 +591,106 @@ export const housingGuides: Guide[] = [
         answer:
           "계약 Contingency에 따라 수리 요청·가격 조정·해지가 가능할 수 있습니다. 기한 안에 서면으로 진행하세요.",
       },
+      {
+        question: "정부 지원·다운페이 보조가 있나요?",
+        answer:
+          "주·시·FHA 등 프로그램이 있을 수 있습니다. ArriveUS ‘첫 주택 구매 지원’ 가이드와 HUD 상담을 확인하세요.",
+      },
     ],
     updatedAt: "2026-09",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 부동산·대출·법률·세무 자문이 아닙니다. 계약·이자·자격은 개인·지역·상품마다 다르므로 CFPB·HUD·라이선스 있는 전문가 안내를 확인하세요. 특정 중개·은행을 추천하지 않습니다.",
+  },
+  {
+    slug: "first-time-buyer-help",
+    category: "housing",
+    title: "첫 주택 구매 지원 (정부·공공)",
+    summary:
+      "첫 주택 구매자용 FHA·다운페이 보조·주·시 프로그램·HUD 주택 상담을 찾는 입문 안내입니다. 자격·금액은 공식 창구에서 확인하세요.",
+    cost: "상담은 무료~저비용인 경우 많음 / 대출·보조 조건·수수료는 프로그램마다 다름",
+    methods: [
+      "HUD 승인 주택 상담",
+      "FHA 등 특수 대출 개념",
+      "주·시·비영리 다운페이·Closing 보조",
+      "Loan Estimate 비교",
+    ],
+    overview:
+      "미국에는 ‘첫 주택을 사는 사람’을 돕는 연방·주·시·비영리 프로그램이 있습니다. 다만 전국 단일 ‘무조건 보조금’은 없고, First-time buyer 정의도 프로그램마다 다릅니다(예: 최근 3년 내 소유 이력 없음 등). 소득·신용·구매 지역·교육 이수·주 거주요건이 붙는 경우가 많습니다.\n\n자주 듣는 유형은 (1) FHA 대출처럼 다운페이가 상대적으로 낮은 연방 보험 모기지 개념 (2) 주 Housing Finance Agency·시·비영리가 주는 Down payment / Closing cost assistance (무이자·유예·2차 담보 형태 등) (3) 교사·소방관 등 특정 직군·특정 동네 대상 프로그램 (4) VA(군인·해당 유족), USDA(일부 농촌 지역)처럼 해당자만 쓰는 특수 대출입니다. 보조를 받으면 일정 기간 거주·재판매 제한이 따를 수 있습니다.\n\n가장 안전한 출발은 CFPB·HUD가 안내하는 HUD-approved housing counselor입니다. ZIP으로 상담 기관을 찾아 예산·신용·지역 프로그램을 함께 점검하세요. ‘정부 보조금 대행·선입금만 내면 승인’ 광고는 사기로 보고, 공식 상담·렌더 Loan Estimate만 비교하세요.\n\n비시민·영주권·비자 신분도 프로그램·렌더마다 자격이 갈립니다. ArriveUS는 개별 승인·알선을 하지 않습니다.",
+    requirements: [
+      "거주지 ZIP·구매 희망 지역",
+      "소득·가구 규모·최근 세금 신고",
+      "신용 개요·부채(월 상환)",
+      "신분 서류(렌더·프로그램 요구에 따름)",
+      "HUD 상담·홈바이어 교육 이수 여부(프로그램이 요구하면)",
+    ],
+    steps: [
+      "CFPB Find a Housing Counselor 또는 HUD 안내로 거주 ZIP의 HUD 승인 상담 기관을 찾습니다.",
+      "상담에서 첫 구매 정의·소득 한도·지역 DPA(다운페이 보조)·필수 교육 과정을 확인합니다.",
+      "FHA·일반(Conventional)·해당 시 VA/USDA 등 후보를 렌더 2–3곳에 물어 Pre-approval·Loan Estimate를 비교합니다.",
+      "주 Housing Finance Agency·시 주택국 사이트에서 first-time / down payment 프로그램을 검색하고, 상담사가 안내한 공식 신청 창구만 이용합니다.",
+      "보조·교육·대출 조건을 계약서·약관으로 읽고, 거주·재판매·상환 의무를 메모합니다.",
+      "‘정부 대행 수수료’ 선입금 요구는 거절하고, USA.gov·CFPB 사기 주의 안내를 참고합니다.",
+    ],
+    links: [
+      {
+        label: "CFPB – First-time home buyer programs",
+        url: "https://www.consumerfinance.gov/ask-cfpb/where-can-i-find-information-on-programs-for-first-time-home-buyers-en-2156/",
+      },
+      {
+        label: "CFPB – Special loan programs",
+        url: "https://www.consumerfinance.gov/owning-a-home/special-loan-programs/",
+      },
+      {
+        label: "CFPB – Find a Housing Counselor",
+        url: "https://www.consumerfinance.gov/find-a-housing-counselor/",
+      },
+      {
+        label: "HUD – Buying a home",
+        url: "https://www.hud.gov/buying",
+      },
+      {
+        label: "USA.gov – Buying a home",
+        url: "https://www.usa.gov/buying-home",
+      },
+      {
+        label: "집 구입·모기지 기초",
+        url: "/guides/housing/buy-home",
+      },
+      {
+        label: "신용 점수 올리기",
+        url: "/guides/bank/credit-build",
+      },
+    ],
+    faq: [
+      {
+        question: "정부가 다운페이를 그냥 주나요?",
+        answer:
+          "현금 선물처럼 무조건 주는 경우는 드물고, 대출·유예·조건 부여 보조인 경우가 많습니다. 거주·소득 요건을 공식 안내에서 확인하세요.",
+      },
+      {
+        question: "FHA가 뭔가요?",
+        answer:
+          "연방주택청(FHA)이 보험하는 모기지 유형 중 하나로, 다운페이가 낮은 상품이 있을 수 있습니다. 자격·보험료·한도는 렌더·공식 안내를 보세요.",
+      },
+      {
+        question: "어디서 우리 동네 프로그램을 찾나요?",
+        answer:
+          "HUD 승인 주택 상담사와 주 Housing Finance Agency·시 주택국이 출발점입니다. CFPB 상담사 검색을 이용하세요.",
+      },
+      {
+        question: "비시민도 지원을 받을 수 있나요?",
+        answer:
+          "프로그램·렌더마다 다릅니다. 상담·렌더에 신분 요건을 먼저 확인하고, 사기성 ‘무조건 승인’ 광고는 피하세요.",
+      },
+      {
+        question: "홈바이어 교육을 꼭 들어야 하나요?",
+        answer:
+          "많은 다운페이 보조·일부 대출이 사전 교육을 요구합니다. 상담 기관이 인정하는 과정인지 확인하세요.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 대출·부동산·법률 자문이 아닙니다. 첫 구매·보조·FHA/VA/USDA 자격과 금액은 주·시·연도·개인마다 다르므로 HUD·CFPB·주 공식 기관과 라이선스 있는 렌더·상담사 안내만 따르세요. 특정 프로그램을 보장·알선하지 않습니다.",
   },
   {
     slug: "eviction-landlord",

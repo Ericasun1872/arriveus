@@ -1393,6 +1393,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Please walk me through the Closing Disclosure.",
     },
   ],
+  "housing/first-time-buyer-help": [
+    {
+      ko: "첫 주택 구매자 지원·다운페이 보조 프로그램이 있는지 알고 싶습니다.",
+      en: "I would like to know about first-time homebuyer or down payment assistance programs.",
+    },
+    {
+      ko: "HUD 승인 주택 상담을 예약하고 싶습니다.",
+      en: "I would like to schedule a HUD-approved housing counseling appointment.",
+    },
+    {
+      ko: "FHA 대출 자격과 필요 서류를 알려 주세요.",
+      en: "Please tell me about FHA loan eligibility and required documents.",
+    },
+    {
+      ko: "이 지역의 Housing Finance Agency 프로그램을 안내해 주세요.",
+      en: "Can you tell me about Housing Finance Agency programs in this area?",
+    },
+  ],
   "housing/eviction-landlord": [
     {
       ko: "퇴거 통지서를 받았습니다. 어떻게 대응해야 하나요?",

@@ -275,7 +275,12 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
     {
       question: "집을 사고 싶은데 무엇부터요?",
       answer:
-        "예산·신용으로 모기지 Pre-approval부터 보는 경우가 많습니다. ArriveUS ‘집 구입·모기지 기초’ 가이드를 참고하세요.",
+        "예산·신용으로 모기지 Pre-approval부터 보는 경우가 많습니다. 첫 구매·다운페이 보조는 ‘첫 주택 구매 지원’·‘집 구입·모기지 기초’ 가이드를 함께 보세요.",
+    },
+    {
+      question: "첫 집 살 때 정부 지원이 있나요?",
+      answer:
+        "주·시·FHA·HUD 상담 등 경로가 있을 수 있습니다. ArriveUS ‘첫 주택 구매 지원’ 가이드와 CFPB·HUD 공식 안내를 확인하세요.",
     },
     {
       question: "퇴거 통지를 받으면요?",
