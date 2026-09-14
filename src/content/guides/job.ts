@@ -51,6 +51,14 @@ export const jobGuides: Guide[] = [
         url: "/guides/job/work-documents",
       },
       {
+        label: "오피스·LinkedIn 구직",
+        url: "/guides/job/office-linkedin",
+      },
+      {
+        label: "신분·EAD별 합법 근로",
+        url: "/guides/job/work-authorization",
+      },
+      {
         label: "취업 이민(EB-3) 개요",
         url: "/guides/immigration/employment-green-card",
       },
@@ -64,15 +72,15 @@ export const jobGuides: Guide[] = [
       {
         question: "면접에서 비자·스폰서를 물어보면?",
         answer:
-          "합법 근로 가능 여부·시작 가능 시점을 짧게 말하는 준비가 도움이 됩니다. 세부 이민 전략은 채용 단계와 변호사 상담을 구분하세요.",
+          "합법 근로 가능 여부·시작 가능 시점을 짧게 말하는 준비가 도움이 됩니다. 세부 이민 전략은 채용 단계와 변호사 상담을 구분하세요. ‘신분·EAD별 합법 근로’ 가이드도 참고하세요.",
       },
       {
         question: "LinkedIn이 꼭 필요한가요?",
         answer:
-          "필수는 아니지만 미국 채용에서 사실상 기본에 가깝습니다. Resume와 날짜·직함을 맞추는 것이 중요합니다.",
+          "필수는 아니지만 미국 채용에서 사실상 기본에 가깝습니다. Resume와 날짜·직함을 맞추세요. 오피스 구직은 ‘오피스·LinkedIn 구직’ 가이드를 보세요.",
       },
     ],
-    updatedAt: "2026-08",
+    updatedAt: "2026-09",
     disclaimer,
   },
   {
@@ -782,5 +790,235 @@ export const jobGuides: Guide[] = [
     updatedAt: "2026-08",
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 법률·복지·이민 자문이 아닙니다. 실업급여 자격·금액·이민 영향은 주·개인 상황에 따라 다르므로 주 UI 공식 안내와 자격 있는 전문가에게 확인하세요. 신청 대행 사기를 주의하세요.",
+  },
+  {
+    slug: "office-linkedin",
+    category: "job",
+    title: "오피스·LinkedIn 구직",
+    summary:
+      "현장 일 다음 단계로 오피스·원격·하이브리드 공고를 볼 때 LinkedIn·영문 Resume·네트워킹·스폰서 질문의 기본 순서를 정리합니다.",
+    cost: "LinkedIn 기본은 무료 / Premium은 선택",
+    methods: ["LinkedIn 프로필·공고", "회사 Careers 페이지", "Referral·한인 네트워크", "이력서·면접 가이드와 병행"],
+    overview:
+      "많은 분이 식당·네일·창고·돌봄에서 시작해 영어·경력이 쌓이면 오피스·고객지원·행정·세일즈·테크 지원 같은 공고를 봅니다. 미국 오피스 채용에서는 LinkedIn 프로필이 Resume와 함께 사실상 기본에 가깝습니다. 사진·Headline·About·Experience 날짜·직함을 Resume와 맞추고, Open to Work는 공개 범위를 신중히 고르세요.\n\n공고는 LinkedIn Jobs·Indeed·회사 Careers·USA.gov Jobs를 함께 보고, 키워드(administrative assistant, customer success, accountant 등)로 좁힙니다. Referral(내부 추천)이 있으면 서류 통과에 도움이 되는 경우가 많습니다. 스폰서(H-1B·영주권)가 필요한 포지션은 공고에 sponsorship 문구가 있는지 확인하고, ‘영주권 보장’ 광고는 경계하세요.\n\nArriveUS는 특정 회사·헤드헌터를 추천하지 않습니다. 합법 근로는 ‘신분·EAD별 합법 근로’ 가이드, 현장 일은 everyday-jobs를 먼저 보세요.",
+    requirements: [
+      "영문 Resume PDF (이력서·면접 가이드)",
+      "LinkedIn 프로필 (사진·경력·스킬)",
+      "목표 직군 키워드 메모",
+      "근로 허가·시작 가능 시점 메모",
+      "추천인·한인·전 직장 네트워크 연락처(있으면)",
+    ],
+    steps: [
+      "Resume를 1페이지 중심으로 다듬고, LinkedIn Experience·날짜·직함을 동일하게 맞춥니다.",
+      "Headline·About에 역할·강점·키워드를 넣고, Skills·추천(Recommendations)을 정리합니다.",
+      "LinkedIn·Indeed·회사 Careers에서 목표 공고 10개를 골라 Job description 키워드를 Resume에 반영합니다.",
+      "아는 사람·한인 커뮤니티·전 동료에게 ‘이런 역할을 찾고 있다’고 짧게 알리고 Referral을 부탁합니다.",
+      "지원 시 Easy Apply만 의존하지 말고, 가능하면 회사 공식 Careers로도 제출합니다.",
+      "면접·오퍼가 오면 work-documents·합법 근로 가이드로 I-9·스폰서 질문을 준비합니다.",
+    ],
+    links: [
+      {
+        label: "USA.gov – Jobs",
+        url: "https://www.usa.gov/jobs",
+      },
+      {
+        label: "CareerOneStop – Find jobs",
+        url: "https://www.careeronestop.org/JobSearch/FindJobs/find-jobs.aspx",
+      },
+      {
+        label: "미국식 이력서·면접 준비",
+        url: "/guides/job/resume-interview",
+      },
+      {
+        label: "온라인 구직·공고 검색",
+        url: "/guides/job/job-search",
+      },
+      {
+        label: "신분·EAD별 합법 근로",
+        url: "/guides/job/work-authorization",
+      },
+      {
+        label: "식당·네일·창고·돌봄·청소 취업",
+        url: "/guides/job/everyday-jobs",
+      },
+      {
+        label: "취업 이민(EB-3) 개요",
+        url: "/guides/immigration/employment-green-card",
+      },
+    ],
+    faq: [
+      {
+        question: "현장 일만 했는데 오피스 지원이 되나요?",
+        answer:
+          "가능한 경우가 많습니다. 고객 응대·일정·재고·팀워크 등 옮길 수 있는 성과를 Resume bullet으로 바꾸세요.",
+      },
+      {
+        question: "LinkedIn Premium이 필수인가요?",
+        answer:
+          "필수는 아닙니다. 프로필·공고 지원·메시지 예의가 더 중요합니다.",
+      },
+      {
+        question: "스폰서가 필요한데 어떻게 말하나요?",
+        answer:
+          "합법 근로 가능 여부와 시작 시점을 짧게 준비하고, 세부 이민 전략은 변호사와 구분하세요. ‘보장’ 광고는 피하세요.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer,
+  },
+  {
+    slug: "work-authorization",
+    category: "job",
+    title: "신분·EAD별 합법 근로",
+    summary:
+      "시민·영주권·EAD·학생 OPT·동반 배우자 등 신분별로 ‘합법적으로 일할 수 있는지’ 확인하는 체크리스트와 I-9·사기 주의를 정리합니다.",
+    cost: "공식 조회·서류 발급 수수료는 카테고리마다 다름",
+    methods: ["본인 신분·EAD·I-94 확인", "I-9 허용 서류", "USCIS·학교 DSO·변호사", "입사 근로 서류 가이드"],
+    overview:
+      "미국에서 일하려면 고용주가 Form I-9로 신원·근로 허가를 확인합니다. 시민권·영주권 카드, EAD(취업허가증), 특정 비자(I-94·I-797) 등 ‘지금 합법적으로 일할 수 있는’ 상태가 핵심입니다. ITIN만으로는 근로 허가를 대신하지 않습니다.\n\n큰 그림만 잡으면: 시민·영주권자는 보통 영주권 카드·여권 등으로 I-9가 가능하고, EAD 소지자는 카드 유효기간·카테고리를 보며, F-1 OPT/CPT는 학교 DSO·EAD 규칙을, H-1B 등은 승인된 청원·I-94를, H-4/L-2 배우자 근로는 별도 EAD·최신 USCIS 안내가 필요할 수 있습니다. 만료·갱신 공백·허가 없는 근로·‘서류 대행으로 바로 취직’ 광고는 위험합니다.\n\n이 글은 자격 판정이 아니라 확인 순서입니다. 세부 이민은 이민 카테고리 가이드와 변호사를, 입사 당일 서류는 work-documents를 보세요.",
+    requirements: [
+      "여권·비자 스탬프·I-94·I-797(해당 시)",
+      "영주권 카드 또는 EAD(해당 시)와 만료일",
+      "학생이면 I-20·DSO 연락처·OPT/CPT 관련 기록",
+      "SSN 카드 또는 신청 상태 (근로·세금용, I-9와 역할이 다름)",
+      "I-9 Lists of Acceptable Documents 사본 개념",
+    ],
+    steps: [
+      "본인 신분(시민·영주·비이민·EAD 등)과 근로가 허용되는지 USCIS·학교·변호사 문서로 확인합니다.",
+      "EAD·I-94·영주권 만료일을 캘린더에 넣고, 갱신·여행 전 공백이 없는지 봅니다.",
+      "입사 전 ‘보장 취업·가짜 서류’ 제안을 거절하고, Worker.gov·USCIS Avoid scams를 참고합니다.",
+      "오퍼 후 I-9에서는 허용 서류 목록에서 본인이 고릅니다. 고용주가 ‘그린카드만’ 강요하면 차별 이슈일 수 있어 직장 차별 가이드·IER을 참고하세요.",
+      "세부 카테고리(OPT·H-4 EAD·취업 이민)는 해당 이민 가이드로 이어갑니다.",
+      "입사 서류·W-4·Direct deposit는 work-documents 가이드를 따릅니다.",
+    ],
+    links: [
+      {
+        label: "USCIS – Form I-9",
+        url: "https://www.uscis.gov/i-9",
+      },
+      {
+        label: "USCIS – Employee rights (I-9)",
+        url: "https://www.uscis.gov/i-9-central/employee-rights-and-resources/employee-rights",
+      },
+      {
+        label: "Worker.gov – Documentation",
+        url: "https://www.worker.gov/documentation/",
+      },
+      {
+        label: "입사 근로 서류 (I-9, W-4, SSN)",
+        url: "/guides/job/work-documents",
+      },
+      {
+        label: "EAD 갱신",
+        url: "/guides/immigration/ead-renewal",
+      },
+      {
+        label: "학생(F-1)·OPT 개요",
+        url: "/guides/immigration/f1-opt",
+      },
+      {
+        label: "I-94·여행·동반 배우자 근로",
+        url: "/guides/immigration/i94-travel",
+      },
+      {
+        label: "직장 차별·괴롭힘 신고",
+        url: "/guides/job/workplace-discrimination",
+      },
+    ],
+    faq: [
+      {
+        question: "ITIN으로 취업할 수 있나요?",
+        answer:
+          "ITIN은 세금 번호이지 근로 허가가 아닙니다. I-9용 근로 허가 서류가 따로 필요합니다.",
+      },
+      {
+        question: "EAD 갱신 중에도 일할 수 있나요?",
+        answer:
+          "카테고리·자동연장 규칙에 따라 다릅니다. USCIS·EAD 가이드와 고용주 안내를 확인하세요.",
+      },
+      {
+        question: "학생이 CPT 없이 밖에서 일해도 되나요?",
+        answer:
+          "허가 없는 근로는 신분 위반 위험이 큽니다. DSO·Study in the States 안내를 우선하세요.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 이민·법률·취업 알선 자문이 아닙니다. 근로 허가·I-9·비자는 개인·시점에 따라 다르므로 USCIS·학교·자격 있는 이민 변호사를 확인하세요. 불법 근로·가짜 서류 방법은 안내하지 않습니다.",
+  },
+  {
+    slug: "workplace-discrimination",
+    category: "job",
+    title: "직장 차별·괴롭힘 신고",
+    summary:
+      "인종·성별·출신국·장애 등 차별, 성희롱·괴롭힘, I-9 서류 강요 차별이 있을 때 EEOC·DOJ IER·Legal aid로 가는 입문 경로를 정리합니다.",
+    cost: "공식 신고 창구는 보통 무료 / 변호사 수임은 별도",
+    methods: ["기록·증거 보관", "EEOC", "DOJ Immigrant and Employee Rights (IER)", "Legal aid·주 기관"],
+    overview:
+      "미국에서는 고용주가 인종, 피부색, 종교, 성별(임신 포함), 출신국, 나이(40세 이상), 장애, 유전정보 등을 이유로 채용·해고·임금·업무에서 부당하게 차별하는 것을 금지하는 연방법이 있습니다. 성희롱·적대적 업무 환경도 포함될 수 있습니다. 별도로, 시민권·이민 신분·출신국을 이유로 I-9에서 특정 서류만 강요하거나 유효한 서류를 거부하는 행위는 법무부 Immigrant and Employee Rights(IER) 관할인 경우가 많습니다.\n\n임금 체불은 Worker.gov·Wage and Hour, 산재는 산재 가이드처럼 창구가 다를 수 있습니다. 보복(신고했다고 불이익)도 문제로 다뤄질 수 있으니 날짜·메시지·증인을 기록하세요. ArriveUS는 개별 소송을 대리하지 않습니다. 기한(예: EEOC·IER 신고 기한)은 짧을 수 있어 공식 사이트와 Legal aid를 빨리 확인하세요.",
+    requirements: [
+      "사건 날짜·장소·관련자·목격자 메모",
+      "이메일·문자·평가서·급여 기록 사본",
+      "회사 내부 신고(HR) 기록(했다면)",
+      "본인 연락처·고용주 정보",
+    ],
+    steps: [
+      "안전이 위험하면 911. 그다음 사실·날짜·증거를 메모하고 보복이 있어도 기록을 남깁니다.",
+      "가능하면 회사 정책에 따라 HR·상사에게 서면으로 알리고, 사본을 보관합니다.",
+      "출신국·시민권·I-9 서류 강요 이슈면 DOJ IER(Worker Hotline) 안내를 확인합니다.",
+      "인종·성별·종교·장애 등 일반적인 고용 차별·성희롱은 EEOC 신고 안내를 확인합니다.",
+      "임금·팁 체불은 wage-scams 가이드·Worker.gov, 부상은 workplace-injury 가이드로 갑니다.",
+      "USA.gov Legal aid·주 기관·노조(있으면)에 상담하고, ‘선입금 승소 보장’ 광고는 피합니다.",
+    ],
+    links: [
+      {
+        label: "EEOC – Filing a charge",
+        url: "https://www.eeoc.gov/filing-charge-discrimination",
+      },
+      {
+        label: "DOJ – Immigrant and Employee Rights (IER)",
+        url: "https://www.justice.gov/crt/immigrant-and-employee-rights-section",
+      },
+      {
+        label: "Worker.gov – Documentation",
+        url: "https://www.worker.gov/documentation/",
+      },
+      {
+        label: "USA.gov – Legal aid",
+        url: "https://www.usa.gov/legal-aid",
+      },
+      {
+        label: "임금 체불·취업 사기·신고 창구",
+        url: "/guides/job/wage-scams",
+      },
+      {
+        label: "산재·직장 부상",
+        url: "/guides/job/workplace-injury",
+      },
+      {
+        label: "신분·EAD별 합법 근로",
+        url: "/guides/job/work-authorization",
+      },
+    ],
+    faq: [
+      {
+        question: "EEOC와 IER 중 어디로 가나요?",
+        answer:
+          "일반적인 고용 차별·성희롱은 EEOC, 시민권·이민 신분·I-9 서류 차별은 IER인 경우가 많습니다. 애매하면 양쪽 안내를 읽고 Legal aid에 물어보세요.",
+      },
+      {
+        question: "신고하면 보복이 두려워요.",
+        answer:
+          "보복 금지가 있는 경우가 많습니다. 증거를 남기고 공식 핫라인·변호사와 상의하세요.",
+      },
+      {
+        question: "기한이 있나요?",
+        answer:
+          "있습니다. EEOC·IER 등 창구마다 다르고 짧을 수 있으니 공식 사이트에서 바로 확인하세요.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 법률 자문이 아닙니다. 차별·괴롭힘·보복 사건과 신고 기한은 사실·고용주 규모·주에 따라 다르므로 EEOC·IER·Legal aid·자격 있는 변호사를 확인하세요.",
   },
 ];

@@ -1259,6 +1259,60 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "Do I need to submit a record of my job search activities?",
     },
   ],
+  "job/office-linkedin": [
+    {
+      ko: "이 포지션에 지원하고 싶습니다.",
+      en: "I would like to apply for this position.",
+    },
+    {
+      ko: "LinkedIn에서 연결을 요청해도 될까요?",
+      en: "May I send you a LinkedIn connection request?",
+    },
+    {
+      ko: "내부 추천(Referral)이 가능한지 알고 싶습니다.",
+      en: "I would like to know if an employee referral is possible.",
+    },
+    {
+      ko: "제 Resume와 LinkedIn 프로필을 맞춰 두었습니다.",
+      en: "I aligned my resume with my LinkedIn profile.",
+    },
+  ],
+  "job/work-authorization": [
+    {
+      ko: "합법적으로 일할 수 있는 서류가 있습니다.",
+      en: "I have documents showing I am authorized to work in the U.S.",
+    },
+    {
+      ko: "I-9에 어떤 서류를 제출하면 되나요?",
+      en: "Which documents can I present for Form I-9?",
+    },
+    {
+      ko: "제 EAD 만료일과 갱신 상태를 확인해 주세요.",
+      en: "Please help me check my EAD expiration and renewal status.",
+    },
+    {
+      ko: "ITIN만으로 취업이 가능한가요?",
+      en: "Can I work with only an ITIN?",
+    },
+  ],
+  "job/workplace-discrimination": [
+    {
+      ko: "직장에서 차별·괴롭힘을 당했습니다. 어디에 신고하나요?",
+      en: "I experienced workplace discrimination or harassment. Where can I file a complaint?",
+    },
+    {
+      ko: "I-9에서 특정 서류만 요구받았습니다.",
+      en: "My employer asked only for a specific immigration document for Form I-9.",
+    },
+    {
+      ko: "EEOC 또는 IER에 연락하고 싶습니다.",
+      en: "I would like to contact the EEOC or the DOJ Immigrant and Employee Rights Section.",
+    },
+    {
+      ko: "한국어 통역이 필요합니다.",
+      en: "I need a Korean interpreter.",
+    },
+  ],
   "job/work-documents": [
     {
       ko: "I-9 서류를 제출하러 왔습니다.",

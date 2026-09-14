@@ -53,7 +53,7 @@ export const categories: Category[] = [
     slug: "job",
     name: "취업",
     nameEn: "Jobs",
-    description: "구직, 임금·산재, 실업급여, 홈케어, 이력서",
+    description: "구직·LinkedIn, 합법 근로, 차별 신고, 임금·산재, 실업",
     accent: "#3D3A8C",
     icon: "job",
   },
