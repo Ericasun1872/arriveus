@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { EmailAction } from "@/components/EmailAction";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -11,19 +12,6 @@ export const metadata: Metadata = {
 
 export default function SupportPage() {
   const email = siteConfig.contactEmail;
-  const cheerHref = `mailto:${email}?subject=${encodeURIComponent(
-    "ArriveUS 응원·후원",
-  )}&body=${encodeURIComponent(
-    "안녕하세요.\nArriveUS가 도움이 되어 응원(또는 후원 문의) 드립니다.\n\n",
-  )}`;
-  const sponsorHref = `mailto:${email}?subject=${encodeURIComponent(
-    "ArriveUS 광고·협찬 문의",
-  )}&body=${encodeURIComponent(
-    "안녕하세요.\n광고·협찬·배너·콘텐츠 협력을 문의드립니다.\n\n회사/단체명:\n희망 형태(광고/협찬):\n기간·예산(대략):\n연락처:\n\n",
-  )}`;
-  const jobsHref = `mailto:${email}?subject=${encodeURIComponent(
-    "ArriveUS 채용 광고 문의",
-  )}`;
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
@@ -53,12 +41,15 @@ export default function SupportPage() {
           후원·기부 방법을 문의하고 싶으실 때도 같은 메일로 연락해 주세요.
           현재는 메일로 안내드리며, 강요하지 않습니다.
         </p>
-        <a
-          href={cheerHref}
-          className="inline-flex rounded-lg bg-[var(--brand)] px-4 py-2.5 text-sm font-semibold text-white hover:opacity-90"
-        >
-          응원·후원 메일 보내기
-        </a>
+        <EmailAction
+          email={email}
+          subject="ArriveUS 응원·후원"
+          body={
+            "안녕하세요.\nArriveUS가 도움이 되어 응원(또는 후원 문의) 드립니다.\n\n"
+          }
+          primaryLabel="응원·후원 메일 보내기"
+          variant="brand"
+        />
       </section>
 
       <section className="mt-10 space-y-3 border-t border-[var(--border)] pt-8">
@@ -71,12 +62,15 @@ export default function SupportPage() {
           “결과 보장”류 광고는 받지 않습니다. 유료·협찬 게시물은 광고/협찬으로
           표시합니다.
         </p>
-        <a
-          href={sponsorHref}
-          className="inline-flex rounded-lg border border-[var(--border)] bg-[var(--surface)] px-4 py-2.5 text-sm font-semibold text-[var(--ink)] hover:bg-[var(--surface-muted)]"
-        >
-          광고·협찬 문의
-        </a>
+        <EmailAction
+          email={email}
+          subject="ArriveUS 광고·협찬 문의"
+          body={
+            "안녕하세요.\n광고·협찬·배너·콘텐츠 협력을 문의드립니다.\n\n회사/단체명:\n희망 형태(광고/협찬):\n기간·예산(대략):\n연락처:\n\n"
+          }
+          primaryLabel="광고·협찬 문의"
+          variant="outline"
+        />
       </section>
 
       <section className="mt-10 space-y-3 border-t border-[var(--border)] pt-8">
@@ -94,12 +88,14 @@ export default function SupportPage() {
           >
             채용·광고 문의 페이지
           </Link>
-          <a
-            href={jobsHref}
-            className="inline-flex text-sm font-semibold text-[var(--brand)] hover:underline"
-          >
-            {email}로 바로 문의
-          </a>
+        </div>
+        <div className="mt-4">
+          <EmailAction
+            email={email}
+            subject="ArriveUS 채용 광고 문의"
+            primaryLabel="채용 문의 메일 보내기"
+            variant="outline"
+          />
         </div>
       </section>
 
