@@ -28,6 +28,9 @@ export function Footer() {
             <Link href="/about" className="hover:underline">
               소개
             </Link>
+            <Link href="/support" className="hover:underline">
+              후원·광고
+            </Link>
             <Link href="/privacy" className="hover:underline">
               개인정보
             </Link>
@@ -38,7 +41,7 @@ export function Footer() {
               href={`mailto:${siteConfig.contactEmail}?subject=${encodeURIComponent("ArriveUS 채용·광고 문의")}`}
               className="hover:underline"
             >
-              채용·광고 문의
+              채용 문의
             </a>
             <a
               href={`mailto:${siteConfig.contactEmail}`}
@@ -53,7 +56,11 @@ export function Footer() {
           아닙니다. 최종 결정 전에는 반드시 해당 주·연방 공식 기관 안내를
           확인하세요. 일부 링크는 제휴·광고일 수 있으며, 이를 통해 소액의
           수수료를 받을 수 있습니다. 추천 여부와 수수료는 무관하게 공식·유용한
-          출처를 우선합니다. 채용·광고 문의:{" "}
+          출처를 우선합니다. 후원·응원·광고·협찬:{" "}
+          <Link href="/support" className="underline underline-offset-2">
+            /support
+          </Link>
+          {" · "}
           <a
             href={`mailto:${siteConfig.contactEmail}`}
             className="underline underline-offset-2"

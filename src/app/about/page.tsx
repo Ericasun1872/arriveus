@@ -34,6 +34,23 @@ export default function AboutPage() {
         아닙니다. 최종 확인은 해당 주·연방 공식 안내와 자격 있는 전문가에게
         맡기세요.
       </p>
+
+      <section className="mt-10 rounded-2xl border border-[var(--border)] bg-[var(--surface-muted)]/50 px-5 py-5">
+        <h2 className="text-base font-semibold text-[var(--ink)]">
+          도움이 되셨나요?
+        </h2>
+        <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
+          응원·후원 한마디, 또는 광고·협찬·채용 게재 문의는 별도 페이지에서
+          메일로 받을 수 있습니다. 가이드 본문을 가리는 팝업은 쓰지 않습니다.
+        </p>
+        <Link
+          href="/support"
+          className="mt-3 inline-flex text-sm font-semibold text-[var(--brand)] hover:underline"
+        >
+          후원·응원·광고·협찬 안내 →
+        </Link>
+      </section>
+
       <ul className="mt-8 space-y-2 text-sm">
         <li>
           <Link href="/guides/life/first-week" className="font-semibold text-[var(--brand)] hover:underline">
@@ -43,6 +60,11 @@ export default function AboutPage() {
         <li>
           <Link href="/search" className="font-semibold text-[var(--brand)] hover:underline">
             가이드 검색 →
+          </Link>
+        </li>
+        <li>
+          <Link href="/support" className="font-semibold text-[var(--brand)] hover:underline">
+            후원·광고·협찬 →
           </Link>
         </li>
         <li>

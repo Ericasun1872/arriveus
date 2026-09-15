@@ -74,12 +74,16 @@ export default function TermsPage() {
         </section>
 
         <section className="space-y-2">
-          <h2 className="text-base font-semibold text-[var(--ink)]">6. 문의·채용·광고</h2>
+          <h2 className="text-base font-semibold text-[var(--ink)]">6. 문의·후원·채용·광고</h2>
           <p>
-            이메일 문의·채용·광고 제휴 요청에 담긴 내용은 답변·검수·운영
-            목적으로만 사용합니다. 채용 공고는 검수 후에만 게시될 수 있으며,
-            ArriveUS는 고용·이민·채용 결과를 보장하지 않습니다. 게시물은
-            광고·제휴로 표시될 수 있습니다.
+            이메일 문의·응원·후원·채용·광고·협찬 요청에 담긴 내용은 답변·검수·운영
+            목적으로만 사용합니다. 채용·광고·협찬은 검수 후에만 게시될 수 있으며,
+            ArriveUS는 고용·이민·채용·광고 성과를 보장하지 않습니다. 유료·협찬
+            게시물은 광고·제휴로 표시될 수 있습니다. 안내는{" "}
+            <Link href="/support" className="text-[var(--brand)] underline underline-offset-2">
+              후원·광고 페이지
+            </Link>
+            를 참고하세요.
           </p>
         </section>
 
