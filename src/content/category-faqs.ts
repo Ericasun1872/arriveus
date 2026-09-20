@@ -198,6 +198,11 @@ export const categoryFaqs: Record<string, FaqItem[]> = {
       answer:
         "I-94 만료·재입국·H-4/L-2 EAD는 카테고리마다 다릅니다. ArriveUS ‘I-94·여행·동반 배우자 근로’ 가이드와 USCIS·CBP 안내를 확인하세요.",
     },
+    {
+      question: "ICE 전화·단속이 걱정돼요.",
+      answer:
+        "전화로 돈·SSN을 요구하면 사기일 수 있습니다. 기본 권리·법률구조·구금 시 도움 창구는 ArriveUS ‘ICE·단속 시 기본 안내·사기 주의’ 가이드를 보세요. 단속 회피 방법은 안내하지 않습니다.",
+    },
   ],
   job: [
     {

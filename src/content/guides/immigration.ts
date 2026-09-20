@@ -820,4 +820,93 @@ export const immigrationGuides: Guide[] = [
     disclaimer:
       "ArriveUS 가이드는 일반적인 참고 정보이며 이민·법률 자문이 아닙니다. I-94·여행·동반 배우자 근로는 카테고리·시점에 따라 다르므로 CBP·USCIS 공식 안내와 자격 있는 이민 변호사를 확인하세요.",
   },
+  {
+    slug: "ice-rights",
+    category: "immigration",
+    title: "ICE·단속 시 기본 안내·사기 주의",
+    summary:
+      "ICE가 USCIS와 어떻게 다른지, 사칭 사기, 마주쳤을 때·구금됐을 때 흔히 안내되는 기본 권리와 법률구조·변호사 찾는 공식 창구를 정리합니다.",
+    cost: "공식 안내·일부 legal aid는 무료·저비용 / 변호사 수임은 별도",
+    methods: [
+      "사칭·전화 사기 거절",
+      "Know Your Rights (공식·법률구조)",
+      "변호사·Accredited Representative",
+      "가족 비상 연락 계획",
+    ],
+    overview:
+      "ICE(Immigration and Customs Enforcement)는 국토안보부(DHS) 산하 기관으로, 이민법 집행·구금·추방 절차 등과 관련됩니다. USCIS(이민국)는 주로 비자·영주권·시민권 등 혜택 신청을 처리하고, CBP는 국경·항구 입국 심사에 가깝습니다. 세 기관 이름·유니폼·역할이 달라 헷갈리기 쉽습니다.\n\n전화·문자로 ‘ICE다, 지금 보내지 않으면 체포’라며 기프트카드·송금·SSN을 요구하는 것은 사기인 경우가 많습니다. 정부 기관은 보통 그런 방식으로 즉석 결제를 요구하지 않습니다. USCIS Avoid scams·FTC 안내를 참고하고, 공식 웹사이트·법률구조에 확인하세요.\n\n단속·정지를 당했을 때 흔히 법률구조·시민권 단체가 안내하는 큰 원칙은 (1) 침착하게 행동하고, (2) 변호사에게 말할 권리를 요청할 수 있으며, (3) 이해하지 못하는 서류에 바로 서명하지 말고, (4) 가족·변호사에게 연락할 방법을 미리 정해 두는 것입니다. 집 안 수색 등은 ‘판사가 서명한 영장’과 행정 서류의 차이가 중요할 수 있어, 자세한 판단은 ACLU Immigrants’ Rights·지역 legal aid 안내와 변호사에게 맡기세요.\n\nArriveUS는 단속을 피하거나 숨는 방법, 폭력적 저항, 불법 신분 유지를 안내하지 않습니다. 개별 사건에 대한 변호도 하지 않습니다.",
+    requirements: [
+      "변호사·legal aid·믿을 수 있는 가족 비상 연락처 (미리 메모)",
+      "본인 이민 서류 보관 위치 (변호사와 상의한 범위에서)",
+      "자녀·직장 비상 계획(해당 시)",
+    ],
+    steps: [
+      "전화·문자로 돈·기프트카드·SSN을 요구하면 ICE로 단정하지 말고, USCIS Avoid scams·FTC에 사기 여부를 확인합니다.",
+      "평소에 USCIS Find legal services·DOJ 인정 기관·지역 Legal aid 연락처를 저장해 둡니다. 공증인(notario)이 이민 변호를 한다고 하면 경계하세요.",
+      "가족·친구와 ‘연락이 안 되면 누구에게 알릴지’ 비상 계획을 짧게 정해 둡니다.",
+      "현장에서 기관이 누군지 배지·소속을 확인하려 할 수 있고, 법률구조 안내에 따라 묵비·변호사 요청을 할 수 있습니다. 세부 대응은 변호사 안내를 따르세요.",
+      "구금·체포 후에는 서명 전에 서류를 이해할 때까지 기다리고, 변호사·Accredited Representative·ICE detainee locator 등 공식 경로로 위치를 찾는 방법을 가족에게 알려 둡니다.",
+      "형사 사건과 이민 사건이 겹치면 형사·이민 변호를 구분해 상담하세요.",
+    ],
+    links: [
+      {
+        label: "USCIS – Avoid scams",
+        url: "https://www.uscis.gov/avoid-scams",
+      },
+      {
+        label: "USCIS – Find legal services",
+        url: "https://www.uscis.gov/avoid-scams/find-legal-services",
+      },
+      {
+        label: "USA.gov – Legal aid",
+        url: "https://www.usa.gov/legal-aid",
+      },
+      {
+        label: "ACLU – Immigrants’ rights",
+        url: "https://www.aclu.org/know-your-rights/immigrants-rights",
+      },
+      {
+        label: "ICE – Online Detainee Locator",
+        url: "https://locator.ice.gov/",
+      },
+      {
+        label: "911·응급·재난",
+        url: "/guides/life/emergency-911",
+      },
+      {
+        label: "USCIS 계정·케이스 조회",
+        url: "/guides/immigration/uscis-account",
+      },
+    ],
+    faq: [
+      {
+        question: "ICE와 USCIS는 같은가요?",
+        answer:
+          "아닙니다. USCIS는 주로 신청·혜택 처리, ICE는 집행·구금 등과 관련이 큽니다. 역할이 다릅니다.",
+      },
+      {
+        question: "전화로 ICE라며 돈을 내라고 하면요?",
+        answer:
+          "사기일 가능성이 큽니다. 기프트카드·즉석 송금·SSN을 요구하면 거절하고 USCIS Avoid scams·FTC에 확인하세요.",
+      },
+      {
+        question: "단속에 마주치면 어떻게 하나요?",
+        answer:
+          "ArriveUS는 개별 변호 전술을 안내하지 않습니다. 법률구조·ACLU 등 Know Your Rights에서 흔히 말하는 큰 원칙은 침착함, 변호사 요청, 이해 못 하는 서류에 바로 서명하지 않기입니다. 변호사·legal aid를 우선하세요.",
+      },
+      {
+        question: "잡히거나 구금되면요?",
+        answer:
+          "가족·변호사에게 알리고, 서명 전 서류를 이해했는지 확인하세요. ICE Online Detainee Locator와 USCIS/USA.gov legal services로 도움 창구를 찾을 수 있습니다.",
+      },
+      {
+        question: "단속을 피하는 방법을 알려 주세요.",
+        answer:
+          "ArriveUS는 단속 회피·은닉 방법을 안내하지 않습니다. 합법 체류·공식 절차와 변호사 상담을 권합니다.",
+      },
+    ],
+    updatedAt: "2026-09",
+    disclaimer:
+      "ArriveUS 가이드는 일반적인 참고 정보이며 이민·형사·헌법 법률 자문이 아닙니다. ICE·단속·구금·추방 절차는 사실·지역·시점에 따라 다르므로 자격 있는 이민 변호사·Accredited Representative·공식·법률구조 안내를 확인하세요. 단속 회피·불법 행위·폭력적 저항 방법은 안내하지 않습니다.",
+  },
 ];

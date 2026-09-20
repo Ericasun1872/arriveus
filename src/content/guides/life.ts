@@ -395,7 +395,7 @@ export const lifeGuides: Guide[] = [
     cost: "911 통화 자체 비용보다 출동·병원비·보험 적용이 이슈 / 앰뷸런스·ER 비용은 보험·지역마다 다름",
     methods: ["911", "비응급 경찰 번호", "Ready.gov·FEMA 앱 알림"],
     overview:
-      "미국에서 생명·안전이 위급한 화재·범죄·의료 응급에는 911을 겁니다. 영어가 서툴러도 ‘Emergency’, 주소, 무슨 일인지 짧게 말하면 됩니다. 통역을 요청할 수 있는 지역도 많습니다. 단순 소음·주차·분실물처럼 급하지 않으면 시의 non-emergency police 번호를 쓰는 편이 낫습니다. 자연재해·정전·대피 경보는 Ready.gov와 지역 비상 알림·FEMA 앱으로 미리 알아 둡니다. 병원비·보험 청구는 의료 가이드를, 임금·노동 위험은 Worker.gov를 참고하세요. 가짜 ‘경찰·ICE 사칭’ 전화에 돈·SSN을 보내지 마세요.",
+      "미국에서 생명·안전이 위급한 화재·범죄·의료 응급에는 911을 겁니다. 영어가 서툴러도 ‘Emergency’, 주소, 무슨 일인지 짧게 말하면 됩니다. 통역을 요청할 수 있는 지역도 많습니다. 단순 소음·주차·분실물처럼 급하지 않으면 시의 non-emergency police 번호를 쓰는 편이 낫습니다. 자연재해·정전·대피 경보는 Ready.gov와 지역 비상 알림·FEMA 앱으로 미리 알아 둡니다. 병원비·보험 청구는 의료 가이드를, 임금·노동 위험은 Worker.gov를 참고하세요. 가짜 ‘경찰·ICE 사칭’ 전화에 돈·SSN을 보내지 마세요. ICE·단속·사기 주의는 이민국 ‘ICE·단속 시 기본 안내’ 가이드를 보세요.",
     requirements: [
       "현재 주소·교차로를 영어로 말할 수 있게 메모",
       "가족 비상 연락처",
@@ -426,6 +426,10 @@ export const lifeGuides: Guide[] = [
       {
         label: "영사관·한인 커뮤니티",
         url: "/guides/life/korean-community",
+      },
+      {
+        label: "ICE·단속 시 기본 안내·사기 주의",
+        url: "/guides/immigration/ice-rights",
       },
     ],
     faq: [

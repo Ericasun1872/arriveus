@@ -1087,6 +1087,24 @@ export const englishByGuide: Record<string, EnglishPhrase[]> = {
       en: "I would like to know whether I can work in L-2 status.",
     },
   ],
+  "immigration/ice-rights": [
+    {
+      ko: "변호사를 만나고 싶습니다.",
+      en: "I would like to speak with a lawyer.",
+    },
+    {
+      ko: "한국어 통역이 필요합니다.",
+      en: "I need a Korean interpreter.",
+    },
+    {
+      ko: "이 서류에 서명하기 전에 내용을 설명해 주세요.",
+      en: "Please explain this document before I sign anything.",
+    },
+    {
+      ko: "가족에게 연락할 수 있나요?",
+      en: "May I contact my family?",
+    },
+  ],
   "job/everyday-jobs": [
     {
       ko: "일자리 있으면 지원하고 싶습니다.",
