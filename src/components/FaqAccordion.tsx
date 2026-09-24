@@ -40,16 +40,19 @@ export function FaqAccordion({ items }: { items: FaqItem[] }) {
                 </span>
               </button>
             </h3>
-            {open ? (
-              <div
-                id={panelId}
-                role="region"
-                aria-labelledby={buttonId}
-                className="pb-4 text-sm leading-relaxed text-[var(--muted)]"
-              >
-                {item.answer}
-              </div>
-            ) : null}
+            <div
+              id={panelId}
+              role="region"
+              aria-labelledby={buttonId}
+              hidden={!open}
+              className={
+                open
+                  ? "pb-4 text-sm leading-relaxed text-[var(--muted)]"
+                  : "hidden pb-4 text-sm leading-relaxed text-[var(--muted)]"
+              }
+            >
+              {item.answer}
+            </div>
           </div>
         );
       })}

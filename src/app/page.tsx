@@ -5,14 +5,40 @@ import { heroSlides } from "@/content/hero-slides";
 import { startPaths } from "@/content/start-paths";
 import { getDailyTip } from "@/content/tips";
 import { getCategories, getCategory, getNewGuides } from "@/lib/guides";
+import { siteConfig } from "@/lib/site";
 
 export default function HomePage() {
   const categories = getCategories();
   const newGuides = getNewGuides();
   const dailyTip = getDailyTip();
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": `${siteConfig.url}/#organization`,
+        name: siteConfig.name,
+        url: siteConfig.url,
+        logo: `${siteConfig.url}${siteConfig.logo}`,
+        email: siteConfig.contactEmail,
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${siteConfig.url}/#website`,
+        name: siteConfig.name,
+        url: siteConfig.url,
+        inLanguage: "ko",
+        publisher: { "@id": `${siteConfig.url}/#organization` },
+      },
+    ],
+  };
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="relative isolate min-h-[68vh] overflow-hidden sm:min-h-[72vh]">
         <HeroSlideshow slides={heroSlides} />
         <div

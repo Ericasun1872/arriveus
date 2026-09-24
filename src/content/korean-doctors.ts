@@ -20,6 +20,8 @@ export type KoreanDoctorRegion = {
   steps: string[];
   links: KoreanDoctorLink[];
   phrases?: KoreanDoctorPhrase[];
+  /** YYYY-MM */
+  updatedAt?: string;
 };
 
 /**

@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/og-arriveus.png",
-        width: 1376,
-        height: 768,
+        url: "/og-arriveus.jpg",
+        width: 1200,
+        height: 630,
         alt: "ArriveUS — 한국인을 위한 미국 정착 가이드",
       },
     ],
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ArriveUS — 한국인을 위한 미국 정착 가이드",
     description: siteConfig.description,
-    images: ["/og-arriveus.png"],
+    images: ["/og-arriveus.jpg"],
   },
   robots: {
     index: true,

@@ -9,6 +9,7 @@ import {
   getGuide,
   formatGuideUpdatedAt,
 } from "@/lib/guides";
+import { schemaDate } from "@/lib/dates";
 import { siteConfig } from "@/lib/site";
 
 type PageProps = {
@@ -35,13 +36,19 @@ export async function generateMetadata({
       description: guide.summary,
       url: path,
       type: "article",
-      images: ["/og-arriveus.png"],
+      images: [
+        {
+          url: "/og-arriveus.jpg",
+          width: 1200,
+          height: 630,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: guide.title,
       description: guide.summary,
-      images: ["/og-arriveus.png"],
+      images: ["/og-arriveus.jpg"],
     },
   };
 }
@@ -91,17 +98,20 @@ export default async function GuidePage({ params }: PageProps) {
     headline: guide.title,
     description: guide.summary,
     inLanguage: "ko",
+    datePublished: schemaDate(guide.publishedAt ?? guide.updatedAt),
+    dateModified: schemaDate(guide.updatedAt ?? guide.publishedAt),
     author: { "@type": "Organization", name: siteConfig.name },
     publisher: {
       "@type": "Organization",
       name: siteConfig.name,
       url: siteConfig.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}${siteConfig.logo}`,
+      },
     },
     mainEntityOfPage: `${siteConfig.url}${path}`,
   };
-  if (guide.updatedAt) {
-    articleLd.dateModified = `${guide.updatedAt}-01`;
-  }
   const jsonLd =
     guide.faq && guide.faq.length > 0
       ? {

@@ -4,13 +4,14 @@ import { getEnglishPhrases } from "@/content/english";
 import { guides } from "@/content/guides";
 import { newGuideRefs } from "@/content/new-guides";
 import type { Category, FaqItem, Guide } from "@/content/types";
-
-const DEFAULT_UPDATED_AT = "2026-08";
+import { DEFAULT_CONTENT_DATE } from "@/lib/dates";
 
 function withEnglish(guide: Guide): Guide {
+  const updatedAt = guide.updatedAt ?? guide.publishedAt ?? DEFAULT_CONTENT_DATE;
   return {
     ...guide,
-    updatedAt: guide.updatedAt ?? DEFAULT_UPDATED_AT,
+    publishedAt: guide.publishedAt ?? updatedAt,
+    updatedAt,
     english: guide.english ?? getEnglishPhrases(guide.category, guide.slug),
   };
 }
