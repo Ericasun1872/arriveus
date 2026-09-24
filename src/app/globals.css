@@ -85,3 +85,13 @@ body {
     animation: none;
   }
 }
+
+[data-guide-tabs][data-active-tab="overview"] [data-guide-tab]:not([data-guide-tab="overview"]),
+[data-guide-tabs][data-active-tab="requirements"] [data-guide-tab]:not([data-guide-tab="requirements"]),
+[data-guide-tabs][data-active-tab="process"] [data-guide-tab]:not([data-guide-tab="process"]),
+[data-guide-tabs][data-active-tab="faq"] [data-guide-tab]:not([data-guide-tab="faq"]),
+[data-guide-tabs][data-active-tab="quiz"] [data-guide-tab]:not([data-guide-tab="quiz"]),
+[data-guide-tabs][data-active-tab="english"] [data-guide-tab]:not([data-guide-tab="english"]),
+[data-guide-tabs][data-active-tab="links"] [data-guide-tab]:not([data-guide-tab="links"]) {
+  display: none;
+}

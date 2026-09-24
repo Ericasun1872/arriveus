@@ -1,10 +1,9 @@
-"use client";
-
 import Link from "next/link";
-import { useId, useMemo, useState, type ReactNode } from "react";
+import type { ReactNode } from "react";
 import type { Guide } from "@/content/types";
 import { EnglishPhrases } from "./EnglishPhrases";
 import { FaqAccordion } from "./FaqAccordion";
+import { GuideTabShell, type GuideTabItem } from "./GuideTabShell";
 import { ExternalLinkIcon } from "./icons";
 import { PracticeQuiz } from "./PracticeQuiz";
 import { RequirementsChecklist } from "./RequirementsChecklist";
@@ -137,28 +136,27 @@ function OverviewText({ text }: { text: string }) {
   );
 }
 
-function TabPanel({
+function GuideSection({
   id,
-  labelledBy,
-  active,
   heading,
+  active,
   className,
   children,
 }: {
-  id: string;
-  labelledBy: string;
-  active: boolean;
+  id: TabId;
   heading: string;
+  active: boolean;
   className?: string;
   children: ReactNode;
 }) {
   return (
     <section
       role="tabpanel"
-      id={id}
-      aria-labelledby={labelledBy}
+      id={`guide-panel-${id}`}
+      data-guide-tab={id}
+      aria-labelledby={`guide-tab-${id}`}
       hidden={!active}
-      className={`${active ? "animate-fade" : "hidden"} ${className ?? ""}`}
+      className={className}
     >
       <h2 className="mb-4 font-[family-name:var(--font-display)] text-xl font-semibold tracking-tight text-[var(--ink)]">
         {heading}
@@ -168,65 +166,30 @@ function TabPanel({
   );
 }
 
+function EmptyState({ message }: { message: string }) {
+  return (
+    <p className="rounded-xl border border-dashed border-[var(--border)] px-4 py-8 text-center text-sm text-[var(--muted)]">
+      {message}
+    </p>
+  );
+}
+
 export function GuideTabs({ guide }: { guide: Guide }) {
-  const [active, setActive] = useState<TabId>("overview");
-  const baseId = useId();
   const phrases = guide.english ?? [];
   const quiz = guide.practiceQuestions ?? [];
   const faq = guide.faq ?? [];
 
-  const tabs = useMemo(
-    () =>
-      baseTabs.filter((tab) => {
-        if (tab.id === "english") return phrases.length > 0;
-        if (tab.id === "quiz") return quiz.length > 0;
-        if (tab.id === "faq") return faq.length > 0;
-        return true;
-      }),
-    [phrases.length, quiz.length, faq.length],
-  );
+  const tabs: GuideTabItem[] = baseTabs.filter((tab) => {
+    if (tab.id === "english") return phrases.length > 0;
+    if (tab.id === "quiz") return quiz.length > 0;
+    if (tab.id === "faq") return faq.length > 0;
+    return true;
+  });
 
   return (
     <div>
-      <div
-        role="tablist"
-        aria-label="가이드 섹션"
-        className="sticky top-[57px] z-20 -mx-4 flex gap-1 overflow-x-auto border-b border-[var(--border)] bg-[var(--surface)] px-4 sm:-mx-0 sm:px-0"
-      >
-        {tabs.map((tab) => {
-          const selected = active === tab.id;
-          return (
-            <button
-              key={tab.id}
-              type="button"
-              role="tab"
-              id={`${baseId}-${tab.id}`}
-              aria-selected={selected}
-              aria-controls={`${baseId}-panel-${tab.id}`}
-              className={`relative shrink-0 px-4 py-3 text-sm transition-colors ${
-                selected
-                  ? "font-semibold text-[var(--brand)]"
-                  : "text-[var(--muted)] hover:text-[var(--ink)]"
-              }`}
-              onClick={() => setActive(tab.id)}
-            >
-              {tab.label}
-              {selected ? (
-                <span className="absolute inset-x-3 bottom-0 h-0.5 rounded-full bg-[var(--brand)]" />
-              ) : null}
-            </button>
-          );
-        })}
-      </div>
-
-      <div className="pt-6">
-        <TabPanel
-          id={`${baseId}-panel-overview`}
-          labelledBy={`${baseId}-overview`}
-          active={active === "overview"}
-          heading="개요"
-          className="space-y-5"
-        >
+      <GuideTabShell tabs={tabs}>
+        <GuideSection id="overview" heading="개요" active className="space-y-5">
           <OverviewText text={guide.overview} />
           {(guide.cost || guide.methods?.length) && (
             <dl className="grid gap-3 sm:grid-cols-2">
@@ -266,14 +229,9 @@ export function GuideTabs({ guide }: { guide: Guide }) {
               ) : null}
             </dl>
           )}
-        </TabPanel>
+        </GuideSection>
 
-        <TabPanel
-          id={`${baseId}-panel-requirements`}
-          labelledBy={`${baseId}-requirements`}
-          active={active === "requirements"}
-          heading="준비물"
-        >
+        <GuideSection id="requirements" heading="준비물" active={false}>
           {guide.requirements.length > 0 ? (
             <RequirementsChecklist
               category={guide.category}
@@ -283,14 +241,9 @@ export function GuideTabs({ guide }: { guide: Guide }) {
           ) : (
             <EmptyState message="준비물 정보가 곧 업데이트됩니다." />
           )}
-        </TabPanel>
+        </GuideSection>
 
-        <TabPanel
-          id={`${baseId}-panel-process`}
-          labelledBy={`${baseId}-process`}
-          active={active === "process"}
-          heading="절차"
-        >
+        <GuideSection id="process" heading="절차" active={false}>
           {guide.steps.length > 0 ? (
             <ol className="relative space-y-0 border-l border-[var(--brand-border)] pl-6">
               {guide.steps.map((step, index) => (
@@ -310,36 +263,25 @@ export function GuideTabs({ guide }: { guide: Guide }) {
           ) : (
             <EmptyState message="절차 정보가 곧 업데이트됩니다." />
           )}
-        </TabPanel>
+        </GuideSection>
 
         {faq.length > 0 ? (
-          <TabPanel
-            id={`${baseId}-panel-faq`}
-            labelledBy={`${baseId}-faq`}
-            active={active === "faq"}
-            heading="자주 묻는 질문"
-          >
+          <GuideSection id="faq" heading="자주 묻는 질문" active={false}>
             <FaqAccordion items={faq} />
-          </TabPanel>
+          </GuideSection>
         ) : null}
 
         {quiz.length > 0 ? (
-          <TabPanel
-            id={`${baseId}-panel-quiz`}
-            labelledBy={`${baseId}-quiz`}
-            active={active === "quiz"}
-            heading="연습 문제"
-          >
+          <GuideSection id="quiz" heading="연습 문제" active={false}>
             <PracticeQuiz questions={quiz} />
-          </TabPanel>
+          </GuideSection>
         ) : null}
 
         {phrases.length > 0 ? (
-          <TabPanel
-            id={`${baseId}-panel-english`}
-            labelledBy={`${baseId}-english`}
-            active={active === "english"}
+          <GuideSection
+            id="english"
             heading="영어 표현"
+            active={false}
             className="space-y-3"
           >
             <p className="text-sm text-[var(--muted)]">
@@ -347,15 +289,10 @@ export function GuideTabs({ guide }: { guide: Guide }) {
               확인해 보세요.
             </p>
             <EnglishPhrases phrases={phrases} />
-          </TabPanel>
+          </GuideSection>
         ) : null}
 
-        <TabPanel
-          id={`${baseId}-panel-links`}
-          labelledBy={`${baseId}-links`}
-          active={active === "links"}
-          heading="참고 링크"
-        >
+        <GuideSection id="links" heading="참고 링크" active={false}>
           {guide.links.length > 0 ? (
             <ul className="space-y-3">
               {guide.links.map((link) => {
@@ -392,8 +329,8 @@ export function GuideTabs({ guide }: { guide: Guide }) {
           ) : (
             <EmptyState message="공식 링크가 곧 추가됩니다." />
           )}
-        </TabPanel>
-      </div>
+        </GuideSection>
+      </GuideTabShell>
 
       {guide.disclaimer ? (
         <p className="mt-8 rounded-xl bg-[var(--surface-muted)] px-4 py-3 text-xs leading-relaxed text-[var(--muted)]">
@@ -401,13 +338,5 @@ export function GuideTabs({ guide }: { guide: Guide }) {
         </p>
       ) : null}
     </div>
-  );
-}
-
-function EmptyState({ message }: { message: string }) {
-  return (
-    <p className="rounded-xl border border-dashed border-[var(--border)] px-4 py-8 text-center text-sm text-[var(--muted)]">
-      {message}
-    </p>
   );
 }
