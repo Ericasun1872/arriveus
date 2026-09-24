@@ -27,7 +27,9 @@ export function EnglishPhrases({ phrases }: { phrases: EnglishPhrase[] }) {
         >
           <div className="flex items-start justify-between gap-3">
             <div>
-              <p className="text-sm text-[var(--muted)]">{phrase.ko}</p>
+              <h3 className="text-sm font-normal text-[var(--muted)]">
+                {phrase.ko}
+              </h3>
               <p className="mt-1 text-base font-medium text-[var(--ink)]">
                 {phrase.en}
               </p>

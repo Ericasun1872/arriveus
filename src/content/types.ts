@@ -37,6 +37,8 @@ export type Guide = {
   faq?: FaqItem[];
   disclaimer?: string;
   comingSoon?: boolean;
+  /** YYYY-MM, first published month */
+  publishedAt?: string;
   /** YYYY-MM, shown as "YYYY년 M월 기준" */
   updatedAt?: string;
 };

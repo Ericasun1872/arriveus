@@ -13,11 +13,9 @@ export function RequirementsChecklist({
   items: string[];
 }) {
   const [checked, setChecked] = useState<string[]>([]);
-  const [ready, setReady] = useState(false);
 
   useEffect(() => {
     setChecked(loadChecklist(category, slug));
-    setReady(true);
   }, [category, slug]);
 
   const progress = useMemo(() => {
@@ -41,12 +39,6 @@ export function RequirementsChecklist({
   function reset() {
     setChecked([]);
     saveChecklist(category, slug, []);
-  }
-
-  if (!ready) {
-    return (
-      <div className="h-40 animate-pulse rounded-xl bg-[var(--surface-muted)]" />
-    );
   }
 
   return (

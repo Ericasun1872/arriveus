@@ -16,6 +16,8 @@ export type StateGuide = {
   highlights: string[];
   localNotes?: StateLocalNote[];
   featured?: boolean;
+  /** YYYY-MM */
+  updatedAt?: string;
 };
 
 /**
@@ -493,15 +495,18 @@ export const stateGuides: StateGuide[] = [
 ];
 
 export function getStateGuides() {
-  return stateGuides;
+  return stateGuides.map((state) => ({
+    ...state,
+    updatedAt: state.updatedAt ?? "2026-08",
+  }));
 }
 
 export function getStateGuide(code: string) {
-  return stateGuides.find(
+  return getStateGuides().find(
     (state) => state.code.toLowerCase() === code.toLowerCase(),
   );
 }
 
 export function getFeaturedStates() {
-  return stateGuides.filter((state) => state.featured);
+  return getStateGuides().filter((state) => state.featured);
 }

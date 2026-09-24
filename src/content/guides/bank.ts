@@ -7,6 +7,7 @@ export const bankGuides: Guide[] = [
   {
     slug: "open-account",
     category: "bank",
+    updatedAt: "2026-08",
     title: "은행 계좌 개설",
     summary:
       "체킹·세이빙 계좌를 처음 열 때 필요한 서류와 절차입니다. 학생·임시거주자·SSN 유무에 따른 차이는 ‘신분별 계좌 개설’ 가이드도 함께 보세요.",
@@ -63,6 +64,7 @@ export const bankGuides: Guide[] = [
   {
     slug: "account-by-status",
     category: "bank",
+    updatedAt: "2026-08",
     title: "신분별 계좌 개설 (학생·임시거주 등)",
     summary:
       "유학생, 임시 비자 거주자, SSN이 아직 없는 경우 등 상황별로 자주 필요한 서류와 팁을 나눠 정리했습니다.",
@@ -126,6 +128,7 @@ export const bankGuides: Guide[] = [
   {
     slug: "first-credit-card",
     category: "bank",
+    updatedAt: "2026-08",
     title: "첫 신용카드 만들기",
     summary:
       "은행에서 처음 신용카드(또는 Secured card)를 신청하는 절차, 준비물, 거절됐을 때 대안을 단계별로 안내합니다.",
@@ -181,6 +184,7 @@ export const bankGuides: Guide[] = [
   {
     slug: "credit-build",
     category: "bank",
+    updatedAt: "2026-08",
     title: "신용 점수 올리기",
     summary:
       "신용 점수(FICO 등)에 영향을 주는 요소와, 입국 초보가 점수를 차근차근 올리는 실천 방법을 정리했습니다.",
@@ -237,6 +241,7 @@ export const bankGuides: Guide[] = [
   {
     slug: "direct-deposit",
     category: "bank",
+    updatedAt: "2026-08",
     title: "급여 자동입금 (Direct Deposit)",
     summary:
       "직장 급여를 체킹 계좌로 받는 Direct Deposit 설정 방법과 routing/account number 확인법을 정리했습니다.",
@@ -286,6 +291,7 @@ export const bankGuides: Guide[] = [
   {
     slug: "send-money",
     category: "bank",
+    updatedAt: "2026-08",
     title: "송금 (한국↔미국)",
     summary:
       "미국 계좌에서 한국으로, 또는 한국에서 미국으로 돈을 보낼 때 알아둘 수수료·환율·소요 시간 기본 안내입니다.",
@@ -338,6 +344,7 @@ export const bankGuides: Guide[] = [
   {
     slug: "debit-overdraft",
     category: "bank",
+    updatedAt: "2026-08",
     title: "직불카드·오버드래프트",
     summary:
       "Debit card 사용, ATM 수수료, 잔액 부족(Overdraft) 수수료를 피하는 기본 습관을 안내합니다.",
