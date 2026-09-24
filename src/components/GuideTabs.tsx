@@ -252,7 +252,7 @@ export function GuideTabs({ guide }: { guide: Guide }) {
                     {index + 1}
                   </span>
                   <h3 className="text-sm font-semibold leading-relaxed text-[var(--ink)]">
-                    {index + 1}단계
+                    {`${index + 1}단계`}
                   </h3>
                   <p className="mt-1 text-sm leading-relaxed text-[var(--ink)]">
                     {step}
